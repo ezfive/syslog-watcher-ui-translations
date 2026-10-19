@@ -1,0 +1,5581 @@
+0 "日本語 (Japanese)"
+// Copyright (C) EZ5 Systems Ltd. and contributors.
+// MIT No Attribution License: https://github.com/ezfive/syslog-watcher-ui-translations
+// Syslog Watcher 7.0
+
+// C/C++ COMMENTS  = from double slash until the end of the line
+
+// We recommend to use Visual Studio Code to edit this file: set file language to C++
+
+///////////////////////////////////////////////////////////////////////////////
+// GENERAL STRINGS - translate only strings in quotes ("...")
+// - Keep \r\n (line break) exactly as in the English text.
+// - Keep symbols such as ⮕ ↑ ↓ ❌ → — … unchanged; they stand for buttons, icons, or menu paths.
+// - A comment after a string on the same line (// ...) is a hint for you; do not translate it.
+//   Write your own comments on separate lines that start with //.
+// - The //ORI "..." line above a string is the English original; do not change it.
+// - A line that starts with # is new or its English text changed: check it, translate it again if needed, then remove the #.
+
+// ================================ TOC =======================================
+// 10000 View Layout editor
+// 10100 View Layouts List
+// 10150 Data Fields Section
+// 10200 View Request Window
+// 10250 Filter
+// 10300 Originator editor
+// 10350 Originators List & Select Originators
+// 10400 Parser editor
+// 10450 Parsers List
+// 10500 Parser Section Types
+// 10550 Group editor + Groups List
+// 10600 ViewPreset editor + ViewPresets List
+// 10700 User editor + Users List
+// 10750 Time Range
+// 10850 Severity and Facility Names Dialog
+// 10900 Open Storage
+// 10950 Progress Window
+// 11000 Server Toolbar
+// 11100 Connect Window
+// 11150 General Toolbar
+// 11200 Storage Toolbar
+// 11250 Messages Toolbar
+// 11300 Server Configuration: Remote Access
+// 11350 Server Configuration: Email Accounts
+// 11400 Filter Lists, Field Dictionaries + Field Collections Windows
+// 11450 Server Configuration: Reports
+// 11500 Secrets Windows
+// 11550 Server Configuration: HTTP Endpoints
+// 11650 Certificates Windows
+// 11800 Updates
+// 12000 Manager Settings
+// 12100 Collector Configuration Window
+// 12200 Collector & Server Log tabs
+// 12300 Parser Issue Feedback
+// 12400 Server Configuration Window
+// 12450 Server tab
+// 13000 Storage tab
+// 14000 Viewer tab
+// 14950 Server Feature List window
+// 15000 Feature Window
+// 15050 Send Emails
+// 15200 Forward to Files
+// 15250 Forward to ODBC
+// 15300 Forward to HTTP
+// 15350 Forward to Proc
+// 15400 Forward to Syslog Server
+// 19850 Link + QR Code Windows
+// 19900 Support Window
+// 19919 Licenses Windows
+// 20000 Manager Messages
+// 21000 Collector Configuration: Message Processing
+// 21050 Collector Configuration: Message Processing (Originator IDs)
+// 21100 Collector Configuration: Network Interfaces
+// 21200 Server Configuration: Storage Maintenance
+// 21250 Collector Configuration: Syslog Storage
+// 21400 Migrate from Syslog Watcher 6 (21410+ migration log lines)
+// 21550 Storage Location + Settings
+// 21650 Storage speed test
+// 22000 Reports + Report Templates
+// 29400 HTTP Errors
+// 30750 Filter by Originators
+// 30800 Filter editor
+// 30850 Text with fields editor
+// 30900 Regexp editor
+// 31000 General
+//===============================================================================
+
+// View Layout editor 10000
+//ORI "Column title"
+10002 "列タイトル"
+
+//ORI "Name of the column, shown in the grid header."
+10003 "グリッドのヘッダーに表示される列の名前です。"
+
+//ORI "Column format"
+10004 "列の書式"
+
+//ORI "Combination of {FIELDS} and text, e.g. '{SEVERITY_NUM} / {SEVERITY}'."
+10005 "{FIELDS} とテキストの組み合わせです。例: '{SEVERITY_NUM} / {SEVERITY}'"
+
+//ORI "Column width"
+10006 "列の幅"
+
+//ORI "Column width in pixels."
+10007 "列の幅 (ピクセル単位) です。"
+
+//ORI "Columns"
+10008 "列"
+
+//ORI "List of grid columns. Use 'Add Column' to create a new column, then use ↑↓ to rearrange the order."
+10009 "グリッドの列の一覧です。[列の追加] で新しい列を作成し、↑↓ で順序を変更します。"
+
+//ORI "Add Column"
+10010 "列の追加"
+
+//ORI "Column"
+10011 "列"
+
+//ORI "Expand to edit the column details. Use ↑↓ to rearrange the order, or ❌ to delete the column."
+10012 "展開すると列の詳細を編集できます。↑↓ で順序を変更し、❌ で列を削除します。"
+
+//ORI "Color Rules"
+10016 "色ルール"
+
+//ORI "Color Rule"
+10018 "色ルール"
+
+//ORI "Rule that specifies table row colors."
+10019 "テーブルの行の色を指定するルールです。"
+
+//ORI "Add Color Rule"
+10020 "色ルールの追加"
+
+//ORI "Rule name"
+10021 "ルール名"
+
+//ORI "Name for the color rule."
+10022 "色ルールの名前です。"
+
+//ORI "Rule filter"
+10023 "ルールのフィルター"
+
+//ORI "Open filter options to construct a rule for applying the color."
+10024 "フィルターのオプションを開いて、色を適用するルールを作成します。"
+
+//ORI "Text color"
+10025 "文字色"
+
+//ORI "An RGB color to apply to text when the rule is activated, e.g. '0; 128; 0'."
+10026 "ルールが有効なときに文字に適用する RGB 色です。例: '0; 128; 0'"
+
+//ORI "Background color"
+10027 "背景色"
+
+//ORI "An RGB color to apply to the row background when the rule is activated, e.g. '255; 238; 238'."
+10028 "ルールが有効なときに行の背景に適用する RGB 色です。例: '255; 238; 238'"
+
+//ORI "Apply to"
+10029 "適用対象" // color rule summary: "Apply to: <filter>", e.g. "Apply to: ALL MESSAGES"
+
+//ORI "HTML Sections"
+10030 "HTML セクション"
+
+//ORI "Multi-section HTML template for the message details panel."
+10031 "メッセージ詳細パネル用の複数セクションの HTML テンプレートです。"
+
+//ORI "Message Details"
+10033 "メッセージの詳細"
+
+//ORI "Settings for the message details panel."
+10034 "メッセージ詳細パネルの設定です。"
+
+//ORI "Partial HTML template."
+10037 "部分 HTML テンプレートです。"
+
+//ORI "Section name"
+10039 "セクション名"
+
+//ORI "Name of the HTML section."
+10040 "HTML セクションの名前です。"
+
+//ORI "Render section only for messages that pass the filter."
+10042 "フィルターに一致するメッセージに対してのみセクションを表示します。"
+
+//ORI "Render for"
+10043 "表示対象" // HTML section summary: "Render for: <filter>", e.g. "Render for: ALL MESSAGES"
+
+//ORI "Please add at least one column."
+10044 "列を 1 つ以上追加してください。"
+
+//ORI "Style (CSS)"
+10046 "スタイル (CSS)"
+
+//ORI "CSS to style HTML in the Message Details panel."
+10047 "メッセージ詳細パネルの HTML に適用する CSS です。"
+
+//ORI "Panel position"
+10048 "パネルの位置"
+
+//ORI "The position where the details panel will be placed by default."
+10049 "詳細パネルを既定で配置する位置です。"
+
+//ORI "Panel size"
+10050 "パネルのサイズ"
+
+//ORI "Width for the left/right panels, or height if the panel is positioned at the bottom."
+10051 "左/右パネルの幅、またはパネルが下部にある場合はその高さです。"
+
+//ORI "Section (HTML)"
+10052 "セクション (HTML)"
+
+//ORI "HTML-formatted section of the message details panel."
+10053 "メッセージ詳細パネルの HTML 形式のセクションです。"
+
+//ORI "A view layout defines how messages stored in syslog storage are displayed. It customizes the table appearance and the message details panel."
+10056 "ビューレイアウトは、syslog ストレージに保存されたメッセージの表示方法を定義します。テーブルの外観とメッセージ詳細パネルをカスタマイズできます。"
+
+//ORI "New View Layout"
+10057 "新しいビューレイアウト"
+
+//ORI "Edit View Layout"
+10058 "ビューレイアウトの編集"
+
+//ORI "Rule that specifies a table row color."
+10059 "テーブルの行の色を指定するルールです。"
+
+//ORI "Unable to Add Layout"
+10060 "レイアウトを追加できません"
+
+//ORI "Unable to Edit Layout"
+10061 "レイアウトを編集できません"
+
+//ORI "Save Layout to Storage..."
+10062 "レイアウトをストレージに保存..."
+
+//ORI "Load from Existing Layout..."
+10063 "既存のレイアウトから読み込む..."
+
+//ORI "Load From Layout"
+10064 "レイアウトから読み込む"
+
+//ORI "Save To Layout"
+10065 "レイアウトに保存"
+
+//ORI "Are you sure you want to save changes to the view layout?"
+10066 "ビューレイアウトへの変更を保存しますか?"
+
+//ORI "Are you sure you want to create a new view layout?"
+10067 "新しいビューレイアウトを作成しますか?"
+
+//ORI "Left"
+10068 "左" // panel position
+
+//ORI "Bottom"
+10069 "下" // panel position
+
+//ORI "Right"
+10070 "右" // panel position
+
+// View Layouts List 10100
+//ORI "View Layouts"
+10101 "ビューレイアウト"
+
+//ORI "Unable to Load Layouts"
+10105 "レイアウトを読み込めません"
+
+//ORI "Layout"
+10106 "レイアウト" // default name for new layouts
+
+//ORI "Unable to Delete Layout"
+10108 "レイアウトを削除できません"
+
+//ORI "Data Fields"
+10109 "データフィールド" // column title
+
+// Data Fields Section 10150
+//ORI "Data Fields (Optional)"
+10150 "データフィールド (オプション)"
+
+//ORI "Additional data fields to be extracted from {MESSAGE}."
+10151 "{MESSAGE} から抽出する追加のデータフィールドです。"
+
+//ORI "Regex for extracting fields"
+10152 "フィールド抽出用の正規表現"
+
+//ORI "Regular expression to capture additional data fields from a message.\r\nFormat: (?<FIELD_NAME>...)."
+10153 "メッセージから追加のデータフィールドを取得する正規表現です。\r\n書式: (?<FIELD_NAME>...)"
+
+//ORI "Fields"
+10154 "フィールド"
+
+//ORI "Message fields can be used for further filtering and formatting."
+10155 "メッセージフィールドは、フィルターや書式設定に使用できます。"
+
+//ORI "Add Field"
+10156 "フィールドの追加"
+
+//ORI "Name of the message field, which can later be used as {NAME}."
+10158 "メッセージフィールドの名前です。後で {NAME} として使用できます。"
+
+//ORI "Field format"
+10159 "フィールドの書式"
+
+//ORI "The field value can include text and other fields."
+10160 "フィールドの値には、テキストや他のフィールドを含めることができます。"
+
+//ORI "Extract data fields from a collection using regular expressions."
+10164 "正規表現を使用して、コレクションからデータフィールドを抽出します。"
+
+//ORI "Add Collection"
+10165 "コレクションの追加"
+
+//ORI "Collection access name"
+10166 "コレクションのアクセス名"
+
+//ORI "Name used to access the extracted fields (ACCESS_NAME.FIELD_NAME)."
+10167 "抽出したフィールドにアクセスするための名前です (ACCESS_NAME.FIELD_NAME)。"
+
+//ORI "Field collection"
+10168 "フィールドコレクション"
+
+//ORI "One of the field collections."
+10169 "フィールドコレクションの 1 つです。"
+
+//ORI "Field configuration defines its name, format, and rendering options."
+10170 "フィールドの構成では、名前、書式、表示オプションを定義します。"
+
+//ORI "Keyword selector"
+10171 "キーワードセレクター"
+
+//ORI "Selects a regular expression from the collection."
+10172 "コレクションから正規表現を選択します。"
+
+//ORI "Please enter a non-blank field name."
+10175 "フィールド名を入力してください。"
+
+//ORI "Please enter a non-blank access name."
+10176 "アクセス名を入力してください。"
+
+//ORI "Please enter a non-blank field collection."
+10177 "フィールドコレクションを入力してください。"
+
+//ORI "Please enter a non-blank keyword selector."
+10178 "キーワードセレクターを入力してください。"
+
+//ORI "Regular Expression"
+10179 "正規表現"
+
+// View Request Window 10200
+//ORI "New View Tab"
+10200 "新しいビュータブ"
+
+//ORI "Tab Properties"
+10201 "タブのプロパティ"
+
+//ORI "Properties of the view tab."
+10202 "ビュータブのプロパティです。"
+
+//ORI "Layout based on"
+10203 "基にするレイアウト"
+
+//ORI "Choose one of the available layouts to create this tab. A layout defines the way the collected messages are displayed."
+10204 "このタブの作成に使用するレイアウトを選択します。レイアウトは、収集したメッセージの表示方法を定義します。"
+
+//ORI "Messages per page"
+10205 "ページあたりのメッセージ数"
+
+//ORI "Maximum number of messages to show at once (for pagination)."
+10206 "一度に表示するメッセージの最大数です (ページ分割用)。"
+
+//ORI "Unique name of the viewer, displayed on the tab."
+10208 "ビューアーの一意の名前です。タブに表示されます。"
+
+//ORI "Initial settings of a new view tab displaying messages from the storage. You can change these settings later in the properties."
+10220 "ストレージのメッセージを表示する新しいビュータブの初期設定です。これらの設定は後でプロパティから変更できます。"
+
+//ORI "Request"
+10221 "要求" // heading
+
+//ORI "View"
+10222 "ビュー" // default name of a new viewer tab, a number is appended: View 1
+
+//ORI "Modify View Request"
+10225 "ビューの要求を変更"
+
+//ORI "Unable to Load View Layout"
+10231 "ビューレイアウトを読み込めません"
+
+//ORI "Unable to Save Tab"
+10243 "タブを保存できません"
+
+// Filter 10250
+//ORI "Invalid severity range"
+10250 "重大度の範囲が無効です"
+
+//ORI "all severity levels"
+10251 "すべての重大度レベル"
+
+//ORI "Severity level"
+10252 "重大度レベル"
+
+//ORI "Allowed syslog severity levels."
+10253 "許可する syslog の重大度レベルです。"
+
+//ORI "Filter expression"
+10254 "フィルター式"
+
+//ORI "Reset Filter"
+10256 "フィルターのリセット"
+
+//ORI "Please correct the syntax of the filter expression."
+10258 "フィルター式の構文を修正してください。"
+
+//ORI "Smallest severity number to include."
+10259 "含める重大度の最小値です。"
+
+//ORI "Largest severity number to include."
+10260 "含める重大度の最大値です。"
+
+//ORI "Minimum"
+10261 "最小"
+
+//ORI "Maximum"
+10262 "最大"
+
+//ORI "In syslog, a smaller number is more important."
+10263 "syslog では、数値が小さいほど重要度が高くなります。"
+
+//ORI "Filter Files"
+10264 "フィルターファイル"
+
+// Originator editor 10300
+//ORI "Add..."
+10301 "追加..."
+
+//ORI "Syslog Watcher adds new originators when it receives the first message from them.\r\n\r\nInstead of adding them here, configure your devices to send logs to Syslog Watcher.\r\n\r\nDo you still want to add an originator manually?"
+10302 "Syslog Watcher は、送信元から最初のメッセージを受信すると、その送信元を自動的に追加します。\r\n\r\nここで追加する代わりに、Syslog Watcher にログを送信するようデバイスを設定してください。\r\n\r\nそれでも送信元を手動で追加しますか?"
+
+//ORI "<different states>"
+10303 "<異なる状態>"
+
+//ORI "<no groups>"
+10304 "<グループなし>"
+
+//ORI "An originator with the same ID already exists.\r\nPlease specify a different ID."
+10305 "同じ ID の送信元が既に存在します。\r\n別の ID を指定してください。"
+
+//ORI "Properties of Multiple Originators"
+10306 "複数の送信元のプロパティ"
+
+//ORI "Common properties of several selected syslog originators."
+10307 "選択した複数の syslog 送信元に共通のプロパティです。"
+
+//ORI "Originator Properties"
+10308 "送信元のプロパティ"
+
+//ORI "General originator settings such as name, description, parser, and assigned groups."
+10309 "名前、説明、パーサー、割り当てられたグループなど、送信元の全般設定です。"
+
+//ORI "Inactive originators are hidden and do not accept new messages."
+10311 "非アクティブな送信元は非表示になり、新しいメッセージを受け付けません。"
+
+//ORI "New Syslog Originator"
+10312 "新しい syslog 送信元"
+
+//ORI "Edit Syslog Originator"
+10313 "syslog 送信元の編集"
+
+//ORI "Edit Multiple Syslog Originators"
+10314 "複数の syslog 送信元の編集"
+
+//ORI "ID"
+10315 "ID"
+
+//ORI "Unique originator ID. It cannot be changed once assigned. In most cases, the ID is the originator's IP address."
+10316 "送信元の一意の ID です。一度割り当てると変更できません。ほとんどの場合、ID は送信元の IP アドレスです。"
+
+//ORI "User-friendly name of the originator."
+10318 "送信元のわかりやすい名前です。"
+
+//ORI "Parser assigned to the originator."
+10320 "送信元に割り当てられたパーサーです。"
+
+//ORI "Groups assigned to the originator."
+10322 "送信元に割り当てられたグループです。"
+
+//ORI "<different parsers>"
+10323 "<異なるパーサー>"
+
+//ORI "Please enter an originator ID."
+10324 "送信元 ID を入力してください。"
+
+//ORI "Please enter an originator name."
+10325 "送信元の名前を入力してください。"
+
+//ORI "<unknown parser>"
+10326 "<不明なパーサー>"
+
+//ORI "Modifying properties of multiple syslog originators at once."
+10327 "複数の syslog 送信元のプロパティを一度に変更しています。"
+
+//ORI "Unable to Add Originator"
+10328 "送信元を追加できません"
+
+//ORI "Unable to Modify Originator"
+10329 "送信元を変更できません"
+
+//ORI "Unable to Load Originators"
+10330 "送信元を読み込めません"
+
+//ORI "Please select a parser."
+10331 "パーサーを選択してください。"
+
+//ORI "Parsers from the installation cannot be assigned to originators directly.\r\n\r\nDo you want to create a parser copy in the syslog storage and assign it?"
+10332 "インストールに含まれるパーサーは、送信元に直接割り当てることはできません。\r\n\r\nパーサーのコピーを syslog ストレージに作成して割り当てますか?"
+
+//ORI "You are about to delete the selected originators."
+10333 "選択した送信元を削除しようとしています。"
+
+//ORI "Instead of deleting, consider making the originators inactive. Inactive originators are hidden in views and reports, do not accept new messages, and do not count toward the license limit. Their stored messages and settings are kept, and they reappear if you reactivate the originators.\r\n\r\nDo you still want to delete them?"
+10334 "削除する代わりに、送信元を非アクティブにすることを検討してください。非アクティブな送信元はビューやレポートで非表示になり、新しいメッセージを受け付けず、ライセンスの上限にも数えられません。保存されたメッセージと設定は保持され、送信元を再びアクティブにすると元に戻ります。\r\n\r\nそれでも削除しますか?"
+
+//ORI "Unable to Delete Originator"
+10335 "送信元を削除できません"
+
+// Originators List & Select Originators 10350
+//ORI "Syslog Originators"
+10350 "syslog 送信元"
+
+//ORI "Select Originators"
+10351 "送信元の選択"
+
+//ORI "inactive"
+10356 "非アクティブ" // originators: "12 + inactive 3"
+
+//ORI "deleted"
+10357 "削除済み" // originators: "[5 / 12] + inactive 3 + deleted 2"
+
+//ORI "Originator"
+10358 "送信元"
+
+//ORI "There are no registered originators in the syslog storage."
+10359 "syslog ストレージに登録されている送信元はありません。"
+
+//ORI "There are no syslog originators that match the specified filters."
+10360 "指定したフィルターに一致する syslog 送信元はありません。"
+
+//ORI "This originator no longer exists. It will be removed from the filter when you click Apply."
+10361 "この送信元は存在しません。[適用] をクリックするとフィルターから削除されます。"
+
+//ORI "No originators are selected. The filter will include all originators."
+10362 "送信元が選択されていません。フィルターにはすべての送信元が含まれます。"
+
+// Parser editor 10400
+//ORI "New Syslog Parser"
+10400 "新しい syslog パーサー"
+
+//ORI "Edit Syslog Parser"
+10401 "syslog パーサーの編集"
+
+//ORI "Syslog message example (optional, for testing):"
+10402 "syslog メッセージの例 (オプション、テスト用):"
+
+//ORI "Parser name"
+10403 "パーサー名"
+
+//ORI "Message Sections"
+10405 "メッセージセクション"
+
+//ORI "List of sections that extract data from a message in the specified order."
+10406 "指定した順序でメッセージからデータを抽出するセクションの一覧です。"
+
+//ORI "The section defines how data is extracted from the message body."
+10408 "セクションでは、メッセージ本文からデータを抽出する方法を定義します。"
+
+//ORI "A syslog parser extracts useful data from a syslog message (a line of text). The extracted data fields can be used to filter messages and format the output."
+10409 "syslog パーサーは、syslog メッセージ (1 行のテキスト) から有用なデータを抽出します。抽出したデータフィールドは、メッセージのフィルターや出力の書式設定に使用できます。"
+
+//ORI "Enter a message example to test the parser."
+10411 "パーサーをテストするには、メッセージの例を入力してください。"
+
+//ORI "Syslog Parser"
+10412 "syslog パーサー"
+
+//ORI "Parse results:"
+10413 "解析結果:"
+
+// Parsers List 10450
+//ORI "Syslog Parsers"
+10450 "syslog パーサー"
+
+//ORI "Uses"
+10455 "使用数" // column: number of originators that use the parser
+
+//ORI "You cannot delete a parser that is used by originators.\r\n\r\nAssign another parser to the originators and try again."
+10456 "送信元が使用しているパーサーは削除できません。\r\n\r\n送信元に別のパーサーを割り当ててから、もう一度お試しください。"
+
+//ORI "Default"
+10457 "既定" // column: marks the default parser
+
+//ORI "Syslog parsers break down syslog messages (plain text) into meaningful components (fields)."
+10458 "syslog パーサーは、syslog メッセージ (プレーンテキスト) を意味のある要素 (フィールド) に分解します。"
+
+//ORI "If none of the installed parsers fit your use case, you can create a new customized one."
+10459 "インストールされているパーサーが用途に合わない場合は、新しいパーサーを作成できます。"
+
+//ORI "To use parsers, assign them to syslog originators. The default parser is automatically assigned to new originators."
+10460 "パーサーを使用するには、syslog 送信元に割り当てます。既定のパーサーは新しい送信元に自動的に割り当てられます。"
+
+//ORI "Unable to Load Parsers"
+10461 "パーサーを読み込めません"
+
+//ORI "Unable to Delete Parser"
+10462 "パーサーを削除できません"
+
+//ORI "Unable to Set Default Parser"
+10463 "既定のパーサーを設定できません"
+
+//ORI "You cannot delete the default parser. Select another default parser and try again."
+10464 "既定のパーサーは削除できません。別のパーサーを既定に設定してから、もう一度お試しください。"
+
+//ORI "Set Default Parser"
+10465 "既定のパーサーに設定"
+
+//ORI "Unable to Add Parser"
+10466 "パーサーを追加できません"
+
+//ORI "Unable to Modify Parser"
+10467 "パーサーを変更できません"
+
+//ORI "Do you want to open the online user guide?"
+10468 "オンラインのユーザーガイドを開きますか?"
+
+// Parser Section Types 10500
+//ORI "Header: IETF/BSD-syslog (RFC5424/RFC3164)"
+10500 "ヘッダー: IETF/BSD-syslog (RFC5424/RFC3164)"
+
+//ORI "Field: Legacy Timestamp (RFC3164)"
+10501 "フィールド: 従来のタイムスタンプ (RFC3164)"
+
+//ORI "Body: Common Event Format (CEF)"
+10503 "本文: Common Event Format (CEF)"
+
+//ORI "Body: Name=value pairs"
+10504 "本文: 名前=値のペア"
+
+//ORI "Skip: Spaces"
+10505 "スキップ: 空白"
+
+//ORI "Section parameter. Refer to the user manual for more details."
+10509 "セクションのパラメーターです。詳細はユーザーマニュアルを参照してください。"
+
+//ORI "Skip until (delimiter)"
+10510 "スキップの終端 (区切り文字)"
+
+//ORI "Field: Extract Until"
+10511 "フィールド: 区切り文字まで抽出"
+
+//ORI "Skip: Symbols"
+10512 "スキップ: 記号"
+
+//ORI "Skip: Until Delimiter"
+10513 "スキップ: 区切り文字まで"
+
+//ORI "Symbols to skip"
+10514 "スキップする記号"
+
+//ORI "Extract until (delimiter)"
+10515 "抽出の終端 (区切り文字)"
+
+//ORI "Maximum length"
+10516 "最大長"
+
+//ORI "Body: Comma-Separated Values (CSV)"
+10517 "本文: カンマ区切り値 (CSV)"
+
+//ORI "Header: RFC5424:STRUCTURED-DATA"
+10518 "ヘッダー: RFC5424:STRUCTURED-DATA"
+
+// Group editor + Groups List 10550
+//ORI "New Group"
+10550 "新しいグループ"
+
+//ORI "Edit Group"
+10551 "グループの編集"
+
+//ORI "Group name"
+10552 "グループ名"
+
+//ORI "Originator Groups"
+10554 "送信元グループ"
+
+//ORI "Unable to Load Groups"
+10556 "グループを読み込めません"
+
+//ORI "Originators are organized into groups for easier management and filtering. An originator can belong to more than one group."
+10557 "送信元はグループに整理して、管理やフィルターを簡単にできます。1 つの送信元を複数のグループに所属させることができます。"
+
+//ORI "Select Originators..."
+10558 "送信元の選択..."
+
+//ORI "Originators included in this group."
+10559 "このグループに含まれる送信元です。"
+
+//ORI "Group Properties"
+10560 "グループのプロパティ"
+
+//ORI "Unable to Add Group"
+10563 "グループを追加できません"
+
+//ORI "Unable to Modify Group"
+10564 "グループを変更できません"
+
+//ORI "Unable to Delete Group"
+10565 "グループを削除できません"
+
+// ViewPreset editor + ViewPresets List 10600
+//ORI "View/Search Presets"
+10600 "表示/検索プリセット"
+
+//ORI "Preset"
+10601 "プリセット"
+
+//ORI "Edit View/Search Preset"
+10602 "表示/検索プリセットの編集"
+
+//ORI "New View/Search Preset"
+10603 "新しい表示/検索プリセット"
+
+//ORI "Preset Properties"
+10604 "プリセットのプロパティ"
+
+//ORI "View Tab Defaults"
+10605 "ビュータブの既定値"
+
+//ORI "Default settings that will be used to create a new message view tab."
+10606 "新しいメッセージビュータブの作成に使用される既定の設定です。"
+
+//ORI "Message sorting"
+10607 "メッセージの並べ替え"
+
+//ORI "Default message sorting in the grid."
+10608 "グリッドでのメッセージの既定の並べ替えです。"
+
+//ORI "Time Range"
+10609 "期間"
+
+//ORI "Unable to Load Presets"
+10612 "プリセットを読み込めません"
+
+//ORI "Unable to Delete Preset"
+10613 "プリセットを削除できません"
+
+//ORI "Unable to Add Preset"
+10614 "プリセットを追加できません"
+
+//ORI "Unable to Edit Preset"
+10615 "プリセットを編集できません"
+
+//ORI "View/Search Preset"
+10616 "表示/検索プリセット"
+
+//ORI "View layouts from the installation cannot be assigned to presets directly.\r\n\r\nDo you want to create a layout copy in the storage and use it?"
+10617 "インストールに含まれるビューレイアウトは、プリセットに直接割り当てることはできません。\r\n\r\nレイアウトのコピーをストレージに作成して使用しますか?"
+
+// User editor + Users List 10700
+//ORI "New User"
+10700 "新しいユーザー"
+
+//ORI "Edit User"
+10701 "ユーザーの編集"
+
+//ORI "Remote Access Users"
+10702 "リモートアクセスユーザー"
+
+//ORI "Full name"
+10704 "氏名"
+
+//ORI "Role"
+10705 "ロール"
+
+//ORI "User property set"
+10706 "ユーザーのプロパティ一式"
+
+//ORI "User Properties"
+10707 "ユーザーのプロパティ"
+
+//ORI "User login is required for the connection."
+10709 "接続にはユーザーのログインが必要です。"
+
+//ORI "User's full name."
+10710 "ユーザーの氏名です。"
+
+//ORI "Role of this user."
+10711 "このユーザーのロールです。"
+
+//ORI "Unable to Add User"
+10712 "ユーザーを追加できません"
+
+//ORI "Unable to Edit User"
+10713 "ユーザーを編集できません"
+
+//ORI "Please enter a username."
+10714 "ユーザー名を入力してください。"
+
+//ORI "User password required for connection."
+10716 "接続に必要なユーザーのパスワードです。"
+
+//ORI "Admin"
+10717 "管理者" // user role; also in the window caption "(As Admin)"
+
+//ORI "Operator"
+10718 "オペレーター" // user role
+
+//ORI "Observer"
+10719 "オブザーバー" // user role
+
+//ORI "Please enter a full name."
+10720 "氏名を入力してください。"
+
+//ORI "Please enter a password."
+10721 "パスワードを入力してください。"
+
+//ORI "Unable to Load Users"
+10722 "ユーザーを読み込めません"
+
+//ORI "User"
+10723 "ユーザー" // user editor title (read-only mode); also "User: <name>" in the delete confirmation
+
+//ORI "Unable to Delete User"
+10724 "ユーザーを削除できません"
+
+//ORI "Self Only"
+10725 "自分のみ" // Users window caption when you can see only your own account: "Remote Access Users: Self Only"
+
+//ORI "Self"
+10726 "自分" // user editor caption for your own account: "Edit User: Self"
+
+//ORI "Administrator"
+10727 "管理者" // default full name of the first user
+
+// Time Range 10750
+//ORI "TODAY"
+10750 "今日" // time range type; also shown as the Viewer tab label
+
+//ORI "YESTERDAY"
+10751 "昨日" // time range type; also shown as the Viewer tab label
+
+//ORI "RECENT"
+10752 "最近" // time range type; also shown as the Viewer tab label
+
+//ORI "ENTIRE STORAGE"
+10753 "ストレージ全体" // time range type; also shown as the Viewer tab label
+
+//ORI "CUSTOM"
+10754 "カスタム" // time range type; also shown as the Viewer tab label
+
+//ORI "Range"
+10755 "範囲" // time range type selector (Today, Yesterday, …)
+
+//ORI "Interval of messages to request from the storage."
+10756 "ストレージから要求するメッセージの期間です。"
+
+//ORI "From"
+10757 "開始" // start date/time of a custom time range
+
+//ORI "Until"
+10758 "終了"
+
+//ORI "Last"
+10759 "直近"
+
+//ORI "Type of time range."
+10760 "期間の種類です。"
+
+//ORI "Date and time of the range start."
+10761 "期間の開始日時です。"
+
+//ORI "Date and time of the range end."
+10762 "期間の終了日時です。"
+
+//ORI "Specified time range through the current time."
+10763 "現在時刻までの指定した期間です。"
+
+//ORI "Shift Range into Past"
+10764 "期間を過去にずらす"
+
+//ORI "Shift Range into Future"
+10765 "期間を未来にずらす"
+
+//ORI "15 Minutes"
+10766 "15 分"
+
+//ORI "30 Minutes"
+10767 "30 分"
+
+//ORI "2 Hours"
+10768 "2 時間"
+
+//ORI "6 Hours"
+10769 "6 時間"
+
+//ORI "12 Hours"
+10770 "12 時間"
+
+//ORI "1 Day"
+10771 "1 日"
+
+//ORI "2 Days"
+10772 "2 日"
+
+//ORI "7 Days"
+10773 "7 日"
+
+//ORI "30 Days"
+10774 "30 日"
+
+//ORI "Previous page: shift the range back by its length."
+10775 "前のページ: 期間をその長さだけ過去にずらします。"
+
+//ORI "Next page: shift the range forward by its length."
+10776 "次のページ: 期間をその長さだけ未来にずらします。"
+
+//ORI "ZERO-LENGTH TIME RANGE"
+10777 "長さ 0 の期間" // Non-Existent Interval
+
+// Severity and Facility Names Dialog 10850
+//ORI "Severity and Facility Names"
+10850 "重大度とファシリティの名前"
+
+//ORI "Severity Level Names"
+10851 "重大度レベルの名前"
+
+//ORI "Sets custom severity level names."
+10852 "重大度レベルのカスタム名を設定します。"
+
+//ORI "Facility Names"
+10853 "ファシリティの名前"
+
+//ORI "Sets custom syslog facility names."
+10854 "syslog ファシリティのカスタム名を設定します。"
+
+//ORI "Rename this severity level."
+10855 "この重大度レベルの名前を変更します。"
+
+//ORI "Rename this syslog facility."
+10856 "この syslog ファシリティの名前を変更します。"
+
+//ORI "Customize facility and severity level names to adapt Syslog Watcher to your use case."
+10857 "ファシリティと重大度レベルの名前をカスタマイズして、Syslog Watcher を用途に合わせます。"
+
+//ORI "Please enter a non-blank severity level name."
+10858 "重大度レベルの名前を入力してください。"
+
+//ORI "Please enter a non-blank facility name."
+10859 "ファシリティの名前を入力してください。"
+
+//ORI "Unable to Configure Storage"
+10861 "ストレージを構成できません"
+
+// Open Storage 10900
+//ORI "Select Storage Folder"
+10900 "ストレージフォルダーの選択"
+
+//ORI "Open Syslog Storage"
+10902 "syslog ストレージを開く"
+
+//ORI "Failed to open the syslog storage."
+10903 "syslog ストレージを開けませんでした。"
+
+//ORI "Syslog storage is open for viewing only (read-only)."
+10904 "syslog ストレージは表示専用 (読み取り専用) で開かれています。"
+
+//ORI "Restart Syslog Watcher Manager as Administrator."
+10905 "Syslog Watcher Manager を管理者として再起動してください。"
+
+//ORI "Make sure storage files are not marked as read-only."
+10906 "ストレージファイルが読み取り専用に設定されていないことを確認してください。"
+
+// Progress Window 10950
+//ORI "Current message"
+10951 "現在のメッセージ"
+
+//ORI "Stop"
+10952 "停止" // button
+
+// Server Toolbar 11000
+//ORI "Local"
+11001 "ローカル" // toolbar button: connect to the server on this computer
+
+//ORI "Connect Manager to the Syslog Watcher server installed on this system."
+11002 "このシステムにインストールされている Syslog Watcher サーバーにマネージャーを接続します。"
+
+//ORI "Remote"
+11003 "リモート" // toolbar button: connect to a remote server
+
+//ORI "Connect Syslog Watcher Manager to a remote Syslog Watcher server."
+11004 "Syslog Watcher Manager をリモートの Syslog Watcher サーバーに接続します。"
+
+//ORI "Disconnect"
+11005 "切断"
+
+//ORI "Disconnect Syslog Watcher Manager from the Syslog Watcher server."
+11006 "Syslog Watcher Manager を Syslog Watcher サーバーから切断します。"
+
+//ORI "Collector"
+11007 "コレクター"
+
+//ORI "Syslog Collector configuration and diagnostic records."
+11008 "Syslog コレクターの構成と診断記録です。"
+
+//ORI "Features that process collected syslog messages."
+11012 "収集した syslog メッセージを処理する機能です。"
+
+//ORI "Start Syslog Collector"
+11013 "Syslog コレクターを開始"
+
+//ORI "Stop Syslog Collector"
+11014 "Syslog コレクターを停止"
+
+//ORI "Startup Type"
+11015 "スタートアップの種類"
+
+//ORI "Failed to start Syslog Watcher Collector."
+11016 "Syslog Watcher コレクターを開始できませんでした。"
+
+//ORI "Failed to stop Syslog Watcher Collector."
+11017 "Syslog Watcher コレクターを停止できませんでした。"
+
+//ORI "Syslog Watcher server: configuration and diagnostic records."
+11019 "Syslog Watcher サーバー: 構成と診断記録です。"
+
+//ORI "Diagnostic Records (Collector)"
+11022 "診断記録 (コレクター)"
+
+//ORI "Diagnostic records generated by the Syslog Collector."
+11023 "Syslog コレクターが生成した診断記録です。"
+
+//ORI "Server Configuration..."
+11024 "サーバーの構成..."
+
+//ORI "Syslog Watcher server configuration."
+11025 "Syslog Watcher サーバーの構成です。"
+
+//ORI "Diagnostic Records (Server)"
+11026 "診断記録 (サーバー)"
+
+//ORI "Diagnostic records generated by the Syslog Watcher server."
+11027 "Syslog Watcher サーバーが生成した診断記録です。"
+
+//ORI "Remote Access Users..."
+11028 "リモートアクセスユーザー..."
+
+//ORI "User accounts and user groups for remote server access."
+11029 "リモートからサーバーにアクセスするためのユーザーアカウントとユーザーグループです。"
+
+//ORI "Retention limits of the syslog storage."
+11030 "syslog ストレージの保持の上限です。"
+
+//ORI "Local Server"
+11031 "ローカルサーバー"
+
+//ORI "Start Syslog Server"
+11032 "Syslog サーバーを開始"
+
+//ORI "Are you sure you want to disconnect from the server?"
+11033 "サーバーから切断しますか?"
+
+//ORI "Are you sure you want to close the syslog storage?"
+11034 "syslog ストレージを閉じますか?"
+
+//ORI "Product license information"
+11036 "製品のライセンス情報"
+
+//ORI "Failed to start Syslog Watcher Server."
+11037 "Syslog Watcher サーバーを開始できませんでした。"
+
+//ORI "Are you sure you want to stop collecting syslog messages?"
+11038 "syslog メッセージの収集を停止しますか?"
+
+//ORI "Syslog Collector Configuration..."
+11039 "Syslog コレクターの構成..."
+
+//ORI "Syslog Collector configuration."
+11040 "Syslog コレクターの構成です。"
+
+//ORI "Automatic"
+11043 "自動" // service startup type
+
+//ORI "Manual"
+11044 "手動" // service startup type
+
+//ORI "Switch to Automatic"
+11045 "自動に切り替え"
+
+//ORI "Switch to Manual"
+11046 "手動に切り替え"
+
+//ORI "Failed to Switch Startup Type"
+11047 "スタートアップの種類を切り替えられませんでした"
+
+//ORI "Secret Strings..."
+11048 "シークレット文字列..."
+
+//ORI "Secret strings that the server uses in place of passwords."
+11049 "サーバーがパスワードの代わりに使用するシークレット文字列です。"
+
+//ORI "Your remote account is not allowed to start or stop the Syslog Collector or change its startup type."
+11073 "お使いのリモートアカウントには、Syslog コレクターの開始/停止やスタートアップの種類の変更は許可されていません。"
+
+//ORI "Ask a user in the Administrators group to perform this action."
+11074 "この操作は Administrators グループのユーザーに依頼してください。"
+
+//ORI "Service program:"
+11075 "サービスプログラム:"
+
+//ORI "The Syslog Watcher Server service is disabled. Set its startup type to Automatic and start it?"
+11077 "Syslog Watcher サーバーのサービスが無効になっています。スタートアップの種類を自動に設定して開始しますか?"
+
+// Connect Window 11100
+//ORI "Remote Syslog Watcher Server"
+11100 "リモートの Syslog Watcher サーバー"
+
+//ORI "Connect"
+11101 "接続"
+
+//ORI "Connection settings for a remote Syslog Watcher server."
+11103 "リモートの Syslog Watcher サーバーへの接続設定です。"
+
+//ORI "Server IP address or hostname."
+11105 "サーバーの IP アドレスまたはホスト名です。"
+
+//ORI "Port number for the connection."
+11107 "接続のポート番号です。"
+
+//ORI "Authentication settings for the remote Syslog Watcher server."
+11109 "リモートの Syslog Watcher サーバーの認証設定です。"
+
+//ORI "Username for the connection."
+11111 "接続のユーザー名です。"
+
+//ORI "Password for the connection."
+11113 "接続のパスワードです。"
+
+//ORI "Please enter the server IP address or hostname."
+11114 "サーバーの IP アドレスまたはホスト名を入力してください。"
+
+//ORI "Please enter the server port."
+11115 "サーバーのポートを入力してください。"
+
+//ORI "Please enter the username and password for authentication."
+11116 "認証用のユーザー名とパスワードを入力してください。"
+
+//ORI "Could not connect to the server:"
+11117 "サーバーに接続できませんでした:"
+
+//ORI "Syslog Watcher server has disconnected."
+11118 "Syslog Watcher サーバーが切断されました。"
+
+//ORI "Options for connecting to a remote server."
+11119 "リモートサーバーへの接続オプションです。"
+
+//ORI "Connection protocol type."
+11121 "接続プロトコルの種類です。"
+
+//ORI "Plain (unencrypted)"
+11122 "プレーン (暗号化なし)"
+
+//ORI "Secure (encrypted)"
+11123 "セキュア (暗号化)"
+
+//ORI "Remember password"
+11124 "パスワードを保存する"
+
+//ORI "Store the password to simplify connecting to the server."
+11125 "サーバーへの接続を簡単にするためにパスワードを保存します。"
+
+//ORI "As"
+11130 "ロール:" // window caption: server (As <role>), e.g. (As Administrator)
+
+// General Toolbar 11150
+//ORI "General"
+11150 "全般"
+
+//ORI "Manager"
+11151 "マネージャー"
+
+//ORI "Show information about Syslog Watcher Manager."
+11152 "Syslog Watcher Manager の情報を表示します。"
+
+//ORI "Updates"
+11153 "更新"
+
+//ORI "Show available product updates"
+11154 "利用可能な製品の更新を表示します"
+
+//ORI "Support"
+11155 "サポート"
+
+//ORI "Get technical support"
+11156 "テクニカルサポートを受ける"
+
+// Storage Toolbar 11200
+//ORI "Originator groups make it easier to create filters."
+11202 "送信元グループを使うと、フィルターを簡単に作成できます。"
+
+//ORI "Parsers"
+11203 "パーサー"
+
+//ORI "Parsers extract information and data structures from syslog messages."
+11204 "パーサーは、syslog メッセージから情報やデータ構造を抽出します。"
+
+//ORI "List of syslog originators and their properties."
+11206 "syslog 送信元とそのプロパティの一覧です。"
+
+//ORI "Open Storage Folder..."
+11207 "ストレージフォルダーを開く..."
+
+//ORI "Open syslog storage in a local folder."
+11208 "ローカルフォルダーの syslog ストレージを開きます。"
+
+//ORI "Close Storage"
+11209 "ストレージを閉じる"
+
+//ORI "Close the open syslog storage."
+11210 "開いている syslog ストレージを閉じます。"
+
+//ORI "More"
+11211 "その他" // toolbar button that opens a menu with more items
+
+//ORI "Additional data and structures for message processing and filtering."
+11212 "メッセージの処理とフィルターに使用する追加のデータと構造です。"
+
+//ORI "Severity and Facility Names..."
+11213 "重大度とファシリティの名前..."
+
+//ORI "Customize severity and facility names."
+11214 "重大度とファシリティの名前をカスタマイズします。"
+
+//ORI "Filter Lists..."
+11217 "フィルターリスト..."
+
+//ORI "Lists of field values that simplify filtering."
+11218 "フィルターを簡単にするフィールド値のリストです。"
+
+//ORI "Field Collections..."
+11219 "フィールドコレクション..."
+
+//ORI "Field collections to create complex data extractors and filters."
+11220 "複雑なデータ抽出やフィルターを作成するためのフィールドコレクションです。"
+
+//ORI "Field Dictionaries..."
+11221 "フィールド辞書..."
+
+//ORI "Field dictionaries to create complex data extractors and filters."
+11222 "複雑なデータ抽出やフィルターを作成するためのフィールド辞書です。"
+
+// Messages Toolbar 11250
+//ORI "View/Search"
+11251 "表示/検索"
+
+//ORI "Show collected messages that meet the specified criteria."
+11252 "指定した条件に一致する収集済みメッセージを表示します。"
+
+//ORI "Layouts"
+11253 "レイアウト"
+
+//ORI "The view layout displays collected messages in a table."
+11254 "ビューレイアウトは、収集したメッセージをテーブルに表示します。"
+
+//ORI "Reports"
+11255 "レポート"
+
+//ORI "Manage report templates and generate reports."
+11256 "レポートテンプレートを管理し、レポートを生成します。"
+
+//ORI "Manage export presets and export collected data."
+11258 "エクスポートプリセットを管理し、収集したデータをエクスポートします。"
+
+//ORI "View/Search Messages..."
+11259 "メッセージの表示/検索..."
+
+//ORI "Open a new tab to view collected messages"
+11260 "収集したメッセージを表示する新しいタブを開きます"
+
+//ORI "Manage View/Search Presets..."
+11261 "表示/検索プリセットの管理..."
+
+//ORI "Manage presets for new View/Search tabs."
+11262 "新しい表示/検索タブ用のプリセットを管理します。"
+
+// Server Configuration: Remote Access 11300
+//ORI "Allows remote Syslog Watcher Manager connections to modify configuration and view messages."
+11301 "リモートの Syslog Watcher Manager からの接続で、構成の変更やメッセージの表示を許可します。"
+
+//ORI "Enables an encrypted connection between the Syslog Watcher server and Syslog Watcher Manager."
+11304 "Syslog Watcher サーバーと Syslog Watcher Manager の間で暗号化された接続を有効にします。"
+
+//ORI "Port used for remote connections."
+11306 "リモート接続に使用するポートです。"
+
+//ORI "Allow remote access"
+11309 "リモートアクセスを許可する"
+
+//ORI "Enables remote connections to the Syslog Watcher server."
+11310 "Syslog Watcher サーバーへのリモート接続を有効にします。"
+
+//ORI "Manage Remote Access Users..."
+11311 "リモートアクセスユーザーの管理..."
+
+//ORI "Please provide a certificate and key for a secure connection."
+11312 "セキュアな接続のための証明書と鍵を指定してください。"
+
+//ORI "Certificate for Encrypted Connection"
+11313 "暗号化接続用の証明書"
+
+//ORI "When you save the settings, the remote_access certificate will be selected. If it does not exist yet, a certificate and private key will be generated automatically. You can replace them with your own later if necessary."
+11314 "設定を保存すると、remote_access 証明書が選択されます。まだ存在しない場合は、証明書と秘密鍵が自動的に生成されます。必要に応じて、後で独自のものに置き換えることができます。"
+
+//ORI "Manage Email Accounts..."
+11315 "メールアカウントの管理..."
+
+// Server Configuration: Email Accounts 11350
+//ORI "Email accounts used to send email messages."
+11350 "メールの送信に使用するメールアカウントです。"
+
+//ORI "Email Accounts"
+11351 "メールアカウント"
+
+//ORI "Connection type"
+11352 "接続の種類"
+
+//ORI "Type of SMTP connection."
+11353 "SMTP 接続の種類です。"
+
+//ORI "User-friendly name of the SMTP profile."
+11354 "SMTP プロファイルのわかりやすい名前です。"
+
+//ORI "SMTP server IP address or hostname, e.g. 192.168.0.1 or smtp.example.com."
+11356 "SMTP サーバーの IP アドレスまたはホスト名です。例: 192.168.0.1、smtp.example.com"
+
+//ORI "Commonly used SMTP server port numbers are 587 for STARTTLS and 465 for SMTPS."
+11358 "SMTP サーバーのポート番号は、STARTTLS では 587、SMTPS では 465 が一般的です。"
+
+//ORI "SMTP username for authentication. This is usually an email address or account name."
+11360 "認証用の SMTP ユーザー名です。通常はメールアドレスまたはアカウント名です。"
+
+//ORI "Password for SMTP authentication. Use a secret string (%EXAMPLE%) instead of a real password here."
+11362 "SMTP 認証のパスワードです。ここには実際のパスワードの代わりにシークレット文字列 (%EXAMPLE%) を使用してください。"
+
+//ORI "'From' email address"
+11363 "差出人 ('From') のメールアドレス"
+
+//ORI "The address from which alert emails will be sent. Make sure your SMTP server accepts this address as a valid 'From' address."
+11364 "アラートメールの送信元アドレスです。SMTP サーバーがこのアドレスを有効な差出人 ('From') アドレスとして受け付けることを確認してください。"
+
+//ORI "Profile"
+11368 "プロファイル" // name of newly created SMP profiles
+
+//ORI "Add Email Account"
+11369 "メールアカウントの追加"
+
+//ORI "Email Account"
+11370 "メールアカウント"
+
+//ORI "Test Account"
+11371 "アカウントのテスト"
+
+//ORI "Please enter a name for the email account."
+11375 "メールアカウントの名前を入力してください。"
+
+//ORI "Please enter an email server name or address."
+11376 "メールサーバーの名前またはアドレスを入力してください。"
+
+//ORI "Please enter a valid SMTP port: 1-65535."
+11377 "有効な SMTP ポート (1-65535) を入力してください。"
+
+//ORI "Please enter a 'From' email address."
+11380 "差出人 ('From') のメールアドレスを入力してください。"
+
+//ORI "Test Email Account"
+11381 "メールアカウントのテスト"
+
+//ORI "Send a test email to:"
+11382 "テストメールの送信先:"
+
+//ORI "Send Email"
+11383 "メールの送信"
+
+//ORI "Please enter the destination email address."
+11384 "送信先のメールアドレスを入力してください。"
+
+//ORI "SUCCESS"
+11385 "成功"
+
+//ORI "FAILED"
+11386 "失敗"
+
+//ORI "Sending test email..."
+11387 "テストメールを送信しています..."
+
+//ORI "SMTP (non-secure)"
+11388 "SMTP (非セキュア)"
+
+// Filter Lists, Field Dictionaries + Field Collections Windows 11400
+//ORI "Field Dictionaries"
+11400 "フィールド辞書"
+
+//ORI "Dictionary name"
+11401 "辞書名"
+
+//ORI "Keywords"
+11402 "キーワード"
+
+//ORI "New Field Dictionary"
+11403 "新しいフィールド辞書"
+
+//ORI "Edit Field Dictionary"
+11404 "フィールド辞書の編集"
+
+//ORI "[DEFAULT]"
+11405 "[既定]" // keyword list entry shown for the empty (default) keyword
+
+//ORI "Dict"
+11406 "辞書" // default name of a new field dictionary, a number is appended: Dict1
+
+//ORI "Include a description, purpose, version, etc. here."
+11407 "説明、目的、バージョンなどをここに記入します。"
+
+//ORI "#KEYWORD\r\nReplacement text.\r\n\r\n#another keyword\r\n\r\nEmpty lines can be added for readability.\r\n\r\n\r\n#\r\nBlank keyword for default text replacement."
+11408 "#KEYWORD\r\n置換テキスト。\r\n\r\n#another keyword\r\n\r\n読みやすくするために空行を入れることができます。\r\n\r\n\r\n#\r\n既定の置換テキスト用の空のキーワード。"
+
+//ORI "Collection name"
+11410 "コレクション名"
+
+//ORI "Edit Field Collection"
+11411 "フィールドコレクションの編集"
+
+//ORI "Index"
+11412 "インデックス"
+
+//ORI "List of #keywords, each followed by replacement text:"
+11413 "#キーワードの一覧 (各キーワードの後に置換テキスト):"
+
+//ORI "List of #keywords, each followed by a field extractor expression:"
+11415 "#キーワードの一覧 (各キーワードの後にフィールド抽出式):"
+
+//ORI "Coll"
+11416 "コレクション" // default name of a new field collection, a number is appended: Coll1
+
+//ORI "New Field Collection"
+11417 "新しいフィールドコレクション"
+
+//ORI "#EXAMPLE-MSG1\r\nip=(?<IP>\\S+)\r\n\r\n#EXAMPLE-MSG2\r\nIP:(?<IP>\\S+)"
+11418 "#EXAMPLE-MSG1\r\nip=(?<IP>\\S+)\r\n\r\n#EXAMPLE-MSG2\r\nIP:(?<IP>\\S+)"
+
+//ORI "Filter Lists"
+11419 "フィルターリスト"
+
+//ORI "Filter list name"
+11420 "フィルターリスト名"
+
+//ORI "Items"
+11421 "項目"
+
+//ORI "List"
+11422 "リスト" // default name of a new filter list, a number is appended: List1
+
+//ORI "New Filter List"
+11423 "新しいフィルターリスト"
+
+//ORI "Edit Filter List"
+11424 "フィルターリストの編集"
+
+//ORI "Filter list items, one per line:"
+11425 "フィルターリストの項目 (1 行に 1 つ):"
+
+//ORI "Field Dictionary"
+11426 "フィールド辞書"
+
+//ORI "Field Collection"
+11427 "フィールドコレクション"
+
+//ORI "Filter List"
+11428 "フィルターリスト"
+
+//ORI "Type:"
+11429 "種類:"
+
+//ORI "RegExp Extractors"
+11430 "正規表現抽出"
+
+//ORI "CSV Field Names"
+11431 "CSV フィールド名"
+
+//ORI "List of #keywords, each followed by comma-separated field names:"
+11432 "#キーワードの一覧 (各キーワードの後にカンマ区切りのフィールド名):"
+
+//ORI "Sort Alphabetically"
+11433 "アルファベット順に並べ替え"
+
+//ORI "Unable to Load"
+11436 "読み込めません"
+
+//ORI "Unable to Modify"
+11437 "変更できません"
+
+//ORI "Unable to Delete"
+11438 "削除できません"
+
+//ORI "Unable to Export"
+11439 "エクスポートできません"
+
+//ORI "Unable to Import"
+11440 "インポートできません"
+
+//ORI "Field Dictionary File"
+11441 "フィールド辞書ファイル"
+
+//ORI "Field Collection File"
+11442 "フィールドコレクションファイル"
+
+//ORI "Filter List File"
+11443 "フィルターリストファイル"
+
+// Server Configuration: Reports 11450
+//ORI "Syslog Reports"
+11450 "syslog レポート" // settings page title and category caption
+
+//ORI "Scheduled report generation."
+11451 "スケジュールによるレポートの生成です。"
+
+//ORI "Report generation settings."
+11453 "レポート生成の設定です。"
+
+//ORI "Generate on a schedule"
+11454 "スケジュールに従って生成する"
+
+//ORI "Generate reports on a schedule."
+11455 "スケジュールに従ってレポートを生成します。"
+
+//ORI "Concurrent tasks"
+11456 "同時実行タスク数"
+
+//ORI "Maximum number of reports that can be generated simultaneously."
+11457 "同時に生成できるレポートの最大数です。"
+
+//ORI "Include folders"
+11458 "含めるフォルダー"
+
+//ORI "(Optional) Folders for files to be included in reports. One folder path per line."
+11459 "(オプション) レポートに含めるファイルのフォルダーです。1 行に 1 つのフォルダーパスを指定します。"
+
+//ORI "Output folder"
+11460 "出力フォルダー"
+
+//ORI "Folder for report files."
+11461 "レポートファイルのフォルダーです。"
+
+//ORI "Keep reports (days)"
+11462 "レポートの保存期間 (日)"
+
+//ORI "Number of days to keep report records and files."
+11463 "レポートの記録とファイルを保存する日数です。"
+
+//ORI "Please specify the output folder."
+11464 "出力フォルダーを指定してください。"
+
+// Secrets Windows 11500
+//ORI "Secret Strings"
+11500 "シークレット文字列"
+
+//ORI "Unable to Enumerate Secrets"
+11501 "シークレットを列挙できません"
+
+//ORI "Secret String"
+11502 "シークレット文字列"
+
+//ORI "Secret string"
+11503 "シークレット文字列"
+
+//ORI "Unable to Add Secret String"
+11504 "シークレット文字列を追加できません"
+
+//ORI "Unable to Delete Secret String"
+11505 "シークレット文字列を削除できません"
+
+//ORI "Please enter a secret name."
+11506 "シークレットの名前を入力してください。"
+
+//ORI "Please enter a secret string."
+11507 "シークレット文字列を入力してください。"
+
+//ORI "Secret strings are used to hide passwords and other private information in the server configuration."
+11508 "シークレット文字列は、サーバーの構成でパスワードやその他の機密情報を隠すために使用します。"
+
+//ORI "Name, description, and payload of the secret string."
+11509 "シークレット文字列の名前、説明、内容です。"
+
+//ORI "Name of the secret string. A secret name enclosed in percent signs (%EXAMPLE%) can be used in place of a password."
+11510 "シークレット文字列の名前です。パーセント記号で囲んだシークレット名 (%EXAMPLE%) をパスワードの代わりに使用できます。"
+
+//ORI "Description of the secret string."
+11511 "シークレット文字列の説明です。"
+
+//ORI "Value of the secret string. You enter it once, and it cannot be changed."
+11512 "シークレット文字列の値です。一度だけ入力し、変更することはできません。"
+
+//ORI "Secret confirmation"
+11513 "シークレットの確認"
+
+//ORI "The secret string and confirmation do not match."
+11514 "シークレット文字列と確認用の入力が一致しません。"
+
+//ORI "Secret string confirmation."
+11515 "シークレット文字列の確認入力です。"
+
+//ORI "The name cannot contain a percent sign (%). Please enter a different name."
+11516 "名前にパーセント記号 (%) は使用できません。別の名前を入力してください。"
+
+//ORI "The name is too long. Please use at most 128 UTF-8 bytes."
+11517 "名前が長すぎます。UTF-8 で 128 バイト以下にしてください。"
+
+//ORI "The description is too long. Please use at most 1024 UTF-8 bytes."
+11518 "説明が長すぎます。UTF-8 で 1024 バイト以下にしてください。"
+
+//ORI "Properties"
+11519 "プロパティ"
+
+// Server Configuration: HTTP Endpoints 11550
+//ORI "Integrate Syslog Watcher with web services."
+11550 "Syslog Watcher を Web サービスと連携します。"
+
+//ORI "HTTP Endpoints"
+11551 "HTTP エンドポイント"
+
+//ORI "Add HTTP Endpoint"
+11552 "HTTP エンドポイントの追加"
+
+//ORI "EP"
+11553 "EP" // default name of a new HTTP endpoint (EP = endpoint), a number is appended: EP 1
+
+//ORI "Send Test Request"
+11554 "テスト要求の送信"
+
+//ORI "User-friendly name for the HTTP endpoint."
+11555 "HTTP エンドポイントのわかりやすい名前です。"
+
+//ORI "Request headers"
+11556 "要求ヘッダー"
+
+//ORI "(Optional) Request headers, one per line, such as authentication keys. Use secret strings (%EXAMPLE%) for private information."
+11557 "(オプション) 認証キーなどの要求ヘッダーを 1 行に 1 つ指定します。機密情報にはシークレット文字列 (%EXAMPLE%) を使用してください。"
+
+//ORI "HTTP Endpoint"
+11558 "HTTP エンドポイント"
+
+//ORI "Please enter an HTTP endpoint name."
+11559 "HTTP エンドポイントの名前を入力してください。"
+
+//ORI "Please enter an HTTP server name or address."
+11560 "HTTP サーバーの名前またはアドレスを入力してください。"
+
+//ORI "Please enter a username and password for authentication."
+11561 "認証用のユーザー名とパスワードを入力してください。"
+
+//ORI "Content-type"
+11562 "Content-type"
+
+//ORI "HTTP request content type."
+11563 "HTTP 要求のコンテンツの種類です。"
+
+//ORI "HTTP authentication method."
+11565 "HTTP の認証方式です。"
+
+//ORI "None"
+11566 "なし"
+
+//ORI "Basic"
+11567 "Basic"
+
+//ORI "Username for authentication."
+11569 "認証用のユーザー名です。"
+
+//ORI "Use a secret (%EXAMPLE%) instead of a real password to avoid including it in the configuration."
+11571 "構成に実際のパスワードを含めないよう、代わりにシークレット (%EXAMPLE%) を使用してください。"
+
+//ORI "Request type"
+11572 "要求の種類"
+
+//ORI "Type of HTTP request to send."
+11573 "送信する HTTP 要求の種類です。"
+
+//ORI "Please specify the content type."
+11574 "コンテンツの種類を指定してください。"
+
+//ORI "User agent"
+11575 "ユーザーエージェント"
+
+//ORI "The HTTP User-Agent header identifies the client software."
+11576 "HTTP の User-Agent ヘッダーは、クライアントソフトウェアを識別します。"
+
+//ORI "Target server"
+11577 "送信先サーバー" // HTTP endpoint URL
+
+//ORI "Server address to which the request will be sent. Include the protocol and optional port number, for example: https://example.com:8080."
+11578 "要求の送信先のサーバーアドレスです。プロトコルと、必要に応じてポート番号を含めます。例: https://example.com:8080"
+
+//ORI "Test HTTP Endpoint"
+11579 "HTTP エンドポイントのテスト"
+
+//ORI "HTTP request parameters."
+11581 "HTTP 要求のパラメーターです。"
+
+//ORI "Path to the resource on the server, for example: /api/send-message."
+11583 "サーバー上のリソースのパスです。例: /api/send-message"
+
+//ORI "Request body"
+11584 "要求本文"
+
+//ORI "Text to send in the request body."
+11585 "要求本文で送信するテキストです。"
+
+//ORI "Please fill in the request parameters."
+11586 "要求のパラメーターを入力してください。"
+
+//ORI "Send Request"
+11587 "要求を送信" // button: sends a test HTTP request
+
+//ORI "Status code"
+11588 "ステータスコード"
+
+//ORI "An error occurred"
+11589 "エラーが発生しました"
+
+//ORI "Sending test request..."
+11590 "テスト要求を送信しています..."
+
+// Certificates Windows 11650
+//ORI "TLS Certificates..."
+11650 "TLS 証明書..."
+
+//ORI "TLS certificates, CA certificates, and private keys stored on the server."
+11651 "サーバーに保存されている TLS 証明書、CA 証明書、秘密鍵です。"
+
+//ORI "TLS Certificates"
+11652 "TLS 証明書"
+
+//ORI "Unable to Enumerate Certificates"
+11653 "証明書を列挙できません"
+
+//ORI "Unable to Delete Certificate"
+11654 "証明書を削除できません"
+
+//ORI "Failed to generate key/certificate."
+11655 "鍵/証明書を生成できませんでした。"
+
+//ORI "Generate Self-signed Certificate"
+11656 "自己署名証明書の生成"
+
+//ORI "Unable to Add Certificate"
+11657 "証明書を追加できません"
+
+//ORI "The name must be a valid file name. \\ / : * ? "" < > |, a trailing space or period, and reserved names such as CON or NUL are not allowed."
+11659 "名前は有効なファイル名である必要があります。\\ / : * ? "" < > |、末尾の空白やピリオド、CON や NUL などの予約名は使用できません。"
+
+//ORI "Name of the certificate in the store. Letters, digits, underscore, and hyphen only. Maximum 128 characters."
+11660 "ストア内の証明書の名前です。英字、数字、アンダースコア、ハイフンのみ使用できます。最大 128 文字です。"
+
+//ORI "Fill in the name. The certificate is stored on the server."
+11661 "名前を入力してください。証明書はサーバーに保存されます。"
+
+//ORI "Import Certificate"
+11662 "証明書のインポート"
+
+//ORI "Unable to Import Certificate"
+11663 "証明書をインポートできません"
+
+//ORI "Review the certificate name and import the PEM pair into the server store."
+11672 "証明書の名前を確認し、PEM のペアをサーバーのストアにインポートします。"
+
+//ORI "Certificate"
+11673 "証明書"
+
+//ORI "Named certificate and private key from Manage Certificates."
+11674 "[証明書の管理] で登録した名前付きの証明書と秘密鍵です。"
+
+//ORI "Certificate name"
+11675 "証明書名"
+
+//ORI "Import"
+11677 "インポート"
+
+//ORI "Secret strings and TLS certificates stored on the server."
+11678 "サーバーに保存されているシークレット文字列と TLS 証明書です。"
+
+//ORI "Issuer"
+11680 "発行者"
+
+//ORI "Subject"
+11681 "サブジェクト"
+
+//ORI "Self-signed"
+11682 "自己署名"
+
+//ORI "Generate Random"
+11684 "ランダムに生成"
+
+//ORI "SAN: Subject Alternative Names"
+11685 "SAN: サブジェクト代替名"
+
+//ORI "DNS hostnames and IP addresses the certificate is valid for."
+11686 "証明書が有効な DNS ホスト名と IP アドレスです。"
+
+//ORI "Add"
+11687 "追加"
+
+//ORI "DNS name or IP address."
+11689 "DNS 名または IP アドレスです。"
+
+//ORI "DNS"
+11690 "DNS" // SAN type: DNS name
+
+//ORI "IP"
+11691 "IP" // SAN type: IP address
+
+//ORI "Pick a local hostname or IP address, or enter one."
+11693 "ローカルのホスト名または IP アドレスを選択するか、入力してください。"
+
+//ORI "Please enter a SAN value."
+11695 "SAN の値を入力してください。"
+
+//ORI "Please enter a valid IPv4 or IPv6 address."
+11696 "有効な IPv4 または IPv6 アドレスを入力してください。"
+
+//ORI "Expiration (days)"
+11698 "有効期限 (日)"
+
+//ORI "Private Key"
+11699 "秘密鍵"
+
+//ORI "Key size"
+11700 "鍵のサイズ"
+
+//ORI "Value"
+11701 "値"
+
+//ORI "The certificate has no Common Name (CN) and no Subject Alternative Names (SAN). Generate it anyway?"
+11702 "証明書にコモンネーム (CN) もサブジェクト代替名 (SAN) もありません。このまま生成しますか?"
+
+//ORI "The encryption password was saved to Secret Strings as"
+11703 "暗号化パスワードはシークレット文字列に次の名前で保存されました:"
+
+//ORI "Password to decrypt the password-protected private key."
+11704 "パスワードで保護された秘密鍵を復号するためのパスワードです。"
+
+//ORI "From PEM File..."
+11706 "PEM ファイルから..."
+
+//ORI "From Clipboard..."
+11707 "クリップボードから..."
+
+//ORI "PEM File"
+11708 "PEM ファイル"
+
+//ORI "The clipboard does not contain a PEM certificate or private key."
+11709 "クリップボードに PEM 形式の証明書または秘密鍵がありません。"
+
+//ORI "The selected file is not a PEM certificate or private key."
+11710 "選択したファイルは PEM 形式の証明書または秘密鍵ではありません。"
+
+//ORI "The selected PEM file contains a certificate but no private key. Now select the PEM file that contains the private key."
+11711 "選択した PEM ファイルには証明書がありますが、秘密鍵がありません。秘密鍵を含む PEM ファイルを選択してください。"
+
+//ORI "The selected PEM file contains a private key but no certificate. Now select the PEM file that contains the certificate."
+11712 "選択した PEM ファイルには秘密鍵がありますが、証明書がありません。証明書を含む PEM ファイルを選択してください。"
+
+//ORI "The clipboard contains a certificate but no private key. Copy the private key (PEM) to the clipboard, then click OK."
+11713 "クリップボードには証明書がありますが、秘密鍵がありません。秘密鍵 (PEM) をクリップボードにコピーしてから、[OK] をクリックしてください。"
+
+//ORI "The clipboard contains a private key but no certificate. Copy the certificate (PEM) to the clipboard, then click OK."
+11714 "クリップボードには秘密鍵がありますが、証明書がありません。証明書 (PEM) をクリップボードにコピーしてから、[OK] をクリックしてください。"
+
+//ORI "The clipboard is empty."
+11715 "クリップボードが空です。"
+
+//ORI "A certificate with this name already exists. Please specify a different name."
+11717 "この名前の証明書は既に存在します。別の名前を指定してください。"
+
+//ORI "No certificates"
+11718 "証明書がありません"
+
+//ORI "<select certificate>"
+11719 "<証明書を選択>"
+
+//ORI "CA"
+11720 "CA" // certificate type: Certificate Authority
+
+//ORI "CA certificate"
+11721 "CA 証明書"
+
+//ORI "Certificate + Key"
+11722 "証明書 + 鍵"
+
+//ORI "Certificate + Encrypted Key"
+11723 "証明書 + 暗号化された鍵"
+
+//ORI "To PEM File..."
+11725 "PEM ファイルへ..."
+
+//ORI "To Clipboard..."
+11726 "クリップボードへ..."
+
+//ORI "Failed to export the certificate."
+11727 "証明書をエクスポートできませんでした。"
+
+//ORI "Certificate File"
+11728 "証明書ファイル"
+
+//ORI "Failed to generate a random password."
+11729 "ランダムなパスワードを生成できませんでした。"
+
+//ORI "Failed to add certificate entry:"
+11730 "証明書エントリを追加できませんでした:"
+
+//ORI "Failed to create certificate extension:"
+11731 "証明書の拡張を作成できませんでした:"
+
+//ORI "Failed to add certificate extension:"
+11732 "証明書の拡張を追加できませんでした:"
+
+//ORI "Failed to allocate serial number:"
+11733 "シリアル番号を割り当てられませんでした:"
+
+//ORI "Failed to generate random serial number:"
+11734 "ランダムなシリアル番号を生成できませんでした:"
+
+//ORI "Failed to set certificate serial number:"
+11735 "証明書のシリアル番号を設定できませんでした:"
+
+//ORI "RSA key length must be at least 2048 bits."
+11736 "RSA 鍵の長さは 2048 ビット以上である必要があります。"
+
+//ORI "Failed to create private key:"
+11737 "秘密鍵を作成できませんでした:"
+
+//ORI "Failed to create X509 certificate:"
+11738 "X509 証明書を作成できませんでした:"
+
+//ORI "Failed to set certificate version to v3:"
+11739 "証明書のバージョンを v3 に設定できませんでした:"
+
+//ORI "Failed to set certificate notBefore:"
+11740 "証明書の notBefore を設定できませんでした:"
+
+//ORI "Failed to set certificate notAfter:"
+11741 "証明書の notAfter を設定できませんでした:"
+
+//ORI "Failed to set certificate public key:"
+11742 "証明書の公開鍵を設定できませんでした:"
+
+//ORI "Failed to get certificate subject name:"
+11743 "証明書のサブジェクト名を取得できませんでした:"
+
+//ORI "Failed to set certificate issuer name:"
+11744 "証明書の発行者名を設定できませんでした:"
+
+//ORI "Failed to sign certificate:"
+11745 "証明書に署名できませんでした:"
+
+//ORI "Failed to allocate key PEM buffer:"
+11746 "鍵の PEM バッファーを割り当てられませんでした:"
+
+//ORI "Failed to encode private key:"
+11747 "秘密鍵をエンコードできませんでした:"
+
+//ORI "Failed to allocate certificate PEM buffer:"
+11748 "証明書の PEM バッファーを割り当てられませんでした:"
+
+//ORI "Failed to encode certificate:"
+11749 "証明書をエンコードできませんでした:"
+
+//ORI "Certificate Only (No Private Key)"
+11750 "証明書のみ (秘密鍵なし)"
+
+//ORI "Export Certificate (Without Private Key)"
+11751 "証明書のエクスポート (秘密鍵なし)"
+
+//ORI "Private RSA key options."
+11752 "RSA 秘密鍵のオプションです。"
+
+//ORI "Size of the private key in bits. The default is 2048."
+11753 "秘密鍵のサイズ (ビット) です。既定値は 2048 です。"
+
+//ORI "Encrypt key with password"
+11754 "鍵をパスワードで暗号化する"
+
+//ORI "(Optional) Encrypt the output file with the provided password."
+11755 "(オプション) 指定したパスワードで出力ファイルを暗号化します。"
+
+//ORI "Certificate properties."
+11756 "証明書のプロパティです。"
+
+//ORI "Sets the certificate to expire after the specified number of days."
+11757 "証明書が指定した日数の経過後に期限切れになるように設定します。"
+
+//ORI "Common Name (CN)"
+11758 "コモンネーム (CN)"
+
+//ORI "For example, a fully qualified hostname or IP address."
+11759 "例: 完全修飾ホスト名または IP アドレス"
+
+//ORI "Optional Subject Fields"
+11760 "サブジェクトのオプションフィールド"
+
+//ORI "Attributes of the certificate owner."
+11761 "証明書の所有者の属性です。"
+
+//ORI "Country code (C)"
+11762 "国コード (C)"
+
+//ORI "Two-letter country code. Examples: US, CA."
+11763 "2 文字の国コードです。例: US、JP"
+
+//ORI "State or province name (ST)"
+11764 "都道府県名 (ST)"
+
+//ORI "Example: California"
+11765 "例: Tokyo"
+
+//ORI "Locality name (L)"
+11766 "市区町村名 (L)"
+
+//ORI "Example: San Francisco"
+11767 "例: Chiyoda-ku"
+
+//ORI "Organization name (O)"
+11768 "組織名 (O)"
+
+//ORI "Example: Example, Inc."
+11769 "例: Example, Inc."
+
+//ORI "Organizational unit (OU)"
+11770 "部署名 (OU)"
+
+//ORI "List of the subject's organizational units (OU)."
+11771 "サブジェクトの部署 (OU) の一覧です。"
+
+//ORI "Password confirmation"
+11772 "パスワードの確認"
+
+//ORI "Re-enter the password to confirm. Leave both password fields empty to write an unencrypted key."
+11773 "確認のため、パスワードをもう一度入力してください。暗号化されていない鍵を書き込むには、両方のパスワード欄を空のままにします。"
+
+//ORI "The password and confirmation do not match."
+11774 "パスワードと確認用の入力が一致しません。"
+
+//ORI "The password does not unlock this private key."
+11775 "このパスワードでは秘密鍵のロックを解除できません。"
+
+//ORI "The private key could not be parsed."
+11776 "秘密鍵を解析できませんでした。"
+
+
+// Updates 11800
+//ORI "A new version is available. Open Updates for details."
+11800 "新しいバージョンが利用可能です。詳細は [更新] を開いてください。"
+
+//ORI "This version is not covered by the current license maintenance."
+11801 "このバージョンは、現在のライセンスの保守契約の対象外です。"
+
+//ORI "Version"
+11802 "バージョン"
+
+//ORI "No updates are available."
+11803 "利用可能な更新はありません。"
+
+//ORI "Failed to check for updates."
+11804 "更新を確認できませんでした。"
+
+//ORI "Download Page"
+11805 "ダウンロードページ"
+
+//ORI "Currently installed version (Manager)."
+11806 "現在インストールされているバージョン (マネージャー) です。"
+
+//ORI "The Syslog Watcher server is running a different version: "
+11807 "Syslog Watcher サーバーは別のバージョンで動作しています: "
+
+//ORI "Not available (Maintenance Renewal Required)"
+11808 "利用不可 (保守契約の更新が必要)"
+
+//ORI "Available (Free Upgrade)"
+11809 "利用可能 (無償アップグレード)"
+
+//ORI "Available (Free Update)"
+11810 "利用可能 (無償アップデート)"
+
+//ORI "Syslog Watcher could not reach the update server. Check the internet connection and try again."
+11811 "Syslog Watcher が更新サーバーに接続できませんでした。インターネット接続を確認して、もう一度お試しください。"
+
+//ORI "Installed"
+11812 "インストール済み"
+
+//ORI "Syslog Watcher Updates"
+11813 "Syslog Watcher の更新"
+
+//ORI "Syslog Watcher"
+11814 "Syslog Watcher"
+
+//ORI "This Manager is version "
+11815 "このマネージャーのバージョンは " // version mismatch, part 1, followed by the Manager version: "This Manager is version 7.0.5, and the server is version 7.1.0." Keep the trailing space.
+
+//ORI "They are not the same product line. Update Manager or the server before continuing."
+11816 "製品ラインが異なります。続行する前に、マネージャーまたはサーバーを更新してください。"
+
+//ORI ", and the server is version "
+11817 "、サーバーのバージョンは " // version mismatch, part 2, follows the Manager version and is followed by the server version. Keep the leading comma and the trailing space.
+
+//ORI "Consider updating Manager or the server so they match."
+11818 "バージョンが一致するように、マネージャーまたはサーバーの更新を検討してください。"
+
+// Manager Settings 12000
+//ORI "Syslog Watcher Manager"
+12000 "Syslog Watcher Manager"
+
+//ORI "Settings for Syslog Watcher Manager (GUI application)."
+12001 "Syslog Watcher Manager (GUI アプリケーション) の設定です。"
+
+//ORI "Behavior"
+12002 "動作"
+
+//ORI "Behavior settings for Syslog Watcher Manager."
+12003 "Syslog Watcher Manager の動作の設定です。"
+
+//ORI "Auto-connect to local server"
+12004 "ローカルサーバーに自動接続する"
+
+//ORI "When Syslog Watcher Manager starts, try to connect it to the Syslog Watcher server installed on the same system."
+12005 "Syslog Watcher Manager の起動時に、同じシステムにインストールされている Syslog Watcher サーバーへの接続を試みます。"
+
+//ORI "Language of the Syslog Watcher Manager user interface.\r\nRestart Syslog Watcher Manager to apply the language change."
+12006 "Syslog Watcher Manager のユーザーインターフェイスの言語です。\r\n言語の変更を適用するには、Syslog Watcher Manager を再起動してください。"
+
+//ORI "English"
+12007 "英語 (English)" // keep "English" as well: XXX (English)
+
+//ORI "Check for updates"
+12009 "更新を確認する"
+
+//ORI "When Syslog Watcher Manager starts, check for the latest available product version."
+12010 "Syslog Watcher Manager の起動時に、最新の製品バージョンを確認します。"
+
+//ORI "License Agreements"
+12011 "使用許諾契約"
+
+//ORI "UI language"
+12012 "UI の言語"
+
+//ORI "Restart Syslog Watcher Manager to apply the language change."
+12013 "言語の変更を適用するには、Syslog Watcher Manager を再起動してください。"
+
+//ORI "Appearance"
+12014 "外観"
+
+//ORI "Appearance settings for Syslog Watcher Manager."
+12015 "Syslog Watcher Manager の外観の設定です。"
+
+//ORI "System settings"
+12016 "システム設定"
+
+//ORI "Long date format"
+12017 "長い日付の形式"
+
+//ORI "Format used for long dates."
+12018 "長い日付に使用する形式です。"
+
+//ORI "Short date format"
+12019 "短い日付の形式"
+
+//ORI "Format used for short dates."
+12020 "短い日付に使用する形式です。"
+
+//ORI "Long time format"
+12021 "長い時刻の形式"
+
+//ORI "Format used for long times."
+12022 "長い時刻に使用する形式です。"
+
+//ORI "Short time format"
+12023 "短い時刻の形式"
+
+//ORI "Format used for short times."
+12024 "短い時刻に使用する形式です。"
+
+//ORI "Unable to Save Preference"
+12025 "設定を保存できません"
+
+//ORI "Unable to Save Manager Settings"
+12027 "マネージャーの設定を保存できません"
+
+//ORI "Server tab scale"
+12037 "サーバータブの拡大率"
+
+//ORI "Scale of the Server tab, as a percent of the screen scale. 100% matches the screen. Hold Ctrl and scroll the mouse wheel on the Server tab to change it."
+12038 "サーバータブの拡大率 (画面の拡大率に対するパーセント) です。100% は画面と同じです。サーバータブで Ctrl キーを押しながらマウスホイールを回すと変更できます。"
+
+//ORI "Warn if versions differ"
+12049 "バージョンが異なる場合に警告する"
+
+//ORI "When connecting to a local or remote Syslog Watcher server, warn if its version does not match this Manager."
+12050 "ローカルまたはリモートの Syslog Watcher サーバーに接続するときに、そのバージョンがこのマネージャーと一致しない場合は警告します。"
+
+//ORI "Storage Tab"
+12055 "ストレージタブ"
+
+//ORI "Settings for the Storage tab."
+12056 "ストレージタブの設定です。"
+
+//ORI "Maximum selected days"
+12057 "選択できる最大日数"
+
+//ORI "How many days can be selected together on the Storage tab calendar (1 to 999)."
+12058 "ストレージタブのカレンダーで同時に選択できる日数です (1 - 999)。"
+
+//ORI "Confirm closing a view tab"
+12059 "ビュータブを閉じるときに確認する"
+
+//ORI "Ask for confirmation before a view tab is closed with its close button."
+12060 "閉じるボタンでビュータブを閉じる前に確認します。"
+
+//ORI "Confirm closing Manager"
+12061 "マネージャーを閉じるときに確認する"
+
+//ORI "Ask for confirmation before Syslog Watcher Manager is closed while it is connected to a server."
+12062 "サーバーに接続中に Syslog Watcher Manager を閉じる前に確認します。"
+
+//ORI "Syslog Watcher Manager is connected to a server. Are you sure you want to close it?"
+12063 "Syslog Watcher Manager はサーバーに接続しています。閉じてもよろしいですか?"
+
+// Collector Configuration Window 12100
+//ORI "Syslog Collector Configuration"
+12100 "Syslog コレクターの構成"
+
+//ORI "Message Processing"
+12102 "メッセージ処理"
+
+//ORI "Unable to Load Collector Configuration"
+12104 "コレクターの構成を読み込めません"
+
+//ORI "This configuration was exported from a previous version of the product. Would you like to import the syslog collector settings?"
+12108 "この構成は製品の以前のバージョンからエクスポートされたものです。syslog コレクターの設定をインポートしますか?"
+
+//ORI "Unable to Apply Collector Configuration"
+12109 "コレクターの構成を適用できません"
+
+// Collector & Server Diagnostic tabs 12200
+//ORI "Diagnostics (Collector)"
+12200 "診断 (コレクター)"
+
+//ORI "Prev. Records"
+12201 "前の記録"
+
+//ORI "Show diagnostic records for the previous collector startup"
+12202 "前回のコレクター起動時の診断記録を表示します"
+
+//ORI "Next Records"
+12203 "次の記録"
+
+//ORI "Show diagnostic records for the next collector startup"
+12204 "次回のコレクター起動時の診断記録を表示します"
+
+//ORI "Started"
+12205 "開始" // collector startup list: "Started: <date/time>"
+
+//ORI "Show DEBUG records"
+12206 "DEBUG 記録を表示"
+
+//ORI "Show all records or only important ones."
+12207 "すべての記録、または重要な記録のみを表示します。"
+
+//ORI "Level"
+12208 "レベル"
+
+//ORI "Timestamp (ISO Format)"
+12209 "タイムスタンプ (ISO 形式)"
+
+//ORI "Component"
+12210 "コンポーネント"
+
+//ORI "Diagnostic record"
+12211 "診断記録"
+
+//ORI "Save to File..."
+12215 "ファイルに保存..."
+
+//ORI "Save records for the current startup to a file."
+12216 "現在の起動時の記録をファイルに保存します。"
+
+//ORI "This is the latest diagnostic records file."
+12217 "これは最新の診断記録ファイルです。"
+
+//ORI "This is the oldest diagnostic records file."
+12218 "これは最も古い診断記録ファイルです。"
+
+//ORI "Diagnostics (Server)"
+12219 "診断 (サーバー)"
+
+//ORI "Records"
+12220 "記録"
+
+//ORI "Unable to Load Diagnostic Records"
+12221 "診断記録を読み込めません"
+
+//ORI "<never started>"
+12223 "<起動履歴なし>"
+
+//ORI "Log File"
+12224 "ログファイル"
+
+//ORI "Show diagnostic records for the previous day"
+12225 "前日の診断記録を表示します"
+
+//ORI "Show diagnostic records for the next day"
+12226 "翌日の診断記録を表示します"
+
+//ORI "Critical"
+12227 "重大" // diagnostic record level
+
+//ORI "Warning"
+12229 "警告" // diagnostic record level
+
+//ORI "Info"
+12230 "情報" // diagnostic record level
+
+//ORI "Debug"
+12231 "デバッグ" // diagnostic record level
+
+//ORI "Trace"
+12232 "トレース" // diagnostic record level
+
+// Parser Issue Feedback 12300
+//ORI "Report Incorrect Parsing..."
+12300 "誤った解析を報告..."
+
+//ORI "Report Incorrect Parsing"
+12301 "誤った解析の報告"
+
+//ORI "Feedback"
+12302 "フィードバック"
+
+//ORI "The selected syslog message, its parsed fields, the columns as shown, the view layout, and the parser configuration are included."
+12303 "選択した syslog メッセージ、解析されたフィールド、表示されている列、ビューレイアウト、パーサーの構成が含まれます。"
+
+//ORI "Originator description"
+12304 "送信元の説明"
+
+//ORI "Specify the entity that sent this message: software, hardware, model, version, etc."
+12305 "このメッセージを送信したもの (ソフトウェア、ハードウェア、モデル、バージョンなど) を指定してください。"
+
+//ORI "(Optional) What is wrong"
+12306 "(オプション) 問題点"
+
+//ORI "Describe what you expected or what is wrong."
+12307 "期待した結果、または問題点を記述してください。"
+
+//ORI "(Optional) Contact email"
+12308 "(オプション) 連絡先メールアドレス"
+
+//ORI "An address where we can reply about this report."
+12309 "このレポートについて返信できるアドレスです。"
+
+//ORI "Send Request"
+12310 "要求を送信" // button
+
+//ORI "Save Request to File..."
+12311 "要求をファイルに保存..."
+
+//ORI "Enter a brief originator description."
+12312 "送信元の簡単な説明を入力してください。"
+
+//ORI "The report was sent. Thank you."
+12313 "レポートを送信しました。ありがとうございました。"
+
+//ORI "The request could not be sent. Save the request to a file and contact technical support with that file attached."
+12314 "要求を送信できませんでした。要求をファイルに保存し、そのファイルを添付してテクニカルサポートにお問い合わせください。"
+
+//ORI "Unable to save the request file."
+12315 "要求ファイルを保存できません。"
+
+// Server Configuration Window 12400
+//ORI "Server Configuration"
+12400 "サーバーの構成"
+
+//ORI "Unable to Load Server Configuration"
+12401 "サーバーの構成を読み込めません"
+
+//ORI "Unable to Apply Server Configuration"
+12402 "サーバーの構成を適用できません"
+
+//ORI "Export your changes to a file so you do not lose them. You can import them later."
+12403 "変更内容が失われないように、ファイルにエクスポートしてください。後でインポートできます。"
+
+//ORI "Remote access to the Syslog Watcher server is enabled, but no users are configured.\r\n\r\nPlease add at least one user to allow remote access."
+12405 "Syslog Watcher サーバーへのリモートアクセスが有効になっていますが、ユーザーが構成されていません。\r\n\r\nリモートアクセスを許可するには、ユーザーを 1 人以上追加してください。"
+
+//ORI "Diagnostics"
+12406 "診断"
+
+//ORI "Server diagnostic records."
+12407 "サーバーの診断記録です。"
+
+//ORI "Use email account"
+12408 "使用するメールアカウント"
+
+//ORI "Email account used to send email messages."
+12409 "メールの送信に使用するメールアカウントです。"
+
+//ORI "Email error diagnostic records"
+12410 "エラー診断記録のメール送信"
+
+//ORI "Send all warning and error events from diagnostic records by email."
+12411 "診断記録のすべての警告とエラーイベントをメールで送信します。"
+
+//ORI "Send emails to"
+12414 "メールの送信先"
+
+//ORI "Recipient email addresses, separated by commas or semicolons."
+12415 "受信者のメールアドレスです。カンマまたはセミコロンで区切ります。"
+
+//ORI "This configuration was exported from a previous version of the product. Would you like to import the syslog server settings?"
+12420 "この構成は製品の以前のバージョンからエクスポートされたものです。syslog サーバーの設定をインポートしますか?"
+
+//ORI "Storage Maintenance"
+12421 "ストレージのメンテナンス"
+
+// Server tab 12450
+//ORI "Uptime"
+12500 "稼働時間"
+
+//ORI "Errors / Recoveries"
+12501 "エラー / 回復"
+
+//ORI "Maintenance"
+12502 "メンテナンス"
+
+//ORI "Collecting"
+12504 "収集中"
+
+//ORI "Protocol/IP/Port"
+12506 "プロトコル/IP/ポート"
+
+//ORI "Last Timestamp"
+12508 "最後のタイムスタンプ"
+
+//ORI "Received"
+12509 "受信"
+
+//ORI "Connected Clients"
+12510 "接続中のクライアント"
+
+//ORI "Last Message"
+12512 "最後のメッセージ"
+
+//ORI "Last Discarded"
+12513 "最後の破棄"
+
+//ORI "Syslog Collector is stopped."
+12514 "Syslog コレクターは停止しています。"
+
+//ORI "Buffer overflow"
+12516 "バッファーのオーバーフロー"
+
+//ORI "Syslog Server is stopped."
+12517 "Syslog サーバーは停止しています。"
+
+//ORI "Message Severity"
+12520 "メッセージの重大度"
+
+//ORI "Current Clock Hour"
+12521 "現在の時間帯"
+
+//ORI "Previous Clock Hour"
+12522 "前の時間帯"
+
+//ORI "Since Collector Startup"
+12523 "コレクターの起動以降"
+
+//ORI "Syslog Collector"
+12524 "Syslog コレクター"
+
+//ORI "Discarded Messages"
+12525 "破棄されたメッセージ"
+
+//ORI "Buffer Usage"
+12527 "バッファー使用率"
+
+//ORI "No network interfaces in the collector configuration."
+12534 "コレクターの構成にネットワークインターフェイスがありません。"
+
+//ORI "Reason"
+12535 "理由"
+
+//ORI "License limit"
+12537 "ライセンスの上限"
+
+//ORI "Filtered (content)"
+12538 "フィルター済み (内容)"
+
+//ORI "Filtered (severity)"
+12539 "フィルター済み (重大度)"
+
+//ORI "Unknown originator"
+12540 "不明な送信元"
+
+//ORI "Inactive originator"
+12541 "非アクティブな送信元"
+
+//ORI "No originator ID"
+12542 "送信元 ID なし"
+
+//ORI "Storage failure"
+12543 "ストレージの障害"
+
+//ORI "No discarded syslog messages."
+12544 "破棄された syslog メッセージはありません。"
+
+//ORI "Not Collecting"
+12546 "収集していません"
+
+//ORI "No new syslog messages since the collector started."
+12547 "コレクターの起動以降、新しい syslog メッセージはありません。"
+
+//ORI "Stopped At"
+12548 "停止日時"
+
+//ORI "Syslog Archive"
+12549 "syslog アーカイブ"
+
+//ORI "Next Sync"
+12551 "次回の同期"
+
+//ORI "Last Sync"
+12552 "前回の同期"
+
+//ORI "Synced"
+12554 "同期済み"
+
+//ORI "Last error"
+12561 "最後のエラー"
+
+//ORI "retry in"
+12563 "再試行まで" // next retry of a failed feature: "(retry in 5m)"
+
+//ORI "Failed"
+12564 "失敗"
+
+//ORI "Initialization failed"
+12565 "初期化に失敗しました"
+
+//ORI "No active or suspended features (disabled features are hidden)."
+12567 "アクティブまたは一時停止中の機能はありません (無効な機能は表示されません)。"
+
+//ORI "Storage archive is disabled."
+12568 "ストレージのアーカイブは無効です。"
+
+//ORI "Up to date"
+12569 "最新"
+
+//ORI "Plain"
+12570 "プレーン" // remote access connection is not encrypted, e.g. 0.0.0.0:2289 (Plain)
+
+//ORI "Secure"
+12571 "セキュア" // remote access connection is encrypted (TLS), e.g. 0.0.0.0:2289 (Secure)
+
+//ORI "Server Status and Statistics"
+12572 "サーバーの状態と統計"
+
+//ORI "No active features."
+12573 "アクティブな機能はありません。"
+
+//ORI "Start Collector"
+12574 "コレクターの開始" // data flow diagram
+
+//ORI "Discarded"
+12575 "破棄" // data flow diagram
+
+//ORI "of"
+12576 "/" // collector buffer usage on the Server tab: 42% of 10,000
+
+// Storage tab 13000
+//ORI "Distribution:"
+13000 "分布:" // Storage tab toolbar label before the chart mode list (Time range / Originators)
+
+//ORI "ALL LEVELS"
+13001 "すべてのレベル"
+
+//ORI "Time range"
+13002 "期間"
+
+//ORI "Message distribution option for the table view."
+13004 "テーブル表示でのメッセージの分布のオプションです。"
+
+//ORI "Disk size"
+13005 "ディスクサイズ"
+
+//ORI "Originator name"
+13008 "送信元の名前"
+
+//ORI "Storage size"
+13009 "ストレージのサイズ"
+
+//ORI "ENTIRE RANGE"
+13010 "範囲全体"
+
+//ORI "Date"
+13012 "日付"
+
+//ORI "<deleted>"
+13014 "<削除済み>"
+
+//ORI "The storage contains no syslog messages.\r\nConfigure your originators (software and network devices) to send syslog messages to the Syslog Watcher server."
+13015 "ストレージに syslog メッセージがありません。\r\n送信元 (ソフトウェアやネットワークデバイス) が Syslog Watcher サーバーに syslog メッセージを送信するように設定してください。"
+
+//ORI "<disabled>"
+13016 "<無効>"
+
+//ORI "Show message counts for all originators, one group, or selected originators."
+13017 "すべての送信元、1 つのグループ、または選択した送信元のメッセージ数を表示します。"
+
+//ORI "Show:"
+13018 "表示:" // Storage tab toolbar label before the severity level filter
+
+//ORI "Storage Overview and Statistics"
+13019 "ストレージの概要と統計"
+
+//ORI "No syslog messages were collected on"
+13020 "次の日には syslog メッセージが収集されていません:"
+
+//ORI "No syslog messages were collected in the range"
+13022 "次の期間には syslog メッセージが収集されていません:"
+
+//ORI "Other originators may have messages for these days."
+13023 "他の送信元には、これらの日のメッセージがある可能性があります。"
+
+//ORI "The storage has no messages from the group:"
+13024 "ストレージには次のグループからのメッセージがありません:"
+
+//ORI "The storage has no messages from the originator:"
+13025 "ストレージには次の送信元からのメッセージがありません:"
+
+//ORI "The storage has no messages from the selected originators:"
+13026 "ストレージには選択した送信元からのメッセージがありません:"
+
+//ORI "Select another day or range in the calendar."
+13027 "カレンダーで別の日または範囲を選択してください。"
+
+//ORI "Other originators may have messages for this day."
+13028 "他の送信元には、この日のメッセージがある可能性があります。"
+
+//ORI "Select ALL ORIGINATORS, or another day or range in the calendar."
+13029 "[すべての送信元] を選択するか、カレンダーで別の日または範囲を選択してください。"
+
+// Viewer tab 14000
+//ORI "Request..."
+14000 "要求..."
+
+//ORI "Tab"
+14001 "タブ" // Viewer toolbar menu button with tab actions: ◳ Tab▾
+
+//ORI "Sort:"
+14002 "並べ替え:" // Viewer toolbar label: Sort: Newest at top / Newest at bottom
+
+//ORI "Newest at bottom"
+14003 "新しいものを下に"
+
+//ORI "Newest at top"
+14004 "新しいものを上に"
+
+//ORI "Next Page"
+14006 "次のページ"
+
+//ORI "Load the next page of messages"
+14007 "メッセージの次のページを読み込みます"
+
+//ORI "Prev. Page"
+14008 "前のページ"
+
+//ORI "Load the previous page of messages"
+14009 "メッセージの前のページを読み込みます"
+
+//ORI "Filter Rows"
+14010 "行のフィルター"
+
+//ORI "Toggle filtering of messages currently shown in the grid (table)."
+14011 "グリッド (テーブル) に現在表示されているメッセージのフィルターを切り替えます。"
+
+//ORI "Find"
+14012 "検索"
+
+//ORI "Toggle searching within messages currently shown in the grid (table)."
+14013 "グリッド (テーブル) に現在表示されているメッセージ内の検索を切り替えます。"
+
+//ORI "Auto-Scroll to New Messages"
+14014 "新しいメッセージへ自動スクロール"
+
+//ORI "Prev."
+14016 "前へ" // find previous match (button, short for Previous)
+
+//ORI "Find the previous message above in the table."
+14017 "テーブルの上方向にある前のメッセージを検索します。"
+
+//ORI "Next"
+14018 "次へ" // find next match (button)
+
+//ORI "Find the next message below in the table."
+14019 "テーブルの下方向にある次のメッセージを検索します。"
+
+//ORI "Requested"
+14020 "要求" // Viewer status bar label: requested time range and filter
+
+//ORI "Filter/Search"
+14021 "フィルター/検索"
+
+//ORI "Loaded"
+14022 "読み込み済み" // Viewer status bar counter: messages loaded, e.g. Loaded [page 2]: 1,000
+
+//ORI "Total"
+14023 "合計" // Viewer status bar counter: total messages
+
+//ORI "Visible"
+14024 "表示中" // Viewer status bar counter: messages visible after the search filter
+
+//ORI "Selected"
+14025 "選択中" // Viewer status bar counter: selected messages
+
+//ORI "Rename Tab..."
+14027 "タブ名の変更..."
+
+//ORI "Manage current tab properties."
+14029 "現在のタブのプロパティを管理します。"
+
+//ORI "Edit current time range and message filter"
+14030 "現在の期間とメッセージフィルターを編集します"
+
+//ORI "Message filters are applied:"
+14031 "メッセージフィルターが適用されています:"
+
+//ORI "in ANY column"
+14032 "すべての列で"
+
+//ORI "in"
+14033 "列:" // used in: Find IN ...
+
+//ORI "Not Found"
+14034 "見つかりません"
+
+//ORI "Could not find a message that matches the criteria."
+14035 "条件に一致するメッセージが見つかりませんでした。"
+
+//ORI "Use only messages that meet the filter conditions."
+14036 "フィルター条件を満たすメッセージのみを使用します。"
+
+//ORI "page"
+14037 "ページ" // Viewer status bar: "Loaded [page 2]: 1,000"
+
+//ORI "Copy as Shown (CSV)"
+14038 "表示どおりにコピー (CSV)"
+
+//ORI "Copy as Shown (TAB)"
+14039 "表示どおりにコピー (TAB)"
+
+//ORI "Copy as Parsed (JSON)"
+14040 "解析済みとしてコピー (JSON)"
+
+//ORI "Copy as Received (TEXT)"
+14041 "受信したとおりにコピー (TEXT)"
+
+//ORI "to load messages."
+14042 "をクリックしてメッセージを読み込みます。" // follows the button name: "Refresh to load messages." (as in "Click Refresh to…")
+
+//ORI "None of the loaded messages match the column filters.\r\nChange or clear the filters in the filter row."
+14043 "読み込んだメッセージに、列のフィルターに一致するものはありません。\r\nフィルター行でフィルターを変更またはクリアしてください。"
+
+//ORI "No syslog messages were collected in the requested time range:"
+14044 "要求した期間に収集された syslog メッセージはありません:"
+
+//ORI "Layout..."
+14045 "レイアウト..."
+
+//ORI "Edit current view layout properties."
+14046 "現在のビューレイアウトのプロパティを編集します。"
+
+//ORI "Unable to Load Messages"
+14047 "メッセージを読み込めません"
+
+//ORI "No messages in the requested time range match the message filters:"
+14049 "要求した期間に、メッセージフィルターに一致するメッセージはありません:"
+
+//ORI "New messages will appear when the view is refreshed."
+14050 "ビューを更新すると、新しいメッセージが表示されます。"
+
+//ORI "to select another time range."
+14051 "をクリックして別の期間を選択します。" // follows the button name: "Request... to select another time range."
+
+//ORI "to change the filters or the time range."
+14052 "をクリックしてフィルターまたは期間を変更します。" // follows the button name: "Request... to change the filters or the time range."
+
+//ORI "message"
+14053 "件のメッセージ" // used when N = 1
+
+//ORI "messages"
+14054 "件のメッセージ" // used when N ≠ 1
+
+//ORI "Are you sure you want to close:"
+14055 "次のタブを閉じますか:"
+
+// Server Feature List window 14950
+//ORI "Server Features"
+14950 "サーバー機能"
+
+//ORI "Add Feature..."
+14951 "機能の追加..."
+
+//ORI "Configure..."
+14952 "構成..."
+
+//ORI "Feature"
+14953 "機能" // name for new features
+
+//ORI "Unable to Load Features"
+14958 "機能を読み込めません"
+
+//ORI "Unable to Add Feature"
+14960 "機能を追加できません"
+
+//ORI "Unable to Edit Feature"
+14962 "機能を編集できません"
+
+//ORI "Unable to Load Feature"
+14963 "機能を読み込めません"
+
+//ORI "Unable to Delete Feature"
+14964 "機能を削除できません"
+
+//ORI "Inactive features are not loaded by the server and do not process messages."
+14966 "非アクティブな機能はサーバーに読み込まれず、メッセージを処理しません。"
+
+//ORI "Suspend"
+14967 "一時停止"
+
+//ORI "Resume"
+14968 "再開"
+
+//ORI "From Suspension Time"
+14971 "一時停止した時点から"
+
+//ORI "From Now"
+14972 "現在から"
+
+//ORI "From Date/Time..."
+14973 "指定した日時から..."
+
+//ORI "From Now (Skip Messages)"
+14974 "現在から (メッセージをスキップ)"
+
+//ORI "From Date/Time (Reset)..."
+14975 "指定した日時から (リセット)..."
+
+//ORI "to add a feature to process syslog messages."
+14976 "をクリックして、syslog メッセージを処理する機能を追加します。" // follows the button name: "Add Feature... to add a feature to process syslog messages."
+
+//ORI "Resume From Date/Time"
+14977 "指定した日時から再開"
+
+//ORI "Unable to Suspend Feature"
+14978 "機能を一時停止できません"
+
+//ORI "Unable to Resume Feature"
+14979 "機能を再開できません"
+
+//ORI "Unable to Import Feature"
+14980 "機能をインポートできません"
+
+//ORI "Unable to Export Feature"
+14981 "機能をエクスポートできません"
+
+//ORI "The selected file does not contain a valid feature configuration."
+14982 "選択したファイルには有効な機能の構成が含まれていません。"
+
+//ORI "State"
+14983 "状態" // column
+
+// Feature Window 15000
+//ORI "New Feature"
+15000 "新しい機能"
+
+//ORI "Edit Feature"
+15001 "機能の編集"
+
+//ORI "The feature filter selects messages from the syslog storage. Add filters for severity and originators here."
+15003 "機能のフィルターは、syslog ストレージからメッセージを選択します。ここで重大度と送信元のフィルターを追加します。"
+
+//ORI "Feature"
+15005 "機能"
+
+//ORI "Feature name and state."
+15006 "機能の名前と状態です。"
+
+//ORI "Configuration Warning"
+15007 "構成の警告"
+
+//ORI "Switch to Advanced Mode"
+15008 "詳細モードに切り替え"
+
+//ORI "Server Feature"
+15019 "サーバー機能"
+
+//ORI "This configuration was exported from a previous version of the product. Would you like to import the settings?"
+15021 "この構成は製品の以前のバージョンからエクスポートされたものです。設定をインポートしますか?"
+
+// Send Emails 15050
+//ORI "Send Emails"
+15050 "メールの送信"
+
+//ORI "Email Configuration"
+15051 "メールの構成"
+
+//ORI "Email account settings and a set of emails."
+15052 "メールアカウントの設定とメールのセットです。"
+
+//ORI "Email account"
+15053 "メールアカウント"
+
+//ORI "Email account used for sending emails."
+15054 "メールの送信に使用するメールアカウントです。"
+
+//ORI "Send to"
+15055 "送信先"
+
+//ORI "Addresses to send emails to, separated by commas or semicolons."
+15056 "メールの送信先アドレスです。カンマまたはセミコロンで区切ります。"
+
+//ORI "Emails"
+15059 "メール"
+
+//ORI "Emails are sent when relevant syslog messages are received."
+15060 "該当する syslog メッセージを受信すると、メールが送信されます。"
+
+//ORI "User-friendly name that describes the purpose of the email."
+15063 "メールの目的を表すわかりやすい名前です。"
+
+//ORI "The filter determines which messages will trigger an email. Invalid syntax is highlighted in red."
+15065 "フィルターは、どのメッセージでメールを送信するかを決定します。無効な構文は赤で強調表示されます。"
+
+//ORI "Body"
+15066 "本文"
+
+//ORI "Email body formatted with syslog message fields. For example: {ORIGINATOR_ID} at {TIMESTAMP}: {MESSAGE}."
+15067 "syslog メッセージのフィールドで書式設定したメール本文です。例: {ORIGINATOR_ID} at {TIMESTAMP}: {MESSAGE}"
+
+//ORI "Add Email"
+15068 "メールの追加"
+
+//ORI "Send for"
+15069 "送信対象" // email summary: "Send for: <filter>", e.g. "Send for: ALL MESSAGES"
+
+//ORI "Subject"
+15070 "件名"
+
+//ORI "Email subject text."
+15071 "メールの件名のテキストです。"
+
+//ORI "Delay between emails"
+15072 "メールの送信間隔"
+
+//ORI "Seconds between emails to reduce load on the email server. Set to 0 for no delay."
+15073 "メールサーバーの負荷を減らすための、メール間の秒数です。0 にすると間隔を空けません。"
+
+//ORI "Consolidation"
+15074 "統合"
+
+//ORI "OFF: One email per alert (only with a single email rule)"
+15075 "オフ: アラートごとに 1 通のメール (メールルールが 1 つの場合のみ)"
+
+//ORI "ON: Merge multiple alerts into one email"
+15076 "オン: 複数のアラートを 1 通のメールにまとめる"
+
+//ORI "Combines several alerts into one email. If one syslog message matches more than one rule, all of those alerts are included together, which may exceed the maximum."
+15077 "複数のアラートを 1 通のメールにまとめます。1 つの syslog メッセージが複数のルールに一致した場合、それらのアラートはすべて一緒に含まれるため、最大数を超えることがあります。"
+
+//ORI "Maximum merged emails"
+15078 "統合するメールの最大数"
+
+//ORI "Maximum number of alerts merged into one email. A single syslog message that matches several rules can still add all of those alerts, even if that goes over the maximum."
+15079 "1 通のメールにまとめるアラートの最大数です。複数のルールに一致する 1 つの syslog メッセージは、最大数を超えても、それらのアラートをすべて追加することがあります。"
+
+//ORI "Email subject"
+15080 "メールの件名"
+
+//ORI "Subject of a consolidated email with multiple messages"
+15081 "複数のメッセージを含む統合メールの件名です"
+
+//ORI "No email accounts"
+15082 "メールアカウントがありません"
+
+//ORI "{N} consolidated emails from Syslog Watcher"
+15083 "Syslog Watcher からの統合メール {N} 件" // {N} = number of emails; keep {N} as is
+
+//ORI "<select account>"
+15084 "<アカウントを選択>"
+
+//ORI "No emails will be sent because no email account is selected. Please create an email account: Main Toolbar > Server > Server Configuration..."
+15088 "メールアカウントが選択されていないため、メールは送信されません。メールアカウントを作成してください: メインツールバー > サーバー > サーバーの構成..."
+
+//ORI "No emails will be sent. Please add at least one email: Emails > Add Email."
+15089 "メールは送信されません。メールを 1 つ以上追加してください: メール > メールの追加"
+
+//ORI "Consolidation should stay on when there is more than one email. One syslog message can match several rules, and those alerts are always sent in the same email."
+15090 "メールが複数ある場合は、統合をオンのままにしてください。1 つの syslog メッセージが複数のルールに一致することがあり、それらのアラートは常に同じメールで送信されます。"
+
+//ORI "The 'Send Emails' feature sends email notifications for syslog messages that match the specified filter conditions."
+15091 "[メールの送信] 機能は、指定したフィルター条件に一致する syslog メッセージについてメール通知を送信します。"
+
+//ORI "Unable to Load Email Accounts"
+15092 "メールアカウントを読み込めません"
+
+//ORI "Sends a plain-text email when a syslog message matches the filter."
+15093 "syslog メッセージがフィルターに一致したときに、プレーンテキストのメールを送信します。"
+
+//ORI "Email 1"
+15094 "メール 1" // default alert name in a new Send Emails feature
+
+//ORI "no delay"
+15095 "間隔なし" // delay value 0
+
+// Forward to Files 15200
+//ORI "Export to Files"
+15200 "ファイルへのエクスポート"
+
+//ORI "File Exporter"
+15201 "ファイルエクスポーター"
+
+//ORI "Configures the output file format and the output folder structure."
+15202 "出力ファイルの形式と出力フォルダーの構造を構成します。"
+
+//ORI "Target folder"
+15203 "出力先フォルダー"
+
+//ORI "Path to the folder where the output subdirectories and files will be created."
+15204 "出力サブフォルダーとファイルを作成するフォルダーのパスです。"
+
+//ORI "Subfolders template"
+15205 "サブフォルダーのテンプレート"
+
+//ORI "(Optional) Generates names of subfolders, for example: '{ORIGINATOR_NAME}' = a separate folder per originator."
+15206 "(オプション) サブフォルダーの名前を生成します。例: '{ORIGINATOR_NAME}' = 送信元ごとに別のフォルダー"
+
+//ORI "Template that generates file names, for example: '{RECEIVED|%Y-%m-%d}.txt' = a new file daily."
+15208 "ファイル名を生成するテンプレートです。例: '{RECEIVED|%Y-%m-%d}.txt' = 毎日新しいファイル"
+
+//ORI "Line endings"
+15209 "改行コード"
+
+//ORI "Character or sequence of characters that will be added to the end of each line."
+15210 "各行の末尾に追加する文字または文字列です。"
+
+//ORI "CR+LF (Windows style)"
+15211 "CR+LF (Windows 形式)"
+
+//ORI "LF (Unix style)"
+15212 "LF (Unix 形式)"
+
+//ORI "Limit file size"
+15213 "ファイルサイズを制限する"
+
+//ORI "Create a new file when the specified size is reached."
+15214 "指定したサイズに達すると、新しいファイルを作成します。"
+
+//ORI "Maximum size (KB)"
+15215 "最大サイズ (KB)"
+
+//ORI "Maximum size of each file in kilobytes."
+15216 "各ファイルの最大サイズ (KB) です。"
+
+//ORI "File Content Sections"
+15217 "ファイル内容のセクション"
+
+//ORI "Defines how messages are formatted as text before being saved to files."
+15218 "メッセージをファイルに保存する前に、テキストとしてどのように書式設定するかを定義します。"
+
+//ORI "File Contents"
+15220 "ファイルの内容"
+
+//ORI "Converts syslog messages to text, for example: <{PRIORITY}>{RAW_MESSAGE} = messages as received."
+15221 "syslog メッセージをテキストに変換します。例: <{PRIORITY}>{RAW_MESSAGE} = 受信したとおりのメッセージ"
+
+//ORI "The 'Export to Files' feature writes incoming syslog messages to text files in real time. It helps integrate with other products and provides an additional backup of collected data."
+15222 "[ファイルへのエクスポート] 機能は、受信した syslog メッセージをリアルタイムでテキストファイルに書き込みます。他の製品との連携に役立ち、収集したデータの追加のバックアップにもなります。"
+
+//ORI "Please enter a destination folder path."
+15223 "出力先フォルダーのパスを入力してください。"
+
+//ORI "Please enter a filename template."
+15224 "ファイル名のテンプレートを入力してください。"
+
+//ORI "No message-to-text converters are configured. The output file will be empty."
+15225 "メッセージをテキストに変換するコンバーターが構成されていません。出力ファイルは空になります。"
+
+//ORI "File section"
+15228 "ファイルのセクション"
+
+//ORI "Specify the syslog messages that activate this section."
+15230 "このセクションを有効にする syslog メッセージを指定します。"
+
+//ORI "Message to text"
+15231 "メッセージからテキストへ"
+
+//ORI "Max open files"
+15233 "開いておくファイルの最大数"
+
+//ORI "The maximum number of files the server keeps open. Set this value to 1 to prevent the server from locking files (lower performance)."
+15234 "サーバーが開いたままにするファイルの最大数です。サーバーがファイルをロックしないようにするには、この値を 1 に設定します (パフォーマンスは低下します)。"
+
+//ORI "Close idle files after (s)"
+15235 "アイドル状態のファイルを閉じるまでの時間 (秒)"
+
+//ORI "Close files that have not been written for this many seconds."
+15236 "この秒数の間書き込みがないファイルを閉じます。"
+
+//ORI "File header"
+15237 "ファイルヘッダー"
+
+//ORI "(Optional) Text written once at the start of each new file. Line endings match the Line endings setting. Existing files are not changed."
+15238 "(オプション) 新しいファイルの先頭に一度だけ書き込まれるテキストです。改行コードは [改行コード] の設定に従います。既存のファイルは変更されません。"
+
+// Forward to ODBC 15250
+//ORI "Export to DB (ODBC)"
+15250 "DB へのエクスポート (ODBC)"
+
+//ORI "ODBC connection string"
+15251 "ODBC 接続文字列"
+
+//ORI "Click (...) to open the connection string builder. The builder lists ODBC drivers and data sources on this computer and is available only when managing the local server."
+15252 "(...) をクリックすると接続文字列ビルダーが開きます。ビルダーにはこのコンピューターの ODBC ドライバーとデータソースが一覧表示され、ローカルサーバーを管理している場合にのみ使用できます。"
+
+//ORI "Messages per transaction"
+15253 "トランザクションあたりのメッセージ数"
+
+//ORI "Number of messages combined in one transaction (SQL BEGIN/COMMIT). Set to 0 to disable transactions."
+15254 "1 つのトランザクション (SQL BEGIN/COMMIT) にまとめるメッセージの数です。0 にするとトランザクションを使用しません。"
+
+//ORI "Please enter a connection string."
+15255 "接続文字列を入力してください。"
+
+//ORI "No SQL commands. The output database will be empty."
+15256 "SQL コマンドがありません。出力先のデータベースは空になります。"
+
+//ORI "Build Connection String"
+15257 "接続文字列の作成"
+
+//ORI "By default, the Syslog Watcher service runs as the Local System account. In this case, you should create a System Data Source (not User Data Source) to make it accessible to the service.\r\n\r\nIf the System Data Source option is not available, restart Syslog Watcher Manager as Administrator."
+15258 "既定では、Syslog Watcher サービスは Local System アカウントで実行されます。この場合、サービスからアクセスできるように、(ユーザーデータソースではなく) システムデータソースを作成する必要があります。\r\n\r\nシステムデータソースのオプションを使用できない場合は、Syslog Watcher Manager を管理者として再起動してください。"
+
+//ORI "Add Commands"
+15259 "コマンドの追加"
+
+//ORI "Commands group"
+15260 "コマンドグループ"
+
+//ORI "SQL commands to export syslog messages to the database. In most cases, this is an SQL INSERT command with fields from the message."
+15261 "syslog メッセージをデータベースにエクスポートする SQL コマンドです。ほとんどの場合、メッセージのフィールドを使用した SQL INSERT コマンドです。"
+
+//ORI "The 'Export to DB' feature exports incoming syslog messages to an external database via ODBC."
+15262 "[DB へのエクスポート] 機能は、受信した syslog メッセージを ODBC 経由で外部データベースにエクスポートします。"
+
+//ORI "Group filter"
+15263 "グループのフィルター"
+
+//ORI "Filter messages that trigger the execution of these commands."
+15264 "これらのコマンドを実行するメッセージを絞り込みます。"
+
+//ORI "SQL commands to export syslog messages to the database."
+15265 "syslog メッセージをデータベースにエクスポートする SQL コマンドです。"
+
+//ORI "SQL Commands"
+15266 "SQL コマンド"
+
+//ORI "Commands"
+15267 "コマンド"
+
+//ORI "ODBC Configuration"
+15268 "ODBC の構成"
+
+//ORI "ODBC connection configuration and SQL commands to export data."
+15269 "ODBC 接続の構成と、データをエクスポートする SQL コマンドです。"
+
+//ORI "Connection String Builder"
+15270 "接続文字列ビルダー"
+
+//ORI "The connection string is used by the server, not by this computer. The builder lists ODBC drivers and data sources on this computer and is available only when managing the local server.\r\n\r\nPaste a connection string that the server can use, or build it on the server (ODBC Data Source Administrator) or with Manager in Manage Local Server mode."
+15271 "接続文字列はこのコンピューターではなくサーバーが使用します。ビルダーにはこのコンピューターの ODBC ドライバーとデータソースが一覧表示され、ローカルサーバーを管理している場合にのみ使用できます。\r\n\r\nサーバーが使用できる接続文字列を貼り付けるか、サーバー上 (ODBC データソースアドミニストレーター) またはローカルサーバー管理モードのマネージャーで作成してください。"
+
+// Forward to HTTP 15300
+//ORI "Send HTTP Requests"
+15300 "HTTP 要求の送信"
+
+//ORI "HTTP request configuration."
+15302 "HTTP 要求の構成です。"
+
+//ORI "The 'Send HTTP Requests' feature integrates with external services by sending HTTP requests."
+15305 "[HTTP 要求の送信] 機能は、HTTP 要求を送信して外部サービスと連携します。"
+
+//ORI "HTTP request section"
+15306 "HTTP 要求のセクション"
+
+//ORI "Path to the resource on the server. Message fields are allowed. For example: /api/send-message/{SEVERITY_NUM}"
+15308 "サーバー上のリソースのパスです。メッセージフィールドを使用できます。例: /api/send-message/{SEVERITY_NUM}"
+
+//ORI "Request Body Sections"
+15309 "要求本文のセクション"
+
+//ORI "Body sections can use filters to generate specific HTTP requests based on the content of syslog messages."
+15310 "本文のセクションではフィルターを使用して、syslog メッセージの内容に応じた HTTP 要求を生成できます。"
+
+//ORI "Add Request Section"
+15311 "要求セクションの追加"
+
+//ORI "No HTTP endpoints"
+15313 "HTTP エンドポイントがありません"
+
+//ORI "<select endpoint>"
+15314 "<エンドポイントを選択>"
+
+//ORI "Include message fields to transform messages into HTTP requests."
+15315 "メッセージフィールドを含めて、メッセージを HTTP 要求に変換します。"
+
+//ORI "Request Body"
+15316 "要求本文"
+
+//ORI "HTTP request body"
+15317 "HTTP 要求の本文"
+
+//ORI "Matching messages trigger this request body section."
+15318 "一致するメッセージで、この要求本文のセクションが使用されます。"
+
+//ORI "HTTP endpoint"
+15320 "HTTP エンドポイント"
+
+//ORI "An HTTP endpoint defines access to a web server. You can create endpoints here: Main Toolbar > Server > Server Configuration..."
+15321 "HTTP エンドポイントは Web サーバーへのアクセスを定義します。エンドポイントは次の場所で作成できます: メインツールバー > サーバー > サーバーの構成..."
+
+//ORI "Unable to Load HTTP Endpoints"
+15322 "HTTP エンドポイントを読み込めません"
+
+//ORI "Please choose an existing HTTP endpoint or create a new one."
+15323 "既存の HTTP エンドポイントを選択するか、新しく作成してください。"
+
+//ORI "No HTTP requests will be sent because no HTTP endpoint is selected. Please create an HTTP endpoint: Main Toolbar > Server > Server Configuration..."
+15324 "HTTP エンドポイントが選択されていないため、HTTP 要求は送信されません。HTTP エンドポイントを作成してください: メインツールバー > サーバー > サーバーの構成..."
+
+// Forward to Proc 15350
+//ORI "Execute Program/Script"
+15350 "プログラム/スクリプトの実行"
+
+//ORI "Program Configuration"
+15351 "プログラムの構成"
+
+//ORI "Executable file"
+15352 "実行ファイル"
+
+//ORI "Location of the executable file."
+15353 "実行ファイルの場所です。"
+
+//ORI "Program execution configuration."
+15354 "プログラムの実行の構成です。"
+
+//ORI "The 'Execute Program/Script' feature integrates with external tools by executing programs or scripts."
+15355 "[プログラム/スクリプトの実行] 機能は、プログラムやスクリプトを実行して外部ツールと連携します。"
+
+//ORI "Windows account that starts the process. DOMAIN\\user, user@domain, or a local name. Leave empty to run as the server account."
+15359 "プロセスを開始する Windows アカウントです。DOMAIN\\user、user@domain、またはローカル名を指定します。サーバーのアカウントで実行するには空のままにします。"
+
+//ORI "User login password."
+15363 "ユーザーのログインパスワードです。"
+
+//ORI "Filter messages that trigger these parameters."
+15364 "これらのパラメーターを使用するメッセージを絞り込みます。"
+
+//ORI "Please enter a file path."
+15367 "ファイルのパスを入力してください。"
+
+//ORI "Command Line Parameters"
+15368 "コマンドラインパラメーター"
+
+//ORI "Options or data passed to the program through command-line parameters."
+15369 "コマンドラインパラメーターでプログラムに渡すオプションやデータです。"
+
+//ORI "Add Parameters"
+15370 "パラメーターの追加"
+
+//ORI "Parameters"
+15371 "パラメーター"
+
+//ORI "Success exit code"
+15372 "成功の終了コード"
+
+//ORI "Empty: any exit code is success. A number: that exit code is success."
+15373 "空: どの終了コードも成功とします。数値: その終了コードを成功とします。"
+
+//ORI "Enter a number, or leave empty to accept any exit code."
+15374 "数値を入力するか、どの終了コードも受け付ける場合は空のままにしてください。"
+
+// Forward to Syslog Server 15400
+//ORI "Forward to Syslog Server"
+15400 "syslog サーバーへの転送"
+
+//ORI "Syslog Forwarder"
+15401 "syslog フォワーダー"
+
+//ORI "Message format and target syslog server for forwarding."
+15402 "転送するメッセージの形式と送信先の syslog サーバーです。"
+
+//ORI "Send messages"
+15403 "メッセージの送信形式"
+
+//ORI "Transforms messages into the format expected by the target syslog server."
+15404 "送信先の syslog サーバーが想定する形式にメッセージを変換します。"
+
+//ORI "As received (no changes)"
+15405 "受信したとおり (変更なし)"
+
+//ORI "Formatted as IETF-syslog (RFC5424)"
+15406 "IETF-syslog 形式 (RFC5424)"
+
+//ORI "Formatted as IETF-syslog + SD:origin (RFC5424 7.2)"
+15407 "IETF-syslog + SD:origin 形式 (RFC5424 7.2)"
+
+//ORI "In custom format"
+15408 "カスタム形式"
+
+//ORI "Message Format"
+15409 "メッセージの形式"
+
+//ORI "Syslog protocol used to forward messages."
+15416 "メッセージの転送に使用する syslog プロトコルです。"
+
+//ORI "Target server"
+15417 "送信先サーバー" // syslog server host
+
+//ORI "Syslog server IP address or hostname, e.g. 192.168.1.1 or syslog.example.com."
+15418 "syslog サーバーの IP アドレスまたはホスト名です。例: 192.168.1.1、syslog.example.com"
+
+//ORI "Target port"
+15419 "送信先ポート"
+
+//ORI "Target port for forwarded syslog messages."
+15420 "転送する syslog メッセージの送信先ポートです。"
+
+//ORI "Use local interface (optional)"
+15421 "ローカルインターフェイスを使用する (オプション)"
+
+//ORI "Selects the local IP address to be used for sending."
+15422 "送信に使用するローカル IP アドレスを選択します。"
+
+//ORI "Messages in stream"
+15423 "ストリーム内のメッセージ"
+
+//ORI "Use the 'octet counting' algorithm"
+15425 "'octet counting' アルゴリズムを使用する"
+
+//ORI "Separate with \\0"
+15426 "\\0 で区切る"
+
+//ORI "Separate with \\n"
+15427 "\\n で区切る"
+
+//ORI "Separate with \\r\\n"
+15428 "\\r\\n で区切る"
+
+//ORI "TLS Options"
+15429 "TLS オプション"
+
+//ORI "Secure connection settings."
+15430 "セキュアな接続の設定です。"
+
+//ORI "Protocol version"
+15431 "プロトコルのバージョン"
+
+//ORI "TLS protocol version."
+15432 "TLS プロトコルのバージョンです。"
+
+//ORI "Please enter a target syslog server IP address or hostname."
+15439 "送信先の syslog サーバーの IP アドレスまたはホスト名を入力してください。"
+
+//ORI "The 'Forward to Syslog Server' feature transfers incoming syslog messages to a different syslog server."
+15440 "[syslog サーバーへの転送] 機能は、受信した syslog メッセージを別の syslog サーバーに転送します。"
+
+//ORI "Message template"
+15441 "メッセージテンプレート"
+
+//ORI "Template filter"
+15442 "テンプレートのフィルター"
+
+//ORI "Filter messages that use this format."
+15443 "この形式を使用するメッセージを絞り込みます。"
+
+//ORI "Format Templates"
+15444 "書式テンプレート"
+
+//ORI "Add Template"
+15445 "テンプレートの追加"
+
+//ORI "Verify server certificate"
+15446 "サーバー証明書を検証する"
+
+//ORI "When on, the target certificate is checked against Windows trusted roots and the optional CA certificate, and the name must match the target server."
+15447 "オンの場合、送信先の証明書を Windows の信頼されたルートとオプションの CA 証明書で検証し、名前が送信先サーバーと一致する必要があります。"
+
+//ORI "Named CA certificate from Manage Certificates. Leave blank to use Windows trusted roots only. Used only when Verify server certificate is on."
+15449 "[証明書の管理] で登録した名前付きの CA 証明書です。Windows の信頼されたルートのみを使用するには空のままにします。[サーバー証明書を検証する] がオンの場合にのみ使用されます。"
+
+//ORI "Timeout"
+15450 "タイムアウト"
+
+//ORI "Connect, handshake, and I/O timeout in milliseconds."
+15451 "接続、ハンドシェイク、I/O のタイムアウト (ミリ秒) です。"
+
+//ORI "ON: Verify certificate"
+15452 "オン: 証明書を検証する"
+
+//ORI "OFF: Do not verify"
+15453 "オフ: 検証しない"
+
+//ORI "Syslog over UDP"
+15454 "UDP による syslog"
+
+//ORI "Syslog over TCP"
+15455 "TCP による syslog"
+
+//ORI "Syslog over TLS"
+15456 "TLS による syslog"
+
+// Link + QR Code Windows 19850
+//ORI "Web Link"
+19850 "Web リンク"
+
+//ORI "Link in QR code"
+19851 "QR コードのリンク"
+
+//ORI "Save Link"
+19852 "リンクを保存"
+
+//ORI "Open Link"
+19853 "リンクを開く"
+
+//ORI "Copy Link"
+19854 "リンクをコピー"
+
+//ORI "URL File"
+19855 "URL ファイル"
+
+// Support Window 19900
+//ORI "Product Support"
+19900 "製品サポート"
+
+//ORI "User Guide (Online)"
+19901 "ユーザーガイド (オンライン)"
+
+//ORI "User Guide (Offline)"
+19902 "ユーザーガイド (オフライン)"
+
+//ORI "Not installed"
+19903 "インストールされていません"
+
+//ORI "Ask Question / Submit Ticket"
+19904 "質問する / チケットを送信"
+
+//ORI "1. Provide support code:"
+19905 "1. サポートコードを伝える:"
+
+//ORI "2. Attach support data:"
+19906 "2. サポートデータを添付する:"
+
+//ORI "Save Support Data to File..."
+19908 "サポートデータをファイルに保存..."
+
+//ORI "Unable to Save Support Data"
+19909 "サポートデータを保存できません"
+
+//ORI "Support data was saved successfully.\r\n\r\nAttach this file when you contact technical support."
+19913 "サポートデータを保存しました。\r\n\r\nテクニカルサポートに連絡するときに、このファイルを添付してください。"
+
+//ORI "OR"
+19910 "または" // separator between two alternatives in the Support window
+
+//ORI "Support Data File"
+19912 "サポートデータファイル"
+//IDS_SUPPORT_OPEN                "Open"
+//IDS_SUPPORT_WARNING             "Offline user guide is not installed.\r\n\r\nHelp (❓) buttons will try to open online user guide. We recommend installing offline copy if this system has no Internet access."
+
+// Licenses Windows 19919
+//ORI "Request Evaluation License"
+19920 "評価ライセンスの申請"
+
+//ORI "Please enter an email address."
+19921 "メールアドレスを入力してください。"
+
+//ORI "Details"
+19923 "詳細"
+
+//ORI "License request details."
+19924 "ライセンス申請の詳細です。"
+
+//ORI "Type of the license you want to evaluate."
+19926 "評価するライセンスの種類です。"
+
+//ORI "Syslog Watcher will try to obtain a license online. If it fails, EZ5 will send the license to the email address provided."
+19928 "Syslog Watcher はオンラインでライセンスの取得を試みます。失敗した場合は、指定したメールアドレスに EZ5 からライセンスが送信されます。"
+
+//ORI "Unable to obtain an evaluation license."
+19929 "評価ライセンスを取得できません。"
+
+//ORI "Unable to install the obtained evaluation license."
+19930 "取得した評価ライセンスをインストールできません。"
+
+//ORI "The license server returned a response that is too large to install."
+19931 "ライセンスサーバーの応答が大きすぎるため、インストールできません。"
+
+//ORI "Professional"
+19932 "Professional"
+
+//ORI "Enterprise"
+19933 "Enterprise"
+
+//ORI "Ultimate"
+19934 "Ultimate"
+
+//ORI "Lite"
+19935 "Lite"
+
+//ORI "Special"
+19936 "Special" // license
+
+//ORI "Free"
+19937 "Free" // license
+
+//ORI "evaluation"
+19938 "評価版" // trial license state: "Enterprise License (evaluation)"
+
+//ORI "Please contact Technical Support."
+19939 "テクニカルサポートにお問い合わせください。"
+
+//ORI "Error code"
+19940 "エラーコード"
+
+//ORI "unlimited"
+19941 "無制限" // license limit value instead of a number (max originators, messages per hour)
+
+//ORI "expired"
+19942 "期限切れ" // trial license state: "Enterprise License (expired)"
+
+//ORI "inactive"
+19943 "非アクティブ" // license state: "Enterprise License (inactive)"
+
+//ORI "License File"
+19944 "ライセンスファイル"
+
+//ORI "Request Evaluation..."
+19951 "評価版の申請..."
+
+//ORI "Purchase License"
+19952 "ライセンスの購入"
+
+//ORI "Install License"
+19953 "ライセンスのインストール"
+
+//ORI "Selected License"
+19954 "選択したライセンス"
+
+//ORI "Max originators"
+19956 "最大送信元数"
+
+//ORI "Max msg/hour"
+19957 "最大メッセージ数/時"
+
+//ORI "Maintenance (support and updates)"
+19958 "保守 (サポートと更新)"
+
+//ORI "Owner"
+19959 "所有者"
+
+//ORI "Renew Maintenance"
+19960 "保守の更新"
+
+//ORI "Upgrade License"
+19961 "ライセンスのアップグレード"
+
+//ORI "Unable to install the obtained license file."
+19962 "取得したライセンスファイルをインストールできません。"
+
+//ORI "Unable to activate the license for installation."
+19963 "インストールのためにライセンスをアクティブ化できません。"
+
+//ORI "Unable to uninstall the license online."
+19964 "オンラインでライセンスをアンインストールできません。"
+
+//ORI "License key that was used when installing the license (XXXX-XXXX-XXXX-XXXX-XXXX)."
+19965 "ライセンスのインストール時に使用したライセンスキー (XXXX-XXXX-XXXX-XXXX-XXXX) です。"
+
+//ORI "License Key..."
+19966 "ライセンスキー..."
+
+//ORI "License File..."
+19967 "ライセンスファイル..."
+
+//ORI "Uninstall License"
+19968 "ライセンスのアンインストール"
+
+//ORI "Uninstall"
+19969 "アンインストール"
+
+//ORI "License details"
+19971 "ライセンスの詳細"
+
+//ORI "Key"
+19972 "キー"
+
+//ORI "License key to install (XXXX-XXXX-XXXX-XXXX-XXXX)."
+19973 "インストールするライセンスキー (XXXX-XXXX-XXXX-XXXX-XXXX) です。"
+
+//ORI "Please enter a correct license key."
+19974 "正しいライセンスキーを入力してください。"
+
+//ORI "Install"
+19975 "インストール"
+
+//ORI "License owner: company/organization name or person's name."
+19976 "ライセンスの所有者: 会社/組織名または個人名です。"
+
+//ORI "For technical support and notifications."
+19978 "テクニカルサポートと通知に使用します。"
+
+//ORI "Please enter the license owner."
+19980 "ライセンスの所有者を入力してください。"
+
+//ORI "Unable to install the license file."
+19981 "ライセンスファイルをインストールできません。"
+
+//ORI "Unable to uninstall the evaluation license."
+19982 "評価ライセンスをアンインストールできません。"
+
+//ORI "System ID"
+19983 "システム ID"
+
+//ORI "No licenses are installed. The Free License is active (up to 3 originators and 5000 msg/hour)."
+19984 "ライセンスがインストールされていません。Free ライセンスが有効です (送信元 3 件、5000 メッセージ/時まで)。"
+
+//ORI "Unable to perform the operation automatically (online).\r\n\r\nOpen the generated request link on a system with Internet access."
+19985 "自動 (オンライン) で操作を実行できません。\r\n\r\n生成された要求リンクを、インターネットにアクセスできるシステムで開いてください。"
+
+//ORI "Unable to Load Licenses"
+19986 "ライセンスを読み込めません"
+
+//ORI "Unable to Select License"
+19987 "ライセンスを選択できません"
+
+//ORI "Reinstall License"
+19988 "ライセンスの再インストール"
+
+//ORI "License key to reinstall (XXXX-XXXX-XXXX-XXXX-XXXX)."
+19989 "再インストールするライセンスキー (XXXX-XXXX-XXXX-XXXX-XXXX) です。"
+
+//ORI "Reinstall"
+19990 "再インストール"
+
+//ORI "No activations left."
+19991 "残りのアクティベーションがありません。"
+
+//ORI "Are you sure you want to switch to this license?"
+19992 "このライセンスに切り替えますか?"
+
+//ORI "Unable to perform the operation automatically (online).\r\n\r\nOpen the generated request link on a system with Internet access to release the license online."
+19993 "自動 (オンライン) で操作を実行できません。\r\n\r\nオンラインでライセンスを解放するには、生成された要求リンクを、インターネットにアクセスできるシステムで開いてください。"
+
+//ORI "Selected"
+19994 "選択中"
+
+// Manager Messages 20000
+//ORI "To apply the change, Syslog Watcher Manager will be disconnected from the server."
+20003 "変更を適用するため、Syslog Watcher Manager はサーバーから切断されます。"
+
+//ORI "Failed to Locate Time Zone"
+20004 "タイムゾーンを特定できません"
+
+//ORI "Failed to identify the current time zone."
+20005 "現在のタイムゾーンを特定できませんでした。"
+
+//ORI "Failed to load the UTC time zone."
+20006 "UTC タイムゾーンを読み込めませんでした。"
+
+//ORI "Failed to load time zone: "
+20007 "タイムゾーンを読み込めませんでした: "
+
+//ORI "The server returned an invalid time zone."
+20008 "サーバーから無効なタイムゾーンが返されました。"
+
+//ORI "You are connected to the local Syslog Watcher Server using Syslog Watcher Manager with a restricted account. Some settings are read-only.\r\n\r\nTo gain full access, restart the Manager as Administrator."
+20009 "制限付きのアカウントで Syslog Watcher Manager を使用して、ローカルの Syslog Watcher サーバーに接続しています。一部の設定は読み取り専用です。\r\n\r\nフルアクセスするには、マネージャーを管理者として再起動してください。"
+
+// Collector Configuration: Message Processing 21000
+//ORI "Settings that define how messages are processed before being written to the syslog storage."
+21001 "syslog ストレージに書き込む前に、メッセージをどのように処理するかを定義する設定です。"
+
+//ORI "Preprocessor"
+21002 "プリプロセッサー"
+
+//ORI "The first step in message processing is to extract the severity level and determine the encoding."
+21003 "メッセージ処理の最初の手順では、重大度レベルを抽出し、エンコードを判定します。"
+
+//ORI "The preliminary filter discards unnecessary syslog messages at an early stage, before they are written to syslog storage."
+21005 "事前フィルターは、syslog ストレージに書き込まれる前の早い段階で、不要な syslog メッセージを破棄します。"
+
+//ORI "If a message has no severity, assign"
+21006 "重大度がない場合に割り当てる値"
+
+//ORI "Assign this severity level if a syslog message does not contain severity information."
+21007 "syslog メッセージに重大度の情報がない場合に、この重大度レベルを割り当てます。"
+
+//ORI "Message body encoding"
+21008 "メッセージ本文のエンコード"
+
+//ORI "Can be UTF-8 (default) or another text encoding, e.g., Latin1, Shift-JIS, ISO-8859-8, etc."
+21009 "UTF-8 (既定) または他のテキストエンコード (Latin1、Shift-JIS、ISO-8859-8 など) を指定できます。"
+
+//ORI "Filter by severity"
+21010 "重大度でフィルター"
+
+//ORI "Messages with lower-priority (higher numeric) severity levels are discarded."
+21011 "優先度の低い (数値の大きい) 重大度レベルのメッセージは破棄されます。"
+
+//ORI "Do not discard (accept all levels)"
+21012 "破棄しない (すべてのレベルを受け付ける)"
+
+//ORI "Discard if level"
+21013 "次のレベルの場合に破棄"
+
+//ORI "Discard messages with keywords"
+21014 "キーワードを含むメッセージを破棄する"
+
+//ORI "Messages with any of the listed keywords are discarded. Enter one keyword per line. Use Ctrl+Enter to add a new line. The filter is inactive if the list is empty."
+21015 "一覧のいずれかのキーワードを含むメッセージは破棄されます。1 行に 1 つのキーワードを入力します。新しい行を追加するには Ctrl+Enter を使用します。一覧が空の場合、フィルターは無効です。"
+
+//ORI "Accept only messages with keywords"
+21016 "キーワードを含むメッセージのみを受け付ける"
+
+//ORI "Messages that do not contain at least one keyword are discarded. Enter one keyword per line. Use Ctrl+Enter to add a new line. The filter is inactive if the list is empty."
+21017 "キーワードを 1 つも含まないメッセージは破棄されます。1 行に 1 つのキーワードを入力します。新しい行を追加するには Ctrl+Enter を使用します。一覧が空の場合、フィルターは無効です。"
+
+// Collector Configuration: Message Processing (Originator IDs) 21050
+//ORI "Originator IDs"
+21050 "送信元 ID"
+
+//ORI "An originator ID uniquely identifies the message source. IP addresses are used by default, but more complex cases may need extra rules."
+21051 "送信元 ID はメッセージの送信元を一意に識別します。既定では IP アドレスが使用されますが、より複雑な場合は追加のルールが必要になることがあります。"
+
+//ORI "Default originator ID rule"
+21052 "既定の送信元 ID ルール"
+
+//ORI "Default rule for originator IDs."
+21053 "送信元 ID の既定のルールです。"
+
+//ORI "Algorithm to detect the originator ID."
+21055 "送信元 ID を判定するアルゴリズムです。"
+
+//ORI "ID = IP address of the message sender"
+21056 "ID = メッセージ送信者の IP アドレス"
+
+//ORI "If originator ID is unknown"
+21057 "送信元 ID が不明な場合"
+
+//ORI "Behavior when a new message is received from an unknown originator."
+21058 "不明な送信元から新しいメッセージを受信したときの動作です。"
+
+//ORI "Add new originator"
+21059 "新しい送信元を追加する"
+
+//ORI "Discard messages"
+21060 "メッセージを破棄する"
+
+//ORI "IP Range Rule"
+21061 "IP 範囲のルール"
+
+//ORI "Rule for determining originator IDs for messages that have passed through a syslog proxy/forwarder."
+21062 "syslog プロキシ/フォワーダーを経由したメッセージの送信元 ID を判定するルールです。"
+
+//ORI "Add Rule"
+21063 "ルールの追加"
+
+//ORI "IP range start"
+21064 "IP 範囲の開始"
+
+//ORI "The first IP address of the range, e.g., 192.168.0.1 or ::1."
+21065 "範囲の最初の IP アドレスです。例: 192.168.0.1、::1"
+
+//ORI "IP range end"
+21066 "IP 範囲の終了"
+
+//ORI "The last IP address of the range. Leave blank for a single IP address range."
+21067 "範囲の最後の IP アドレスです。単一の IP アドレスの範囲にするには空のままにします。"
+
+//ORI "Extract with regular expression"
+21068 "正規表現で抽出"
+
+//ORI "Extract as RFC5424:HOSTNAME"
+21069 "RFC5424:HOSTNAME として抽出"
+
+//ORI "Extract as RFC5424:HOSTNAME/APPNAME"
+21070 "RFC5424:HOSTNAME/APPNAME として抽出"
+
+//ORI "Regular expression"
+21071 "正規表現"
+
+//ORI "Regular expression to extract originator ID from the message contents.\r\nExample: '^(\\S+)\\s' extracts characters until the first space.\r\nIf the expression has several groups, their matches are concatenated."
+21072 "メッセージの内容から送信元 ID を抽出する正規表現です。\r\n例: '^(\\S+)\\s' は最初の空白までの文字を抽出します。\r\n式に複数のグループがある場合、一致した部分が連結されます。"
+
+//ORI "If unable to extract ID"
+21073 "ID を抽出できない場合"
+
+//ORI "Behavior in case of an error or missing originator ID."
+21074 "エラーの場合、または送信元 ID がない場合の動作です。"
+
+//ORI "Apply the default rule"
+21075 "既定のルールを適用する"
+
+//ORI "Please enter a starting IP address of the range."
+21076 "範囲の開始 IP アドレスを入力してください。"
+
+//ORI "Please enter a valid regular expression to extract the originator ID."
+21077 "送信元 ID を抽出する有効な正規表現を入力してください。"
+
+//ORI "Regular expression filter"
+21078 "正規表現フィルター"
+
+//ORI "Accepts only messages that match the regular expression and discards the rest; 'If message matches' inverts this. Inactive if empty."
+21079 "正規表現に一致するメッセージのみを受け付け、それ以外は破棄します。[メッセージが一致する場合] でこれを反転できます。空の場合は無効です。"
+
+//ORI "Originator ID Rules"
+21080 "送信元 ID のルール"
+
+//ORI "Please enter a valid regular expression."
+21081 "有効な正規表現を入力してください。"
+
+//ORI "Resolve name (reverse DNS lookup)"
+21082 "名前を解決する (DNS 逆引き)"
+
+//ORI "Turns on reverse DNS lookup to resolve an originator name from an originator ID."
+21083 "DNS 逆引きを有効にして、送信元 ID から送信元の名前を解決します。"
+
+//ORI "If message matches"
+21084 "メッセージが一致する場合"
+
+//ORI "Configures what happens if a regular expression is entered and the message matches it."
+21085 "正規表現が入力されていて、メッセージがそれに一致した場合の動作を構成します。"
+
+//ORI "Accept it"
+21086 "受け付ける"
+
+//ORI "Discard it"
+21087 "破棄する"
+
+//ORI "Rules for messages received through a syslog proxy or forwarder."
+21088 "syslog プロキシまたはフォワーダーを経由して受信したメッセージのルールです。"
+
+// Collector Configuration: Network Interfaces 21100
+//ORI "Network interfaces receive syslog messages from the network. Add at least one network interface to collect logs."
+21100 "ネットワークインターフェイスは、ネットワークから syslog メッセージを受信します。ログを収集するには、ネットワークインターフェイスを 1 つ以上追加してください。"
+
+//ORI "Add UDP Interface"
+21102 "UDP インターフェイスの追加"
+
+//ORI "Add TCP Interface"
+21103 "TCP インターフェイスの追加"
+
+//ORI "Add TLS Interface"
+21104 "TLS インターフェイスの追加"
+
+//ORI "Interface"
+21105 "インターフェイス"
+
+//ORI "The network interface receives syslog messages from the network using the selected protocol."
+21106 "ネットワークインターフェイスは、選択したプロトコルでネットワークから syslog メッセージを受信します。"
+
+//ORI "Local IP address"
+21107 "ローカル IP アドレス"
+
+//ORI "IP address to listen for incoming traffic. 0.0.0.0 = all IPv4 addresses on the local machine. ::0 = all IPv6 addresses on the local machine."
+21108 "受信トラフィックを待ち受ける IP アドレスです。0.0.0.0 = ローカルマシンのすべての IPv4 アドレス、::0 = ローカルマシンのすべての IPv6 アドレスです。"
+
+//ORI "Syslog port"
+21109 "syslog ポート"
+
+//ORI "Make sure no other applications are configured to listen on the same IP/port to avoid conflicts."
+21110 "競合を避けるため、同じ IP/ポートで待ち受けるように構成された他のアプリケーションがないことを確認してください。"
+
+//ORI "Maximum message length"
+21111 "メッセージの最大長"
+
+//ORI "Messages longer than the maximum length (in bytes) are truncated."
+21112 "最大長 (バイト) を超えるメッセージは切り詰められます。"
+
+//ORI "Socket buffer size (bytes)"
+21113 "ソケットバッファーのサイズ (バイト)"
+
+//ORI "Size of the system buffer (in bytes) to handle data bursts."
+21114 "データの急増に対応するためのシステムバッファーのサイズ (バイト) です。"
+
+//ORI "Delete Interface"
+21115 "インターフェイスの削除"
+
+//ORI "Maximum concurrent connections"
+21116 "最大同時接続数"
+
+//ORI "The number of simultaneous syslog client connections is limited by the OS or by this value."
+21117 "syslog クライアントの同時接続数は、OS またはこの値によって制限されます。"
+
+//ORI "Replace older connections"
+21118 "古い接続を置き換える"
+
+//ORI "Disconnect the oldest connection to allow a new syslog client to connect."
+21119 "最も古い接続を切断して、新しい syslog クライアントが接続できるようにします。"
+
+//ORI "Octet-counting detection"
+21120 "オクテットカウントの検出"
+
+//ORI "Enables the octet-counting algorithm described in RFC 6587. Suitable for most cases; disable it only for compatibility with legacy equipment."
+21121 "RFC 6587 で規定されているオクテットカウントのアルゴリズムを有効にします。ほとんどの場合に適しています。古い機器との互換性のためにのみ無効にしてください。"
+
+//ORI "Split stream using CR/LF"
+21122 "CR/LF でストリームを分割する"
+
+//ORI "Splits the incoming stream into separate messages using CR/LF and \\0; otherwise, uses \\0 only."
+21123 "受信ストリームを CR/LF と \\0 で個別のメッセージに分割します。オフの場合は \\0 のみを使用します。"
+
+//ORI "Inactive client timeout"
+21124 "非アクティブなクライアントのタイムアウト"
+
+//ORI "Disconnect syslog clients that have been inactive for the specified number of seconds. Set to 0 to keep clients connected."
+21125 "指定した秒数の間アクティブでない syslog クライアントを切断します。0 にすると接続を維持します。"
+
+//ORI "TLS Options"
+21126 "TLS オプション"
+
+//ORI "Syslog Watcher acts as a TLS server when receiving syslog over TLS."
+21127 "syslog over TLS を受信するとき、Syslog Watcher は TLS サーバーとして動作します。"
+
+//ORI "Minimum protocol version"
+21128 "プロトコルの最小バージョン"
+
+//ORI "The recommended setting is TLS 1.2. A lower minimum version can be required by older clients."
+21129 "推奨の設定は TLS 1.2 です。古いクライアントでは、より低い最小バージョンが必要になる場合があります。"
+
+//ORI "Certificate fingerprints"
+21135 "証明書のフィンガープリント"
+
+//ORI "Client certificates whose fingerprints are allowed for this TLS interface. Open the list to allow or deny known certificates."
+21136 "この TLS インターフェイスで許可するフィンガープリントを持つクライアント証明書です。一覧を開いて、既知の証明書を許可または拒否します。"
+
+//ORI "Another interface already uses this address and port."
+21139 "このアドレスとポートは別のインターフェイスで既に使用されています。"
+
+//ORI "Password for decrypting a password-protected private key. Use %SECRET% instead of an actual password."
+21145 "パスワードで保護された秘密鍵を復号するためのパスワードです。実際のパスワードの代わりに %SECRET% を使用してください。"
+
+//ORI "Client certificates"
+21146 "クライアント証明書"
+
+//ORI "Enables or disables the verification of client certificates."
+21147 "クライアント証明書の検証を有効または無効にします。"
+
+//ORI "Do not request"
+21148 "要求しない"
+
+//ORI "Request, validate if received"
+21149 "要求し、受信した場合は検証する"
+
+//ORI "Require, validate"
+21150 "必須にして検証する"
+
+//ORI "No Network Interfaces"
+21155 "ネットワークインターフェイスがありません"
+
+//ORI "Add at least one network interface to collect logs."
+21156 "ログを収集するには、ネットワークインターフェイスを 1 つ以上追加してください。"
+
+//ORI "All local IPv4 addresses (0.0.0.0)"
+21157 "すべてのローカル IPv4 アドレス (0.0.0.0)"
+
+//ORI "All local IPv6 addresses (::0)"
+21158 "すべてのローカル IPv6 アドレス (::0)"
+
+//ORI "TLS Interface Options"
+21159 "TLS インターフェイスのオプション"
+
+//ORI "A TLS interface requires a certificate to work correctly.\r\nDo you want to generate a self-signed TLS certificate?"
+21162 "TLS インターフェイスが正しく動作するには証明書が必要です。\r\n自己署名の TLS 証明書を生成しますか?"
+
+//ORI "Allow self-signed certificates"
+21168 "自己署名証明書を許可する"
+
+//ORI "Accept a client certificate if its fingerprint is listed. An empty fingerprints file rejects all self-signed clients."
+21169 "フィンガープリントが一覧にある場合、クライアント証明書を受け付けます。フィンガープリントのファイルが空の場合、自己署名のクライアントはすべて拒否されます。"
+
+//ORI "Named CA certificate from Manage Certificates. Leave blank to disable CA validation."
+21171 "[証明書の管理] で登録した名前付きの CA 証明書です。CA による検証を無効にするには空のままにします。"
+
+//ORI "Allow clients by IP"
+21172 "IP でクライアントを許可する"
+
+//ORI "Accept the client if its certificate SAN includes the source IP address in an IP field (SAN:IP)."
+21173 "証明書の SAN の IP フィールド (SAN:IP) に送信元の IP アドレスが含まれている場合、クライアントを受け付けます。"
+
+//ORI "Allow clients by name"
+21174 "名前でクライアントを許可する"
+
+//ORI "Choose whether any client name is accepted, or only names from the list."
+21175 "任意のクライアント名を受け付けるか、一覧の名前のみを受け付けるかを選択します。"
+
+//ORI "allowed"
+21176 "件を許可" // number of allowed TLS client entries: "5 allowed"
+
+//ORI "From IP"
+21178 "送信元 IP"
+
+//ORI "Algorithm"
+21179 "アルゴリズム"
+
+//ORI "Fingerprint"
+21180 "フィンガープリント"
+
+//ORI "Could not load or save certificate fingerprints for this TLS interface."
+21181 "この TLS インターフェイスの証明書のフィンガープリントを読み込みまたは保存できませんでした。"
+
+//ORI "Allow any name (no check)"
+21182 "任意の名前を許可する (確認なし)"
+
+//ORI "TCP and TLS are the same transport."
+21183 "TCP と TLS は同じトランスポートです。"
+
+//ORI "Client names"
+21187 "クライアント名"
+
+//ORI "Could not load or save client names for this TLS interface."
+21189 "この TLS インターフェイスのクライアント名を読み込みまたは保存できませんでした。"
+
+//ORI "Please enter a value in the allowed range."
+21191 "許容範囲内の値を入力してください。"
+
+// Server Configuration: Storage Maintenance 21200
+//ORI "Storage Archive (Storage Copy)"
+21217 "ストレージのアーカイブ (ストレージのコピー)"
+
+//ORI "The archive is a periodically synchronized backup copy of the syslog storage. Compression provides up to 10x longer retention for the same size. The storage archive can also be located on a remote disk."
+21218 "アーカイブは、定期的に同期される syslog ストレージのバックアップコピーです。圧縮により、同じサイズで最大 10 倍長く保持できます。ストレージのアーカイブはリモートのディスクに置くこともできます。"
+
+//ORI "Synchronize archive"
+21219 "アーカイブを同期する"
+
+//ORI "Enables daily or hourly archiving of the syslog storage files."
+21220 "syslog ストレージのファイルの日次または毎時のアーカイブを有効にします。"
+
+//ORI "Archive location"
+21221 "アーカイブの場所"
+
+//ORI "Path to the directory where the storage archive is located."
+21222 "ストレージのアーカイブがあるディレクトリのパスです。"
+
+//ORI "Keep archive files for (days)"
+21223 "アーカイブファイルの保存期間 (日)"
+
+//ORI "Archived data files older than the set number of days will be deleted. This only deletes old archive files; it does not limit what the next sync creates."
+21224 "設定した日数より古いアーカイブのデータファイルは削除されます。古いアーカイブファイルが削除されるだけで、次の同期で作成される内容は制限されません。"
+
+//ORI "Protect files with password"
+21225 "ファイルをパスワードで保護する"
+
+//ORI "(Optional) Password for encrypting storage archives. Use a secret string (%EXAMPLE%) instead of an actual password."
+21226 "(オプション) ストレージのアーカイブを暗号化するパスワードです。実際のパスワードの代わりにシークレット文字列 (%EXAMPLE%) を使用してください。"
+
+//ORI "Execute command after syncing"
+21227 "同期後にコマンドを実行する"
+
+//ORI "(Optional) Command line run after each archive sync. Use {ARCHIVE_DIR} for the archive folder, for example to upload to cloud storage."
+21228 "(オプション) アーカイブの同期のたびに実行するコマンドラインです。アーカイブフォルダーには {ARCHIVE_DIR} を使用します (クラウドストレージへのアップロードなど)。"
+
+//ORI "Please specify the archive location."
+21229 "アーカイブの場所を指定してください。"
+
+//ORI "Daily"
+21230 "日次"
+
+//ORI "Hourly"
+21231 "毎時"
+
+//ORI "Command timeout"
+21233 "コマンドのタイムアウト"
+
+//ORI "Seconds to wait for the command to finish. The process is stopped if it runs longer."
+21234 "コマンドの完了を待つ秒数です。これより長く実行されると、プロセスは停止されます。"
+
+//ORI "Run as"
+21235 "実行アカウント"
+
+//ORI "Windows account that runs the command. DOMAIN\\user, user@domain, or a local name. Leave empty to run as the server service account."
+21236 "コマンドを実行する Windows アカウントです。DOMAIN\\user、user@domain、またはローカル名を指定します。サーバーのサービスアカウントで実行するには空のままにします。"
+
+//ORI "Password for the account that runs the command. Use a secret string (%EXAMPLE%) instead of an actual password."
+21240 "コマンドを実行するアカウントのパスワードです。実際のパスワードの代わりにシークレット文字列 (%EXAMPLE%) を使用してください。"
+
+//ORI "Daily and hourly archives use different folder structures. Do not use the same folder for both, or delete all files in this folder before starting a fresh archive."
+21241 "日次と毎時のアーカイブではフォルダー構造が異なります。両方に同じフォルダーを使用しないでください。または、新しいアーカイブを開始する前にこのフォルダーのファイルをすべて削除してください。"
+
+//ORI "Syslog Storage Retention"
+21242 "syslog ストレージの保持"
+
+//ORI "Automatically delete syslog storage files that exceed the age or size limits. Storage limits are kept in the storage and can be set in Storage ⮕ Storage Settings..."
+21243 "経過時間またはサイズの上限を超えた syslog ストレージのファイルを自動的に削除します。ストレージの上限はストレージに保存され、ストレージ ⮕ ストレージの設定... で設定できます。"
+
+//ORI "Enforce storage limits"
+21244 "ストレージの上限を適用する"
+
+//ORI "When enabled, the server checks syslog storage size and file age and deletes files that exceed the limits set in Storage ⮕ Storage Settings..."
+21245 "有効にすると、サーバーは syslog ストレージのサイズとファイルの経過時間を確認し、ストレージ ⮕ ストレージの設定... で設定した上限を超えるファイルを削除します。"
+
+//ORI "Delete files that exceed limits"
+21246 "上限を超えるファイルを削除する"
+
+//ORI "Limit archive retention"
+21247 "アーカイブの保持を制限する"
+
+//ORI "When set to Yes, archived files older than Keep archive files for (days) are deleted. That period only deletes old archive files; it does not limit what the next sync creates."
+21248 "[はい] に設定すると、[アーカイブファイルの保存期間 (日)] より古いアーカイブファイルが削除されます。この期間は古いアーカイブファイルを削除するだけで、次の同期で作成される内容は制限されません。"
+
+//ORI "Yes, delete older archive files"
+21249 "はい、古いアーカイブファイルを削除する"
+
+// Collector Configuration: Syslog Storage 21250
+//ORI "These settings control how incoming messages are saved in the main syslog storage."
+21250 "これらの設定は、受信したメッセージをメインの syslog ストレージにどのように保存するかを制御します。"
+
+//ORI "Memory Buffer"
+21251 "メモリバッファー"
+
+//ORI "Keeps messages before they are written to the syslog storage."
+21252 "syslog ストレージに書き込まれるまでメッセージを保持します。"
+
+//ORI "Buffer size (messages)"
+21253 "バッファーのサイズ (メッセージ数)"
+
+//ORI "A larger buffer helps to handle bursts of syslog traffic. New messages are discarded if the buffer is full."
+21254 "バッファーを大きくすると、syslog トラフィックの急増に対応しやすくなります。バッファーがいっぱいになると、新しいメッセージは破棄されます。"
+
+//ORI "Warn if buffer is % full"
+21255 "バッファーの使用率がこの % を超えたら警告する"
+
+//ORI "A warning will appear in the collector's diagnostic records."
+21256 "コレクターの診断記録に警告が表示されます。"
+
+//ORI "Please enter a valid buffer size between 1,000 and 10,000,000."
+21257 "1,000 - 10,000,000 の範囲で有効なバッファーのサイズを入力してください。"
+
+//ORI "Shown for information only. This path is not part of the collector configuration. To change it, use the Storage button on the main toolbar."
+21258 "情報としてのみ表示されます。このパスはコレクターの構成の一部ではありません。変更するには、メインツールバーの [ストレージ] ボタンを使用してください。"
+
+// Migrate from Syslog Watcher 6 21400
+//ORI "Migrate from Syslog Watcher 6"
+21400 "Syslog Watcher 6 からの移行"
+
+//ORI "Syslog Watcher 6 data was found on this computer.\r\nYou can migrate the configuration and collected messages to Syslog Watcher 7."
+21401 "このコンピューターに Syslog Watcher 6 のデータが見つかりました。\r\n構成と収集済みのメッセージを Syslog Watcher 7 に移行できます。"
+
+//ORI "Test (Dry Run)"
+21402 "テスト (ドライラン)"
+
+//ORI "Migrate"
+21403 "移行"
+
+//ORI "Skip"
+21404 "スキップ"
+
+//ORI "Click Test (Dry Run) to validate sources without writing.\r\nClick Migrate to convert the configuration to Syslog Watcher 7."
+21405 "書き込みを行わずに移行元を検証するには、[テスト (ドライラン)] をクリックします。\r\n構成を Syslog Watcher 7 に変換するには、[移行] をクリックします。"
+
+//ORI "Migrate configuration from Syslog Watcher 6 to Syslog Watcher 7?\r\n\r\nSWNGServer and SW7Collector will be stopped, and SWNGServer will be set to manual start. The SW6 license will be moved to SW7 and removed from SW6. SW7 will use the existing SW6 storage folder (no message copy). Other SW6 data will remain on disk."
+21406 "Syslog Watcher 6 から Syslog Watcher 7 に構成を移行しますか?\r\n\r\nSWNGServer と SW7Collector は停止され、SWNGServer は手動起動に設定されます。SW6 のライセンスは SW7 に移動され、SW6 からは削除されます。SW7 は既存の SW6 のストレージフォルダーを使用します (メッセージはコピーされません)。その他の SW6 のデータはディスクに残ります。"
+
+//ORI "Migration completed SUCCESSFULLY.\r\n\r\nSyslog Watcher 7 is ready to collect messages. Please start the Collector when you are ready.\r\n\r\nIf Syslog Watcher 6 had a license, it was moved to Syslog Watcher 7 and is no longer in Syslog Watcher 6 (see the log above). The SWNGServer service is set to manual start."
+21407 "移行が正常に完了しました。\r\n\r\nSyslog Watcher 7 はメッセージを収集する準備ができています。準備ができたらコレクターを開始してください。\r\n\r\nSyslog Watcher 6 にライセンスがあった場合、そのライセンスは Syslog Watcher 7 に移動され、Syslog Watcher 6 からは削除されています (上のログを参照)。SWNGServer サービスは手動起動に設定されています。"
+
+//ORI "Migration finished with ERRORS. Review the results log."
+21408 "移行はエラーで終了しました。結果のログを確認してください。"
+
+//ORI "Skip migration? You will not be asked again."
+21409 "移行をスキップしますか? 今後は確認されません。"
+
+//ORI "========== Migrate: Syslog Watcher 6.x → 7.0 =========="
+21410 "========== 移行: Syslog Watcher 6.x → 7.0 =========="
+
+//ORI "System time zone:"
+21411 "システムのタイムゾーン:"
+
+//ORI "ERROR: Failed to locate system time zone."
+21412 "エラー: システムのタイムゾーンを特定できませんでした。"
+
+//ORI "ERROR: Syslog Watcher 6.x was not found."
+21413 "エラー: Syslog Watcher 6.x が見つかりませんでした。"
+
+//ORI "Ensure SW6 service is stopped and starts manually."
+21414 "SW6 サービスが停止していて、手動で起動するように設定されていることを確認します。"
+
+//ORI "ERROR: Cannot stop SW6 service (SWNGServer)."
+21415 "エラー: SW6 サービス (SWNGServer) を停止できません。"
+
+//ORI "Ensure SW7 collector is stopped."
+21416 "SW7 コレクターが停止していることを確認します。"
+
+//ORI "ERROR: Cannot stop SW7 collector (SW7Collector)."
+21417 "エラー: SW7 コレクター (SW7Collector) を停止できません。"
+
+//ORI "Move license file from SW6 to SW7."
+21418 "ライセンスファイルを SW6 から SW7 に移動します。"
+
+//ORI "WARNING: Migration continues without a license. Cannot install SW6 license file:"
+21419 "警告: ライセンスなしで移行を続行します。SW6 のライセンスファイルをインストールできません:"
+
+//ORI "WARNING: Migration continues without a license. Cannot load SW6 license file:"
+21420 "警告: ライセンスなしで移行を続行します。SW6 のライセンスファイルを読み込めません:"
+
+//ORI "SKIPPED: No SW6 license to migrate."
+21421 "スキップ: 移行する SW6 のライセンスはありません。"
+
+//ORI "Read SW6 configuration file."
+21422 "SW6 の構成ファイルを読み込みます。"
+
+//ORI "ERROR: Cannot read SW6 configuration file."
+21423 "エラー: SW6 の構成ファイルを読み込めません。"
+
+//ORI "Read SW7 server configuration file."
+21424 "SW7 のサーバー構成ファイルを読み込みます。"
+
+//ORI "ERROR: Cannot read SW7 server configuration file."
+21425 "エラー: SW7 のサーバー構成ファイルを読み込めません。"
+
+//ORI "Merge SW6 configuration into SW7 server configuration file."
+21426 "SW6 の構成を SW7 のサーバー構成ファイルに統合します。"
+
+//ORI "Write SW7 server configuration file."
+21428 "SW7 のサーバー構成ファイルを書き込みます。"
+
+//ORI "ERROR: Cannot write SW7 configuration file."
+21429 "エラー: SW7 の構成ファイルを書き込めません。"
+
+//ORI "Locate SW6 syslog storage."
+21430 "SW6 の syslog ストレージを探します。"
+
+//ORI "ERROR: Cannot locate SW6 syslog storage."
+21431 "エラー: SW6 の syslog ストレージが見つかりません。"
+
+//ORI "*** SW6 = Syslog Watcher 6.x *** SW7 = Syslog Watcher 7 ***"
+21432 "*** SW6 = Syslog Watcher 6.x *** SW7 = Syslog Watcher 7 ***"
+
+//ORI "ERROR: Cannot create SW7 storage index file."
+21433 "エラー: SW7 のストレージのインデックスファイルを作成できません。"
+
+//ORI "ERROR: SW7 syslog storage index already exists."
+21434 "エラー: SW7 の syslog ストレージのインデックスは既に存在します。"
+
+//ORI "Migrate SW6 forwarders into SW7 features."
+21435 "SW6 のフォワーダーを SW7 の機能に移行します。"
+
+//ORI "WARNING: Failed to migrate feature"
+21436 "警告: 移行できなかった機能"
+
+//ORI "Import SW6 KB files into SW7 syslog storage."
+21437 "SW6 の KB ファイルを SW7 の syslog ストレージにインポートします。"
+
+//ORI "ERROR: Cannot open SW7 storage index file."
+21438 "エラー: SW7 のストレージのインデックスファイルを開けません。"
+
+//ORI "WARNING: Skipped"
+21439 "警告: スキップしました"
+
+//ORI "WARNING: File skipped (no '#' keyword section):"
+21440 "警告: ファイルをスキップしました ('#' キーワードのセクションがありません):"
+
+//ORI "WARNING: Cannot add FD"
+21441 "警告: 追加できなかった FD" // migration log, followed by a name; FD = field dictionary
+
+//ORI "Import SW6 FL files into SW7 syslog storage."
+21442 "SW6 の FL ファイルを SW7 の syslog ストレージにインポートします。"
+
+//ORI "WARNING: Cannot add FL"
+21443 "警告: 追加できなかった FL" // migration log, followed by a name; FL = filter list
+
+//ORI "Import SW6 view layouts into SW7 syslog storage."
+21444 "SW6 のビューレイアウトを SW7 の syslog ストレージにインポートします。"
+
+//ORI "WARNING: Layout skipped (parse failed):"
+21445 "警告: レイアウトをスキップしました (解析に失敗):"
+
+//ORI "Import SW6 report templates into SW7 syslog storage."
+21447 "SW6 のレポートテンプレートを SW7 の syslog ストレージにインポートします。"
+
+//ORI "WARNING: Report template skipped (parse failed):"
+21448 "警告: レポートテンプレートをスキップしました (解析に失敗):"
+
+//ORI "Read SW7 collector configuration file."
+21450 "SW7 のコレクター構成ファイルを読み込みます。"
+
+//ORI "ERROR: Cannot read SW7 collector configuration file."
+21451 "エラー: SW7 のコレクター構成ファイルを読み込めません。"
+
+//ORI "Merge SW6 configuration into SW7 collector configuration file."
+21452 "SW6 の構成を SW7 のコレクター構成ファイルに統合します。"
+
+//ORI "Write SW7 collector configuration file."
+21453 "SW7 のコレクター構成ファイルを書き込みます。"
+
+//ORI "Set new syslog storage path in SW7."
+21454 "SW7 に新しい syslog ストレージのパスを設定します。"
+
+//ORI "ERROR: Cannot set syslog storage path in SW7."
+21455 "エラー: SW7 に syslog ストレージのパスを設定できません。"
+
+//ORI "ERROR: Service is not installed:"
+21456 "エラー: サービスがインストールされていません:"
+
+//ORI "Service is already stopped:"
+21457 "サービスは既に停止しています:"
+
+//ORI "Stopping service"
+21458 "サービスを停止しています"
+
+//ORI "ERROR: Failed to stop service:"
+21459 "エラー: サービスを停止できませんでした:"
+
+//ORI "Passwords (decrypted / need to be re-entered):"
+21461 "パスワード (復号済み / 再入力が必要):"
+
+//ORI "Features (migrated / failed):"
+21462 "機能 (移行済み / 失敗):"
+
+//ORI "Knowledge base (imported / skipped):"
+21463 "ナレッジベース (インポート済み / スキップ):"
+
+//ORI "Filter lists (imported / skipped):"
+21464 "フィルターリスト (インポート済み / スキップ):"
+
+//ORI "View layouts (imported / skipped):"
+21465 "ビューレイアウト (インポート済み / スキップ):"
+
+//ORI "Report templates (imported / skipped):"
+21466 "レポートテンプレート (インポート済み / スキップ):"
+
+//ORI "========== Dry run: Syslog Watcher 6.x → 7.0 (no changes) =========="
+21467 "========== ドライラン: Syslog Watcher 6.x → 7.0 (変更なし) =========="
+
+//ORI "OK: writable —"
+21468 "OK: 書き込み可能 —"
+
+//ORI "ERROR: not writable —"
+21469 "エラー: 書き込み不可 —"
+
+//ORI "Service is running (migrate will stop it):"
+21470 "サービスは実行中です (移行時に停止されます):"
+
+//ORI "OK: license file is valid (it will be moved to SW7 and removed from SW6)."
+21471 "OK: ライセンスファイルは有効です (SW7 に移動され、SW6 からは削除されます)。"
+
+//ORI "Dry run completed SUCCESSFULLY — no files were modified."
+21472 "ドライランが正常に完了しました — ファイルは変更されていません。"
+
+//ORI "Dry run finished with WARNINGS or ERRORS — no files were modified."
+21473 "ドライランは警告またはエラーで終了しました — ファイルは変更されていません。"
+
+//ORI "OK: storage folder is ready for a new SW7 index."
+21474 "OK: ストレージフォルダーは新しい SW7 インデックスの準備ができています。"
+
+//ORI "WARNING: Password not decrypted (re-enter it after migration):"
+21475 "警告: パスワードを復号できませんでした (移行後に再入力してください):"
+
+//ORI "Features (convertible / invalid):"
+21476 "機能 (変換可能 / 無効):"
+
+//ORI "Knowledge base (valid / invalid):"
+21477 "ナレッジベース (有効 / 無効):"
+
+//ORI "Filter lists (valid / invalid):"
+21478 "フィルターリスト (有効 / 無効):"
+
+//ORI "View layouts (valid / invalid):"
+21479 "ビューレイアウト (有効 / 無効):"
+
+//ORI "Report templates (valid / invalid):"
+21480 "レポートテンプレート (有効 / 無効):"
+
+//ORI "Secret"
+21483 "シークレット"
+
+//ORI "WARNING: Could not create secret (re-enter the password after migration):"
+21484 "警告: シークレットを作成できませんでした (移行後にパスワードを再入力してください):"
+
+//ORI "Migration completed, but the syslog storage could not be reopened.\r\n\r\nReview the error details, then open the storage manually if needed."
+21482 "移行は完了しましたが、syslog ストレージを再度開けませんでした。\r\n\r\nエラーの詳細を確認し、必要に応じてストレージを手動で開いてください。"
+
+//ORI "User skipped migration."
+21485 "ユーザーが移行をスキップしました。"
+
+//ORI "WARNING: Migration continues without a license. SW6 license file is invalid:"
+21486 "警告: ライセンスなしで移行を続行します。SW6 のライセンスファイルが無効です:"
+
+//ORI "WARNING: SW6 storage time zone differs from the server time zone. Daily archive and leftover SW6 files will keep the SW6 time zone:"
+21487 "警告: SW6 のストレージのタイムゾーンがサーバーのタイムゾーンと異なります。日次アーカイブと残った SW6 のファイルは SW6 のタイムゾーンのままになります:"
+
+//ORI "IMPORTANT: Syslog storage retention and storage archive retention are turned off.\r\n\r\nCheck that the migrated limits are correct, then turn retention on manually in Server > Server Configuration... > Storage Maintenance.\r\nIt is left off so you can review those limits before any old messages or archives are removed."
+21488 "重要: syslog ストレージの保持とストレージのアーカイブの保持はオフになっています。\r\n\r\n移行された上限が正しいことを確認してから、サーバー > サーバーの構成... > ストレージのメンテナンス で保持を手動でオンにしてください。\r\n古いメッセージやアーカイブが削除される前に上限を確認できるように、オフのままにしてあります。"
+
+//ORI "Migrated from Syslog Watcher 6"
+21489 "Syslog Watcher 6 から移行"
+
+//ORI "Migrated from Syslog Watcher 6 knowledge base"
+21490 "Syslog Watcher 6 のナレッジベースから移行"
+
+//ORI "Migrated from Syslog Watcher 6 filter list"
+21491 "Syslog Watcher 6 のフィルターリストから移行"
+
+//ORI "not writable"
+21492 "書き込み不可"
+
+//ORI "License moved to SW7 and removed from SW6."
+21493 "ライセンスを SW7 に移動し、SW6 から削除しました。"
+
+//ORI "WARNING: The license stays in SW6 and is not installed in SW7. Migration continues without a license. Cannot remove the license from SW6:"
+21494 "警告: ライセンスは SW6 に残り、SW7 にはインストールされません。ライセンスなしで移行を続行します。SW6 からライセンスを削除できません:"
+
+//ORI "WARNING: The license stays in SW6 and is not installed in SW7. Migration continues without a license. SW6 license file is not writable:"
+21495 "警告: ライセンスは SW6 に残り、SW7 にはインストールされません。ライセンスなしで移行を続行します。SW6 のライセンスファイルに書き込めません:"
+
+//ORI "Service set to manual start:"
+21496 "サービスを手動起動に設定しました:"
+
+//ORI "Service startup type already Manual or Disabled, left unchanged:"
+21497 "サービスのスタートアップの種類は既に手動または無効のため、変更しませんでした:"
+
+//ORI "WARNING: Cannot set service to manual start. Set it to Manual in Windows Services so SW6 does not start after a restart. Service:"
+21498 "警告: サービスを手動起動に設定できません。再起動後に SW6 が起動しないように、Windows のサービスで手動に設定してください。サービス:"
+
+//ORI "OK: startup type of service can be changed:"
+21499 "OK: サービスのスタートアップの種類を変更できます:"
+
+//ORI "TLS certificate skipped (missing cert or key file)."
+21500 "TLS 証明書をスキップしました (証明書または鍵のファイルがありません)。"
+
+//ORI "TLS certificate skipped (not PEM):"
+21501 "TLS 証明書をスキップしました (PEM ではありません):"
+
+//ORI "TLS certificate skipped (name conflict):"
+21502 "TLS 証明書をスキップしました (名前が競合しています):"
+
+//ORI "TLS certificate import failed:"
+21503 "TLS 証明書をインポートできませんでした:"
+
+//ORI "TLS certificate"
+21504 "TLS 証明書"
+
+//ORI "CA certificate skipped (not a CA PEM):"
+21505 "CA 証明書をスキップしました (CA の PEM ではありません):"
+
+//ORI "CA certificate skipped (name conflict):"
+21506 "CA 証明書をスキップしました (名前が競合しています):"
+
+//ORI "CA certificate import failed:"
+21507 "CA 証明書をインポートできませんでした:"
+
+//ORI "CA folder skipped (not a directory):"
+21509 "CA フォルダーをスキップしました (ディレクトリではありません):"
+
+//ORI "CA folder skipped (no CA PEM files):"
+21510 "CA フォルダーをスキップしました (CA の PEM ファイルがありません):"
+
+//ORI "CA default path skipped (not imported)."
+21511 "CA の既定のパスをスキップしました (インポートしていません)。"
+
+
+// Storage Location + Settings 21550
+//ORI "Storage Settings..."
+21550 "ストレージの設定..."
+
+//ORI "Unable to Change Storage Parameters"
+21551 "ストレージのパラメーターを変更できません"
+
+//ORI "Unable to Get Storage Parameters"
+21552 "ストレージのパラメーターを取得できません"
+
+//ORI "Storage Settings"
+21553 "ストレージの設定"
+
+//ORI "Syslog Storage Location..."
+21554 "syslog ストレージの場所..."
+
+//ORI "Storage Location"
+21556 "ストレージの場所"
+
+//ORI "Folder in which received messages are stored."
+21557 "受信したメッセージを保存するフォルダーです。"
+
+//ORI "Path"
+21558 "パス"
+
+//ORI "Path to the syslog storage folder."
+21559 "syslog ストレージフォルダーのパスです。"
+
+//ORI "Syslog storage is the local file-based database for collected messages. If you change the storage path, a new syslog storage will be created in the specified folder."
+21560 "syslog ストレージは、収集したメッセージのためのローカルのファイルベースのデータベースです。ストレージのパスを変更すると、指定したフォルダーに新しい syslog ストレージが作成されます。"
+
+//ORI "Please enter a non-blank path."
+21561 "パスを入力してください。"
+
+//ORI "Unable to Change Storage Folder"
+21562 "ストレージフォルダーを変更できません"
+
+//ORI "You do not have permission to change the syslog storage location."
+21563 "syslog ストレージの場所を変更する権限がありません。"
+
+//ORI "Unable to Get Storage Folder"
+21564 "ストレージフォルダーを取得できません"
+
+//ORI "Change syslog storage location..."
+21565 "syslog ストレージの場所を変更..."
+
+//ORI "Maintenance settings for the syslog storage: automatic cleanup and the storage archive."
+21566 "syslog ストレージのメンテナンスの設定 (自動クリーンアップとストレージのアーカイブ) です。"
+
+//ORI "Network folders (mapped drives and UNC paths) cannot be used as the syslog storage location. Please choose a folder on a local disk."
+21567 "ネットワークフォルダー (割り当てられたドライブや UNC パス) は syslog ストレージの場所として使用できません。ローカルディスクのフォルダーを選択してください。"
+
+//ORI "Please enter a valid retention period and a maximum storage size."
+21568 "有効な保持期間とストレージの最大サイズを入力してください。"
+
+//ORI "Storage Limits"
+21569 "ストレージの上限"
+
+//ORI "Parameters that limit the syslog storage size. Important: These limits are applied only if enabled in Server ⮕ Server Configuration... ⮕ Storage Maintenance."
+21570 "syslog ストレージのサイズを制限するパラメーターです。重要: これらの上限は、サーバー ⮕ サーバーの構成... ⮕ ストレージのメンテナンス で有効にした場合にのみ適用されます。"
+
+//ORI "Delete files older than"
+21571 "次の日数より古いファイルを削除"
+
+//ORI "Storage files older than the set number of days will be deleted. Important: These limits are applied only if enabled in Server ⮕ Server Configuration... ⮕ Storage Maintenance."
+21572 "設定した日数より古いストレージファイルは削除されます。重要: これらの上限は、サーバー ⮕ サーバーの構成... ⮕ ストレージのメンテナンス で有効にした場合にのみ適用されます。"
+
+//ORI "Maximum storage size (GB)"
+21573 "ストレージの最大サイズ (GB)"
+
+//ORI "Delete older files when the storage size exceeds the set limit. Important: These limits are applied only if enabled in Server ⮕ Server Configuration... ⮕ Storage Maintenance."
+21574 "ストレージのサイズが設定した上限を超えると、古いファイルを削除します。重要: これらの上限は、サーバー ⮕ サーバーの構成... ⮕ ストレージのメンテナンス で有効にした場合にのみ適用されます。"
+
+// Storage speed test 21650
+//ORI "Test Storage Speed"
+21650 "ストレージの速度テスト"
+
+//ORI "Test Storage Speed..."
+21652 "ストレージの速度テスト..."
+
+//ORI "Start Test"
+21653 "テストの開始"
+
+//ORI "Stop Test"
+21654 "テストの停止"
+
+//ORI "Location"
+21655 "場所"
+
+//ORI "Folder where the _speed_test_ subdirectory will be created."
+21656 "_speed_test_ サブディレクトリを作成するフォルダーです。"
+
+//ORI "Number of syslog originators"
+21657 "syslog 送信元の数"
+
+//ORI "Important for the speed test: enter a rough estimate of your real number of syslog originators."
+21658 "速度テストでは重要です: 実際の syslog 送信元のおおよその数を入力してください。"
+
+//ORI "Average message length"
+21659 "メッセージの平均長"
+
+//ORI "Average message body length in bytes (minimum 50)."
+21660 "メッセージ本文の平均長 (バイト、最小 50) です。"
+
+//ORI "Test Parameters"
+21661 "テストのパラメーター"
+
+//ORI "Parameters for the storage write throughput test. The test writes into a _speed_test_ folder under Location and deletes it when the test stops."
+21662 "ストレージの書き込みスループットのテストのパラメーターです。テストは [場所] の下の _speed_test_ フォルダーに書き込み、テストの停止時に削除します。"
+
+//ORI "Writing to:"
+21663 "書き込み先:"
+
+//ORI "Originators:"
+21664 "送信元:"
+
+//ORI "Stopping: waiting for the queue to drain..."
+21666 "停止しています: キューが空になるのを待っています..."
+
+//ORI "Stopped."
+21667 "停止しました。"
+
+//ORI "Deleted test files in "
+21668 "テストファイルを削除しました: "
+
+//ORI "WARNING: Could not delete test files in "
+21669 "警告: テストファイルを削除できませんでした: "
+
+//ORI "ERROR: Location is empty."
+21670 "エラー: 場所が空です。"
+
+//ORI "ERROR: Cannot create test folder "
+21671 "エラー: テストフォルダーを作成できません: "
+
+//ORI "Syslog storage location, retention limits, and storage speed test."
+21673 "syslog ストレージの場所、保持の上限、ストレージの速度テストです。"
+
+//ORI "Waiting for the first results (about 5 seconds)..."
+21674 "最初の結果を待っています (約 5 秒)..."
+
+//ORI "Average message length:"
+21675 "メッセージの平均長:"
+
+//ORI "speed"
+21676 "速度" // speed test log: speed=1,234 msg/s (current rate)
+
+//ORI "avg"
+21677 "平均" // speed test log: avg=1,200 msg/s (average since start)
+
+//ORI "total"
+21678 "合計" // speed test log: total=50,000 (messages written)
+
+//ORI "invalid path"
+21679 "無効なパス"
+
+//ORI "unknown"
+21680 "不明"
+
+//ORI "write failed"
+21681 "書き込み失敗"
+
+// Reports + Report Templates 22000
+//ORI "Generate Report Now..."
+22000 "今すぐレポートを生成..."
+
+//ORI "Generate a syslog report immediately. Syslog Watcher Manager is unavailable until generation is complete."
+22001 "syslog レポートをすぐに生成します。生成が完了するまで Syslog Watcher Manager は使用できません。"
+
+//ORI "Show Scheduled Reports"
+22002 "スケジュールされたレポートの表示"
+
+//ORI "Show generated report history, schedule new reports, or edit existing ones."
+22003 "生成されたレポートの履歴の表示、新しいレポートのスケジュール、既存のレポートの編集を行います。"
+
+//ORI "Manage Report Templates..."
+22004 "レポートテンプレートの管理..."
+
+//ORI "Manage report templates: Report templates define the message analysis and output file format."
+22005 "レポートテンプレートの管理: レポートテンプレートは、メッセージの分析方法と出力ファイルの形式を定義します。"
+
+//ORI "Report Templates"
+22006 "レポートテンプレート"
+
+//ORI "Report Template"
+22008 "レポートテンプレート"
+
+//ORI "New Report Template"
+22009 "新しいレポートテンプレート"
+
+//ORI "Edit Report Template"
+22010 "レポートテンプレートの編集"
+
+//ORI "SQL Commands"
+22011 "SQL コマンド"
+
+//ORI "Command to execute when a message passes the filter."
+22012 "メッセージがフィルターを通過したときに実行するコマンドです。"
+
+//ORI "Add Commands"
+22013 "コマンドの追加"
+
+//ORI "Collecting Data"
+22014 "データの収集"
+
+//ORI "Settings that define data collection commands."
+22015 "データ収集のコマンドを定義する設定です。"
+
+//ORI "Initialization (SQL commands)"
+22016 "初期化 (SQL コマンド)"
+
+//ORI "Commands for setting up the environment. Create tables, indexes, and triggers here."
+22017 "環境を準備するコマンドです。ここでテーブル、インデックス、トリガーを作成します。"
+
+//ORI "Finalization (SQL commands)"
+22018 "終了処理 (SQL コマンド)"
+
+//ORI "Commands for processing the collected data and preparing it for output."
+22019 "収集したデータを処理し、出力の準備をするコマンドです。"
+
+//ORI "Output File"
+22020 "出力ファイル"
+
+//ORI "Settings that define the output file template, name, and location."
+22021 "出力ファイルのテンプレート、名前、場所を定義する設定です。"
+
+//ORI "Name of the report file to generate."
+22023 "生成するレポートファイルの名前です。"
+
+//ORI "Report file contents"
+22024 "レポートファイルの内容"
+
+//ORI "Template for generating an output report file using the collected data."
+22025 "収集したデータを使用して出力レポートファイルを生成するテンプレートです。"
+
+//ORI "Please enter a filename."
+22026 "ファイル名を入力してください。"
+
+//ORI "Please enter an SQL command or delete it."
+22027 "SQL コマンドを入力するか、削除してください。"
+
+//ORI "For Each Message"
+22028 "各メッセージに対して"
+
+//ORI "Use SQL commands to transform messages into data and insert the data into the tables created by the initialization SQL commands."
+22029 "SQL コマンドを使用してメッセージをデータに変換し、初期化の SQL コマンドで作成したテーブルにそのデータを挿入します。"
+
+//ORI "The report template contains data collection instructions (SQL commands) and a text template (TXT or HTML) for generating the final file."
+22030 "レポートテンプレートには、データ収集の手順 (SQL コマンド) と、最終的なファイルを生成するためのテキストテンプレート (TXT または HTML) が含まれます。"
+
+//ORI "Execute the command only for messages that pass this filter."
+22031 "このフィルターを通過したメッセージに対してのみコマンドを実行します。"
+
+//ORI "Report template"
+22032 "レポートテンプレート"
+
+//ORI "Report template that will be used to generate reports."
+22033 "レポートの生成に使用するレポートテンプレートです。"
+
+//ORI "Run"
+22034 "実行" // report schedule selector: As soon as possible / Once / Recurring / Weekly / Monthly
+
+//ORI "Parameters that define the report generation schedule."
+22035 "レポート生成のスケジュールを定義するパラメーターです。"
+
+//ORI "As soon as possible"
+22036 "できるだけ早く"
+
+//ORI "Once"
+22037 "1 回" // report schedule: run one time at a set date/time
+
+//ORI "Recurring"
+22038 "繰り返し"
+
+//ORI "Weekly"
+22039 "毎週"
+
+//ORI "Monthly"
+22040 "毎月"
+
+//ORI "Run on"
+22042 "実行する曜日"
+
+//ORI "The report will be generated at midnight on a specific day of the week."
+22043 "レポートは指定した曜日の午前 0 時に生成されます。"
+
+//ORI "Run on (month day)"
+22044 "実行日 (月の日付)"
+
+//ORI "Day of the month when the report will be generated at midnight."
+22045 "レポートを午前 0 時に生成する月の日付です。"
+
+//ORI "Report configuration."
+22046 "レポートの構成です。"
+
+//ORI "Repeat"
+22047 "繰り返し"
+
+//ORI "Range"
+22048 "範囲" // column: time range covered by the report
+
+//ORI "Generate Report"
+22049 "レポートの生成"
+
+//ORI "Schedule New Report..."
+22050 "新しいレポートのスケジュール..."
+
+//ORI "Schedule a new syslog report"
+22051 "新しい syslog レポートをスケジュールします"
+
+//ORI "Schedule Report"
+22052 "レポートのスケジュール"
+
+//ORI "General"
+22053 "全般" // category: general report properties
+
+//ORI "General report properties"
+22054 "レポートの全般プロパティ"
+
+//ORI "Edit Scheduled Report"
+22055 "スケジュールされたレポートの編集"
+
+//ORI "Schedule"
+22056 "スケジュール"
+
+//ORI "Open Report"
+22057 "レポートを開く"
+
+//ORI "Change the report template, syslog filter, message range, or the time of a one-time report. To change the schedule, cancel the report and use Reschedule."
+22059 "レポートテンプレート、syslog フィルター、メッセージの範囲、または 1 回限りのレポートの時刻を変更します。スケジュールを変更するには、レポートをキャンセルして [再スケジュール] を使用してください。"
+
+//ORI "Delete generated report files and the report history entry."
+22060 "生成されたレポートファイルとレポートの履歴エントリを削除します。"
+
+//ORI "Open the generated report file."
+22061 "生成されたレポートファイルを開きます。"
+
+//ORI "Filter to select messages for the report."
+22062 "レポートのメッセージを選択するフィルターです。"
+
+//ORI "Unable to Load Reports"
+22064 "レポートを読み込めません"
+
+//ORI "Last 365 days"
+22065 "過去 365 日"
+
+//ORI "Last 3 days"
+22066 "過去 3 日"
+
+//ORI "Last 7 days"
+22067 "過去 7 日"
+
+//ORI "Last 14 days"
+22068 "過去 14 日"
+
+//ORI "Last 30 days"
+22069 "過去 30 日"
+
+//ORI "Last 60 days"
+22070 "過去 60 日"
+
+//ORI "Last 180 days"
+22071 "過去 180 日"
+
+//ORI "At"
+22072 "日時" // report schedule Once: label of the date/time field (when to run)
+
+//ORI "Date and time for the syslog report."
+22073 "syslog レポートの日時です。"
+
+//ORI "First at"
+22074 "初回の日時" // report schedule Recurring: label of the date/time field (first run)
+
+//ORI "Date and time of the first report. Together with the repeat interval, this defines the message range."
+22075 "最初のレポートの日時です。繰り返しの間隔とあわせて、メッセージの範囲を定義します。"
+
+//ORI "Repeat every"
+22076 "繰り返しの間隔"
+
+//ORI "Interval for scheduling new reports. This also defines the syslog message range."
+22077 "新しいレポートをスケジュールする間隔です。syslog メッセージの範囲もこれで決まります。"
+
+//ORI "Scheduled"
+22078 "スケジュール済み"
+
+//ORI "Waiting..."
+22079 "待機中..."
+
+//ORI "Completed"
+22081 "完了"
+
+//ORI "...processing..."
+22082 "...処理中..." // report status: being generated
+
+//ORI "Canceled"
+22083 "キャンセル済み"
+
+//ORI "Unable to Open Report"
+22084 "レポートを開けません"
+
+//ORI "Date/Time"
+22085 "日時"
+
+//ORI "<no report templates>"
+22086 "<レポートテンプレートなし>"
+
+//ORI "Are you sure you want to cancel or delete this report?"
+22089 "このレポートをキャンセルまたは削除しますか?"
+
+//ORI "Unable to Cancel Report"
+22090 "レポートをキャンセルできません"
+
+//ORI "Unable to Delete Report"
+22091 "レポートを削除できません"
+
+//ORI "Unable to Edit Report"
+22092 "レポートを編集できません"
+
+//ORI "Execute for"
+22095 "実行対象"
+
+//ORI "Show reports for:"
+22096 "表示するレポート:"
+
+//ORI "Speed"
+22097 "速度"
+
+//ORI "Report records"
+22098 "レポートの記録"
+
+//ORI "Incomplete"
+22099 "未完了"
+
+//ORI "Errors"
+22100 "エラー"
+
+//ORI "No report records. Increase the range to see older reports, or schedule a new report."
+22101 "レポートの記録がありません。古いレポートを表示するには範囲を広げるか、新しいレポートをスケジュールしてください。"
+
+//ORI "Unable to Add Template"
+22102 "テンプレートを追加できません"
+
+//ORI "Unable to Edit Template"
+22103 "テンプレートを編集できません"
+
+//ORI "Unable to Delete Template"
+22104 "テンプレートを削除できません"
+
+//ORI "Sundays"
+22106 "日曜日" // 22106–22112: Sunday…Saturday, must stay in this order (indexed by day of week)
+
+//ORI "Mondays"
+22107 "月曜日"
+
+//ORI "Tuesdays"
+22108 "火曜日"
+
+//ORI "Wednesdays"
+22109 "水曜日"
+
+//ORI "Thursdays"
+22110 "木曜日"
+
+//ORI "Fridays"
+22111 "金曜日"
+
+//ORI "Saturdays"
+22112 "土曜日"
+
+//ORI "on"
+22113 "日付:" // e.g. on 1 day of month
+
+//ORI "Reschedule..."
+22114 "再スケジュール..."
+
+//ORI "Schedule the selected report again."
+22115 "選択したレポートを再度スケジュールします。"
+
+//ORI "Generating Report..."
+22116 "レポートを生成しています..."
+
+//ORI "Scheduled Reports"
+22117 "スケジュールされたレポート"
+
+//ORI "Unable to Load Templates"
+22118 "テンプレートを読み込めません"
+
+//ORI "Unable to Generate Report"
+22119 "レポートを生成できません"
+
+//ORI "Report generation failed."
+22120 "レポートの生成に失敗しました。"
+
+//ORI "The report no longer exists."
+22121 "レポートは存在しません。"
+
+//ORI "The report is being generated. Cancel it first, or wait until it finishes."
+22122 "レポートは生成中です。先にキャンセルするか、完了するまでお待ちください。"
+
+//ORI "The report is no longer scheduled."
+22123 "レポートはスケジュールされていません。"
+
+//ORI "The report is being generated and can no longer be changed. To use new settings, cancel it and use Reschedule."
+22124 "レポートは生成中のため、変更できません。新しい設定を使用するには、レポートをキャンセルして [再スケジュール] を使用してください。"
+
+//ORI "Result"
+22125 "結果" // column
+
+//ORI "Please select a report template."
+22126 "レポートテンプレートを選択してください。"
+
+// HTTP Errors 29400
+//ORI "Authentication failed. Username or password is incorrect."
+29401 "認証に失敗しました。ユーザー名またはパスワードが正しくありません。"
+
+//ORI "Access denied. This account is not allowed to perform this operation."
+29402 "アクセスが拒否されました。このアカウントにはこの操作が許可されていません。"
+
+//ORI "Unknown error"
+29403 "不明なエラー"
+
+//ORI "Too many requests."
+29404 "要求が多すぎます。"
+
+//ORI "Service unavailable."
+29405 "サービスを利用できません。"
+
+//ORI "The item was changed by another user. Close this window, open it again, and repeat your changes."
+29406 "この項目は別のユーザーによって変更されました。このウィンドウを閉じて再度開き、変更をやり直してください。"
+
+//ORI "The item was not found. It may have been deleted by another user."
+29407 "項目が見つかりません。別のユーザーによって削除された可能性があります。"
+
+//ORI "The item is in use and cannot be deleted. Remove the settings that use it first."
+29408 "この項目は使用中のため削除できません。先に、この項目を使用している設定を削除してください。"
+
+//ORI "The change refers to an item that no longer exists. It may have been deleted by another user. Close this window, open it again, and select it again."
+29409 "この変更は、存在しない項目を参照しています。別のユーザーによって削除された可能性があります。このウィンドウを閉じて再度開き、もう一度選択してください。"
+
+//ORI "The service rejected the saved password. It may have been changed in another Manager. Connect again with the current password."
+29410 "サービスが保存されたパスワードを拒否しました。別のマネージャーで変更された可能性があります。現在のパスワードで再接続してください。"
+
+// Filter by Originators 30750
+//ORI "ALL ORIGINATORS"
+30750 "すべての送信元"
+
+//ORI "Filters syslog messages by originators and originator groups."
+30752 "送信元と送信元グループで syslog メッセージを絞り込みます。"
+
+//ORI "<select originators>"
+30754 "<送信元を選択>"
+
+// Filter editor 30800
+//ORI "Filter expression:"
+30802 "フィルター式:"
+
+//ORI "Standard Fields"
+30803 "標準フィールド"
+
+//ORI "Operators"
+30804 "演算子"
+
+//ORI "Logic"
+30805 "論理" // filter editor button: insert a logical operator (AND, OR, NOT)
+
+//ORI "Blank expression matches any syslog message."
+30806 "空の式はすべての syslog メッセージに一致します。"
+
+//ORI "INVALID SYNTAX"
+30807 "構文が無効です"
+
+//ORI "SYNTAX OK"
+30808 "構文 OK"
+
+//ORI "A filter expression contains one or more conditions joined with logical operators. Examples:\r\n{FIELD1}=""foo"" and {FIELD2}!=""bar""\r\n{FIELD}<=50 or {FIELD}=100\r\n{FIELD} CONTAINS ""foobar""\r\n{FIELD} STARTS_WITH ""foo""\r\n{FIELD} IN ""List""\r\nSee the reference manual for more examples."
+30810 "フィルター式は、論理演算子で結合された 1 つ以上の条件で構成されます。例:\r\n{FIELD1}=""foo"" and {FIELD2}!=""bar""\r\n{FIELD}<=50 or {FIELD}=100\r\n{FIELD} CONTAINS ""foobar""\r\n{FIELD} STARTS_WITH ""foo""\r\n{FIELD} IN ""List""\r\nその他の例はリファレンスマニュアルを参照してください。"
+
+// Text with fields editor 30850
+//ORI "Text with fields:"
+30852 "フィールドを含むテキスト:"
+
+//ORI "Insert Standard Field"
+30853 "標準フィールドの挿入"
+
+//ORI "Use data fields extracted from a message. For more information, refer to the user manual."
+30854 "メッセージから抽出したデータフィールドを使用します。詳細はユーザーマニュアルを参照してください。"
+
+// Regexp editor 30900
+//ORI "Regex Editor..."
+30901 "正規表現エディター..."
+
+//ORI "Regular expression with named capture groups (?<FIELD_NAME>…):"
+30902 "名前付きキャプチャグループ (?<FIELD_NAME>…) を含む正規表現:"
+
+//ORI "(Optional) Part of a syslog message for testing:"
+30903 "(オプション) テスト用の syslog メッセージの一部:"
+
+//ORI "Enter a regular expression with named capture groups to extract data fields.\r\n\r\nExample: ""(?<NAME>[^""]*)""\r\nExplanation: The name is between double quotes ("""") and can be used as {NAME}.\r\n\r\nExample: ip=(?<IP>\\S+)\r\nExplanation: Extracts the characters between ""ip="" and the following space to place it in the {IP} field."
+30904 "データフィールドを抽出するには、名前付きキャプチャグループを含む正規表現を入力します。\r\n\r\n例: ""(?<NAME>[^""]*)""\r\n説明: 名前は二重引用符 ("""") の間にあり、{NAME} として使用できます。\r\n\r\n例: ip=(?<IP>\\S+)\r\n説明: ""ip="" と次の空白の間の文字を抽出して、{IP} フィールドに格納します。"
+
+//ORI "The regular expression is invalid."
+30905 "正規表現が無効です。"
+
+//ORI "Add one or more named capture groups to extract data fields.\r\n\r\nFor example: ip=(?<IP>\\S+)"
+30906 "データフィールドを抽出するには、名前付きキャプチャグループを 1 つ以上追加してください。\r\n\r\n例: ip=(?<IP>\\S+)"
+
+//ORI "No fields were extracted."
+30907 "抽出されたフィールドはありません。"
+
+//ORI "The regular expression is valid.\r\n\r\nEnter a test message to check how it works."
+30908 "正規表現は有効です。\r\n\r\nテストメッセージを入力して、動作を確認してください。"
+
+// General 31000
+//ORI "Originators"
+31000 "送信元"
+
+//ORI "Unable to Read Storage"
+31003 "ストレージを読み込めません"
+
+//ORI "Export to File..."
+31005 "ファイルにエクスポート..."
+
+//ORI "Import from File..."
+31006 "ファイルからインポート..."
+
+//ORI "Expand All"
+31007 "すべて展開"
+
+//ORI "Collapse All"
+31008 "すべて折りたたむ"
+
+//ORI "Copy"
+31009 "コピー"
+
+//ORI "Paste"
+31010 "貼り付け"
+
+//ORI "Yes"
+31011 "はい"
+
+//ORI "No"
+31012 "いいえ"
+
+//ORI "ALL MESSAGES"
+31013 "すべてのメッセージ"
+
+//ORI "<unnamed>"
+31014 "<名前なし>"
+
+//ORI "Please enter a valid filter expression."
+31015 "有効なフィルター式を入力してください。"
+
+//ORI "JSON File"
+31016 "JSON ファイル"
+
+//ORI "Please enter a name."
+31017 "名前を入力してください。"
+
+//ORI "Name"
+31018 "名前"
+
+//ORI "Short, unique identifier."
+31019 "短い一意の識別子です。" // Name field explanation
+
+//ORI "Description"
+31020 "説明"
+
+//ORI "Longer description with details."
+31021 "詳細を含む長めの説明です。" // Description field explanation
+
+//ORI "Apply"
+31022 "適用"
+
+//ORI "Cancel"
+31023 "キャンセル"
+
+//ORI "Changes Not Applied"
+31024 "変更は適用されていません"
+
+//ORI "The changes you have made will be discarded."
+31025 "行った変更は破棄されます。"
+
+//ORI "NO MESSAGES"
+31026 "メッセージなし"
+
+//ORI "invalid filter"
+31027 "無効なフィルター"
+
+//ORI "Create New"
+31028 "新規作成"
+
+//ORI "Duplicate"
+31029 "複製"
+
+//ORI "Delete"
+31030 "削除"
+
+//ORI "Edit..."
+31031 "編集..."
+
+//ORI "Close"
+31032 "閉じる"
+
+//ORI "There are no items in the list."
+31033 "一覧に項目がありません。"
+
+//ORI "Stopped"
+31034 "停止"
+
+//ORI "Confirmation Required"
+31035 "確認が必要です"
+
+//ORI "Are you sure you want to delete the items listed below?"
+31036 "次の項目を削除しますか?"
+
+//ORI "copy"
+31037 "コピー" // appended to a duplicated item's name, followed by a number: "Name - copy 2"
+
+//ORI "Syslog Storage"
+31038 "syslog ストレージ"
+
+//ORI "Create"
+31040 "作成"
+
+//ORI "Installation"
+31041 "インストール" // source of a built-in item (installation folder); prefix: Installation: <name>
+
+//ORI "Error"
+31042 "エラー"
+
+//ORI "Processing"
+31043 "処理中" // state
+
+//ORI "Suspended"
+31044 "一時停止中" // state
+
+//ORI "Maximum number of items reached."
+31045 "項目の最大数に達しました。"
+
+//ORI "<any>"
+31046 "<任意>"
+
+//ORI "Refresh"
+31047 "更新"
+
+//ORI "Refresh the current view"
+31048 "現在のビューを更新します"
+
+//ORI "Messages"
+31049 "メッセージ"
+
+//ORI "OFF"
+31050 "オフ" // disabled; shown as for example "Filter [OFF]"
+
+//ORI "second"
+31051 "秒" // used when N = 1
+
+//ORI "seconds"
+31052 "秒" // used when N ≠ 1
+
+//ORI "Tab updated"
+31053 "タブの更新" // status bar: Tab updated: 5s ago (125 ms)
+
+//ORI "ms"
+31054 "ms" // milliseconds, e.g. 125 ms
+
+//ORI "Incremental update interval"
+31055 "差分更新の間隔"
+
+//ORI "Features"
+31057 "機能"
+
+//ORI "day"
+31058 "日" // used when N = 1
+
+//ORI "days"
+31059 "日" // used when N ≠ 1
+
+//ORI "hour"
+31060 "時間" // used when N = 1
+
+//ORI "hours"
+31061 "時間" // used when N ≠ 1
+
+//ORI "minute"
+31062 "分" // used when N = 1
+
+//ORI "minutes"
+31063 "分" // used when N ≠ 1
+
+//ORI "<no filter>"
+31064 "<フィルターなし>"
+
+//ORI "Email"
+31065 "メール"
+
+//ORI "hour(s)"
+31066 "時間"
+
+//ORI "day(s)"
+31067 "日"
+
+//ORI "minute(s)"
+31068 "分"
+
+//ORI "Duration"
+31069 "経過時間"
+
+//ORI "Every"
+31070 "間隔" // interval: auto-refresh "Every 5s"; recurring report "Every 2 hours"
+
+//ORI "Auto: OFF"
+31071 "自動: オフ" // auto-refresh drop-down: automatic refresh is disabled
+
+//ORI "Request"
+31072 "要求" // button
+
+//ORI "Please select a view layout."
+31073 "ビューレイアウトを選択してください。"
+
+//ORI "Editor"
+31074 "エディター"
+
+//ORI "Editor..."
+31075 "エディター..."
+
+//ORI "Status"
+31078 "ステータス"
+
+//ORI "msg/s"
+31079 "件/秒" // messages per second, e.g. 1,234 msg/s
+
+//ORI "Network Interfaces"
+31080 "ネットワークインターフェイス"
+
+//ORI "General Properties"
+31081 "全般プロパティ"
+
+//ORI "Filename template"
+31082 "ファイル名のテンプレート"
+
+//ORI "Advanced"
+31083 "詳細設定"
+
+//ORI "Advanced settings have optimal defaults for most cases."
+31084 "詳細設定は、ほとんどの場合に最適な既定値になっています。"
+
+//ORI "Open the help page"
+31085 "ヘルプページを開きます"
+
+//ORI "Basic properties of an entity: name, description, etc."
+31086 "エンティティの基本プロパティ (名前、説明など) です。"
+
+//ORI "Disabled"
+31087 "無効"
+
+//ORI "Field name"
+31088 "フィールド名"
+
+//ORI "Field Collections"
+31089 "フィールドコレクション"
+
+//ORI "Support keyword"
+31090 "サポートキーワード"
+
+//ORI "Recommendations"
+31091 "推奨事項"
+
+//ORI "Set Checkmarks"
+31092 "チェックを付ける"
+
+//ORI "Clear Checkmarks"
+31093 "チェックを外す"
+
+//ORI "Invert Checkmarks"
+31094 "チェックを反転する"
+
+//ORI "Section"
+31095 "セクション"
+
+//ORI "Add Section"
+31096 "セクションの追加"
+
+//ORI "Section filter"
+31097 "セクションのフィルター"
+
+//ORI "View Layout"
+31098 "ビューレイアウト"
+
+//ORI "Parser"
+31099 "パーサー"
+
+//ORI "Delete Confirmation"
+31101 "削除の確認"
+
+//ORI "Are you sure you want to delete it?"
+31102 "削除しますか?"
+
+//ORI "An item with the same name already exists.\r\nPlease specify a different name."
+31103 "同じ名前の項目が既に存在します。\r\n別の名前を指定してください。"
+
+//ORI "Filter"
+31104 "フィルター"
+
+//ORI "Read Only"
+31108 "読み取り専用"
+
+//ORI "not found"
+31109 "見つかりません" // after a missing item's name: "My Layout (not found)"
+
+//ORI "Select"
+31110 "選択" // button
+
+//ORI "All Files"
+31113 "すべてのファイル"
+
+//ORI "From"
+31114 "提供元" // column: where the item comes from (Installation / Syslog Storage)
+
+//ORI "Entities in the installation folder are read-only.\r\nDo you want to create a copy in the syslog storage?\r\n\r\nYes = Create an editable copy in the storage.\r\nNo = Open the item in read-only mode."
+31115 "インストールフォルダーの項目は読み取り専用です。\r\nsyslog ストレージにコピーを作成しますか?\r\n\r\nはい = 編集可能なコピーをストレージに作成します。\r\nいいえ = 項目を読み取り専用モードで開きます。"
+
+//ORI "Configuration File"
+31116 "構成ファイル"
+
+//ORI "Failed to Export Configuration"
+31117 "構成をエクスポートできませんでした"
+
+//ORI "Failed to Import Configuration"
+31118 "構成をインポートできませんでした"
+
+//ORI "Originator ID"
+31119 "送信元 ID"
+
+//ORI "Group"
+31120 "グループ"
+
+//ORI "originator"
+31121 "送信元" // 1 originator
+
+//ORI "originators"
+31122 "送信元" // N originators
+
+//ORI "Please review the imported settings.\r\n\r\nPasswords, if included in the original configuration, were not imported and must be set again."
+31123 "インポートした設定を確認してください。\r\n\r\n元の構成にパスワードが含まれていた場合、パスワードはインポートされていないため、再設定する必要があります。"
+
+//ORI "Please choose an existing email account or create a new one."
+31124 "既存のメールアカウントを選択するか、新しく作成してください。"
+
+//ORI "Time zone"
+31126 "タイムゾーン"
+
+//ORI "Please provide the email address of the target recipient."
+31127 "送信先のメールアドレスを入力してください。"
+
+//ORI "Work folder"
+31128 "作業フォルダー"
+
+//ORI "Working folder for the process."
+31129 "プロセスの作業フォルダーです。"
+
+//ORI "Connection"
+31130 "接続"
+
+//ORI "Authentication"
+31131 "認証"
+
+//ORI "HTTP Request"
+31132 "HTTP 要求"
+
+//ORI "Resource path"
+31133 "リソースのパス"
+
+//ORI "Protocol"
+31134 "プロトコル"
+
+//ORI "Remote Access"
+31135 "リモートアクセス"
+
+//ORI "Private key password"
+31138 "秘密鍵のパスワード"
+
+//ORI "Certificate Authority (CA)"
+31139 "証明機関 (CA)"
+
+//ORI "ago"
+31152 "前" // for time ranges, e.g. 5 minutes ago
+
+//ORI "Unknown"
+31155 "不明"
+
+//ORI "License"
+31157 "ライセンス"
+
+//ORI "Active"
+31159 "アクティブ"
+
+//ORI "Inactive"
+31160 "非アクティブ"
+
+//ORI "Delete All"
+31161 "すべて削除"
+
+//ORI "Please enter a non-blank template or delete it."
+31164 "空でないテンプレートを入力するか、削除してください。"
+
+//ORI "Are you sure you want to delete all items?"
+31166 "すべての項目を削除しますか?"
+
+//ORI "Import / Export"
+31167 "インポート / エクスポート"
+
+//ORI "<no view layouts>"
+31169 "<ビューレイアウトなし>"
+
+//ORI "<no view layouts in storage>"
+31170 "<ストレージにビューレイアウトなし>"
+
+//ORI "View..."
+31172 "表示..."
+
+//ORI "Text File"
+31178 "テキストファイル"
+
+//ORI "d"
+31187 "日" // days; compact duration: 2d 5h 3m 10s
+
+//ORI "h"
+31188 "時間" // hours; compact duration: 2d 5h 3m 10s
+
+//ORI "m"
+31189 "分" // minutes (not months); compact duration: 2d 5h 3m 10s; refresh interval: Every 5m
+
+//ORI "s"
+31190 "秒" // seconds; compact duration: 2d 5h 3m 10s; refresh interval: Every 5s; <1s
+
+//ORI "Groups"
+31191 "グループ"
+
+//ORI "Storage"
+31192 "ストレージ"
+
+//ORI "Licenses"
+31193 "ライセンス"
+
+//ORI "Export"
+31194 "エクスポート"
+
+//ORI "Midnight"
+31195 "午前 0 時"
+
+//ORI "Midday"
+31196 "正午"
+
+//ORI "bytes"
+31199 "バイト" // data size, e.g. 512 bytes
+
+//ORI "KB"
+31200 "KB" // data size, e.g. 1.5 KB
+
+//ORI "MB"
+31201 "MB" // data size, e.g. 1.5 MB
+
+//ORI "GB"
+31202 "GB" // data size, e.g. 1.5 GB
+
+//ORI "TB"
+31203 "TB" // data size, e.g. 1.5 TB
+
+//ORI "Password"
+31206 "パスワード"
+
+//ORI "Username"
+31207 "ユーザー名"
+
+//ORI "Type"
+31208 "種類"
+
+//ORI "Server"
+31209 "サーバー"
+
+//ORI "Port"
+31210 "ポート"
+
+//ORI "Generate"
+31211 "生成"
+
+//ORI "For help, click Support."
+57345 "ヘルプを表示するには [サポート] をクリックしてください。"
