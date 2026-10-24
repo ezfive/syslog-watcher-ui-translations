@@ -1,0 +1,5581 @@
+0 "Deutsch (German)"
+// Copyright (C) EZ5 Systems Ltd. and contributors.
+// MIT No Attribution License: https://github.com/ezfive/syslog-watcher-ui-translations
+// Syslog Watcher 7.0
+
+// C/C++ COMMENTS  = from double slash until the end of the line
+
+// We recommend to use Visual Studio Code to edit this file: set file language to C++
+
+///////////////////////////////////////////////////////////////////////////////
+// GENERAL STRINGS - translate only strings in quotes ("...")
+// - Keep \r\n (line break) exactly as in the English text.
+// - Keep symbols such as ⮕ ↑ ↓ ❌ → — … unchanged; they stand for buttons, icons, or menu paths.
+// - A comment after a string on the same line (// ...) is a hint for you; do not translate it.
+//   Write your own comments on separate lines that start with //.
+// - The //ORI "..." line above a string is the English original; do not change it.
+// - A line that starts with # is new or its English text changed: check it, translate it again if needed, then remove the #.
+
+// ================================ TOC =======================================
+// 10000 View Layout editor
+// 10100 View Layouts List
+// 10150 Data Fields Section
+// 10200 View Request Window
+// 10250 Filter
+// 10300 Originator editor
+// 10350 Originators List & Select Originators
+// 10400 Parser editor
+// 10450 Parsers List
+// 10500 Parser Section Types
+// 10550 Group editor + Groups List
+// 10600 ViewPreset editor + ViewPresets List
+// 10700 User editor + Users List
+// 10750 Time Range
+// 10850 Severity and Facility Names Dialog
+// 10900 Open Storage
+// 10950 Progress Window
+// 11000 Server Toolbar
+// 11100 Connect Window
+// 11150 General Toolbar
+// 11200 Storage Toolbar
+// 11250 Messages Toolbar
+// 11300 Server Configuration: Remote Access
+// 11350 Server Configuration: Email Accounts
+// 11400 Filter Lists, Field Dictionaries + Field Collections Windows
+// 11450 Server Configuration: Reports
+// 11500 Secrets Windows
+// 11550 Server Configuration: HTTP Endpoints
+// 11650 Certificates Windows
+// 11800 Updates
+// 12000 Manager Settings
+// 12100 Collector Configuration Window
+// 12200 Collector & Server Log tabs
+// 12300 Parser Issue Feedback
+// 12400 Server Configuration Window
+// 12450 Server tab
+// 13000 Storage tab
+// 14000 Viewer tab
+// 14950 Server Feature List window
+// 15000 Feature Window
+// 15050 Send Emails
+// 15200 Forward to Files
+// 15250 Forward to ODBC
+// 15300 Forward to HTTP
+// 15350 Forward to Proc
+// 15400 Forward to Syslog Server
+// 19850 Link + QR Code Windows
+// 19900 Support Window
+// 19919 Licenses Windows
+// 20000 Manager Messages
+// 21000 Collector Configuration: Message Processing
+// 21050 Collector Configuration: Message Processing (Originator IDs)
+// 21100 Collector Configuration: Network Interfaces
+// 21200 Server Configuration: Storage Maintenance
+// 21250 Collector Configuration: Syslog Storage
+// 21400 Migrate from Syslog Watcher 6 (21410+ migration log lines)
+// 21550 Storage Location + Settings
+// 21650 Storage speed test
+// 22000 Reports + Report Templates
+// 29400 HTTP Errors
+// 30750 Filter by Originators
+// 30800 Filter editor
+// 30850 Text with fields editor
+// 30900 Regexp editor
+// 31000 General
+//===============================================================================
+
+// View Layout editor 10000
+//ORI "Column title"
+10002 "Spaltentitel"
+
+//ORI "Name of the column, shown in the grid header."
+10003 "Name der Spalte, wird in der Tabellenkopfzeile angezeigt."
+
+//ORI "Column format"
+10004 "Spaltenformat"
+
+//ORI "Combination of {FIELDS} and text, e.g. '{SEVERITY_NUM} / {SEVERITY}'."
+10005 "Kombination aus {FIELDS} und Text, z. B. '{SEVERITY_NUM} / {SEVERITY}'."
+
+//ORI "Column width"
+10006 "Spaltenbreite"
+
+//ORI "Column width in pixels."
+10007 "Spaltenbreite in Pixeln."
+
+//ORI "Columns"
+10008 "Spalten"
+
+//ORI "List of grid columns. Use 'Add Column' to create a new column, then use ↑↓ to rearrange the order."
+10009 "Liste der Tabellenspalten. Mit 'Spalte hinzufügen' erstellen Sie eine neue Spalte, mit ↑↓ ändern Sie die Reihenfolge."
+
+//ORI "Add Column"
+10010 "Spalte hinzufügen"
+
+//ORI "Column"
+10011 "Spalte"
+
+//ORI "Expand to edit the column details. Use ↑↓ to rearrange the order, or ❌ to delete the column."
+10012 "Aufklappen, um die Spaltendetails zu bearbeiten. Mit ↑↓ ändern Sie die Reihenfolge, mit ❌ löschen Sie die Spalte."
+
+//ORI "Color Rules"
+10016 "Farbregeln"
+
+//ORI "Color Rule"
+10018 "Farbregel"
+
+//ORI "Rule that specifies table row colors."
+10019 "Regel, die die Farben der Tabellenzeilen festlegt."
+
+//ORI "Add Color Rule"
+10020 "Farbregel hinzufügen"
+
+//ORI "Rule name"
+10021 "Regelname"
+
+//ORI "Name for the color rule."
+10022 "Name der Farbregel."
+
+//ORI "Rule filter"
+10023 "Regelfilter"
+
+//ORI "Open filter options to construct a rule for applying the color."
+10024 "Filteroptionen öffnen, um eine Regel für die Anwendung der Farbe zu erstellen."
+
+//ORI "Text color"
+10025 "Textfarbe"
+
+//ORI "An RGB color to apply to text when the rule is activated, e.g. '0; 128; 0'."
+10026 "RGB-Farbe für den Text, wenn die Regel zutrifft, z. B. '0; 128; 0'."
+
+//ORI "Background color"
+10027 "Hintergrundfarbe"
+
+//ORI "An RGB color to apply to the row background when the rule is activated, e.g. '255; 238; 238'."
+10028 "RGB-Farbe für den Zeilenhintergrund, wenn die Regel zutrifft, z. B. '255; 238; 238'."
+
+//ORI "Apply to"
+10029 "Anwenden auf" // color rule summary: "Apply to: <filter>", e.g. "Apply to: ALL MESSAGES"
+
+//ORI "HTML Sections"
+10030 "HTML-Abschnitte"
+
+//ORI "Multi-section HTML template for the message details panel."
+10031 "HTML-Vorlage aus mehreren Abschnitten für das Nachrichtendetails-Panel."
+
+//ORI "Message Details"
+10033 "Nachrichtendetails"
+
+//ORI "Settings for the message details panel."
+10034 "Einstellungen für das Nachrichtendetails-Panel."
+
+//ORI "Partial HTML template."
+10037 "Teil einer HTML-Vorlage."
+
+//ORI "Section name"
+10039 "Abschnittsname"
+
+//ORI "Name of the HTML section."
+10040 "Name des HTML-Abschnitts."
+
+//ORI "Render section only for messages that pass the filter."
+10042 "Abschnitt nur für Nachrichten rendern, die den Filter passieren."
+
+//ORI "Render for"
+10043 "Rendern für" // HTML section summary: "Render for: <filter>", e.g. "Render for: ALL MESSAGES"
+
+//ORI "Please add at least one column."
+10044 "Bitte fügen Sie mindestens eine Spalte hinzu."
+
+//ORI "Style (CSS)"
+10046 "Stil (CSS)"
+
+//ORI "CSS to style HTML in the Message Details panel."
+10047 "CSS zur Formatierung des HTML im Nachrichtendetails-Panel."
+
+//ORI "Panel position"
+10048 "Panelposition"
+
+//ORI "The position where the details panel will be placed by default."
+10049 "Position, an der das Detail-Panel standardmäßig platziert wird."
+
+//ORI "Panel size"
+10050 "Panelgröße"
+
+//ORI "Width for the left/right panels, or height if the panel is positioned at the bottom."
+10051 "Breite für Panels links/rechts bzw. Höhe, wenn das Panel unten positioniert ist."
+
+//ORI "Section (HTML)"
+10052 "Abschnitt (HTML)"
+
+//ORI "HTML-formatted section of the message details panel."
+10053 "HTML-formatierter Abschnitt des Nachrichtendetails-Panels."
+
+//ORI "A view layout defines how messages stored in syslog storage are displayed. It customizes the table appearance and the message details panel."
+10056 "Ein Ansichtslayout legt fest, wie die im Syslog-Speicher gespeicherten Nachrichten angezeigt werden. Es passt das Aussehen der Tabelle und das Nachrichtendetails-Panel an."
+
+//ORI "New View Layout"
+10057 "Neues Ansichtslayout"
+
+//ORI "Edit View Layout"
+10058 "Ansichtslayout bearbeiten"
+
+//ORI "Rule that specifies a table row color."
+10059 "Regel, die die Farbe einer Tabellenzeile festlegt."
+
+//ORI "Unable to Add Layout"
+10060 "Layout kann nicht hinzugefügt werden"
+
+//ORI "Unable to Edit Layout"
+10061 "Layout kann nicht bearbeitet werden"
+
+//ORI "Save Layout to Storage..."
+10062 "Layout im Speicher speichern..."
+
+//ORI "Load from Existing Layout..."
+10063 "Aus vorhandenem Layout laden..."
+
+//ORI "Load From Layout"
+10064 "Aus Layout laden"
+
+//ORI "Save To Layout"
+10065 "In Layout speichern"
+
+//ORI "Are you sure you want to save changes to the view layout?"
+10066 "Möchten Sie die Änderungen am Ansichtslayout wirklich speichern?"
+
+//ORI "Are you sure you want to create a new view layout?"
+10067 "Möchten Sie wirklich ein neues Ansichtslayout erstellen?"
+
+//ORI "Left"
+10068 "Links" // panel position
+
+//ORI "Bottom"
+10069 "Unten" // panel position
+
+//ORI "Right"
+10070 "Rechts" // panel position
+
+// View Layouts List 10100
+//ORI "View Layouts"
+10101 "Ansichtslayouts"
+
+//ORI "Unable to Load Layouts"
+10105 "Layouts können nicht geladen werden"
+
+//ORI "Layout"
+10106 "Layout" // default name for new layouts
+
+//ORI "Unable to Delete Layout"
+10108 "Layout kann nicht gelöscht werden"
+
+//ORI "Data Fields"
+10109 "Datenfelder" // column title
+
+// Data Fields Section 10150
+//ORI "Data Fields (Optional)"
+10150 "Datenfelder (optional)"
+
+//ORI "Additional data fields to be extracted from {MESSAGE}."
+10151 "Zusätzliche Datenfelder, die aus {MESSAGE} extrahiert werden."
+
+//ORI "Regex for extracting fields"
+10152 "Regex zum Extrahieren von Feldern"
+
+//ORI "Regular expression to capture additional data fields from a message.\r\nFormat: (?<FIELD_NAME>...)."
+10153 "Regulärer Ausdruck zum Erfassen zusätzlicher Datenfelder aus einer Nachricht.\r\nFormat: (?<FELDNAME>...)."
+
+//ORI "Fields"
+10154 "Felder"
+
+//ORI "Message fields can be used for further filtering and formatting."
+10155 "Nachrichtenfelder können zum weiteren Filtern und Formatieren verwendet werden."
+
+//ORI "Add Field"
+10156 "Feld hinzufügen"
+
+//ORI "Name of the message field, which can later be used as {NAME}."
+10158 "Name des Nachrichtenfelds, das später als {NAME} verwendet werden kann."
+
+//ORI "Field format"
+10159 "Feldformat"
+
+//ORI "The field value can include text and other fields."
+10160 "Der Feldwert kann Text und andere Felder enthalten."
+
+//ORI "Extract data fields from a collection using regular expressions."
+10164 "Datenfelder mit regulären Ausdrücken aus einer Sammlung extrahieren."
+
+//ORI "Add Collection"
+10165 "Sammlung hinzufügen"
+
+//ORI "Collection access name"
+10166 "Zugriffsname der Sammlung"
+
+//ORI "Name used to access the extracted fields (ACCESS_NAME.FIELD_NAME)."
+10167 "Name für den Zugriff auf die extrahierten Felder (ZUGRIFFSNAME.FELDNAME)."
+
+//ORI "Field collection"
+10168 "Feldsammlung"
+
+//ORI "One of the field collections."
+10169 "Eine der Feldsammlungen."
+
+//ORI "Field configuration defines its name, format, and rendering options."
+10170 "Die Feldkonfiguration legt Name, Format und Darstellungsoptionen fest."
+
+//ORI "Keyword selector"
+10171 "Schlüsselwortauswahl"
+
+//ORI "Selects a regular expression from the collection."
+10172 "Wählt einen regulären Ausdruck aus der Sammlung aus."
+
+//ORI "Please enter a non-blank field name."
+10175 "Bitte geben Sie einen nicht leeren Feldnamen ein."
+
+//ORI "Please enter a non-blank access name."
+10176 "Bitte geben Sie einen nicht leeren Zugriffsnamen ein."
+
+//ORI "Please enter a non-blank field collection."
+10177 "Bitte geben Sie eine nicht leere Feldsammlung ein."
+
+//ORI "Please enter a non-blank keyword selector."
+10178 "Bitte geben Sie eine nicht leere Schlüsselwortauswahl ein."
+
+//ORI "Regular Expression"
+10179 "Regulärer Ausdruck"
+
+// View Request Window 10200
+//ORI "New View Tab"
+10200 "Neue Ansichtsregisterkarte"
+
+//ORI "Tab Properties"
+10201 "Registerkarteneigenschaften"
+
+//ORI "Properties of the view tab."
+10202 "Eigenschaften der Ansichtsregisterkarte."
+
+//ORI "Layout based on"
+10203 "Layout basiert auf"
+
+//ORI "Choose one of the available layouts to create this tab. A layout defines the way the collected messages are displayed."
+10204 "Wählen Sie eines der verfügbaren Layouts für diese Registerkarte. Ein Layout legt fest, wie die gesammelten Nachrichten angezeigt werden."
+
+//ORI "Messages per page"
+10205 "Nachrichten pro Seite"
+
+//ORI "Maximum number of messages to show at once (for pagination)."
+10206 "Maximale Anzahl gleichzeitig angezeigter Nachrichten (für die Seitenaufteilung)."
+
+//ORI "Unique name of the viewer, displayed on the tab."
+10208 "Eindeutiger Name der Ansicht, wird auf der Registerkarte angezeigt."
+
+//ORI "Initial settings of a new view tab displaying messages from the storage. You can change these settings later in the properties."
+10220 "Anfangseinstellungen einer neuen Ansichtsregisterkarte, die Nachrichten aus dem Speicher anzeigt. Sie können diese Einstellungen später in den Eigenschaften ändern."
+
+//ORI "Request"
+10221 "Anfrage" // heading
+
+//ORI "View"
+10222 "Ansicht" // default name of a new viewer tab, a number is appended: View 1
+
+//ORI "Modify View Request"
+10225 "Ansichtsanfrage ändern"
+
+//ORI "Unable to Load View Layout"
+10231 "Ansichtslayout kann nicht geladen werden"
+
+//ORI "Unable to Save Tab"
+10243 "Registerkarte kann nicht gespeichert werden"
+
+// Filter 10250
+//ORI "Invalid severity range"
+10250 "Ungültiger Schweregradbereich"
+
+//ORI "all severity levels"
+10251 "alle Schweregrade"
+
+//ORI "Severity level"
+10252 "Schweregrad"
+
+//ORI "Allowed syslog severity levels."
+10253 "Zulässige Syslog-Schweregrade."
+
+//ORI "Filter expression"
+10254 "Filterausdruck"
+
+//ORI "Reset Filter"
+10256 "Filter zurücksetzen"
+
+//ORI "Please correct the syntax of the filter expression."
+10258 "Bitte korrigieren Sie die Syntax des Filterausdrucks."
+
+//ORI "Smallest severity number to include."
+10259 "Kleinste einzuschließende Schweregradnummer."
+
+//ORI "Largest severity number to include."
+10260 "Größte einzuschließende Schweregradnummer."
+
+//ORI "Minimum"
+10261 "Minimum"
+
+//ORI "Maximum"
+10262 "Maximum"
+
+//ORI "In syslog, a smaller number is more important."
+10263 "In Syslog ist eine kleinere Nummer wichtiger."
+
+//ORI "Filter Files"
+10264 "Filterdateien"
+
+// Originator editor 10300
+//ORI "Add..."
+10301 "Hinzufügen..."
+
+//ORI "Syslog Watcher adds new originators when it receives the first message from them.\r\n\r\nInstead of adding them here, configure your devices to send logs to Syslog Watcher.\r\n\r\nDo you still want to add an originator manually?"
+10302 "Syslog Watcher legt neue Absender an, sobald er die erste Nachricht von ihnen empfängt.\r\n\r\nStatt sie hier hinzuzufügen, konfigurieren Sie Ihre Geräte so, dass sie Protokolle an Syslog Watcher senden.\r\n\r\nMöchten Sie trotzdem einen Absender manuell hinzufügen?"
+
+//ORI "<different states>"
+10303 "<unterschiedliche Zustände>"
+
+//ORI "<no groups>"
+10304 "<keine Gruppen>"
+
+//ORI "An originator with the same ID already exists.\r\nPlease specify a different ID."
+10305 "Ein Absender mit derselben ID ist bereits vorhanden.\r\nBitte geben Sie eine andere ID an."
+
+//ORI "Properties of Multiple Originators"
+10306 "Eigenschaften mehrerer Absender"
+
+//ORI "Common properties of several selected syslog originators."
+10307 "Gemeinsame Eigenschaften mehrerer ausgewählter Syslog-Absender."
+
+//ORI "Originator Properties"
+10308 "Absendereigenschaften"
+
+//ORI "General originator settings such as name, description, parser, and assigned groups."
+10309 "Allgemeine Absendereinstellungen wie Name, Beschreibung, Parser und zugewiesene Gruppen."
+
+//ORI "Inactive originators are hidden and do not accept new messages."
+10311 "Inaktive Absender werden ausgeblendet und nehmen keine neuen Nachrichten an."
+
+//ORI "New Syslog Originator"
+10312 "Neuer Syslog-Absender"
+
+//ORI "Edit Syslog Originator"
+10313 "Syslog-Absender bearbeiten"
+
+//ORI "Edit Multiple Syslog Originators"
+10314 "Mehrere Syslog-Absender bearbeiten"
+
+//ORI "ID"
+10315 "ID"
+
+//ORI "Unique originator ID. It cannot be changed once assigned. In most cases, the ID is the originator's IP address."
+10316 "Eindeutige Absender-ID. Sie kann nach der Zuweisung nicht mehr geändert werden. In den meisten Fällen ist die ID die IP-Adresse des Absenders."
+
+//ORI "User-friendly name of the originator."
+10318 "Benutzerfreundlicher Name des Absenders."
+
+//ORI "Parser assigned to the originator."
+10320 "Dem Absender zugewiesener Parser."
+
+//ORI "Groups assigned to the originator."
+10322 "Dem Absender zugewiesene Gruppen."
+
+//ORI "<different parsers>"
+10323 "<unterschiedliche Parser>"
+
+//ORI "Please enter an originator ID."
+10324 "Bitte geben Sie eine Absender-ID ein."
+
+//ORI "Please enter an originator name."
+10325 "Bitte geben Sie einen Absendernamen ein."
+
+//ORI "<unknown parser>"
+10326 "<unbekannter Parser>"
+
+//ORI "Modifying properties of multiple syslog originators at once."
+10327 "Eigenschaften mehrerer Syslog-Absender gleichzeitig ändern."
+
+//ORI "Unable to Add Originator"
+10328 "Absender kann nicht hinzugefügt werden"
+
+//ORI "Unable to Modify Originator"
+10329 "Absender kann nicht geändert werden"
+
+//ORI "Unable to Load Originators"
+10330 "Absender können nicht geladen werden"
+
+//ORI "Please select a parser."
+10331 "Bitte wählen Sie einen Parser aus."
+
+//ORI "Parsers from the installation cannot be assigned to originators directly.\r\n\r\nDo you want to create a parser copy in the syslog storage and assign it?"
+10332 "Parser aus der Installation können Absendern nicht direkt zugewiesen werden.\r\n\r\nMöchten Sie eine Kopie des Parsers im Syslog-Speicher erstellen und diese zuweisen?"
+
+//ORI "You are about to delete the selected originators."
+10333 "Sie sind dabei, die ausgewählten Absender zu löschen."
+
+//ORI "Instead of deleting, consider making the originators inactive. Inactive originators are hidden in views and reports, do not accept new messages, and do not count toward the license limit. Their stored messages and settings are kept, and they reappear if you reactivate the originators.\r\n\r\nDo you still want to delete them?"
+10334 "Erwägen Sie, die Absender zu deaktivieren, statt sie zu löschen. Inaktive Absender werden in Ansichten und Berichten ausgeblendet, nehmen keine neuen Nachrichten an und zählen nicht zum Lizenzlimit. Ihre gespeicherten Nachrichten und Einstellungen bleiben erhalten, und sie erscheinen wieder, wenn Sie die Absender reaktivieren.\r\n\r\nMöchten Sie sie trotzdem löschen?"
+
+//ORI "Unable to Delete Originator"
+10335 "Absender kann nicht gelöscht werden"
+
+// Originators List & Select Originators 10350
+//ORI "Syslog Originators"
+10350 "Syslog-Absender"
+
+//ORI "Select Originators"
+10351 "Absender auswählen"
+
+//ORI "inactive"
+10356 "inaktiv" // originators: "12 + inactive 3"
+
+//ORI "deleted"
+10357 "gelöscht" // originators: "[5 / 12] + inactive 3 + deleted 2"
+
+//ORI "Originator"
+10358 "Absender"
+
+//ORI "There are no registered originators in the syslog storage."
+10359 "Im Syslog-Speicher sind keine Absender registriert."
+
+//ORI "There are no syslog originators that match the specified filters."
+10360 "Keine Syslog-Absender entsprechen den angegebenen Filtern."
+
+//ORI "This originator no longer exists. It will be removed from the filter when you click Apply."
+10361 "Dieser Absender existiert nicht mehr. Er wird aus dem Filter entfernt, wenn Sie auf Anwenden klicken."
+
+//ORI "No originators are selected. The filter will include all originators."
+10362 "Es sind keine Absender ausgewählt. Der Filter schließt alle Absender ein."
+
+// Parser editor 10400
+//ORI "New Syslog Parser"
+10400 "Neuer Syslog-Parser"
+
+//ORI "Edit Syslog Parser"
+10401 "Syslog-Parser bearbeiten"
+
+//ORI "Syslog message example (optional, for testing):"
+10402 "Beispiel einer Syslog-Nachricht (optional, zum Testen):"
+
+//ORI "Parser name"
+10403 "Parsername"
+
+//ORI "Message Sections"
+10405 "Nachrichtenabschnitte"
+
+//ORI "List of sections that extract data from a message in the specified order."
+10406 "Liste der Abschnitte, die in der angegebenen Reihenfolge Daten aus einer Nachricht extrahieren."
+
+//ORI "The section defines how data is extracted from the message body."
+10408 "Der Abschnitt legt fest, wie Daten aus dem Nachrichtentext extrahiert werden."
+
+//ORI "A syslog parser extracts useful data from a syslog message (a line of text). The extracted data fields can be used to filter messages and format the output."
+10409 "Ein Syslog-Parser extrahiert nützliche Daten aus einer Syslog-Nachricht (einer Textzeile). Die extrahierten Datenfelder können zum Filtern von Nachrichten und zum Formatieren der Ausgabe verwendet werden."
+
+//ORI "Enter a message example to test the parser."
+10411 "Geben Sie eine Beispielnachricht ein, um den Parser zu testen."
+
+//ORI "Syslog Parser"
+10412 "Syslog-Parser"
+
+//ORI "Parse results:"
+10413 "Parse-Ergebnisse:"
+
+// Parsers List 10450
+//ORI "Syslog Parsers"
+10450 "Syslog-Parser"
+
+//ORI "Uses"
+10455 "Verwendet" // column: number of originators that use the parser
+
+//ORI "You cannot delete a parser that is used by originators.\r\n\r\nAssign another parser to the originators and try again."
+10456 "Ein Parser, der von Absendern verwendet wird, kann nicht gelöscht werden.\r\n\r\nWeisen Sie den Absendern einen anderen Parser zu und versuchen Sie es erneut."
+
+//ORI "Default"
+10457 "Standard" // column: marks the default parser
+
+//ORI "Syslog parsers break down syslog messages (plain text) into meaningful components (fields)."
+10458 "Syslog-Parser zerlegen Syslog-Nachrichten (Klartext) in sinnvolle Bestandteile (Felder)."
+
+//ORI "If none of the installed parsers fit your use case, you can create a new customized one."
+10459 "Wenn keiner der installierten Parser zu Ihrem Anwendungsfall passt, können Sie einen neuen, angepassten Parser erstellen."
+
+//ORI "To use parsers, assign them to syslog originators. The default parser is automatically assigned to new originators."
+10460 "Um Parser zu verwenden, weisen Sie sie Syslog-Absendern zu. Der Standardparser wird neuen Absendern automatisch zugewiesen."
+
+//ORI "Unable to Load Parsers"
+10461 "Parser können nicht geladen werden"
+
+//ORI "Unable to Delete Parser"
+10462 "Parser kann nicht gelöscht werden"
+
+//ORI "Unable to Set Default Parser"
+10463 "Standardparser kann nicht festgelegt werden"
+
+//ORI "You cannot delete the default parser. Select another default parser and try again."
+10464 "Der Standardparser kann nicht gelöscht werden. Wählen Sie einen anderen Standardparser und versuchen Sie es erneut."
+
+//ORI "Set Default Parser"
+10465 "Als Standardparser festlegen"
+
+//ORI "Unable to Add Parser"
+10466 "Parser kann nicht hinzugefügt werden"
+
+//ORI "Unable to Modify Parser"
+10467 "Parser kann nicht geändert werden"
+
+//ORI "Do you want to open the online user guide?"
+10468 "Möchten Sie das Online-Benutzerhandbuch öffnen?"
+
+// Parser Section Types 10500
+//ORI "Header: IETF/BSD-syslog (RFC5424/RFC3164)"
+10500 "Header: IETF/BSD-Syslog (RFC5424/RFC3164)"
+
+//ORI "Field: Legacy Timestamp (RFC3164)"
+10501 "Feld: Legacy-Zeitstempel (RFC3164)"
+
+//ORI "Body: Common Event Format (CEF)"
+10503 "Body: Common Event Format (CEF)"
+
+//ORI "Body: Name=value pairs"
+10504 "Body: Name=Wert-Paare"
+
+//ORI "Skip: Spaces"
+10505 "Überspringen: Leerzeichen"
+
+//ORI "Section parameter. Refer to the user manual for more details."
+10509 "Abschnittsparameter. Weitere Informationen finden Sie im Benutzerhandbuch."
+
+//ORI "Skip until (delimiter)"
+10510 "Überspringen bis (Trennzeichen)"
+
+//ORI "Field: Extract Until"
+10511 "Feld: Extrahieren bis"
+
+//ORI "Skip: Symbols"
+10512 "Überspringen: Zeichen"
+
+//ORI "Skip: Until Delimiter"
+10513 "Überspringen: Bis Trennzeichen"
+
+//ORI "Symbols to skip"
+10514 "Zu überspringende Zeichen"
+
+//ORI "Extract until (delimiter)"
+10515 "Extrahieren bis (Trennzeichen)"
+
+//ORI "Maximum length"
+10516 "Maximale Länge"
+
+//ORI "Body: Comma-Separated Values (CSV)"
+10517 "Body: Kommagetrennte Werte (CSV)"
+
+//ORI "Header: RFC5424:STRUCTURED-DATA"
+10518 "Header: RFC5424:STRUCTURED-DATA"
+
+// Group editor + Groups List 10550
+//ORI "New Group"
+10550 "Neue Gruppe"
+
+//ORI "Edit Group"
+10551 "Gruppe bearbeiten"
+
+//ORI "Group name"
+10552 "Gruppenname"
+
+//ORI "Originator Groups"
+10554 "Absendergruppen"
+
+//ORI "Unable to Load Groups"
+10556 "Gruppen können nicht geladen werden"
+
+//ORI "Originators are organized into groups for easier management and filtering. An originator can belong to more than one group."
+10557 "Absender werden zur einfacheren Verwaltung und Filterung in Gruppen organisiert. Ein Absender kann mehreren Gruppen angehören."
+
+//ORI "Select Originators..."
+10558 "Absender auswählen..."
+
+//ORI "Originators included in this group."
+10559 "In dieser Gruppe enthaltene Absender."
+
+//ORI "Group Properties"
+10560 "Gruppeneigenschaften"
+
+//ORI "Unable to Add Group"
+10563 "Gruppe kann nicht hinzugefügt werden"
+
+//ORI "Unable to Modify Group"
+10564 "Gruppe kann nicht geändert werden"
+
+//ORI "Unable to Delete Group"
+10565 "Gruppe kann nicht gelöscht werden"
+
+// ViewPreset editor + ViewPresets List 10600
+//ORI "View/Search Presets"
+10600 "Ansichts-/Suchvoreinstellungen"
+
+//ORI "Preset"
+10601 "Voreinstellung"
+
+//ORI "Edit View/Search Preset"
+10602 "Ansichts-/Suchvoreinstellung bearbeiten"
+
+//ORI "New View/Search Preset"
+10603 "Neue Ansichts-/Suchvoreinstellung"
+
+//ORI "Preset Properties"
+10604 "Voreinstellungseigenschaften"
+
+//ORI "View Tab Defaults"
+10605 "Standardwerte für Ansichtsregisterkarten"
+
+//ORI "Default settings that will be used to create a new message view tab."
+10606 "Standardeinstellungen, mit denen eine neue Nachrichtenansicht erstellt wird."
+
+//ORI "Message sorting"
+10607 "Nachrichtensortierung"
+
+//ORI "Default message sorting in the grid."
+10608 "Standardsortierung der Nachrichten in der Tabelle."
+
+//ORI "Time Range"
+10609 "Zeitraum"
+
+//ORI "Unable to Load Presets"
+10612 "Voreinstellungen können nicht geladen werden"
+
+//ORI "Unable to Delete Preset"
+10613 "Voreinstellung kann nicht gelöscht werden"
+
+//ORI "Unable to Add Preset"
+10614 "Voreinstellung kann nicht hinzugefügt werden"
+
+//ORI "Unable to Edit Preset"
+10615 "Voreinstellung kann nicht bearbeitet werden"
+
+//ORI "View/Search Preset"
+10616 "Ansichts-/Suchvoreinstellung"
+
+//ORI "View layouts from the installation cannot be assigned to presets directly.\r\n\r\nDo you want to create a layout copy in the storage and use it?"
+10617 "Ansichtslayouts aus der Installation können Voreinstellungen nicht direkt zugewiesen werden.\r\n\r\nMöchten Sie eine Kopie des Layouts im Speicher erstellen und diese verwenden?"
+
+// User editor + Users List 10700
+//ORI "New User"
+10700 "Neuer Benutzer"
+
+//ORI "Edit User"
+10701 "Benutzer bearbeiten"
+
+//ORI "Remote Access Users"
+10702 "Fernzugriffsbenutzer"
+
+//ORI "Full name"
+10704 "Vollständiger Name"
+
+//ORI "Role"
+10705 "Rolle"
+
+//ORI "User property set"
+10706 "Benutzereigenschaften"
+
+//ORI "User Properties"
+10707 "Benutzereigenschaften"
+
+//ORI "User login is required for the connection."
+10709 "Der Benutzername ist für die Verbindung erforderlich."
+
+//ORI "User's full name."
+10710 "Vollständiger Name des Benutzers."
+
+//ORI "Role of this user."
+10711 "Rolle dieses Benutzers."
+
+//ORI "Unable to Add User"
+10712 "Benutzer kann nicht hinzugefügt werden"
+
+//ORI "Unable to Edit User"
+10713 "Benutzer kann nicht bearbeitet werden"
+
+//ORI "Please enter a username."
+10714 "Bitte geben Sie einen Benutzernamen ein."
+
+//ORI "User password required for connection."
+10716 "Das Benutzerkennwort ist für die Verbindung erforderlich."
+
+//ORI "Admin"
+10717 "Admin" // user role; also in the window caption "(As Admin)"
+
+//ORI "Operator"
+10718 "Operator" // user role
+
+//ORI "Observer"
+10719 "Beobachter" // user role
+
+//ORI "Please enter a full name."
+10720 "Bitte geben Sie einen vollständigen Namen ein."
+
+//ORI "Please enter a password."
+10721 "Bitte geben Sie ein Kennwort ein."
+
+//ORI "Unable to Load Users"
+10722 "Benutzer können nicht geladen werden"
+
+//ORI "User"
+10723 "Benutzer" // user editor title (read-only mode); also "User: <name>" in the delete confirmation
+
+//ORI "Unable to Delete User"
+10724 "Benutzer kann nicht gelöscht werden"
+
+//ORI "Self Only"
+10725 "Nur eigenes Konto" // Users window caption when you can see only your own account: "Remote Access Users: Self Only"
+
+//ORI "Self"
+10726 "Eigenes Konto" // user editor caption for your own account: "Edit User: Self"
+
+//ORI "Administrator"
+10727 "Administrator" // default full name of the first user
+
+// Time Range 10750
+//ORI "TODAY"
+10750 "HEUTE" // time range type; also shown as the Viewer tab label
+
+//ORI "YESTERDAY"
+10751 "GESTERN" // time range type; also shown as the Viewer tab label
+
+//ORI "RECENT"
+10752 "KÜRZLICH" // time range type; also shown as the Viewer tab label
+
+//ORI "ENTIRE STORAGE"
+10753 "GESAMTER SPEICHER" // time range type; also shown as the Viewer tab label
+
+//ORI "CUSTOM"
+10754 "BENUTZERDEFINIERT" // time range type; also shown as the Viewer tab label
+
+//ORI "Range"
+10755 "Bereich" // time range type selector (Today, Yesterday, …)
+
+//ORI "Interval of messages to request from the storage."
+10756 "Zeitintervall der Nachrichten, die aus dem Speicher angefordert werden."
+
+//ORI "From"
+10757 "Von" // start date/time of a custom time range
+
+//ORI "Until"
+10758 "Bis"
+
+//ORI "Last"
+10759 "Letzte"
+
+//ORI "Type of time range."
+10760 "Art des Zeitraums."
+
+//ORI "Date and time of the range start."
+10761 "Datum und Uhrzeit des Zeitraumbeginns."
+
+//ORI "Date and time of the range end."
+10762 "Datum und Uhrzeit des Zeitraumendes."
+
+//ORI "Specified time range through the current time."
+10763 "Angegebener Zeitraum bis zur aktuellen Zeit."
+
+//ORI "Shift Range into Past"
+10764 "Zeitraum in die Vergangenheit verschieben"
+
+//ORI "Shift Range into Future"
+10765 "Zeitraum in die Zukunft verschieben"
+
+//ORI "15 Minutes"
+10766 "15 Minuten"
+
+//ORI "30 Minutes"
+10767 "30 Minuten"
+
+//ORI "2 Hours"
+10768 "2 Stunden"
+
+//ORI "6 Hours"
+10769 "6 Stunden"
+
+//ORI "12 Hours"
+10770 "12 Stunden"
+
+//ORI "1 Day"
+10771 "1 Tag"
+
+//ORI "2 Days"
+10772 "2 Tage"
+
+//ORI "7 Days"
+10773 "7 Tage"
+
+//ORI "30 Days"
+10774 "30 Tage"
+
+//ORI "Previous page: shift the range back by its length."
+10775 "Vorherige Seite: Zeitraum um seine Länge zurückschieben."
+
+//ORI "Next page: shift the range forward by its length."
+10776 "Nächste Seite: Zeitraum um seine Länge vorschieben."
+
+//ORI "ZERO-LENGTH TIME RANGE"
+10777 "ZEITRAUM OHNE LÄNGE" // Non-Existent Interval
+
+// Severity and Facility Names Dialog 10850
+//ORI "Severity and Facility Names"
+10850 "Schweregrad- und Facility-Namen"
+
+//ORI "Severity Level Names"
+10851 "Namen der Schweregrade"
+
+//ORI "Sets custom severity level names."
+10852 "Legt benutzerdefinierte Namen für die Schweregrade fest."
+
+//ORI "Facility Names"
+10853 "Facility-Namen"
+
+//ORI "Sets custom syslog facility names."
+10854 "Legt benutzerdefinierte Namen für die Syslog-Facilitys fest."
+
+//ORI "Rename this severity level."
+10855 "Diesen Schweregrad umbenennen."
+
+//ORI "Rename this syslog facility."
+10856 "Diese Syslog-Facility umbenennen."
+
+//ORI "Customize facility and severity level names to adapt Syslog Watcher to your use case."
+10857 "Passen Sie die Namen der Facilitys und Schweregrade an Ihren Anwendungsfall an."
+
+//ORI "Please enter a non-blank severity level name."
+10858 "Bitte geben Sie einen nicht leeren Schweregradnamen ein."
+
+//ORI "Please enter a non-blank facility name."
+10859 "Bitte geben Sie einen nicht leeren Facility-Namen ein."
+
+//ORI "Unable to Configure Storage"
+10861 "Speicher kann nicht konfiguriert werden"
+
+// Open Storage 10900
+//ORI "Select Storage Folder"
+10900 "Speicherordner auswählen"
+
+//ORI "Open Syslog Storage"
+10902 "Syslog-Speicher öffnen"
+
+//ORI "Failed to open the syslog storage."
+10903 "Der Syslog-Speicher konnte nicht geöffnet werden."
+
+//ORI "Syslog storage is open for viewing only (read-only)."
+10904 "Der Syslog-Speicher ist nur zum Anzeigen geöffnet (schreibgeschützt)."
+
+//ORI "Restart Syslog Watcher Manager as Administrator."
+10905 "Starten Sie Syslog Watcher Manager als Administrator neu."
+
+//ORI "Make sure storage files are not marked as read-only."
+10906 "Stellen Sie sicher, dass die Speicherdateien nicht schreibgeschützt sind."
+
+// Progress Window 10950
+//ORI "Current message"
+10951 "Aktuelle Nachricht"
+
+//ORI "Stop"
+10952 "Stopp" // button
+
+// Server Toolbar 11000
+//ORI "Local"
+11001 "Lokal" // toolbar button: connect to the server on this computer
+
+//ORI "Connect Manager to the Syslog Watcher server installed on this system."
+11002 "Manager mit dem auf diesem System installierten Syslog Watcher-Server verbinden."
+
+//ORI "Remote"
+11003 "Remote" // toolbar button: connect to a remote server
+
+//ORI "Connect Syslog Watcher Manager to a remote Syslog Watcher server."
+11004 "Syslog Watcher Manager mit einem entfernten Syslog Watcher-Server verbinden."
+
+//ORI "Disconnect"
+11005 "Trennen"
+
+//ORI "Disconnect Syslog Watcher Manager from the Syslog Watcher server."
+11006 "Verbindung von Syslog Watcher Manager zum Syslog Watcher-Server trennen."
+
+//ORI "Collector"
+11007 "Collector"
+
+//ORI "Syslog Collector configuration and diagnostic records."
+11008 "Konfiguration und Diagnoseeinträge des Syslog Collectors."
+
+//ORI "Features that process collected syslog messages."
+11012 "Funktionen, die gesammelte Syslog-Nachrichten verarbeiten."
+
+//ORI "Start Syslog Collector"
+11013 "Syslog Collector starten"
+
+//ORI "Stop Syslog Collector"
+11014 "Syslog Collector stoppen"
+
+//ORI "Startup Type"
+11015 "Starttyp"
+
+//ORI "Failed to start Syslog Watcher Collector."
+11016 "Syslog Watcher Collector konnte nicht gestartet werden."
+
+//ORI "Failed to stop Syslog Watcher Collector."
+11017 "Syslog Watcher Collector konnte nicht gestoppt werden."
+
+//ORI "Syslog Watcher server: configuration and diagnostic records."
+11019 "Syslog Watcher-Server: Konfiguration und Diagnoseeinträge."
+
+//ORI "Diagnostic Records (Collector)"
+11022 "Diagnoseeinträge (Collector)"
+
+//ORI "Diagnostic records generated by the Syslog Collector."
+11023 "Vom Syslog Collector erzeugte Diagnoseeinträge."
+
+//ORI "Server Configuration..."
+11024 "Serverkonfiguration..."
+
+//ORI "Syslog Watcher server configuration."
+11025 "Konfiguration des Syslog Watcher-Servers."
+
+//ORI "Diagnostic Records (Server)"
+11026 "Diagnoseeinträge (Server)"
+
+//ORI "Diagnostic records generated by the Syslog Watcher server."
+11027 "Vom Syslog Watcher-Server erzeugte Diagnoseeinträge."
+
+//ORI "Remote Access Users..."
+11028 "Fernzugriffsbenutzer..."
+
+//ORI "User accounts and user groups for remote server access."
+11029 "Benutzerkonten und Benutzergruppen für den Fernzugriff auf den Server."
+
+//ORI "Retention limits of the syslog storage."
+11030 "Aufbewahrungslimits des Syslog-Speichers."
+
+//ORI "Local Server"
+11031 "Lokaler Server"
+
+//ORI "Start Syslog Server"
+11032 "Syslog-Server starten"
+
+//ORI "Are you sure you want to disconnect from the server?"
+11033 "Möchten Sie die Verbindung zum Server wirklich trennen?"
+
+//ORI "Are you sure you want to close the syslog storage?"
+11034 "Möchten Sie den Syslog-Speicher wirklich schließen?"
+
+//ORI "Product license information"
+11036 "Informationen zur Produktlizenz"
+
+//ORI "Failed to start Syslog Watcher Server."
+11037 "Syslog Watcher Server konnte nicht gestartet werden."
+
+//ORI "Are you sure you want to stop collecting syslog messages?"
+11038 "Möchten Sie das Sammeln von Syslog-Nachrichten wirklich beenden?"
+
+//ORI "Syslog Collector Configuration..."
+11039 "Syslog Collector-Konfiguration..."
+
+//ORI "Syslog Collector configuration."
+11040 "Konfiguration des Syslog Collectors."
+
+//ORI "Automatic"
+11043 "Automatisch" // service startup type
+
+//ORI "Manual"
+11044 "Manuell" // service startup type
+
+//ORI "Switch to Automatic"
+11045 "Auf Automatisch umstellen"
+
+//ORI "Switch to Manual"
+11046 "Auf Manuell umstellen"
+
+//ORI "Failed to Switch Startup Type"
+11047 "Starttyp konnte nicht geändert werden"
+
+//ORI "Secret Strings..."
+11048 "Geheime Zeichenfolgen..."
+
+//ORI "Secret strings that the server uses in place of passwords."
+11049 "Geheime Zeichenfolgen, die der Server anstelle von Kennwörtern verwendet."
+
+//ORI "Your remote account is not allowed to start or stop the Syslog Collector or change its startup type."
+11073 "Ihr Remote-Konto darf den Syslog Collector nicht starten oder stoppen und seinen Starttyp nicht ändern."
+
+//ORI "Ask a user in the Administrators group to perform this action."
+11074 "Bitten Sie einen Benutzer aus der Gruppe Administratoren, diese Aktion auszuführen."
+
+//ORI "Service program:"
+11075 "Dienstprogramm:"
+
+//ORI "The Syslog Watcher Server service is disabled. Set its startup type to Automatic and start it?"
+11077 "Der Dienst Syslog Watcher Server ist deaktiviert. Starttyp auf Automatisch setzen und den Dienst starten?"
+
+// Connect Window 11100
+//ORI "Remote Syslog Watcher Server"
+11100 "Entfernter Syslog Watcher-Server"
+
+//ORI "Connect"
+11101 "Verbinden"
+
+//ORI "Connection settings for a remote Syslog Watcher server."
+11103 "Verbindungseinstellungen für einen entfernten Syslog Watcher-Server."
+
+//ORI "Server IP address or hostname."
+11105 "IP-Adresse oder Hostname des Servers."
+
+//ORI "Port number for the connection."
+11107 "Portnummer für die Verbindung."
+
+//ORI "Authentication settings for the remote Syslog Watcher server."
+11109 "Authentifizierungseinstellungen für den entfernten Syslog Watcher-Server."
+
+//ORI "Username for the connection."
+11111 "Benutzername für die Verbindung."
+
+//ORI "Password for the connection."
+11113 "Kennwort für die Verbindung."
+
+//ORI "Please enter the server IP address or hostname."
+11114 "Bitte geben Sie die IP-Adresse oder den Hostnamen des Servers ein."
+
+//ORI "Please enter the server port."
+11115 "Bitte geben Sie den Serverport ein."
+
+//ORI "Please enter the username and password for authentication."
+11116 "Bitte geben Sie Benutzername und Kennwort für die Authentifizierung ein."
+
+//ORI "Could not connect to the server:"
+11117 "Verbindung zum Server nicht möglich:"
+
+//ORI "Syslog Watcher server has disconnected."
+11118 "Der Syslog Watcher-Server hat die Verbindung getrennt."
+
+//ORI "Options for connecting to a remote server."
+11119 "Optionen für die Verbindung zu einem entfernten Server."
+
+//ORI "Connection protocol type."
+11121 "Typ des Verbindungsprotokolls."
+
+//ORI "Plain (unencrypted)"
+11122 "Unverschlüsselt"
+
+//ORI "Secure (encrypted)"
+11123 "Sicher (verschlüsselt)"
+
+//ORI "Remember password"
+11124 "Kennwort merken"
+
+//ORI "Store the password to simplify connecting to the server."
+11125 "Kennwort speichern, um die Verbindung zum Server zu vereinfachen."
+
+//ORI "As"
+11130 "Als" // window caption: server (As <role>), e.g. (As Administrator)
+
+// General Toolbar 11150
+//ORI "General"
+11150 "Allgemein"
+
+//ORI "Manager"
+11151 "Manager"
+
+//ORI "Show information about Syslog Watcher Manager."
+11152 "Informationen über Syslog Watcher Manager anzeigen."
+
+//ORI "Updates"
+11153 "Updates"
+
+//ORI "Show available product updates"
+11154 "Verfügbare Produktupdates anzeigen"
+
+//ORI "Support"
+11155 "Support"
+
+//ORI "Get technical support"
+11156 "Technischen Support erhalten"
+
+// Storage Toolbar 11200
+//ORI "Originator groups make it easier to create filters."
+11202 "Absendergruppen erleichtern das Erstellen von Filtern."
+
+//ORI "Parsers"
+11203 "Parser"
+
+//ORI "Parsers extract information and data structures from syslog messages."
+11204 "Parser extrahieren Informationen und Datenstrukturen aus Syslog-Nachrichten."
+
+//ORI "List of syslog originators and their properties."
+11206 "Liste der Syslog-Absender und ihrer Eigenschaften."
+
+//ORI "Open Storage Folder..."
+11207 "Speicherordner öffnen..."
+
+//ORI "Open syslog storage in a local folder."
+11208 "Syslog-Speicher in einem lokalen Ordner öffnen."
+
+//ORI "Close Storage"
+11209 "Speicher schließen"
+
+//ORI "Close the open syslog storage."
+11210 "Den geöffneten Syslog-Speicher schließen."
+
+//ORI "More"
+11211 "Mehr" // toolbar button that opens a menu with more items
+
+//ORI "Additional data and structures for message processing and filtering."
+11212 "Zusätzliche Daten und Strukturen für die Verarbeitung und Filterung von Nachrichten."
+
+//ORI "Severity and Facility Names..."
+11213 "Schweregrad- und Facility-Namen..."
+
+//ORI "Customize severity and facility names."
+11214 "Schweregrad- und Facility-Namen anpassen."
+
+//ORI "Filter Lists..."
+11217 "Filterlisten..."
+
+//ORI "Lists of field values that simplify filtering."
+11218 "Listen von Feldwerten, die das Filtern vereinfachen."
+
+//ORI "Field Collections..."
+11219 "Feldsammlungen..."
+
+//ORI "Field collections to create complex data extractors and filters."
+11220 "Feldsammlungen zum Erstellen komplexer Datenextraktoren und Filter."
+
+//ORI "Field Dictionaries..."
+11221 "Feldwörterbücher..."
+
+//ORI "Field dictionaries to create complex data extractors and filters."
+11222 "Feldwörterbücher zum Erstellen komplexer Datenextraktoren und Filter."
+
+// Messages Toolbar 11250
+//ORI "View/Search"
+11251 "Anzeigen/Suchen"
+
+//ORI "Show collected messages that meet the specified criteria."
+11252 "Gesammelte Nachrichten anzeigen, die den angegebenen Kriterien entsprechen."
+
+//ORI "Layouts"
+11253 "Layouts"
+
+//ORI "The view layout displays collected messages in a table."
+11254 "Das Ansichtslayout zeigt gesammelte Nachrichten in einer Tabelle an."
+
+//ORI "Reports"
+11255 "Berichte"
+
+//ORI "Manage report templates and generate reports."
+11256 "Berichtsvorlagen verwalten und Berichte erzeugen."
+
+//ORI "Manage export presets and export collected data."
+11258 "Exportvoreinstellungen verwalten und gesammelte Daten exportieren."
+
+//ORI "View/Search Messages..."
+11259 "Nachrichten anzeigen/suchen..."
+
+//ORI "Open a new tab to view collected messages"
+11260 "Neue Registerkarte zum Anzeigen gesammelter Nachrichten öffnen"
+
+//ORI "Manage View/Search Presets..."
+11261 "Ansichts-/Suchvoreinstellungen verwalten..."
+
+//ORI "Manage presets for new View/Search tabs."
+11262 "Voreinstellungen für neue Anzeigen/Suchen-Registerkarten verwalten."
+
+// Server Configuration: Remote Access 11300
+//ORI "Allows remote Syslog Watcher Manager connections to modify configuration and view messages."
+11301 "Erlaubt entfernten Syslog Watcher Manager-Verbindungen, die Konfiguration zu ändern und Nachrichten anzuzeigen."
+
+//ORI "Enables an encrypted connection between the Syslog Watcher server and Syslog Watcher Manager."
+11304 "Aktiviert eine verschlüsselte Verbindung zwischen dem Syslog Watcher-Server und Syslog Watcher Manager."
+
+//ORI "Port used for remote connections."
+11306 "Port für Remote-Verbindungen."
+
+//ORI "Allow remote access"
+11309 "Fernzugriff erlauben"
+
+//ORI "Enables remote connections to the Syslog Watcher server."
+11310 "Erlaubt Remote-Verbindungen zum Syslog Watcher-Server."
+
+//ORI "Manage Remote Access Users..."
+11311 "Fernzugriffsbenutzer verwalten..."
+
+//ORI "Please provide a certificate and key for a secure connection."
+11312 "Bitte geben Sie ein Zertifikat und einen Schlüssel für eine sichere Verbindung an."
+
+//ORI "Certificate for Encrypted Connection"
+11313 "Zertifikat für verschlüsselte Verbindung"
+
+//ORI "When you save the settings, the remote_access certificate will be selected. If it does not exist yet, a certificate and private key will be generated automatically. You can replace them with your own later if necessary."
+11314 "Beim Speichern der Einstellungen wird das Zertifikat remote_access ausgewählt. Falls es noch nicht existiert, werden Zertifikat und privater Schlüssel automatisch erzeugt. Bei Bedarf können Sie sie später durch eigene ersetzen."
+
+//ORI "Manage Email Accounts..."
+11315 "E-Mail-Konten verwalten..."
+
+// Server Configuration: Email Accounts 11350
+//ORI "Email accounts used to send email messages."
+11350 "E-Mail-Konten zum Senden von E-Mail-Nachrichten."
+
+//ORI "Email Accounts"
+11351 "E-Mail-Konten"
+
+//ORI "Connection type"
+11352 "Verbindungstyp"
+
+//ORI "Type of SMTP connection."
+11353 "Typ der SMTP-Verbindung."
+
+//ORI "User-friendly name of the SMTP profile."
+11354 "Benutzerfreundlicher Name des SMTP-Profils."
+
+//ORI "SMTP server IP address or hostname, e.g. 192.168.0.1 or smtp.example.com."
+11356 "IP-Adresse oder Hostname des SMTP-Servers, z. B. 192.168.0.1 oder smtp.example.com."
+
+//ORI "Commonly used SMTP server port numbers are 587 for STARTTLS and 465 for SMTPS."
+11358 "Übliche SMTP-Serverports sind 587 für STARTTLS und 465 für SMTPS."
+
+//ORI "SMTP username for authentication. This is usually an email address or account name."
+11360 "SMTP-Benutzername für die Authentifizierung. Meist eine E-Mail-Adresse oder ein Kontoname."
+
+//ORI "Password for SMTP authentication. Use a secret string (%EXAMPLE%) instead of a real password here."
+11362 "Kennwort für die SMTP-Authentifizierung. Verwenden Sie hier eine geheime Zeichenfolge (%EXAMPLE%) statt eines echten Kennworts."
+
+//ORI "'From' email address"
+11363 "Absenderadresse ('From')"
+
+//ORI "The address from which alert emails will be sent. Make sure your SMTP server accepts this address as a valid 'From' address."
+11364 "Adresse, von der Alarm-E-Mails gesendet werden. Stellen Sie sicher, dass Ihr SMTP-Server diese Adresse als gültige Absenderadresse akzeptiert."
+
+//ORI "Profile"
+11368 "Profil" // name of newly created SMTP profiles
+
+//ORI "Add Email Account"
+11369 "E-Mail-Konto hinzufügen"
+
+//ORI "Email Account"
+11370 "E-Mail-Konto"
+
+//ORI "Test Account"
+11371 "Konto testen"
+
+//ORI "Please enter a name for the email account."
+11375 "Bitte geben Sie einen Namen für das E-Mail-Konto ein."
+
+//ORI "Please enter an email server name or address."
+11376 "Bitte geben Sie den Namen oder die Adresse des E-Mail-Servers ein."
+
+//ORI "Please enter a valid SMTP port: 1-65535."
+11377 "Bitte geben Sie einen gültigen SMTP-Port ein: 1-65535."
+
+//ORI "Please enter a 'From' email address."
+11380 "Bitte geben Sie eine Absenderadresse ('From') ein."
+
+//ORI "Test Email Account"
+11381 "E-Mail-Konto testen"
+
+//ORI "Send a test email to:"
+11382 "Test-E-Mail senden an:"
+
+//ORI "Send Email"
+11383 "E-Mail senden"
+
+//ORI "Please enter the destination email address."
+11384 "Bitte geben Sie die Ziel-E-Mail-Adresse ein."
+
+//ORI "SUCCESS"
+11385 "ERFOLGREICH"
+
+//ORI "FAILED"
+11386 "FEHLGESCHLAGEN"
+
+//ORI "Sending test email..."
+11387 "Test-E-Mail wird gesendet..."
+
+//ORI "SMTP (non-secure)"
+11388 "SMTP (unverschlüsselt)"
+
+// Filter Lists, Field Dictionaries + Field Collections Windows 11400
+//ORI "Field Dictionaries"
+11400 "Feldwörterbücher"
+
+//ORI "Dictionary name"
+11401 "Wörterbuchname"
+
+//ORI "Keywords"
+11402 "Schlüsselwörter"
+
+//ORI "New Field Dictionary"
+11403 "Neues Feldwörterbuch"
+
+//ORI "Edit Field Dictionary"
+11404 "Feldwörterbuch bearbeiten"
+
+//ORI "[DEFAULT]"
+11405 "[STANDARD]" // keyword list entry shown for the empty (default) keyword
+
+//ORI "Dict"
+11406 "Dict" // default name of a new field dictionary, a number is appended: Dict1
+
+//ORI "Include a description, purpose, version, etc. here."
+11407 "Tragen Sie hier Beschreibung, Zweck, Version usw. ein."
+
+//ORI "#KEYWORD\r\nReplacement text.\r\n\r\n#another keyword\r\n\r\nEmpty lines can be added for readability.\r\n\r\n\r\n#\r\nBlank keyword for default text replacement."
+11408 "#SCHLÜSSELWORT\r\nErsetzungstext.\r\n\r\n#weiteres Schlüsselwort\r\n\r\nLeerzeilen können zur besseren Lesbarkeit eingefügt werden.\r\n\r\n\r\n#\r\nLeeres Schlüsselwort für den Standard-Ersetzungstext."
+
+//ORI "Collection name"
+11410 "Sammlungsname"
+
+//ORI "Edit Field Collection"
+11411 "Feldsammlung bearbeiten"
+
+//ORI "Index"
+11412 "Index"
+
+//ORI "List of #keywords, each followed by replacement text:"
+11413 "Liste von #Schlüsselwörtern, jeweils gefolgt vom Ersetzungstext:"
+
+//ORI "List of #keywords, each followed by a field extractor expression:"
+11415 "Liste von #Schlüsselwörtern, jeweils gefolgt von einem Feldextraktor-Ausdruck:"
+
+//ORI "Coll"
+11416 "Coll" // default name of a new field collection, a number is appended: Coll1
+
+//ORI "New Field Collection"
+11417 "Neue Feldsammlung"
+
+//ORI "#EXAMPLE-MSG1\r\nip=(?<IP>\\S+)\r\n\r\n#EXAMPLE-MSG2\r\nIP:(?<IP>\\S+)"
+11418 "#BEISPIEL-MSG1\r\nip=(?<IP>\\S+)\r\n\r\n#BEISPIEL-MSG2\r\nIP:(?<IP>\\S+)"
+
+//ORI "Filter Lists"
+11419 "Filterlisten"
+
+//ORI "Filter list name"
+11420 "Name der Filterliste"
+
+//ORI "Items"
+11421 "Einträge"
+
+//ORI "List"
+11422 "Liste" // default name of a new filter list, a number is appended: List1
+
+//ORI "New Filter List"
+11423 "Neue Filterliste"
+
+//ORI "Edit Filter List"
+11424 "Filterliste bearbeiten"
+
+//ORI "Filter list items, one per line:"
+11425 "Einträge der Filterliste, einer pro Zeile:"
+
+//ORI "Field Dictionary"
+11426 "Feldwörterbuch"
+
+//ORI "Field Collection"
+11427 "Feldsammlung"
+
+//ORI "Filter List"
+11428 "Filterliste"
+
+//ORI "Type:"
+11429 "Typ:"
+
+//ORI "RegExp Extractors"
+11430 "RegExp-Extraktoren"
+
+//ORI "CSV Field Names"
+11431 "CSV-Feldnamen"
+
+//ORI "List of #keywords, each followed by comma-separated field names:"
+11432 "Liste von #Schlüsselwörtern, jeweils gefolgt von kommagetrennten Feldnamen:"
+
+//ORI "Sort Alphabetically"
+11433 "Alphabetisch sortieren"
+
+//ORI "Unable to Load"
+11436 "Laden nicht möglich"
+
+//ORI "Unable to Modify"
+11437 "Ändern nicht möglich"
+
+//ORI "Unable to Delete"
+11438 "Löschen nicht möglich"
+
+//ORI "Unable to Export"
+11439 "Export nicht möglich"
+
+//ORI "Unable to Import"
+11440 "Import nicht möglich"
+
+//ORI "Field Dictionary File"
+11441 "Feldwörterbuchdatei"
+
+//ORI "Field Collection File"
+11442 "Feldsammlungsdatei"
+
+//ORI "Filter List File"
+11443 "Filterlistendatei"
+
+// Server Configuration: Reports 11450
+//ORI "Syslog Reports"
+11450 "Syslog-Berichte" // settings page title and category caption
+
+//ORI "Scheduled report generation."
+11451 "Geplante Berichterzeugung."
+
+//ORI "Report generation settings."
+11453 "Einstellungen für die Berichterzeugung."
+
+//ORI "Generate on a schedule"
+11454 "Nach Zeitplan erzeugen"
+
+//ORI "Generate reports on a schedule."
+11455 "Berichte nach Zeitplan erzeugen."
+
+//ORI "Concurrent tasks"
+11456 "Gleichzeitige Aufgaben"
+
+//ORI "Maximum number of reports that can be generated simultaneously."
+11457 "Maximale Anzahl gleichzeitig erzeugter Berichte."
+
+//ORI "Include folders"
+11458 "Einzuschließende Ordner"
+
+//ORI "(Optional) Folders for files to be included in reports. One folder path per line."
+11459 "(Optional) Ordner mit Dateien, die in Berichte eingeschlossen werden. Ein Ordnerpfad pro Zeile."
+
+//ORI "Output folder"
+11460 "Ausgabeordner"
+
+//ORI "Folder for report files."
+11461 "Ordner für Berichtsdateien."
+
+//ORI "Keep reports (days)"
+11462 "Berichte aufbewahren (Tage)"
+
+//ORI "Number of days to keep report records and files."
+11463 "Anzahl der Tage, die Berichtseinträge und -dateien aufbewahrt werden."
+
+//ORI "Please specify the output folder."
+11464 "Bitte geben Sie den Ausgabeordner an."
+
+// Secrets Windows 11500
+//ORI "Secret Strings"
+11500 "Geheime Zeichenfolgen"
+
+//ORI "Unable to Enumerate Secrets"
+11501 "Geheime Zeichenfolgen können nicht aufgelistet werden"
+
+//ORI "Secret String"
+11502 "Geheime Zeichenfolge"
+
+//ORI "Secret string"
+11503 "Geheime Zeichenfolge"
+
+//ORI "Unable to Add Secret String"
+11504 "Geheime Zeichenfolge kann nicht hinzugefügt werden"
+
+//ORI "Unable to Delete Secret String"
+11505 "Geheime Zeichenfolge kann nicht gelöscht werden"
+
+//ORI "Please enter a secret name."
+11506 "Bitte geben Sie einen Namen für die geheime Zeichenfolge ein."
+
+//ORI "Please enter a secret string."
+11507 "Bitte geben Sie eine geheime Zeichenfolge ein."
+
+//ORI "Secret strings are used to hide passwords and other private information in the server configuration."
+11508 "Geheime Zeichenfolgen verbergen Kennwörter und andere vertrauliche Informationen in der Serverkonfiguration."
+
+//ORI "Name, description, and payload of the secret string."
+11509 "Name, Beschreibung und Inhalt der geheimen Zeichenfolge."
+
+//ORI "Name of the secret string. A secret name enclosed in percent signs (%EXAMPLE%) can be used in place of a password."
+11510 "Name der geheimen Zeichenfolge. Ein in Prozentzeichen eingeschlossener Name (%EXAMPLE%) kann anstelle eines Kennworts verwendet werden."
+
+//ORI "Description of the secret string."
+11511 "Beschreibung der geheimen Zeichenfolge."
+
+//ORI "Value of the secret string. You enter it once, and it cannot be changed."
+11512 "Wert der geheimen Zeichenfolge. Er wird einmal eingegeben und kann nicht geändert werden."
+
+//ORI "Secret confirmation"
+11513 "Bestätigung"
+
+//ORI "The secret string and confirmation do not match."
+11514 "Die geheime Zeichenfolge und die Bestätigung stimmen nicht überein."
+
+//ORI "Secret string confirmation."
+11515 "Bestätigung der geheimen Zeichenfolge."
+
+//ORI "The name cannot contain a percent sign (%). Please enter a different name."
+11516 "Der Name darf kein Prozentzeichen (%) enthalten. Bitte geben Sie einen anderen Namen ein."
+
+//ORI "The name is too long. Please use at most 128 UTF-8 bytes."
+11517 "Der Name ist zu lang. Bitte verwenden Sie höchstens 128 UTF-8-Bytes."
+
+//ORI "The description is too long. Please use at most 1024 UTF-8 bytes."
+11518 "Die Beschreibung ist zu lang. Bitte verwenden Sie höchstens 1024 UTF-8-Bytes."
+
+//ORI "Properties"
+11519 "Eigenschaften"
+
+// Server Configuration: HTTP Endpoints 11550
+//ORI "Integrate Syslog Watcher with web services."
+11550 "Syslog Watcher mit Webdiensten integrieren."
+
+//ORI "HTTP Endpoints"
+11551 "HTTP-Endpunkte"
+
+//ORI "Add HTTP Endpoint"
+11552 "HTTP-Endpunkt hinzufügen"
+
+//ORI "EP"
+11553 "EP" // default name of a new HTTP endpoint (EP = endpoint), a number is appended: EP 1
+
+//ORI "Send Test Request"
+11554 "Testanfrage senden"
+
+//ORI "User-friendly name for the HTTP endpoint."
+11555 "Benutzerfreundlicher Name für den HTTP-Endpunkt."
+
+//ORI "Request headers"
+11556 "Anfrage-Header"
+
+//ORI "(Optional) Request headers, one per line, such as authentication keys. Use secret strings (%EXAMPLE%) for private information."
+11557 "(Optional) Anfrage-Header, einer pro Zeile, z. B. Authentifizierungsschlüssel. Verwenden Sie geheime Zeichenfolgen (%EXAMPLE%) für vertrauliche Informationen."
+
+//ORI "HTTP Endpoint"
+11558 "HTTP-Endpunkt"
+
+//ORI "Please enter an HTTP endpoint name."
+11559 "Bitte geben Sie einen Namen für den HTTP-Endpunkt ein."
+
+//ORI "Please enter an HTTP server name or address."
+11560 "Bitte geben Sie den Namen oder die Adresse des HTTP-Servers ein."
+
+//ORI "Please enter a username and password for authentication."
+11561 "Bitte geben Sie Benutzername und Kennwort für die Authentifizierung ein."
+
+//ORI "Content-type"
+11562 "Content-Type"
+
+//ORI "HTTP request content type."
+11563 "Inhaltstyp der HTTP-Anfrage."
+
+//ORI "HTTP authentication method."
+11565 "HTTP-Authentifizierungsmethode."
+
+//ORI "None"
+11566 "Keine"
+
+//ORI "Basic"
+11567 "Basic"
+
+//ORI "Username for authentication."
+11569 "Benutzername für die Authentifizierung."
+
+//ORI "Use a secret (%EXAMPLE%) instead of a real password to avoid including it in the configuration."
+11571 "Verwenden Sie eine geheime Zeichenfolge (%EXAMPLE%) statt eines echten Kennworts, damit es nicht in der Konfiguration steht."
+
+//ORI "Request type"
+11572 "Anfragetyp"
+
+//ORI "Type of HTTP request to send."
+11573 "Typ der zu sendenden HTTP-Anfrage."
+
+//ORI "Please specify the content type."
+11574 "Bitte geben Sie den Inhaltstyp an."
+
+//ORI "User agent"
+11575 "User-Agent"
+
+//ORI "The HTTP User-Agent header identifies the client software."
+11576 "Der HTTP-Header User-Agent identifiziert die Client-Software."
+
+//ORI "Target server"
+11577 "Zielserver" // HTTP endpoint URL
+
+//ORI "Server address to which the request will be sent. Include the protocol and optional port number, for example: https://example.com:8080."
+11578 "Serveradresse, an die die Anfrage gesendet wird. Geben Sie das Protokoll und optional die Portnummer an, z. B. https://example.com:8080."
+
+//ORI "Test HTTP Endpoint"
+11579 "HTTP-Endpunkt testen"
+
+//ORI "HTTP request parameters."
+11581 "Parameter der HTTP-Anfrage."
+
+//ORI "Path to the resource on the server, for example: /api/send-message."
+11583 "Pfad zur Ressource auf dem Server, z. B. /api/send-message."
+
+//ORI "Request body"
+11584 "Anfragetext"
+
+//ORI "Text to send in the request body."
+11585 "Text, der im Anfragetext gesendet wird."
+
+//ORI "Please fill in the request parameters."
+11586 "Bitte füllen Sie die Anfrageparameter aus."
+
+//ORI "Send Request"
+11587 "Anfrage senden" // button: sends a test HTTP request
+
+//ORI "Status code"
+11588 "Statuscode"
+
+//ORI "An error occurred"
+11589 "Ein Fehler ist aufgetreten"
+
+//ORI "Sending test request..."
+11590 "Testanfrage wird gesendet..."
+
+// Certificates Windows 11650
+//ORI "TLS Certificates..."
+11650 "TLS-Zertifikate..."
+
+//ORI "TLS certificates, CA certificates, and private keys stored on the server."
+11651 "Auf dem Server gespeicherte TLS-Zertifikate, CA-Zertifikate und private Schlüssel."
+
+//ORI "TLS Certificates"
+11652 "TLS-Zertifikate"
+
+//ORI "Unable to Enumerate Certificates"
+11653 "Zertifikate können nicht aufgelistet werden"
+
+//ORI "Unable to Delete Certificate"
+11654 "Zertifikat kann nicht gelöscht werden"
+
+//ORI "Failed to generate key/certificate."
+11655 "Schlüssel/Zertifikat konnte nicht erzeugt werden."
+
+//ORI "Generate Self-signed Certificate"
+11656 "Selbstsigniertes Zertifikat erzeugen"
+
+//ORI "Unable to Add Certificate"
+11657 "Zertifikat kann nicht hinzugefügt werden"
+
+//ORI "The name must be a valid file name. \\ / : * ? "" < > |, a trailing space or period, and reserved names such as CON or NUL are not allowed."
+11659 "Der Name muss ein gültiger Dateiname sein. \\ / : * ? "" < > |, ein Leerzeichen oder Punkt am Ende sowie reservierte Namen wie CON oder NUL sind nicht erlaubt."
+
+//ORI "Name of the certificate in the store. Letters, digits, underscore, and hyphen only. Maximum 128 characters."
+11660 "Name des Zertifikats im Speicher. Nur Buchstaben, Ziffern, Unterstrich und Bindestrich. Maximal 128 Zeichen."
+
+//ORI "Fill in the name. The certificate is stored on the server."
+11661 "Geben Sie den Namen ein. Das Zertifikat wird auf dem Server gespeichert."
+
+//ORI "Import Certificate"
+11662 "Zertifikat importieren"
+
+//ORI "Unable to Import Certificate"
+11663 "Zertifikat kann nicht importiert werden"
+
+//ORI "Review the certificate name and import the PEM pair into the server store."
+11672 "Prüfen Sie den Zertifikatsnamen und importieren Sie das PEM-Paar in den Serverspeicher."
+
+//ORI "Certificate"
+11673 "Zertifikat"
+
+//ORI "Named certificate and private key from Manage Certificates."
+11674 "Benanntes Zertifikat mit privatem Schlüssel aus der Zertifikatsverwaltung."
+
+//ORI "Certificate name"
+11675 "Zertifikatsname"
+
+//ORI "Import"
+11677 "Importieren"
+
+//ORI "Secret strings and TLS certificates stored on the server."
+11678 "Auf dem Server gespeicherte geheime Zeichenfolgen und TLS-Zertifikate."
+
+//ORI "Issuer"
+11680 "Aussteller"
+
+//ORI "Subject"
+11681 "Antragsteller"
+
+//ORI "Self-signed"
+11682 "Selbstsigniert"
+
+//ORI "Generate Random"
+11684 "Zufällig erzeugen"
+
+//ORI "SAN: Subject Alternative Names"
+11685 "SAN: Alternative Antragstellernamen"
+
+//ORI "DNS hostnames and IP addresses the certificate is valid for."
+11686 "DNS-Hostnamen und IP-Adressen, für die das Zertifikat gültig ist."
+
+//ORI "Add"
+11687 "Hinzufügen"
+
+//ORI "DNS name or IP address."
+11689 "DNS-Name oder IP-Adresse."
+
+//ORI "DNS"
+11690 "DNS" // SAN type: DNS name
+
+//ORI "IP"
+11691 "IP" // SAN type: IP address
+
+//ORI "Pick a local hostname or IP address, or enter one."
+11693 "Wählen Sie einen lokalen Hostnamen oder eine IP-Adresse aus, oder geben Sie einen Wert ein."
+
+//ORI "Please enter a SAN value."
+11695 "Bitte geben Sie einen SAN-Wert ein."
+
+//ORI "Please enter a valid IPv4 or IPv6 address."
+11696 "Bitte geben Sie eine gültige IPv4- oder IPv6-Adresse ein."
+
+//ORI "Expiration (days)"
+11698 "Gültigkeit (Tage)"
+
+//ORI "Private Key"
+11699 "Privater Schlüssel"
+
+//ORI "Key size"
+11700 "Schlüssellänge"
+
+//ORI "Value"
+11701 "Wert"
+
+//ORI "The certificate has no Common Name (CN) and no Subject Alternative Names (SAN). Generate it anyway?"
+11702 "Das Zertifikat hat weder einen Common Name (CN) noch alternative Antragstellernamen (SAN). Trotzdem erzeugen?"
+
+//ORI "The encryption password was saved to Secret Strings as"
+11703 "Das Verschlüsselungskennwort wurde unter Geheime Zeichenfolgen gespeichert als"
+
+//ORI "Password to decrypt the password-protected private key."
+11704 "Kennwort zum Entschlüsseln des kennwortgeschützten privaten Schlüssels."
+
+//ORI "From PEM File..."
+11706 "Aus PEM-Datei..."
+
+//ORI "From Clipboard..."
+11707 "Aus Zwischenablage..."
+
+//ORI "PEM File"
+11708 "PEM-Datei"
+
+//ORI "The clipboard does not contain a PEM certificate or private key."
+11709 "Die Zwischenablage enthält kein PEM-Zertifikat und keinen privaten Schlüssel."
+
+//ORI "The selected file is not a PEM certificate or private key."
+11710 "Die ausgewählte Datei ist kein PEM-Zertifikat und kein privater Schlüssel."
+
+//ORI "The selected PEM file contains a certificate but no private key. Now select the PEM file that contains the private key."
+11711 "Die ausgewählte PEM-Datei enthält ein Zertifikat, aber keinen privaten Schlüssel. Wählen Sie jetzt die PEM-Datei mit dem privaten Schlüssel aus."
+
+//ORI "The selected PEM file contains a private key but no certificate. Now select the PEM file that contains the certificate."
+11712 "Die ausgewählte PEM-Datei enthält einen privaten Schlüssel, aber kein Zertifikat. Wählen Sie jetzt die PEM-Datei mit dem Zertifikat aus."
+
+//ORI "The clipboard contains a certificate but no private key. Copy the private key (PEM) to the clipboard, then click OK."
+11713 "Die Zwischenablage enthält ein Zertifikat, aber keinen privaten Schlüssel. Kopieren Sie den privaten Schlüssel (PEM) in die Zwischenablage und klicken Sie dann auf OK."
+
+//ORI "The clipboard contains a private key but no certificate. Copy the certificate (PEM) to the clipboard, then click OK."
+11714 "Die Zwischenablage enthält einen privaten Schlüssel, aber kein Zertifikat. Kopieren Sie das Zertifikat (PEM) in die Zwischenablage und klicken Sie dann auf OK."
+
+//ORI "The clipboard is empty."
+11715 "Die Zwischenablage ist leer."
+
+//ORI "A certificate with this name already exists. Please specify a different name."
+11717 "Ein Zertifikat mit diesem Namen ist bereits vorhanden. Bitte geben Sie einen anderen Namen an."
+
+//ORI "No certificates"
+11718 "Keine Zertifikate"
+
+//ORI "<select certificate>"
+11719 "<Zertifikat auswählen>"
+
+//ORI "CA"
+11720 "CA" // certificate type: Certificate Authority
+
+//ORI "CA certificate"
+11721 "CA-Zertifikat"
+
+//ORI "Certificate + Key"
+11722 "Zertifikat + Schlüssel"
+
+//ORI "Certificate + Encrypted Key"
+11723 "Zertifikat + verschlüsselter Schlüssel"
+
+//ORI "To PEM File..."
+11725 "In PEM-Datei..."
+
+//ORI "To Clipboard..."
+11726 "In Zwischenablage..."
+
+//ORI "Failed to export the certificate."
+11727 "Das Zertifikat konnte nicht exportiert werden."
+
+//ORI "Certificate File"
+11728 "Zertifikatsdatei"
+
+//ORI "Failed to generate a random password."
+11729 "Es konnte kein zufälliges Kennwort erzeugt werden."
+
+//ORI "Failed to add certificate entry:"
+11730 "Zertifikatseintrag konnte nicht hinzugefügt werden:"
+
+//ORI "Failed to create certificate extension:"
+11731 "Zertifikatserweiterung konnte nicht erstellt werden:"
+
+//ORI "Failed to add certificate extension:"
+11732 "Zertifikatserweiterung konnte nicht hinzugefügt werden:"
+
+//ORI "Failed to allocate serial number:"
+11733 "Seriennummer konnte nicht reserviert werden:"
+
+//ORI "Failed to generate random serial number:"
+11734 "Zufällige Seriennummer konnte nicht erzeugt werden:"
+
+//ORI "Failed to set certificate serial number:"
+11735 "Seriennummer des Zertifikats konnte nicht gesetzt werden:"
+
+//ORI "RSA key length must be at least 2048 bits."
+11736 "Die RSA-Schlüssellänge muss mindestens 2048 Bit betragen."
+
+//ORI "Failed to create private key:"
+11737 "Privater Schlüssel konnte nicht erstellt werden:"
+
+//ORI "Failed to create X509 certificate:"
+11738 "X509-Zertifikat konnte nicht erstellt werden:"
+
+//ORI "Failed to set certificate version to v3:"
+11739 "Zertifikatsversion konnte nicht auf v3 gesetzt werden:"
+
+//ORI "Failed to set certificate notBefore:"
+11740 "notBefore des Zertifikats konnte nicht gesetzt werden:"
+
+//ORI "Failed to set certificate notAfter:"
+11741 "notAfter des Zertifikats konnte nicht gesetzt werden:"
+
+//ORI "Failed to set certificate public key:"
+11742 "Öffentlicher Schlüssel des Zertifikats konnte nicht gesetzt werden:"
+
+//ORI "Failed to get certificate subject name:"
+11743 "Antragstellername des Zertifikats konnte nicht gelesen werden:"
+
+//ORI "Failed to set certificate issuer name:"
+11744 "Ausstellername des Zertifikats konnte nicht gesetzt werden:"
+
+//ORI "Failed to sign certificate:"
+11745 "Zertifikat konnte nicht signiert werden:"
+
+//ORI "Failed to allocate key PEM buffer:"
+11746 "PEM-Puffer für den Schlüssel konnte nicht reserviert werden:"
+
+//ORI "Failed to encode private key:"
+11747 "Privater Schlüssel konnte nicht kodiert werden:"
+
+//ORI "Failed to allocate certificate PEM buffer:"
+11748 "PEM-Puffer für das Zertifikat konnte nicht reserviert werden:"
+
+//ORI "Failed to encode certificate:"
+11749 "Zertifikat konnte nicht kodiert werden:"
+
+//ORI "Certificate Only (No Private Key)"
+11750 "Nur Zertifikat (ohne privaten Schlüssel)"
+
+//ORI "Export Certificate (Without Private Key)"
+11751 "Zertifikat exportieren (ohne privaten Schlüssel)"
+
+//ORI "Private RSA key options."
+11752 "Optionen für den privaten RSA-Schlüssel."
+
+//ORI "Size of the private key in bits. The default is 2048."
+11753 "Länge des privaten Schlüssels in Bit. Standard ist 2048."
+
+//ORI "Encrypt key with password"
+11754 "Schlüssel mit Kennwort verschlüsseln"
+
+//ORI "(Optional) Encrypt the output file with the provided password."
+11755 "(Optional) Ausgabedatei mit dem angegebenen Kennwort verschlüsseln."
+
+//ORI "Certificate properties."
+11756 "Zertifikatseigenschaften."
+
+//ORI "Sets the certificate to expire after the specified number of days."
+11757 "Lässt das Zertifikat nach der angegebenen Anzahl von Tagen ablaufen."
+
+//ORI "Common Name (CN)"
+11758 "Common Name (CN)"
+
+//ORI "For example, a fully qualified hostname or IP address."
+11759 "Zum Beispiel ein vollqualifizierter Hostname oder eine IP-Adresse."
+
+//ORI "Optional Subject Fields"
+11760 "Optionale Antragstellerfelder"
+
+//ORI "Attributes of the certificate owner."
+11761 "Attribute des Zertifikatsinhabers."
+
+//ORI "Country code (C)"
+11762 "Ländercode (C)"
+
+//ORI "Two-letter country code. Examples: US, CA."
+11763 "Zweibuchstabiger Ländercode. Beispiele: DE, AT."
+
+//ORI "State or province name (ST)"
+11764 "Bundesland oder Provinz (ST)"
+
+//ORI "Example: California"
+11765 "Beispiel: Bayern"
+
+//ORI "Locality name (L)"
+11766 "Ort (L)"
+
+//ORI "Example: San Francisco"
+11767 "Beispiel: München"
+
+//ORI "Organization name (O)"
+11768 "Organisation (O)"
+
+//ORI "Example: Example, Inc."
+11769 "Beispiel: Beispiel GmbH"
+
+//ORI "Organizational unit (OU)"
+11770 "Organisationseinheit (OU)"
+
+//ORI "List of the subject's organizational units (OU)."
+11771 "Liste der Organisationseinheiten (OU) des Antragstellers."
+
+//ORI "Password confirmation"
+11772 "Kennwortbestätigung"
+
+//ORI "Re-enter the password to confirm. Leave both password fields empty to write an unencrypted key."
+11773 "Geben Sie das Kennwort zur Bestätigung erneut ein. Lassen Sie beide Kennwortfelder leer, um einen unverschlüsselten Schlüssel zu schreiben."
+
+//ORI "The password and confirmation do not match."
+11774 "Das Kennwort und die Bestätigung stimmen nicht überein."
+
+//ORI "The password does not unlock this private key."
+11775 "Das Kennwort entsperrt diesen privaten Schlüssel nicht."
+
+//ORI "The private key could not be parsed."
+11776 "Der private Schlüssel konnte nicht gelesen werden."
+
+
+// Updates 11800
+//ORI "A new version is available. Open Updates for details."
+11800 "Eine neue Version ist verfügbar. Details finden Sie unter Updates."
+
+//ORI "This version is not covered by the current license maintenance."
+11801 "Diese Version ist nicht durch die Wartung der aktuellen Lizenz abgedeckt."
+
+//ORI "Version"
+11802 "Version"
+
+//ORI "No updates are available."
+11803 "Es sind keine Updates verfügbar."
+
+//ORI "Failed to check for updates."
+11804 "Die Suche nach Updates ist fehlgeschlagen."
+
+//ORI "Download Page"
+11805 "Downloadseite"
+
+//ORI "Currently installed version (Manager)."
+11806 "Derzeit installierte Version (Manager)."
+
+//ORI "The Syslog Watcher server is running a different version: "
+11807 "Der Syslog Watcher-Server verwendet eine andere Version: "
+
+//ORI "Not available (Maintenance Renewal Required)"
+11808 "Nicht verfügbar (Wartungsverlängerung erforderlich)"
+
+//ORI "Available (Free Upgrade)"
+11809 "Verfügbar (kostenloses Upgrade)"
+
+//ORI "Available (Free Update)"
+11810 "Verfügbar (kostenloses Update)"
+
+//ORI "Syslog Watcher could not reach the update server. Check the internet connection and try again."
+11811 "Syslog Watcher konnte den Update-Server nicht erreichen. Prüfen Sie die Internetverbindung und versuchen Sie es erneut."
+
+//ORI "Installed"
+11812 "Installiert"
+
+//ORI "Syslog Watcher Updates"
+11813 "Syslog Watcher-Updates"
+
+//ORI "Syslog Watcher"
+11814 "Syslog Watcher"
+
+//ORI "This Manager is version "
+11815 "Dieser Manager hat Version " // version mismatch, part 1, followed by the Manager version: "This Manager is version 7.0.5, and the server is version 7.1.0." Keep the trailing space.
+
+//ORI "They are not the same product line. Update Manager or the server before continuing."
+11816 "Sie gehören nicht zur selben Produktlinie. Aktualisieren Sie Manager oder den Server, bevor Sie fortfahren."
+
+//ORI ", and the server is version "
+11817 ", und der Server hat Version " // version mismatch, part 2, follows the Manager version and is followed by the server version. Keep the leading comma and the trailing space.
+
+//ORI "Consider updating Manager or the server so they match."
+11818 "Aktualisieren Sie Manager oder den Server, damit die Versionen übereinstimmen."
+
+// Manager Settings 12000
+//ORI "Syslog Watcher Manager"
+12000 "Syslog Watcher Manager"
+
+//ORI "Settings for Syslog Watcher Manager (GUI application)."
+12001 "Einstellungen für Syslog Watcher Manager (GUI-Anwendung)."
+
+//ORI "Behavior"
+12002 "Verhalten"
+
+//ORI "Behavior settings for Syslog Watcher Manager."
+12003 "Verhaltenseinstellungen für Syslog Watcher Manager."
+
+//ORI "Auto-connect to local server"
+12004 "Automatisch mit lokalem Server verbinden"
+
+//ORI "When Syslog Watcher Manager starts, try to connect it to the Syslog Watcher server installed on the same system."
+12005 "Beim Start von Syslog Watcher Manager eine Verbindung zum auf demselben System installierten Syslog Watcher-Server herstellen."
+
+//ORI "Language of the Syslog Watcher Manager user interface.\r\nRestart Syslog Watcher Manager to apply the language change."
+12006 "Sprache der Benutzeroberfläche von Syslog Watcher Manager.\r\nStarten Sie Syslog Watcher Manager neu, um die Sprachänderung zu übernehmen."
+
+//ORI "English"
+12007 "Englisch (English)" // keep "English" as well: XXX (English)
+
+//ORI "Check for updates"
+12009 "Nach Updates suchen"
+
+//ORI "When Syslog Watcher Manager starts, check for the latest available product version."
+12010 "Beim Start von Syslog Watcher Manager nach der neuesten verfügbaren Produktversion suchen."
+
+//ORI "License Agreements"
+12011 "Lizenzvereinbarungen"
+
+//ORI "UI language"
+12012 "Sprache der Benutzeroberfläche"
+
+//ORI "Restart Syslog Watcher Manager to apply the language change."
+12013 "Starten Sie Syslog Watcher Manager neu, um die Sprachänderung zu übernehmen."
+
+//ORI "Appearance"
+12014 "Darstellung"
+
+//ORI "Appearance settings for Syslog Watcher Manager."
+12015 "Darstellungseinstellungen für Syslog Watcher Manager."
+
+//ORI "System settings"
+12016 "Systemeinstellungen"
+
+//ORI "Long date format"
+12017 "Langes Datumsformat"
+
+//ORI "Format used for long dates."
+12018 "Format für lange Datumsangaben."
+
+//ORI "Short date format"
+12019 "Kurzes Datumsformat"
+
+//ORI "Format used for short dates."
+12020 "Format für kurze Datumsangaben."
+
+//ORI "Long time format"
+12021 "Langes Zeitformat"
+
+//ORI "Format used for long times."
+12022 "Format für lange Zeitangaben."
+
+//ORI "Short time format"
+12023 "Kurzes Zeitformat"
+
+//ORI "Format used for short times."
+12024 "Format für kurze Zeitangaben."
+
+//ORI "Unable to Save Preference"
+12025 "Einstellung kann nicht gespeichert werden"
+
+//ORI "Unable to Save Manager Settings"
+12027 "Manager-Einstellungen können nicht gespeichert werden"
+
+//ORI "Server tab scale"
+12037 "Skalierung der Server-Registerkarte"
+
+//ORI "Scale of the Server tab, as a percent of the screen scale. 100% matches the screen. Hold Ctrl and scroll the mouse wheel on the Server tab to change it."
+12038 "Skalierung der Server-Registerkarte in Prozent der Bildschirmskalierung. 100 % entspricht dem Bildschirm. Halten Sie Strg gedrückt und drehen Sie das Mausrad auf der Server-Registerkarte, um sie zu ändern."
+
+//ORI "Warn if versions differ"
+12049 "Bei abweichenden Versionen warnen"
+
+//ORI "When connecting to a local or remote Syslog Watcher server, warn if its version does not match this Manager."
+12050 "Beim Verbinden mit einem lokalen oder entfernten Syslog Watcher-Server warnen, wenn dessen Version nicht zu diesem Manager passt."
+
+//ORI "Storage Tab"
+12055 "Speicher-Registerkarte"
+
+//ORI "Settings for the Storage tab."
+12056 "Einstellungen für die Speicher-Registerkarte."
+
+//ORI "Maximum selected days"
+12057 "Maximal ausgewählte Tage"
+
+//ORI "How many days can be selected together on the Storage tab calendar (1 to 999)."
+12058 "Wie viele Tage im Kalender der Speicher-Registerkarte zusammen ausgewählt werden können (1 bis 999)."
+
+//ORI "Confirm closing a view tab"
+12059 "Schließen einer Ansicht bestätigen"
+
+//ORI "Ask for confirmation before a view tab is closed with its close button."
+12060 "Vor dem Schließen einer Ansichtsregisterkarte über ihre Schließen-Schaltfläche um Bestätigung bitten."
+
+//ORI "Confirm closing Manager"
+12061 "Schließen von Manager bestätigen"
+
+//ORI "Ask for confirmation before Syslog Watcher Manager is closed while it is connected to a server."
+12062 "Vor dem Schließen von Syslog Watcher Manager um Bestätigung bitten, während er mit einem Server verbunden ist."
+
+//ORI "Syslog Watcher Manager is connected to a server. Are you sure you want to close it?"
+12063 "Syslog Watcher Manager ist mit einem Server verbunden. Möchten Sie ihn wirklich schließen?"
+
+// Collector Configuration Window 12100
+//ORI "Syslog Collector Configuration"
+12100 "Syslog Collector-Konfiguration"
+
+//ORI "Message Processing"
+12102 "Nachrichtenverarbeitung"
+
+//ORI "Unable to Load Collector Configuration"
+12104 "Collector-Konfiguration kann nicht geladen werden"
+
+//ORI "This configuration was exported from a previous version of the product. Would you like to import the syslog collector settings?"
+12108 "Diese Konfiguration wurde aus einer früheren Produktversion exportiert. Möchten Sie die Einstellungen des Syslog Collectors importieren?"
+
+//ORI "Unable to Apply Collector Configuration"
+12109 "Collector-Konfiguration kann nicht übernommen werden"
+
+// Collector & Server Diagnostic tabs 12200
+//ORI "Diagnostics (Collector)"
+12200 "Diagnose (Collector)"
+
+//ORI "Prev. Records"
+12201 "Vorherige Einträge"
+
+//ORI "Show diagnostic records for the previous collector startup"
+12202 "Diagnoseeinträge des vorherigen Collector-Starts anzeigen"
+
+//ORI "Next Records"
+12203 "Nächste Einträge"
+
+//ORI "Show diagnostic records for the next collector startup"
+12204 "Diagnoseeinträge des nächsten Collector-Starts anzeigen"
+
+//ORI "Started"
+12205 "Gestartet" // collector startup list: "Started: <date/time>"
+
+//ORI "Show DEBUG records"
+12206 "DEBUG-Einträge anzeigen"
+
+//ORI "Show all records or only important ones."
+12207 "Alle Einträge oder nur wichtige anzeigen."
+
+//ORI "Level"
+12208 "Stufe"
+
+//ORI "Timestamp (ISO Format)"
+12209 "Zeitstempel (ISO-Format)"
+
+//ORI "Component"
+12210 "Komponente"
+
+//ORI "Diagnostic record"
+12211 "Diagnoseeintrag"
+
+//ORI "Save to File..."
+12215 "In Datei speichern..."
+
+//ORI "Save records for the current startup to a file."
+12216 "Einträge des aktuellen Starts in einer Datei speichern."
+
+//ORI "This is the latest diagnostic records file."
+12217 "Dies ist die neueste Diagnosedatei."
+
+//ORI "This is the oldest diagnostic records file."
+12218 "Dies ist die älteste Diagnosedatei."
+
+//ORI "Diagnostics (Server)"
+12219 "Diagnose (Server)"
+
+//ORI "Records"
+12220 "Einträge"
+
+//ORI "Unable to Load Diagnostic Records"
+12221 "Diagnoseeinträge können nicht geladen werden"
+
+//ORI "<never started>"
+12223 "<nie gestartet>"
+
+//ORI "Log File"
+12224 "Protokolldatei"
+
+//ORI "Show diagnostic records for the previous day"
+12225 "Diagnoseeinträge des vorherigen Tages anzeigen"
+
+//ORI "Show diagnostic records for the next day"
+12226 "Diagnoseeinträge des nächsten Tages anzeigen"
+
+//ORI "Critical"
+12227 "Kritisch" // diagnostic record level
+
+//ORI "Warning"
+12229 "Warnung" // diagnostic record level
+
+//ORI "Info"
+12230 "Info" // diagnostic record level
+
+//ORI "Debug"
+12231 "Debug" // diagnostic record level
+
+//ORI "Trace"
+12232 "Trace" // diagnostic record level
+
+// Parser Issue Feedback 12300
+//ORI "Report Incorrect Parsing..."
+12300 "Fehlerhaftes Parsen melden..."
+
+//ORI "Report Incorrect Parsing"
+12301 "Fehlerhaftes Parsen melden"
+
+//ORI "Feedback"
+12302 "Rückmeldung"
+
+//ORI "The selected syslog message, its parsed fields, the columns as shown, the view layout, and the parser configuration are included."
+12303 "Die ausgewählte Syslog-Nachricht, ihre geparsten Felder, die angezeigten Spalten, das Ansichtslayout und die Parserkonfiguration werden mitgesendet."
+
+//ORI "Originator description"
+12304 "Beschreibung des Absenders"
+
+//ORI "Specify the entity that sent this message: software, hardware, model, version, etc."
+12305 "Geben Sie an, wer diese Nachricht gesendet hat: Software, Hardware, Modell, Version usw."
+
+//ORI "(Optional) What is wrong"
+12306 "(Optional) Was ist falsch"
+
+//ORI "Describe what you expected or what is wrong."
+12307 "Beschreiben Sie, was Sie erwartet haben oder was falsch ist."
+
+//ORI "(Optional) Contact email"
+12308 "(Optional) Kontakt-E-Mail"
+
+//ORI "An address where we can reply about this report."
+12309 "Adresse, unter der wir zu dieser Meldung antworten können."
+
+//ORI "Send Request"
+12310 "Anfrage senden" // button
+
+//ORI "Save Request to File..."
+12311 "Anfrage in Datei speichern..."
+
+//ORI "Enter a brief originator description."
+12312 "Geben Sie eine kurze Beschreibung des Absenders ein."
+
+//ORI "The report was sent. Thank you."
+12313 "Die Meldung wurde gesendet. Vielen Dank."
+
+//ORI "The request could not be sent. Save the request to a file and contact technical support with that file attached."
+12314 "Die Anfrage konnte nicht gesendet werden. Speichern Sie die Anfrage in einer Datei und wenden Sie sich mit dieser Datei an den technischen Support."
+
+//ORI "Unable to save the request file."
+12315 "Die Anfragedatei kann nicht gespeichert werden."
+
+// Server Configuration Window 12400
+//ORI "Server Configuration"
+12400 "Serverkonfiguration"
+
+//ORI "Unable to Load Server Configuration"
+12401 "Serverkonfiguration kann nicht geladen werden"
+
+//ORI "Unable to Apply Server Configuration"
+12402 "Serverkonfiguration kann nicht übernommen werden"
+
+//ORI "Export your changes to a file so you do not lose them. You can import them later."
+12403 "Exportieren Sie Ihre Änderungen in eine Datei, damit sie nicht verloren gehen. Sie können sie später importieren."
+
+//ORI "Remote access to the Syslog Watcher server is enabled, but no users are configured.\r\n\r\nPlease add at least one user to allow remote access."
+12405 "Der Fernzugriff auf den Syslog Watcher-Server ist aktiviert, aber es sind keine Benutzer konfiguriert.\r\n\r\nBitte fügen Sie mindestens einen Benutzer hinzu, um den Fernzugriff zu erlauben."
+
+//ORI "Diagnostics"
+12406 "Diagnose"
+
+//ORI "Server diagnostic records."
+12407 "Diagnoseeinträge des Servers."
+
+//ORI "Use email account"
+12408 "E-Mail-Konto verwenden"
+
+//ORI "Email account used to send email messages."
+12409 "E-Mail-Konto zum Senden von E-Mail-Nachrichten."
+
+//ORI "Email error diagnostic records"
+12410 "Fehler aus Diagnoseeinträgen per E-Mail"
+
+//ORI "Send all warning and error events from diagnostic records by email."
+12411 "Alle Warnungen und Fehler aus den Diagnoseeinträgen per E-Mail senden."
+
+//ORI "Send emails to"
+12414 "E-Mails senden an"
+
+//ORI "Recipient email addresses, separated by commas or semicolons."
+12415 "Empfängeradressen, getrennt durch Kommas oder Semikolons."
+
+//ORI "This configuration was exported from a previous version of the product. Would you like to import the syslog server settings?"
+12420 "Diese Konfiguration wurde aus einer früheren Produktversion exportiert. Möchten Sie die Einstellungen des Syslog-Servers importieren?"
+
+//ORI "Storage Maintenance"
+12421 "Speicherwartung"
+
+// Server tab 12450
+//ORI "Uptime"
+12500 "Betriebszeit"
+
+//ORI "Errors / Recoveries"
+12501 "Fehler / Wiederherstellungen"
+
+//ORI "Maintenance"
+12502 "Wartung"
+
+//ORI "Collecting"
+12504 "Sammelt"
+
+//ORI "Protocol/IP/Port"
+12506 "Protokoll/IP/Port"
+
+//ORI "Last Timestamp"
+12508 "Letzter Zeitstempel"
+
+//ORI "Received"
+12509 "Empfangen"
+
+//ORI "Connected Clients"
+12510 "Verbundene Clients"
+
+//ORI "Last Message"
+12512 "Letzte Nachricht"
+
+//ORI "Last Discarded"
+12513 "Zuletzt verworfen"
+
+//ORI "Syslog Collector is stopped."
+12514 "Der Syslog Collector ist gestoppt."
+
+//ORI "Buffer overflow"
+12516 "Pufferüberlauf"
+
+//ORI "Syslog Server is stopped."
+12517 "Der Syslog-Server ist gestoppt."
+
+//ORI "Message Severity"
+12520 "Schweregrad der Nachrichten"
+
+//ORI "Current Clock Hour"
+12521 "Aktuelle Stunde"
+
+//ORI "Previous Clock Hour"
+12522 "Vorherige Stunde"
+
+//ORI "Since Collector Startup"
+12523 "Seit Collector-Start"
+
+//ORI "Syslog Collector"
+12524 "Syslog Collector"
+
+//ORI "Discarded Messages"
+12525 "Verworfene Nachrichten"
+
+//ORI "Buffer Usage"
+12527 "Pufferauslastung"
+
+//ORI "No network interfaces in the collector configuration."
+12534 "Keine Netzwerkschnittstellen in der Collector-Konfiguration."
+
+//ORI "Reason"
+12535 "Grund"
+
+//ORI "License limit"
+12537 "Lizenzlimit"
+
+//ORI "Filtered (content)"
+12538 "Gefiltert (Inhalt)"
+
+//ORI "Filtered (severity)"
+12539 "Gefiltert (Schweregrad)"
+
+//ORI "Unknown originator"
+12540 "Unbekannter Absender"
+
+//ORI "Inactive originator"
+12541 "Inaktiver Absender"
+
+//ORI "No originator ID"
+12542 "Keine Absender-ID"
+
+//ORI "Storage failure"
+12543 "Speicherfehler"
+
+//ORI "No discarded syslog messages."
+12544 "Keine verworfenen Syslog-Nachrichten."
+
+//ORI "Not Collecting"
+12546 "Sammelt nicht"
+
+//ORI "No new syslog messages since the collector started."
+12547 "Keine neuen Syslog-Nachrichten seit dem Start des Collectors."
+
+//ORI "Stopped At"
+12548 "Gestoppt um"
+
+//ORI "Syslog Archive"
+12549 "Syslog-Archiv"
+
+//ORI "Next Sync"
+12551 "Nächste Synchronisierung"
+
+//ORI "Last Sync"
+12552 "Letzte Synchronisierung"
+
+//ORI "Synced"
+12554 "Synchronisiert"
+
+//ORI "Last error"
+12561 "Letzter Fehler"
+
+//ORI "retry in"
+12563 "Wiederholung in" // next retry of a failed feature: "(retry in 5m)"
+
+//ORI "Failed"
+12564 "Fehlgeschlagen"
+
+//ORI "Initialization failed"
+12565 "Initialisierung fehlgeschlagen"
+
+//ORI "No active or suspended features (disabled features are hidden)."
+12567 "Keine aktiven oder angehaltenen Funktionen (deaktivierte Funktionen werden ausgeblendet)."
+
+//ORI "Storage archive is disabled."
+12568 "Das Speicherarchiv ist deaktiviert."
+
+//ORI "Up to date"
+12569 "Aktuell"
+
+//ORI "Plain"
+12570 "Unverschlüsselt" // remote access connection is not encrypted, e.g. 0.0.0.0:2289 (Plain)
+
+//ORI "Secure"
+12571 "Sicher" // remote access connection is encrypted (TLS), e.g. 0.0.0.0:2289 (Secure)
+
+//ORI "Server Status and Statistics"
+12572 "Serverstatus und Statistik"
+
+//ORI "No active features."
+12573 "Keine aktiven Funktionen."
+
+//ORI "Start Collector"
+12574 "Collector starten" // data flow diagram
+
+//ORI "Discarded"
+12575 "Verworfen" // data flow diagram
+
+//ORI "of"
+12576 "von" // collector buffer usage on the Server tab: 42% of 10,000
+
+// Storage tab 13000
+//ORI "Distribution:"
+13000 "Verteilung:" // Storage tab toolbar label before the chart mode list (Time range / Originators)
+
+//ORI "ALL LEVELS"
+13001 "ALLE SCHWEREGRADE"
+
+//ORI "Time range"
+13002 "Zeitraum"
+
+//ORI "Message distribution option for the table view."
+13004 "Option für die Nachrichtenverteilung in der Tabellenansicht."
+
+//ORI "Disk size"
+13005 "Größe auf Datenträger"
+
+//ORI "Originator name"
+13008 "Absendername"
+
+//ORI "Storage size"
+13009 "Speichergröße"
+
+//ORI "ENTIRE RANGE"
+13010 "GESAMTER BEREICH"
+
+//ORI "Date"
+13012 "Datum"
+
+//ORI "<deleted>"
+13014 "<gelöscht>"
+
+//ORI "The storage contains no syslog messages.\r\nConfigure your originators (software and network devices) to send syslog messages to the Syslog Watcher server."
+13015 "Der Speicher enthält keine Syslog-Nachrichten.\r\nKonfigurieren Sie Ihre Absender (Software und Netzwerkgeräte) so, dass sie Syslog-Nachrichten an den Syslog Watcher-Server senden."
+
+//ORI "<disabled>"
+13016 "<deaktiviert>"
+
+//ORI "Show message counts for all originators, one group, or selected originators."
+13017 "Nachrichtenanzahl für alle Absender, eine Gruppe oder ausgewählte Absender anzeigen."
+
+//ORI "Show:"
+13018 "Anzeigen:" // Storage tab toolbar label before the severity level filter
+
+//ORI "Storage Overview and Statistics"
+13019 "Speicherübersicht und Statistik"
+
+//ORI "No syslog messages were collected on"
+13020 "Keine Syslog-Nachrichten gesammelt am"
+
+//ORI "No syslog messages were collected in the range"
+13022 "Keine Syslog-Nachrichten gesammelt im Zeitraum"
+
+//ORI "Other originators may have messages for these days."
+13023 "Andere Absender haben möglicherweise Nachrichten für diese Tage."
+
+//ORI "The storage has no messages from the group:"
+13024 "Der Speicher enthält keine Nachrichten von der Gruppe:"
+
+//ORI "The storage has no messages from the originator:"
+13025 "Der Speicher enthält keine Nachrichten von dem Absender:"
+
+//ORI "The storage has no messages from the selected originators:"
+13026 "Der Speicher enthält keine Nachrichten von den ausgewählten Absendern:"
+
+//ORI "Select another day or range in the calendar."
+13027 "Wählen Sie im Kalender einen anderen Tag oder Zeitraum."
+
+//ORI "Other originators may have messages for this day."
+13028 "Andere Absender haben möglicherweise Nachrichten für diesen Tag."
+
+//ORI "Select ALL ORIGINATORS, or another day or range in the calendar."
+13029 "Wählen Sie ALLE ABSENDER oder im Kalender einen anderen Tag oder Zeitraum."
+
+// Viewer tab 14000
+//ORI "Request..."
+14000 "Anfrage..."
+
+//ORI "Tab"
+14001 "Registerkarte" // Viewer toolbar menu button with tab actions: ◳ Tab▾
+
+//ORI "Sort:"
+14002 "Sortierung:" // Viewer toolbar label: Sort: Newest at top / Newest at bottom
+
+//ORI "Newest at bottom"
+14003 "Neueste unten"
+
+//ORI "Newest at top"
+14004 "Neueste oben"
+
+//ORI "Next Page"
+14006 "Nächste Seite"
+
+//ORI "Load the next page of messages"
+14007 "Nächste Seite mit Nachrichten laden"
+
+//ORI "Prev. Page"
+14008 "Vorherige Seite"
+
+//ORI "Load the previous page of messages"
+14009 "Vorherige Seite mit Nachrichten laden"
+
+//ORI "Filter Rows"
+14010 "Zeilen filtern"
+
+//ORI "Toggle filtering of messages currently shown in the grid (table)."
+14011 "Filterung der aktuell in der Tabelle angezeigten Nachrichten ein-/ausschalten."
+
+//ORI "Find"
+14012 "Suchen"
+
+//ORI "Toggle searching within messages currently shown in the grid (table)."
+14013 "Suche in den aktuell in der Tabelle angezeigten Nachrichten ein-/ausschalten."
+
+//ORI "Auto-Scroll to New Messages"
+14014 "Automatisch zu neuen Nachrichten scrollen"
+
+//ORI "Prev."
+14016 "Zurück" // find previous match (button, short for Previous)
+
+//ORI "Find the previous message above in the table."
+14017 "Vorherige passende Nachricht oberhalb in der Tabelle suchen."
+
+//ORI "Next"
+14018 "Weiter" // find next match (button)
+
+//ORI "Find the next message below in the table."
+14019 "Nächste passende Nachricht unterhalb in der Tabelle suchen."
+
+//ORI "Requested"
+14020 "Angefordert" // Viewer status bar label: requested time range and filter
+
+//ORI "Filter/Search"
+14021 "Filter/Suche"
+
+//ORI "Loaded"
+14022 "Geladen" // Viewer status bar counter: messages loaded, e.g. Loaded [page 2]: 1,000
+
+//ORI "Total"
+14023 "Gesamt" // Viewer status bar counter: total messages
+
+//ORI "Visible"
+14024 "Sichtbar" // Viewer status bar counter: messages visible after the search filter
+
+//ORI "Selected"
+14025 "Ausgewählt" // Viewer status bar counter: selected messages
+
+//ORI "Rename Tab..."
+14027 "Registerkarte umbenennen..."
+
+//ORI "Manage current tab properties."
+14029 "Eigenschaften der aktuellen Registerkarte verwalten."
+
+//ORI "Edit current time range and message filter"
+14030 "Aktuellen Zeitraum und Nachrichtenfilter bearbeiten"
+
+//ORI "Message filters are applied:"
+14031 "Nachrichtenfilter sind aktiv:"
+
+//ORI "in ANY column"
+14032 "in BELIEBIGER Spalte"
+
+//ORI "in"
+14033 "in" // used in: Find IN ...
+
+//ORI "Not Found"
+14034 "Nicht gefunden"
+
+//ORI "Could not find a message that matches the criteria."
+14035 "Es wurde keine Nachricht gefunden, die den Kriterien entspricht."
+
+//ORI "Use only messages that meet the filter conditions."
+14036 "Nur Nachrichten verwenden, die die Filterbedingungen erfüllen."
+
+//ORI "page"
+14037 "Seite" // Viewer status bar: "Loaded [page 2]: 1,000"
+
+//ORI "Copy as Shown (CSV)"
+14038 "Wie angezeigt kopieren (CSV)"
+
+//ORI "Copy as Shown (TAB)"
+14039 "Wie angezeigt kopieren (TAB)"
+
+//ORI "Copy as Parsed (JSON)"
+14040 "Geparst kopieren (JSON)"
+
+//ORI "Copy as Received (TEXT)"
+14041 "Wie empfangen kopieren (TEXT)"
+
+//ORI "to load messages."
+14042 "zum Laden der Nachrichten." // follows the button name: "Refresh to load messages." (as in "Click Refresh to…")
+
+//ORI "None of the loaded messages match the column filters.\r\nChange or clear the filters in the filter row."
+14043 "Keine der geladenen Nachrichten entspricht den Spaltenfiltern.\r\nÄndern oder löschen Sie die Filter in der Filterzeile."
+
+//ORI "No syslog messages were collected in the requested time range:"
+14044 "Im angeforderten Zeitraum wurden keine Syslog-Nachrichten gesammelt:"
+
+//ORI "Layout..."
+14045 "Layout..."
+
+//ORI "Edit current view layout properties."
+14046 "Eigenschaften des aktuellen Ansichtslayouts bearbeiten."
+
+//ORI "Unable to Load Messages"
+14047 "Nachrichten können nicht geladen werden"
+
+//ORI "No messages in the requested time range match the message filters:"
+14049 "Keine Nachrichten im angeforderten Zeitraum entsprechen den Nachrichtenfiltern:"
+
+//ORI "New messages will appear when the view is refreshed."
+14050 "Neue Nachrichten erscheinen, wenn die Ansicht aktualisiert wird."
+
+//ORI "to select another time range."
+14051 "zur Auswahl eines anderen Zeitraums." // follows the button name: "Request... to select another time range."
+
+//ORI "to change the filters or the time range."
+14052 "zum Ändern der Filter oder des Zeitraums." // follows the button name: "Request... to change the filters or the time range."
+
+//ORI "message"
+14053 "Nachricht" // used when N = 1
+
+//ORI "messages"
+14054 "Nachrichten" // used when N ≠ 1
+
+//ORI "Are you sure you want to close:"
+14055 "Möchten Sie wirklich schließen:"
+
+// Server Feature List window 14950
+//ORI "Server Features"
+14950 "Serverfunktionen"
+
+//ORI "Add Feature..."
+14951 "Funktion hinzufügen..."
+
+//ORI "Configure..."
+14952 "Konfigurieren..."
+
+//ORI "Feature"
+14953 "Funktion" // name for new features
+
+//ORI "Unable to Load Features"
+14958 "Funktionen können nicht geladen werden"
+
+//ORI "Unable to Add Feature"
+14960 "Funktion kann nicht hinzugefügt werden"
+
+//ORI "Unable to Edit Feature"
+14962 "Funktion kann nicht bearbeitet werden"
+
+//ORI "Unable to Load Feature"
+14963 "Funktion kann nicht geladen werden"
+
+//ORI "Unable to Delete Feature"
+14964 "Funktion kann nicht gelöscht werden"
+
+//ORI "Inactive features are not loaded by the server and do not process messages."
+14966 "Inaktive Funktionen werden vom Server nicht geladen und verarbeiten keine Nachrichten."
+
+//ORI "Suspend"
+14967 "Anhalten"
+
+//ORI "Resume"
+14968 "Fortsetzen"
+
+//ORI "From Suspension Time"
+14971 "Ab Zeitpunkt des Anhaltens"
+
+//ORI "From Now"
+14972 "Ab jetzt"
+
+//ORI "From Date/Time..."
+14973 "Ab Datum/Uhrzeit..."
+
+//ORI "From Now (Skip Messages)"
+14974 "Ab jetzt (Nachrichten überspringen)"
+
+//ORI "From Date/Time (Reset)..."
+14975 "Ab Datum/Uhrzeit (zurücksetzen)..."
+
+//ORI "to add a feature to process syslog messages."
+14976 "zum Hinzufügen einer Funktion, die Syslog-Nachrichten verarbeitet." // follows the button name: "Add Feature... to add a feature to process syslog messages."
+
+//ORI "Resume From Date/Time"
+14977 "Ab Datum/Uhrzeit fortsetzen"
+
+//ORI "Unable to Suspend Feature"
+14978 "Funktion kann nicht angehalten werden"
+
+//ORI "Unable to Resume Feature"
+14979 "Funktion kann nicht fortgesetzt werden"
+
+//ORI "Unable to Import Feature"
+14980 "Funktion kann nicht importiert werden"
+
+//ORI "Unable to Export Feature"
+14981 "Funktion kann nicht exportiert werden"
+
+//ORI "The selected file does not contain a valid feature configuration."
+14982 "Die ausgewählte Datei enthält keine gültige Funktionskonfiguration."
+
+//ORI "State"
+14983 "Zustand" // column
+
+// Feature Window 15000
+//ORI "New Feature"
+15000 "Neue Funktion"
+
+//ORI "Edit Feature"
+15001 "Funktion bearbeiten"
+
+//ORI "The feature filter selects messages from the syslog storage. Add filters for severity and originators here."
+15003 "Der Funktionsfilter wählt Nachrichten aus dem Syslog-Speicher aus. Fügen Sie hier Filter für Schweregrad und Absender hinzu."
+
+//ORI "Feature"
+15005 "Funktion"
+
+//ORI "Feature name and state."
+15006 "Name und Zustand der Funktion."
+
+//ORI "Configuration Warning"
+15007 "Konfigurationswarnung"
+
+//ORI "Switch to Advanced Mode"
+15008 "In den erweiterten Modus wechseln"
+
+//ORI "Server Feature"
+15019 "Serverfunktion"
+
+//ORI "This configuration was exported from a previous version of the product. Would you like to import the settings?"
+15021 "Diese Konfiguration wurde aus einer früheren Produktversion exportiert. Möchten Sie die Einstellungen importieren?"
+
+// Send Emails 15050
+//ORI "Send Emails"
+15050 "E-Mails senden"
+
+//ORI "Email Configuration"
+15051 "E-Mail-Konfiguration"
+
+//ORI "Email account settings and a set of emails."
+15052 "E-Mail-Kontoeinstellungen und eine Reihe von E-Mails."
+
+//ORI "Email account"
+15053 "E-Mail-Konto"
+
+//ORI "Email account used for sending emails."
+15054 "E-Mail-Konto zum Senden der E-Mails."
+
+//ORI "Send to"
+15055 "Senden an"
+
+//ORI "Addresses to send emails to, separated by commas or semicolons."
+15056 "Adressen, an die E-Mails gesendet werden, getrennt durch Kommas oder Semikolons."
+
+//ORI "Emails"
+15059 "E-Mails"
+
+//ORI "Emails are sent when relevant syslog messages are received."
+15060 "E-Mails werden gesendet, wenn passende Syslog-Nachrichten empfangen werden."
+
+//ORI "User-friendly name that describes the purpose of the email."
+15063 "Benutzerfreundlicher Name, der den Zweck der E-Mail beschreibt."
+
+//ORI "The filter determines which messages will trigger an email. Invalid syntax is highlighted in red."
+15065 "Der Filter bestimmt, welche Nachrichten eine E-Mail auslösen. Ungültige Syntax wird rot hervorgehoben."
+
+//ORI "Body"
+15066 "Text"
+
+//ORI "Email body formatted with syslog message fields. For example: {ORIGINATOR_ID} at {TIMESTAMP}: {MESSAGE}."
+15067 "E-Mail-Text, formatiert mit Feldern der Syslog-Nachricht. Zum Beispiel: {ORIGINATOR_ID} um {TIMESTAMP}: {MESSAGE}."
+
+//ORI "Add Email"
+15068 "E-Mail hinzufügen"
+
+//ORI "Send for"
+15069 "Senden für" // email summary: "Send for: <filter>", e.g. "Send for: ALL MESSAGES"
+
+//ORI "Subject"
+15070 "Betreff"
+
+//ORI "Email subject text."
+15071 "Betrefftext der E-Mail."
+
+//ORI "Delay between emails"
+15072 "Verzögerung zwischen E-Mails"
+
+//ORI "Seconds between emails to reduce load on the email server. Set to 0 for no delay."
+15073 "Sekunden zwischen E-Mails, um den E-Mail-Server zu entlasten. 0 = keine Verzögerung."
+
+//ORI "Consolidation"
+15074 "Zusammenfassung"
+
+//ORI "OFF: One email per alert (only with a single email rule)"
+15075 "AUS: Eine E-Mail pro Alarm (nur mit einer einzigen E-Mail-Regel)"
+
+//ORI "ON: Merge multiple alerts into one email"
+15076 "EIN: Mehrere Alarme in einer E-Mail zusammenfassen"
+
+//ORI "Combines several alerts into one email. If one syslog message matches more than one rule, all of those alerts are included together, which may exceed the maximum."
+15077 "Fasst mehrere Alarme in einer E-Mail zusammen. Wenn eine Syslog-Nachricht auf mehrere Regeln passt, werden alle diese Alarme gemeinsam aufgenommen, auch über das Maximum hinaus."
+
+//ORI "Maximum merged emails"
+15078 "Maximal zusammengefasste E-Mails"
+
+//ORI "Maximum number of alerts merged into one email. A single syslog message that matches several rules can still add all of those alerts, even if that goes over the maximum."
+15079 "Maximale Anzahl von Alarmen in einer E-Mail. Eine einzelne Syslog-Nachricht, die auf mehrere Regeln passt, kann trotzdem alle diese Alarme hinzufügen, auch wenn das Maximum dadurch überschritten wird."
+
+//ORI "Email subject"
+15080 "E-Mail-Betreff"
+
+//ORI "Subject of a consolidated email with multiple messages"
+15081 "Betreff einer zusammengefassten E-Mail mit mehreren Nachrichten"
+
+//ORI "No email accounts"
+15082 "Keine E-Mail-Konten"
+
+//ORI "{N} consolidated emails from Syslog Watcher"
+15083 "{N} zusammengefasste E-Mails von Syslog Watcher" // {N} = number of emails; keep {N} as is
+
+//ORI "<select account>"
+15084 "<Konto auswählen>"
+
+//ORI "No emails will be sent because no email account is selected. Please create an email account: Main Toolbar > Server > Server Configuration..."
+15088 "Es werden keine E-Mails gesendet, da kein E-Mail-Konto ausgewählt ist. Bitte erstellen Sie ein E-Mail-Konto: Hauptsymbolleiste > Server > Serverkonfiguration..."
+
+//ORI "No emails will be sent. Please add at least one email: Emails > Add Email."
+15089 "Es werden keine E-Mails gesendet. Bitte fügen Sie mindestens eine E-Mail hinzu: E-Mails > E-Mail hinzufügen."
+
+//ORI "Consolidation should stay on when there is more than one email. One syslog message can match several rules, and those alerts are always sent in the same email."
+15090 "Die Zusammenfassung sollte bei mehr als einer E-Mail eingeschaltet bleiben. Eine Syslog-Nachricht kann auf mehrere Regeln passen, und diese Alarme werden immer in derselben E-Mail gesendet."
+
+//ORI "The 'Send Emails' feature sends email notifications for syslog messages that match the specified filter conditions."
+15091 "Die Funktion 'E-Mails senden' sendet E-Mail-Benachrichtigungen für Syslog-Nachrichten, die den angegebenen Filterbedingungen entsprechen."
+
+//ORI "Unable to Load Email Accounts"
+15092 "E-Mail-Konten können nicht geladen werden"
+
+//ORI "Sends a plain-text email when a syslog message matches the filter."
+15093 "Sendet eine Nur-Text-E-Mail, wenn eine Syslog-Nachricht auf den Filter passt."
+
+//ORI "Email 1"
+15094 "E-Mail 1" // default alert name in a new Send Emails feature
+
+//ORI "no delay"
+15095 "keine Verzögerung" // delay value 0
+
+// Forward to Files 15200
+//ORI "Export to Files"
+15200 "In Dateien exportieren"
+
+//ORI "File Exporter"
+15201 "Dateiexport"
+
+//ORI "Configures the output file format and the output folder structure."
+15202 "Legt das Format der Ausgabedateien und die Struktur der Ausgabeordner fest."
+
+//ORI "Target folder"
+15203 "Zielordner"
+
+//ORI "Path to the folder where the output subdirectories and files will be created."
+15204 "Pfad zum Ordner, in dem die Unterordner und Ausgabedateien erstellt werden."
+
+//ORI "Subfolders template"
+15205 "Vorlage für Unterordner"
+
+//ORI "(Optional) Generates names of subfolders, for example: '{ORIGINATOR_NAME}' = a separate folder per originator."
+15206 "(Optional) Erzeugt die Namen der Unterordner, z. B. '{ORIGINATOR_NAME}' = ein eigener Ordner pro Absender."
+
+//ORI "Template that generates file names, for example: '{RECEIVED|%Y-%m-%d}.txt' = a new file daily."
+15208 "Vorlage für Dateinamen, z. B. '{RECEIVED|%Y-%m-%d}.txt' = täglich eine neue Datei."
+
+//ORI "Line endings"
+15209 "Zeilenenden"
+
+//ORI "Character or sequence of characters that will be added to the end of each line."
+15210 "Zeichen oder Zeichenfolge, die an das Ende jeder Zeile angefügt wird."
+
+//ORI "CR+LF (Windows style)"
+15211 "CR+LF (Windows)"
+
+//ORI "LF (Unix style)"
+15212 "LF (Unix)"
+
+//ORI "Limit file size"
+15213 "Dateigröße begrenzen"
+
+//ORI "Create a new file when the specified size is reached."
+15214 "Neue Datei anlegen, wenn die angegebene Größe erreicht ist."
+
+//ORI "Maximum size (KB)"
+15215 "Maximale Größe (KB)"
+
+//ORI "Maximum size of each file in kilobytes."
+15216 "Maximale Größe jeder Datei in Kilobyte."
+
+//ORI "File Content Sections"
+15217 "Abschnitte des Dateiinhalts"
+
+//ORI "Defines how messages are formatted as text before being saved to files."
+15218 "Legt fest, wie Nachrichten als Text formatiert werden, bevor sie in Dateien gespeichert werden."
+
+//ORI "File Contents"
+15220 "Dateiinhalt"
+
+//ORI "Converts syslog messages to text, for example: <{PRIORITY}>{RAW_MESSAGE} = messages as received."
+15221 "Wandelt Syslog-Nachrichten in Text um, z. B.: <{PRIORITY}>{RAW_MESSAGE} = Nachrichten wie empfangen."
+
+//ORI "The 'Export to Files' feature writes incoming syslog messages to text files in real time. It helps integrate with other products and provides an additional backup of collected data."
+15222 "Die Funktion 'In Dateien exportieren' schreibt eingehende Syslog-Nachrichten in Echtzeit in Textdateien. Sie erleichtert die Integration mit anderen Produkten und bietet eine zusätzliche Sicherung der gesammelten Daten."
+
+//ORI "Please enter a destination folder path."
+15223 "Bitte geben Sie den Pfad des Zielordners ein."
+
+//ORI "Please enter a filename template."
+15224 "Bitte geben Sie eine Dateinamenvorlage ein."
+
+//ORI "No message-to-text converters are configured. The output file will be empty."
+15225 "Es sind keine Nachricht-zu-Text-Konverter konfiguriert. Die Ausgabedatei bleibt leer."
+
+//ORI "File section"
+15228 "Dateiabschnitt"
+
+//ORI "Specify the syslog messages that activate this section."
+15230 "Geben Sie die Syslog-Nachrichten an, die diesen Abschnitt aktivieren."
+
+//ORI "Message to text"
+15231 "Nachricht als Text"
+
+//ORI "Max open files"
+15233 "Max. geöffnete Dateien"
+
+//ORI "The maximum number of files the server keeps open. Set this value to 1 to prevent the server from locking files (lower performance)."
+15234 "Maximale Anzahl von Dateien, die der Server geöffnet hält. Setzen Sie den Wert auf 1, damit der Server keine Dateien sperrt (geringere Leistung)."
+
+//ORI "Close idle files after (s)"
+15235 "Inaktive Dateien schließen nach (s)"
+
+//ORI "Close files that have not been written for this many seconds."
+15236 "Dateien schließen, in die so viele Sekunden lang nicht geschrieben wurde."
+
+//ORI "File header"
+15237 "Dateikopf"
+
+//ORI "(Optional) Text written once at the start of each new file. Line endings match the Line endings setting. Existing files are not changed."
+15238 "(Optional) Text, der einmal am Anfang jeder neuen Datei geschrieben wird. Zeilenenden entsprechen der Einstellung Zeilenenden. Vorhandene Dateien werden nicht geändert."
+
+// Forward to ODBC 15250
+//ORI "Export to DB (ODBC)"
+15250 "In DB exportieren (ODBC)"
+
+//ORI "ODBC connection string"
+15251 "ODBC-Verbindungszeichenfolge"
+
+//ORI "Click (...) to open the connection string builder. The builder lists ODBC drivers and data sources on this computer and is available only when managing the local server."
+15252 "Klicken Sie auf (...), um den Assistenten für die Verbindungszeichenfolge zu öffnen. Er listet die ODBC-Treiber und Datenquellen dieses Computers auf und ist nur beim Verwalten des lokalen Servers verfügbar."
+
+//ORI "Messages per transaction"
+15253 "Nachrichten pro Transaktion"
+
+//ORI "Number of messages combined in one transaction (SQL BEGIN/COMMIT). Set to 0 to disable transactions."
+15254 "Anzahl der in einer Transaktion (SQL BEGIN/COMMIT) zusammengefassten Nachrichten. 0 = keine Transaktionen."
+
+//ORI "Please enter a connection string."
+15255 "Bitte geben Sie eine Verbindungszeichenfolge ein."
+
+//ORI "No SQL commands. The output database will be empty."
+15256 "Keine SQL-Befehle. Die Zieldatenbank bleibt leer."
+
+//ORI "Build Connection String"
+15257 "Verbindungszeichenfolge erstellen"
+
+//ORI "By default, the Syslog Watcher service runs as the Local System account. In this case, you should create a System Data Source (not User Data Source) to make it accessible to the service.\r\n\r\nIf the System Data Source option is not available, restart Syslog Watcher Manager as Administrator."
+15258 "Standardmäßig läuft der Syslog Watcher-Dienst unter dem Konto Lokales System. In diesem Fall sollten Sie eine Systemdatenquelle (keine Benutzerdatenquelle) anlegen, damit der Dienst darauf zugreifen kann.\r\n\r\nWenn die Option Systemdatenquelle nicht verfügbar ist, starten Sie Syslog Watcher Manager als Administrator neu."
+
+//ORI "Add Commands"
+15259 "Befehle hinzufügen"
+
+//ORI "Commands group"
+15260 "Befehlsgruppe"
+
+//ORI "SQL commands to export syslog messages to the database. In most cases, this is an SQL INSERT command with fields from the message."
+15261 "SQL-Befehle zum Exportieren von Syslog-Nachrichten in die Datenbank. Meist ist dies ein SQL-INSERT-Befehl mit Feldern aus der Nachricht."
+
+//ORI "The 'Export to DB' feature exports incoming syslog messages to an external database via ODBC."
+15262 "Die Funktion 'In DB exportieren' exportiert eingehende Syslog-Nachrichten über ODBC in eine externe Datenbank."
+
+//ORI "Group filter"
+15263 "Gruppenfilter"
+
+//ORI "Filter messages that trigger the execution of these commands."
+15264 "Filtert die Nachrichten, die die Ausführung dieser Befehle auslösen."
+
+//ORI "SQL commands to export syslog messages to the database."
+15265 "SQL-Befehle zum Exportieren von Syslog-Nachrichten in die Datenbank."
+
+//ORI "SQL Commands"
+15266 "SQL-Befehle"
+
+//ORI "Commands"
+15267 "Befehle"
+
+//ORI "ODBC Configuration"
+15268 "ODBC-Konfiguration"
+
+//ORI "ODBC connection configuration and SQL commands to export data."
+15269 "ODBC-Verbindungskonfiguration und SQL-Befehle zum Exportieren der Daten."
+
+//ORI "Connection String Builder"
+15270 "Assistent für Verbindungszeichenfolge"
+
+//ORI "The connection string is used by the server, not by this computer. The builder lists ODBC drivers and data sources on this computer and is available only when managing the local server.\r\n\r\nPaste a connection string that the server can use, or build it on the server (ODBC Data Source Administrator) or with Manager in Manage Local Server mode."
+15271 "Die Verbindungszeichenfolge wird vom Server verwendet, nicht von diesem Computer. Der Assistent listet die ODBC-Treiber und Datenquellen dieses Computers auf und ist nur beim Verwalten des lokalen Servers verfügbar.\r\n\r\nFügen Sie eine Verbindungszeichenfolge ein, die der Server verwenden kann, oder erstellen Sie sie auf dem Server (ODBC-Datenquellen-Administrator) oder mit Manager im Modus 'Lokalen Server verwalten'."
+
+// Forward to HTTP 15300
+//ORI "Send HTTP Requests"
+15300 "HTTP-Anfragen senden"
+
+//ORI "HTTP request configuration."
+15302 "Konfiguration der HTTP-Anfrage."
+
+//ORI "The 'Send HTTP Requests' feature integrates with external services by sending HTTP requests."
+15305 "Die Funktion 'HTTP-Anfragen senden' integriert externe Dienste durch das Senden von HTTP-Anfragen."
+
+//ORI "HTTP request section"
+15306 "HTTP-Anfrageabschnitt"
+
+//ORI "Path to the resource on the server. Message fields are allowed. For example: /api/send-message/{SEVERITY_NUM}"
+15308 "Pfad zur Ressource auf dem Server. Nachrichtenfelder sind erlaubt. Zum Beispiel: /api/send-message/{SEVERITY_NUM}"
+
+//ORI "Request Body Sections"
+15309 "Abschnitte des Anfragetexts"
+
+//ORI "Body sections can use filters to generate specific HTTP requests based on the content of syslog messages."
+15310 "Textabschnitte können Filter verwenden, um je nach Inhalt der Syslog-Nachrichten bestimmte HTTP-Anfragen zu erzeugen."
+
+//ORI "Add Request Section"
+15311 "Anfrageabschnitt hinzufügen"
+
+//ORI "No HTTP endpoints"
+15313 "Keine HTTP-Endpunkte"
+
+//ORI "<select endpoint>"
+15314 "<Endpunkt auswählen>"
+
+//ORI "Include message fields to transform messages into HTTP requests."
+15315 "Fügen Sie Nachrichtenfelder ein, um Nachrichten in HTTP-Anfragen umzuwandeln."
+
+//ORI "Request Body"
+15316 "Anfragetext"
+
+//ORI "HTTP request body"
+15317 "Text der HTTP-Anfrage"
+
+//ORI "Matching messages trigger this request body section."
+15318 "Passende Nachrichten lösen diesen Anfragetext-Abschnitt aus."
+
+//ORI "HTTP endpoint"
+15320 "HTTP-Endpunkt"
+
+//ORI "An HTTP endpoint defines access to a web server. You can create endpoints here: Main Toolbar > Server > Server Configuration..."
+15321 "Ein HTTP-Endpunkt legt den Zugriff auf einen Webserver fest. Endpunkte erstellen Sie hier: Hauptsymbolleiste > Server > Serverkonfiguration..."
+
+//ORI "Unable to Load HTTP Endpoints"
+15322 "HTTP-Endpunkte können nicht geladen werden"
+
+//ORI "Please choose an existing HTTP endpoint or create a new one."
+15323 "Bitte wählen Sie einen vorhandenen HTTP-Endpunkt oder erstellen Sie einen neuen."
+
+//ORI "No HTTP requests will be sent because no HTTP endpoint is selected. Please create an HTTP endpoint: Main Toolbar > Server > Server Configuration..."
+15324 "Es werden keine HTTP-Anfragen gesendet, da kein HTTP-Endpunkt ausgewählt ist. Bitte erstellen Sie einen HTTP-Endpunkt: Hauptsymbolleiste > Server > Serverkonfiguration..."
+
+// Forward to Proc 15350
+//ORI "Execute Program/Script"
+15350 "Programm/Skript ausführen"
+
+//ORI "Program Configuration"
+15351 "Programmkonfiguration"
+
+//ORI "Executable file"
+15352 "Ausführbare Datei"
+
+//ORI "Location of the executable file."
+15353 "Speicherort der ausführbaren Datei."
+
+//ORI "Program execution configuration."
+15354 "Konfiguration der Programmausführung."
+
+//ORI "The 'Execute Program/Script' feature integrates with external tools by executing programs or scripts."
+15355 "Die Funktion 'Programm/Skript ausführen' integriert externe Werkzeuge durch das Ausführen von Programmen oder Skripten."
+
+//ORI "Windows account that starts the process. DOMAIN\\user, user@domain, or a local name. Leave empty to run as the server account."
+15359 "Windows-Konto, das den Prozess startet. DOMÄNE\\Benutzer, benutzer@domäne oder ein lokaler Name. Leer lassen, um unter dem Serverkonto auszuführen."
+
+//ORI "User login password."
+15363 "Kennwort des Benutzers."
+
+//ORI "Filter messages that trigger these parameters."
+15364 "Filtert die Nachrichten, die diese Parameter auslösen."
+
+//ORI "Please enter a file path."
+15367 "Bitte geben Sie einen Dateipfad ein."
+
+//ORI "Command Line Parameters"
+15368 "Befehlszeilenparameter"
+
+//ORI "Options or data passed to the program through command-line parameters."
+15369 "Optionen oder Daten, die dem Programm über Befehlszeilenparameter übergeben werden."
+
+//ORI "Add Parameters"
+15370 "Parameter hinzufügen"
+
+//ORI "Parameters"
+15371 "Parameter"
+
+//ORI "Success exit code"
+15372 "Exit-Code für Erfolg"
+
+//ORI "Empty: any exit code is success. A number: that exit code is success."
+15373 "Leer: jeder Exit-Code gilt als Erfolg. Eine Zahl: dieser Exit-Code gilt als Erfolg."
+
+//ORI "Enter a number, or leave empty to accept any exit code."
+15374 "Geben Sie eine Zahl ein, oder lassen Sie das Feld leer, um jeden Exit-Code zu akzeptieren."
+
+// Forward to Syslog Server 15400
+//ORI "Forward to Syslog Server"
+15400 "An Syslog-Server weiterleiten"
+
+//ORI "Syslog Forwarder"
+15401 "Syslog-Weiterleitung"
+
+//ORI "Message format and target syslog server for forwarding."
+15402 "Nachrichtenformat und Ziel-Syslog-Server für die Weiterleitung."
+
+//ORI "Send messages"
+15403 "Nachrichten senden"
+
+//ORI "Transforms messages into the format expected by the target syslog server."
+15404 "Wandelt Nachrichten in das vom Ziel-Syslog-Server erwartete Format um."
+
+//ORI "As received (no changes)"
+15405 "Wie empfangen (ohne Änderungen)"
+
+//ORI "Formatted as IETF-syslog (RFC5424)"
+15406 "Formatiert als IETF-Syslog (RFC5424)"
+
+//ORI "Formatted as IETF-syslog + SD:origin (RFC5424 7.2)"
+15407 "Formatiert als IETF-Syslog + SD:origin (RFC5424 7.2)"
+
+//ORI "In custom format"
+15408 "In benutzerdefiniertem Format"
+
+//ORI "Message Format"
+15409 "Nachrichtenformat"
+
+//ORI "Syslog protocol used to forward messages."
+15416 "Syslog-Protokoll für die Weiterleitung der Nachrichten."
+
+//ORI "Target server"
+15417 "Zielserver" // syslog server host
+
+//ORI "Syslog server IP address or hostname, e.g. 192.168.1.1 or syslog.example.com."
+15418 "IP-Adresse oder Hostname des Syslog-Servers, z. B. 192.168.1.1 oder syslog.example.com."
+
+//ORI "Target port"
+15419 "Zielport"
+
+//ORI "Target port for forwarded syslog messages."
+15420 "Zielport für weitergeleitete Syslog-Nachrichten."
+
+//ORI "Use local interface (optional)"
+15421 "Lokale Schnittstelle verwenden (optional)"
+
+//ORI "Selects the local IP address to be used for sending."
+15422 "Wählt die lokale IP-Adresse aus, die zum Senden verwendet wird."
+
+//ORI "Messages in stream"
+15423 "Nachrichten im Datenstrom"
+
+//ORI "Use the 'octet counting' algorithm"
+15425 "Algorithmus 'Octet Counting' verwenden"
+
+//ORI "Separate with \\0"
+15426 "Mit \\0 trennen"
+
+//ORI "Separate with \\n"
+15427 "Mit \\n trennen"
+
+//ORI "Separate with \\r\\n"
+15428 "Mit \\r\\n trennen"
+
+//ORI "TLS Options"
+15429 "TLS-Optionen"
+
+//ORI "Secure connection settings."
+15430 "Einstellungen für die sichere Verbindung."
+
+//ORI "Protocol version"
+15431 "Protokollversion"
+
+//ORI "TLS protocol version."
+15432 "Version des TLS-Protokolls."
+
+//ORI "Please enter a target syslog server IP address or hostname."
+15439 "Bitte geben Sie die IP-Adresse oder den Hostnamen des Ziel-Syslog-Servers ein."
+
+//ORI "The 'Forward to Syslog Server' feature transfers incoming syslog messages to a different syslog server."
+15440 "Die Funktion 'An Syslog-Server weiterleiten' überträgt eingehende Syslog-Nachrichten an einen anderen Syslog-Server."
+
+//ORI "Message template"
+15441 "Nachrichtenvorlage"
+
+//ORI "Template filter"
+15442 "Vorlagenfilter"
+
+//ORI "Filter messages that use this format."
+15443 "Filtert die Nachrichten, die dieses Format verwenden."
+
+//ORI "Format Templates"
+15444 "Formatvorlagen"
+
+//ORI "Add Template"
+15445 "Vorlage hinzufügen"
+
+//ORI "Verify server certificate"
+15446 "Serverzertifikat prüfen"
+
+//ORI "When on, the target certificate is checked against Windows trusted roots and the optional CA certificate, and the name must match the target server."
+15447 "Wenn eingeschaltet, wird das Zielzertifikat gegen die vertrauenswürdigen Stammzertifikate von Windows und das optionale CA-Zertifikat geprüft, und der Name muss zum Zielserver passen."
+
+//ORI "Named CA certificate from Manage Certificates. Leave blank to use Windows trusted roots only. Used only when Verify server certificate is on."
+15449 "Benanntes CA-Zertifikat aus der Zertifikatsverwaltung. Leer lassen, um nur die vertrauenswürdigen Stammzertifikate von Windows zu verwenden. Nur wirksam, wenn Serverzertifikat prüfen eingeschaltet ist."
+
+//ORI "Timeout"
+15450 "Zeitlimit"
+
+//ORI "Connect, handshake, and I/O timeout in milliseconds."
+15451 "Zeitlimit für Verbindung, Handshake und E/A in Millisekunden."
+
+//ORI "ON: Verify certificate"
+15452 "EIN: Zertifikat prüfen"
+
+//ORI "OFF: Do not verify"
+15453 "AUS: Nicht prüfen"
+
+//ORI "Syslog over UDP"
+15454 "Syslog über UDP"
+
+//ORI "Syslog over TCP"
+15455 "Syslog über TCP"
+
+//ORI "Syslog over TLS"
+15456 "Syslog über TLS"
+
+// Link + QR Code Windows 19850
+//ORI "Web Link"
+19850 "Weblink"
+
+//ORI "Link in QR code"
+19851 "Link als QR-Code"
+
+//ORI "Save Link"
+19852 "Link speichern"
+
+//ORI "Open Link"
+19853 "Link öffnen"
+
+//ORI "Copy Link"
+19854 "Link kopieren"
+
+//ORI "URL File"
+19855 "URL-Datei"
+
+// Support Window 19900
+//ORI "Product Support"
+19900 "Produktsupport"
+
+//ORI "User Guide (Online)"
+19901 "Benutzerhandbuch (online)"
+
+//ORI "User Guide (Offline)"
+19902 "Benutzerhandbuch (offline)"
+
+//ORI "Not installed"
+19903 "Nicht installiert"
+
+//ORI "Ask Question / Submit Ticket"
+19904 "Frage stellen / Ticket einreichen"
+
+//ORI "1. Provide support code:"
+19905 "1. Supportcode angeben:"
+
+//ORI "2. Attach support data:"
+19906 "2. Supportdaten anhängen:"
+
+//ORI "Save Support Data to File..."
+19908 "Supportdaten in Datei speichern..."
+
+//ORI "Unable to Save Support Data"
+19909 "Supportdaten können nicht gespeichert werden"
+
+//ORI "Support data was saved successfully.\r\n\r\nAttach this file when you contact technical support."
+19913 "Die Supportdaten wurden erfolgreich gespeichert.\r\n\r\nHängen Sie diese Datei an, wenn Sie sich an den technischen Support wenden."
+
+//ORI "OR"
+19910 "ODER" // separator between two alternatives in the Support window
+
+//ORI "Support Data File"
+19912 "Supportdatendatei"
+//IDS_SUPPORT_OPEN                "Open"
+//IDS_SUPPORT_WARNING             "Offline user guide is not installed.\r\n\r\nHelp (❓) buttons will try to open online user guide. We recommend installing offline copy if this system has no Internet access."
+
+// Licenses Windows 19919
+//ORI "Request Evaluation License"
+19920 "Testlizenz anfordern"
+
+//ORI "Please enter an email address."
+19921 "Bitte geben Sie eine E-Mail-Adresse ein."
+
+//ORI "Details"
+19923 "Details"
+
+//ORI "License request details."
+19924 "Details der Lizenzanfrage."
+
+//ORI "Type of the license you want to evaluate."
+19926 "Typ der Lizenz, die Sie testen möchten."
+
+//ORI "Syslog Watcher will try to obtain a license online. If it fails, EZ5 will send the license to the email address provided."
+19928 "Syslog Watcher versucht, die Lizenz online zu beziehen. Falls das fehlschlägt, sendet EZ5 die Lizenz an die angegebene E-Mail-Adresse."
+
+//ORI "Unable to obtain an evaluation license."
+19929 "Es konnte keine Testlizenz bezogen werden."
+
+//ORI "Unable to install the obtained evaluation license."
+19930 "Die bezogene Testlizenz konnte nicht installiert werden."
+
+//ORI "The license server returned a response that is too large to install."
+19931 "Der Lizenzserver hat eine Antwort zurückgegeben, die zu groß zum Installieren ist."
+
+//ORI "Professional"
+19932 "Professional"
+
+//ORI "Enterprise"
+19933 "Enterprise"
+
+//ORI "Ultimate"
+19934 "Ultimate"
+
+//ORI "Lite"
+19935 "Lite"
+
+//ORI "Special"
+19936 "Spezial" // license
+
+//ORI "Free"
+19937 "Kostenlos" // license
+
+//ORI "evaluation"
+19938 "Testversion" // trial license state: "Enterprise License (evaluation)"
+
+//ORI "Please contact Technical Support."
+19939 "Bitte wenden Sie sich an den technischen Support."
+
+//ORI "Error code"
+19940 "Fehlercode"
+
+//ORI "unlimited"
+19941 "unbegrenzt" // license limit value instead of a number (max originators, messages per hour)
+
+//ORI "expired"
+19942 "abgelaufen" // trial license state: "Enterprise License (expired)"
+
+//ORI "inactive"
+19943 "inaktiv" // license state: "Enterprise License (inactive)"
+
+//ORI "License File"
+19944 "Lizenzdatei"
+
+//ORI "Request Evaluation..."
+19951 "Testlizenz anfordern..."
+
+//ORI "Purchase License"
+19952 "Lizenz kaufen"
+
+//ORI "Install License"
+19953 "Lizenz installieren"
+
+//ORI "Selected License"
+19954 "Ausgewählte Lizenz"
+
+//ORI "Max originators"
+19956 "Max. Absender"
+
+//ORI "Max msg/hour"
+19957 "Max. Nachr./Stunde"
+
+//ORI "Maintenance (support and updates)"
+19958 "Wartung (Support und Updates)"
+
+//ORI "Owner"
+19959 "Inhaber"
+
+//ORI "Renew Maintenance"
+19960 "Wartung verlängern"
+
+//ORI "Upgrade License"
+19961 "Lizenz upgraden"
+
+//ORI "Unable to install the obtained license file."
+19962 "Die bezogene Lizenzdatei konnte nicht installiert werden."
+
+//ORI "Unable to activate the license for installation."
+19963 "Die Lizenz konnte nicht für die Installation aktiviert werden."
+
+//ORI "Unable to uninstall the license online."
+19964 "Die Lizenz konnte nicht online deinstalliert werden."
+
+//ORI "License key that was used when installing the license (XXXX-XXXX-XXXX-XXXX-XXXX)."
+19965 "Lizenzschlüssel, der bei der Installation der Lizenz verwendet wurde (XXXX-XXXX-XXXX-XXXX-XXXX)."
+
+//ORI "License Key..."
+19966 "Lizenzschlüssel..."
+
+//ORI "License File..."
+19967 "Lizenzdatei..."
+
+//ORI "Uninstall License"
+19968 "Lizenz deinstallieren"
+
+//ORI "Uninstall"
+19969 "Deinstallieren"
+
+//ORI "License details"
+19971 "Lizenzdetails"
+
+//ORI "Key"
+19972 "Schlüssel"
+
+//ORI "License key to install (XXXX-XXXX-XXXX-XXXX-XXXX)."
+19973 "Zu installierender Lizenzschlüssel (XXXX-XXXX-XXXX-XXXX-XXXX)."
+
+//ORI "Please enter a correct license key."
+19974 "Bitte geben Sie einen korrekten Lizenzschlüssel ein."
+
+//ORI "Install"
+19975 "Installieren"
+
+//ORI "License owner: company/organization name or person's name."
+19976 "Lizenzinhaber: Name des Unternehmens/der Organisation oder der Person."
+
+//ORI "For technical support and notifications."
+19978 "Für technischen Support und Benachrichtigungen."
+
+//ORI "Please enter the license owner."
+19980 "Bitte geben Sie den Lizenzinhaber ein."
+
+//ORI "Unable to install the license file."
+19981 "Die Lizenzdatei konnte nicht installiert werden."
+
+//ORI "Unable to uninstall the evaluation license."
+19982 "Die Testlizenz konnte nicht deinstalliert werden."
+
+//ORI "System ID"
+19983 "System-ID"
+
+//ORI "No licenses are installed. The Free License is active (up to 3 originators and 5000 msg/hour)."
+19984 "Es sind keine Lizenzen installiert. Die kostenlose Lizenz ist aktiv (bis zu 3 Absender und 5000 Nachr./Stunde)."
+
+//ORI "Unable to perform the operation automatically (online).\r\n\r\nOpen the generated request link on a system with Internet access."
+19985 "Der Vorgang konnte nicht automatisch (online) ausgeführt werden.\r\n\r\nÖffnen Sie den erzeugten Anfragelink auf einem System mit Internetzugang."
+
+//ORI "Unable to Load Licenses"
+19986 "Lizenzen können nicht geladen werden"
+
+//ORI "Unable to Select License"
+19987 "Lizenz kann nicht ausgewählt werden"
+
+//ORI "Reinstall License"
+19988 "Lizenz erneut installieren"
+
+//ORI "License key to reinstall (XXXX-XXXX-XXXX-XXXX-XXXX)."
+19989 "Erneut zu installierender Lizenzschlüssel (XXXX-XXXX-XXXX-XXXX-XXXX)."
+
+//ORI "Reinstall"
+19990 "Erneut installieren"
+
+//ORI "No activations left."
+19991 "Keine Aktivierungen mehr verfügbar."
+
+//ORI "Are you sure you want to switch to this license?"
+19992 "Möchten Sie wirklich zu dieser Lizenz wechseln?"
+
+//ORI "Unable to perform the operation automatically (online).\r\n\r\nOpen the generated request link on a system with Internet access to release the license online."
+19993 "Der Vorgang konnte nicht automatisch (online) ausgeführt werden.\r\n\r\nÖffnen Sie den erzeugten Anfragelink auf einem System mit Internetzugang, um die Lizenz online freizugeben."
+
+//ORI "Selected"
+19994 "Ausgewählt"
+
+// Manager Messages 20000
+//ORI "To apply the change, Syslog Watcher Manager will be disconnected from the server."
+20003 "Um die Änderung zu übernehmen, wird die Verbindung von Syslog Watcher Manager zum Server getrennt."
+
+//ORI "Failed to Locate Time Zone"
+20004 "Zeitzone konnte nicht ermittelt werden"
+
+//ORI "Failed to identify the current time zone."
+20005 "Die aktuelle Zeitzone konnte nicht ermittelt werden."
+
+//ORI "Failed to load the UTC time zone."
+20006 "Die UTC-Zeitzone konnte nicht geladen werden."
+
+//ORI "Failed to load time zone: "
+20007 "Zeitzone konnte nicht geladen werden: "
+
+//ORI "The server returned an invalid time zone."
+20008 "Der Server hat eine ungültige Zeitzone zurückgegeben."
+
+//ORI "You are connected to the local Syslog Watcher Server using Syslog Watcher Manager with a restricted account. Some settings are read-only.\r\n\r\nTo gain full access, restart the Manager as Administrator."
+20009 "Sie sind mit Syslog Watcher Manager über ein eingeschränktes Konto mit dem lokalen Syslog Watcher Server verbunden. Einige Einstellungen sind schreibgeschützt.\r\n\r\nFür vollen Zugriff starten Sie Manager als Administrator neu."
+
+// Collector Configuration: Message Processing 21000
+//ORI "Settings that define how messages are processed before being written to the syslog storage."
+21001 "Einstellungen, die festlegen, wie Nachrichten verarbeitet werden, bevor sie in den Syslog-Speicher geschrieben werden."
+
+//ORI "Preprocessor"
+21002 "Vorverarbeitung"
+
+//ORI "The first step in message processing is to extract the severity level and determine the encoding."
+21003 "Der erste Schritt der Nachrichtenverarbeitung ist das Extrahieren des Schweregrads und das Bestimmen der Zeichenkodierung."
+
+//ORI "The preliminary filter discards unnecessary syslog messages at an early stage, before they are written to syslog storage."
+21005 "Der Vorfilter verwirft unnötige Syslog-Nachrichten frühzeitig, bevor sie in den Syslog-Speicher geschrieben werden."
+
+//ORI "If a message has no severity, assign"
+21006 "Wenn eine Nachricht keinen Schweregrad hat, zuweisen"
+
+//ORI "Assign this severity level if a syslog message does not contain severity information."
+21007 "Diesen Schweregrad zuweisen, wenn eine Syslog-Nachricht keine Schweregradinformation enthält."
+
+//ORI "Message body encoding"
+21008 "Kodierung des Nachrichtentexts"
+
+//ORI "Can be UTF-8 (default) or another text encoding, e.g., Latin1, Shift-JIS, ISO-8859-8, etc."
+21009 "UTF-8 (Standard) oder eine andere Textkodierung, z. B. Latin1, Shift-JIS, ISO-8859-8 usw."
+
+//ORI "Filter by severity"
+21010 "Nach Schweregrad filtern"
+
+//ORI "Messages with lower-priority (higher numeric) severity levels are discarded."
+21011 "Nachrichten mit niedrigerer Priorität (höherer Nummer) des Schweregrads werden verworfen."
+
+//ORI "Do not discard (accept all levels)"
+21012 "Nicht verwerfen (alle Schweregrade annehmen)"
+
+//ORI "Discard if level"
+21013 "Verwerfen, wenn Schweregrad"
+
+//ORI "Discard messages with keywords"
+21014 "Nachrichten mit Schlüsselwörtern verwerfen"
+
+//ORI "Messages with any of the listed keywords are discarded. Enter one keyword per line. Use Ctrl+Enter to add a new line. The filter is inactive if the list is empty."
+21015 "Nachrichten mit einem der aufgeführten Schlüsselwörter werden verworfen. Geben Sie ein Schlüsselwort pro Zeile ein. Mit Strg+Eingabe fügen Sie eine neue Zeile hinzu. Der Filter ist inaktiv, wenn die Liste leer ist."
+
+//ORI "Accept only messages with keywords"
+21016 "Nur Nachrichten mit Schlüsselwörtern annehmen"
+
+//ORI "Messages that do not contain at least one keyword are discarded. Enter one keyword per line. Use Ctrl+Enter to add a new line. The filter is inactive if the list is empty."
+21017 "Nachrichten, die keines der Schlüsselwörter enthalten, werden verworfen. Geben Sie ein Schlüsselwort pro Zeile ein. Mit Strg+Eingabe fügen Sie eine neue Zeile hinzu. Der Filter ist inaktiv, wenn die Liste leer ist."
+
+// Collector Configuration: Message Processing (Originator IDs) 21050
+//ORI "Originator IDs"
+21050 "Absender-IDs"
+
+//ORI "An originator ID uniquely identifies the message source. IP addresses are used by default, but more complex cases may need extra rules."
+21051 "Eine Absender-ID identifiziert die Nachrichtenquelle eindeutig. Standardmäßig werden IP-Adressen verwendet, komplexere Fälle können jedoch zusätzliche Regeln erfordern."
+
+//ORI "Default originator ID rule"
+21052 "Standardregel für Absender-IDs"
+
+//ORI "Default rule for originator IDs."
+21053 "Standardregel für Absender-IDs."
+
+//ORI "Algorithm to detect the originator ID."
+21055 "Algorithmus zum Ermitteln der Absender-ID."
+
+//ORI "ID = IP address of the message sender"
+21056 "ID = IP-Adresse des Nachrichtensenders"
+
+//ORI "If originator ID is unknown"
+21057 "Wenn die Absender-ID unbekannt ist"
+
+//ORI "Behavior when a new message is received from an unknown originator."
+21058 "Verhalten, wenn eine neue Nachricht von einem unbekannten Absender empfangen wird."
+
+//ORI "Add new originator"
+21059 "Neuen Absender hinzufügen"
+
+//ORI "Discard messages"
+21060 "Nachrichten verwerfen"
+
+//ORI "IP Range Rule"
+21061 "IP-Bereichsregel"
+
+//ORI "Rule for determining originator IDs for messages that have passed through a syslog proxy/forwarder."
+21062 "Regel zum Ermitteln der Absender-IDs für Nachrichten, die über einen Syslog-Proxy oder eine Weiterleitung eingegangen sind."
+
+//ORI "Add Rule"
+21063 "Regel hinzufügen"
+
+//ORI "IP range start"
+21064 "Anfang des IP-Bereichs"
+
+//ORI "The first IP address of the range, e.g., 192.168.0.1 or ::1."
+21065 "Erste IP-Adresse des Bereichs, z. B. 192.168.0.1 oder ::1."
+
+//ORI "IP range end"
+21066 "Ende des IP-Bereichs"
+
+//ORI "The last IP address of the range. Leave blank for a single IP address range."
+21067 "Letzte IP-Adresse des Bereichs. Leer lassen für einen Bereich mit einer einzigen IP-Adresse."
+
+//ORI "Extract with regular expression"
+21068 "Mit regulärem Ausdruck extrahieren"
+
+//ORI "Extract as RFC5424:HOSTNAME"
+21069 "Als RFC5424:HOSTNAME extrahieren"
+
+//ORI "Extract as RFC5424:HOSTNAME/APPNAME"
+21070 "Als RFC5424:HOSTNAME/APPNAME extrahieren"
+
+//ORI "Regular expression"
+21071 "Regulärer Ausdruck"
+
+//ORI "Regular expression to extract originator ID from the message contents.\r\nExample: '^(\\S+)\\s' extracts characters until the first space.\r\nIf the expression has several groups, their matches are concatenated."
+21072 "Regulärer Ausdruck zum Extrahieren der Absender-ID aus dem Nachrichteninhalt.\r\nBeispiel: '^(\\S+)\\s' extrahiert die Zeichen bis zum ersten Leerzeichen.\r\nHat der Ausdruck mehrere Gruppen, werden ihre Treffer zusammengefügt."
+
+//ORI "If unable to extract ID"
+21073 "Wenn die ID nicht extrahiert werden kann"
+
+//ORI "Behavior in case of an error or missing originator ID."
+21074 "Verhalten bei einem Fehler oder fehlender Absender-ID."
+
+//ORI "Apply the default rule"
+21075 "Standardregel anwenden"
+
+//ORI "Please enter a starting IP address of the range."
+21076 "Bitte geben Sie die erste IP-Adresse des Bereichs ein."
+
+//ORI "Please enter a valid regular expression to extract the originator ID."
+21077 "Bitte geben Sie einen gültigen regulären Ausdruck zum Extrahieren der Absender-ID ein."
+
+//ORI "Regular expression filter"
+21078 "Filter mit regulärem Ausdruck"
+
+//ORI "Accepts only messages that match the regular expression and discards the rest; 'If message matches' inverts this. Inactive if empty."
+21079 "Nimmt nur Nachrichten an, die auf den regulären Ausdruck passen, und verwirft die übrigen; 'Wenn die Nachricht passt' kehrt dies um. Inaktiv, wenn leer."
+
+//ORI "Originator ID Rules"
+21080 "Regeln für Absender-IDs"
+
+//ORI "Please enter a valid regular expression."
+21081 "Bitte geben Sie einen gültigen regulären Ausdruck ein."
+
+//ORI "Resolve name (reverse DNS lookup)"
+21082 "Namen auflösen (Reverse-DNS-Abfrage)"
+
+//ORI "Turns on reverse DNS lookup to resolve an originator name from an originator ID."
+21083 "Schaltet die Reverse-DNS-Abfrage ein, um aus der Absender-ID einen Absendernamen zu ermitteln."
+
+//ORI "If message matches"
+21084 "Wenn die Nachricht passt"
+
+//ORI "Configures what happens if a regular expression is entered and the message matches it."
+21085 "Legt fest, was geschieht, wenn ein regulärer Ausdruck eingegeben ist und die Nachricht darauf passt."
+
+//ORI "Accept it"
+21086 "Annehmen"
+
+//ORI "Discard it"
+21087 "Verwerfen"
+
+//ORI "Rules for messages received through a syslog proxy or forwarder."
+21088 "Regeln für Nachrichten, die über einen Syslog-Proxy oder eine Weiterleitung empfangen werden."
+
+// Collector Configuration: Network Interfaces 21100
+//ORI "Network interfaces receive syslog messages from the network. Add at least one network interface to collect logs."
+21100 "Netzwerkschnittstellen empfangen Syslog-Nachrichten aus dem Netzwerk. Fügen Sie mindestens eine Netzwerkschnittstelle hinzu, um Protokolle zu sammeln."
+
+//ORI "Add UDP Interface"
+21102 "UDP-Schnittstelle hinzufügen"
+
+//ORI "Add TCP Interface"
+21103 "TCP-Schnittstelle hinzufügen"
+
+//ORI "Add TLS Interface"
+21104 "TLS-Schnittstelle hinzufügen"
+
+//ORI "Interface"
+21105 "Schnittstelle"
+
+//ORI "The network interface receives syslog messages from the network using the selected protocol."
+21106 "Die Netzwerkschnittstelle empfängt Syslog-Nachrichten über das ausgewählte Protokoll aus dem Netzwerk."
+
+//ORI "Local IP address"
+21107 "Lokale IP-Adresse"
+
+//ORI "IP address to listen for incoming traffic. 0.0.0.0 = all IPv4 addresses on the local machine. ::0 = all IPv6 addresses on the local machine."
+21108 "IP-Adresse, auf der eingehender Datenverkehr erwartet wird. 0.0.0.0 = alle IPv4-Adressen des lokalen Rechners. ::0 = alle IPv6-Adressen des lokalen Rechners."
+
+//ORI "Syslog port"
+21109 "Syslog-Port"
+
+//ORI "Make sure no other applications are configured to listen on the same IP/port to avoid conflicts."
+21110 "Stellen Sie sicher, dass keine andere Anwendung auf derselben IP-Adresse und demselben Port lauscht, um Konflikte zu vermeiden."
+
+//ORI "Maximum message length"
+21111 "Maximale Nachrichtenlänge"
+
+//ORI "Messages longer than the maximum length (in bytes) are truncated."
+21112 "Nachrichten, die länger als die maximale Länge (in Byte) sind, werden abgeschnitten."
+
+//ORI "Socket buffer size (bytes)"
+21113 "Socket-Puffergröße (Byte)"
+
+//ORI "Size of the system buffer (in bytes) to handle data bursts."
+21114 "Größe des Systempuffers (in Byte) zum Abfangen von Datenspitzen."
+
+//ORI "Delete Interface"
+21115 "Schnittstelle löschen"
+
+//ORI "Maximum concurrent connections"
+21116 "Maximale gleichzeitige Verbindungen"
+
+//ORI "The number of simultaneous syslog client connections is limited by the OS or by this value."
+21117 "Die Anzahl gleichzeitiger Syslog-Client-Verbindungen wird vom Betriebssystem oder von diesem Wert begrenzt."
+
+//ORI "Replace older connections"
+21118 "Ältere Verbindungen ersetzen"
+
+//ORI "Disconnect the oldest connection to allow a new syslog client to connect."
+21119 "Die älteste Verbindung trennen, damit sich ein neuer Syslog-Client verbinden kann."
+
+//ORI "Octet-counting detection"
+21120 "Octet-Counting-Erkennung"
+
+//ORI "Enables the octet-counting algorithm described in RFC 6587. Suitable for most cases; disable it only for compatibility with legacy equipment."
+21121 "Aktiviert den in RFC 6587 beschriebenen Octet-Counting-Algorithmus. Für die meisten Fälle geeignet; nur zur Kompatibilität mit älteren Geräten deaktivieren."
+
+//ORI "Split stream using CR/LF"
+21122 "Datenstrom an CR/LF trennen"
+
+//ORI "Splits the incoming stream into separate messages using CR/LF and \\0; otherwise, uses \\0 only."
+21123 "Trennt den eingehenden Datenstrom an CR/LF und \\0 in einzelne Nachrichten; andernfalls nur an \\0."
+
+//ORI "Inactive client timeout"
+21124 "Zeitlimit für inaktive Clients"
+
+//ORI "Disconnect syslog clients that have been inactive for the specified number of seconds. Set to 0 to keep clients connected."
+21125 "Syslog-Clients trennen, die die angegebene Anzahl von Sekunden inaktiv waren. 0 = Clients bleiben verbunden."
+
+//ORI "TLS Options"
+21126 "TLS-Optionen"
+
+//ORI "Syslog Watcher acts as a TLS server when receiving syslog over TLS."
+21127 "Syslog Watcher arbeitet beim Empfang von Syslog über TLS als TLS-Server."
+
+//ORI "Minimum protocol version"
+21128 "Minimale Protokollversion"
+
+//ORI "The recommended setting is TLS 1.2. A lower minimum version can be required by older clients."
+21129 "Empfohlen ist TLS 1.2. Ältere Clients können eine niedrigere Mindestversion erfordern."
+
+//ORI "Certificate fingerprints"
+21135 "Zertifikat-Fingerabdrücke"
+
+//ORI "Client certificates whose fingerprints are allowed for this TLS interface. Open the list to allow or deny known certificates."
+21136 "Client-Zertifikate, deren Fingerabdrücke für diese TLS-Schnittstelle erlaubt sind. Öffnen Sie die Liste, um bekannte Zertifikate zu erlauben oder abzulehnen."
+
+//ORI "Another interface already uses this address and port."
+21139 "Eine andere Schnittstelle verwendet bereits diese Adresse und diesen Port."
+
+//ORI "Password for decrypting a password-protected private key. Use %SECRET% instead of an actual password."
+21145 "Kennwort zum Entschlüsseln eines kennwortgeschützten privaten Schlüssels. Verwenden Sie %SECRET% statt eines echten Kennworts."
+
+//ORI "Client certificates"
+21146 "Client-Zertifikate"
+
+//ORI "Enables or disables the verification of client certificates."
+21147 "Schaltet die Prüfung von Client-Zertifikaten ein oder aus."
+
+//ORI "Do not request"
+21148 "Nicht anfordern"
+
+//ORI "Request, validate if received"
+21149 "Anfordern, prüfen falls vorhanden"
+
+//ORI "Require, validate"
+21150 "Erfordern, prüfen"
+
+//ORI "No Network Interfaces"
+21155 "Keine Netzwerkschnittstellen"
+
+//ORI "Add at least one network interface to collect logs."
+21156 "Fügen Sie mindestens eine Netzwerkschnittstelle hinzu, um Protokolle zu sammeln."
+
+//ORI "All local IPv4 addresses (0.0.0.0)"
+21157 "Alle lokalen IPv4-Adressen (0.0.0.0)"
+
+//ORI "All local IPv6 addresses (::0)"
+21158 "Alle lokalen IPv6-Adressen (::0)"
+
+//ORI "TLS Interface Options"
+21159 "Optionen der TLS-Schnittstelle"
+
+//ORI "A TLS interface requires a certificate to work correctly.\r\nDo you want to generate a self-signed TLS certificate?"
+21162 "Eine TLS-Schnittstelle benötigt ein Zertifikat, um korrekt zu funktionieren.\r\nMöchten Sie ein selbstsigniertes TLS-Zertifikat erzeugen?"
+
+//ORI "Allow self-signed certificates"
+21168 "Selbstsignierte Zertifikate erlauben"
+
+//ORI "Accept a client certificate if its fingerprint is listed. An empty fingerprints file rejects all self-signed clients."
+21169 "Ein Client-Zertifikat annehmen, wenn sein Fingerabdruck aufgeführt ist. Eine leere Fingerabdruckdatei lehnt alle selbstsignierten Clients ab."
+
+//ORI "Named CA certificate from Manage Certificates. Leave blank to disable CA validation."
+21171 "Benanntes CA-Zertifikat aus der Zertifikatsverwaltung. Leer lassen, um die CA-Prüfung zu deaktivieren."
+
+//ORI "Allow clients by IP"
+21172 "Clients nach IP erlauben"
+
+//ORI "Accept the client if its certificate SAN includes the source IP address in an IP field (SAN:IP)."
+21173 "Den Client annehmen, wenn das SAN seines Zertifikats die Quell-IP-Adresse in einem IP-Feld enthält (SAN:IP)."
+
+//ORI "Allow clients by name"
+21174 "Clients nach Name erlauben"
+
+//ORI "Choose whether any client name is accepted, or only names from the list."
+21175 "Wählen Sie, ob jeder Client-Name angenommen wird oder nur Namen aus der Liste."
+
+//ORI "allowed"
+21176 "erlaubt" // number of allowed TLS client entries: "5 allowed"
+
+//ORI "From IP"
+21178 "Von IP"
+
+//ORI "Algorithm"
+21179 "Algorithmus"
+
+//ORI "Fingerprint"
+21180 "Fingerabdruck"
+
+//ORI "Could not load or save certificate fingerprints for this TLS interface."
+21181 "Die Zertifikat-Fingerabdrücke für diese TLS-Schnittstelle konnten nicht geladen oder gespeichert werden."
+
+//ORI "Allow any name (no check)"
+21182 "Jeden Namen erlauben (keine Prüfung)"
+
+//ORI "TCP and TLS are the same transport."
+21183 "TCP und TLS verwenden denselben Transport."
+
+//ORI "Client names"
+21187 "Client-Namen"
+
+//ORI "Could not load or save client names for this TLS interface."
+21189 "Die Client-Namen für diese TLS-Schnittstelle konnten nicht geladen oder gespeichert werden."
+
+//ORI "Please enter a value in the allowed range."
+21191 "Bitte geben Sie einen Wert im zulässigen Bereich ein."
+
+// Server Configuration: Storage Maintenance 21200
+//ORI "Storage Archive (Storage Copy)"
+21217 "Speicherarchiv (Speicherkopie)"
+
+//ORI "The archive is a periodically synchronized backup copy of the syslog storage. Compression provides up to 10x longer retention for the same size. The storage archive can also be located on a remote disk."
+21218 "Das Archiv ist eine regelmäßig synchronisierte Sicherungskopie des Syslog-Speichers. Durch Komprimierung ist bei gleicher Größe eine bis zu 10-mal längere Aufbewahrung möglich. Das Speicherarchiv kann auch auf einem Netzlaufwerk liegen."
+
+//ORI "Synchronize archive"
+21219 "Archiv synchronisieren"
+
+//ORI "Enables daily or hourly archiving of the syslog storage files."
+21220 "Aktiviert die tägliche oder stündliche Archivierung der Syslog-Speicherdateien."
+
+//ORI "Archive location"
+21221 "Archivspeicherort"
+
+//ORI "Path to the directory where the storage archive is located."
+21222 "Pfad zum Verzeichnis, in dem das Speicherarchiv liegt."
+
+//ORI "Keep archive files for (days)"
+21223 "Archivdateien aufbewahren (Tage)"
+
+//ORI "Archived data files older than the set number of days will be deleted. This only deletes old archive files; it does not limit what the next sync creates."
+21224 "Archivierte Datendateien, die älter als die angegebene Anzahl von Tagen sind, werden gelöscht. Dies löscht nur alte Archivdateien; es begrenzt nicht, was die nächste Synchronisierung erzeugt."
+
+//ORI "Protect files with password"
+21225 "Dateien mit Kennwort schützen"
+
+//ORI "(Optional) Password for encrypting storage archives. Use a secret string (%EXAMPLE%) instead of an actual password."
+21226 "(Optional) Kennwort zum Verschlüsseln der Speicherarchive. Verwenden Sie eine geheime Zeichenfolge (%EXAMPLE%) statt eines echten Kennworts."
+
+//ORI "Execute command after syncing"
+21227 "Befehl nach der Synchronisierung ausführen"
+
+//ORI "(Optional) Command line run after each archive sync. Use {ARCHIVE_DIR} for the archive folder, for example to upload to cloud storage."
+21228 "(Optional) Befehlszeile, die nach jeder Archivsynchronisierung ausgeführt wird. Verwenden Sie {ARCHIVE_DIR} für den Archivordner, z. B. zum Hochladen in einen Cloud-Speicher."
+
+//ORI "Please specify the archive location."
+21229 "Bitte geben Sie den Archivspeicherort an."
+
+//ORI "Daily"
+21230 "Täglich"
+
+//ORI "Hourly"
+21231 "Stündlich"
+
+//ORI "Command timeout"
+21233 "Zeitlimit für den Befehl"
+
+//ORI "Seconds to wait for the command to finish. The process is stopped if it runs longer."
+21234 "Sekunden, die auf das Ende des Befehls gewartet wird. Läuft der Prozess länger, wird er beendet."
+
+//ORI "Run as"
+21235 "Ausführen als"
+
+//ORI "Windows account that runs the command. DOMAIN\\user, user@domain, or a local name. Leave empty to run as the server service account."
+21236 "Windows-Konto, das den Befehl ausführt. DOMÄNE\\Benutzer, benutzer@domäne oder ein lokaler Name. Leer lassen, um unter dem Dienstkonto des Servers auszuführen."
+
+//ORI "Password for the account that runs the command. Use a secret string (%EXAMPLE%) instead of an actual password."
+21240 "Kennwort des Kontos, das den Befehl ausführt. Verwenden Sie eine geheime Zeichenfolge (%EXAMPLE%) statt eines echten Kennworts."
+
+//ORI "Daily and hourly archives use different folder structures. Do not use the same folder for both, or delete all files in this folder before starting a fresh archive."
+21241 "Tägliche und stündliche Archive verwenden unterschiedliche Ordnerstrukturen. Verwenden Sie nicht denselben Ordner für beide, oder löschen Sie alle Dateien in diesem Ordner, bevor Sie ein neues Archiv beginnen."
+
+//ORI "Syslog Storage Retention"
+21242 "Aufbewahrung im Syslog-Speicher"
+
+//ORI "Automatically delete syslog storage files that exceed the age or size limits. Storage limits are kept in the storage and can be set in Storage ⮕ Storage Settings..."
+21243 "Syslog-Speicherdateien automatisch löschen, die die Alters- oder Größenlimits überschreiten. Die Speicherlimits werden im Speicher gehalten und können unter Speicher ⮕ Speichereinstellungen... festgelegt werden."
+
+//ORI "Enforce storage limits"
+21244 "Speicherlimits durchsetzen"
+
+//ORI "When enabled, the server checks syslog storage size and file age and deletes files that exceed the limits set in Storage ⮕ Storage Settings..."
+21245 "Wenn aktiviert, prüft der Server Größe und Dateialter des Syslog-Speichers und löscht Dateien, die die unter Speicher ⮕ Speichereinstellungen... festgelegten Limits überschreiten."
+
+//ORI "Delete files that exceed limits"
+21246 "Dateien löschen, die Limits überschreiten"
+
+//ORI "Limit archive retention"
+21247 "Archivaufbewahrung begrenzen"
+
+//ORI "When set to Yes, archived files older than Keep archive files for (days) are deleted. That period only deletes old archive files; it does not limit what the next sync creates."
+21248 "Wenn auf Ja gesetzt, werden archivierte Dateien gelöscht, die älter sind als Archivdateien aufbewahren (Tage). Dieser Zeitraum löscht nur alte Archivdateien; er begrenzt nicht, was die nächste Synchronisierung erzeugt."
+
+//ORI "Yes, delete older archive files"
+21249 "Ja, ältere Archivdateien löschen"
+
+// Collector Configuration: Syslog Storage 21250
+//ORI "These settings control how incoming messages are saved in the main syslog storage."
+21250 "Diese Einstellungen steuern, wie eingehende Nachrichten im Haupt-Syslog-Speicher gespeichert werden."
+
+//ORI "Memory Buffer"
+21251 "Arbeitsspeicherpuffer"
+
+//ORI "Keeps messages before they are written to the syslog storage."
+21252 "Hält Nachrichten, bevor sie in den Syslog-Speicher geschrieben werden."
+
+//ORI "Buffer size (messages)"
+21253 "Puffergröße (Nachrichten)"
+
+//ORI "A larger buffer helps to handle bursts of syslog traffic. New messages are discarded if the buffer is full."
+21254 "Ein größerer Puffer hilft beim Abfangen von Syslog-Verkehrsspitzen. Neue Nachrichten werden verworfen, wenn der Puffer voll ist."
+
+//ORI "Warn if buffer is % full"
+21255 "Warnen, wenn Puffer zu % voll"
+
+//ORI "A warning will appear in the collector's diagnostic records."
+21256 "In den Diagnoseeinträgen des Collectors erscheint eine Warnung."
+
+//ORI "Please enter a valid buffer size between 1,000 and 10,000,000."
+21257 "Bitte geben Sie eine gültige Puffergröße zwischen 1.000 und 10.000.000 ein."
+
+//ORI "Shown for information only. This path is not part of the collector configuration. To change it, use the Storage button on the main toolbar."
+21258 "Nur zur Information. Dieser Pfad ist nicht Teil der Collector-Konfiguration. Verwenden Sie zum Ändern die Schaltfläche Speicher in der Hauptsymbolleiste."
+
+// Migrate from Syslog Watcher 6 21400
+//ORI "Migrate from Syslog Watcher 6"
+21400 "Von Syslog Watcher 6 migrieren"
+
+//ORI "Syslog Watcher 6 data was found on this computer.\r\nYou can migrate the configuration and collected messages to Syslog Watcher 7."
+21401 "Auf diesem Computer wurden Daten von Syslog Watcher 6 gefunden.\r\nSie können die Konfiguration und die gesammelten Nachrichten nach Syslog Watcher 7 migrieren."
+
+//ORI "Test (Dry Run)"
+21402 "Test (Probelauf)"
+
+//ORI "Migrate"
+21403 "Migrieren"
+
+//ORI "Skip"
+21404 "Überspringen"
+
+//ORI "Click Test (Dry Run) to validate sources without writing.\r\nClick Migrate to convert the configuration to Syslog Watcher 7."
+21405 "Klicken Sie auf Test (Probelauf), um die Quellen ohne Schreibzugriff zu prüfen.\r\nKlicken Sie auf Migrieren, um die Konfiguration nach Syslog Watcher 7 zu konvertieren."
+
+//ORI "Migrate configuration from Syslog Watcher 6 to Syslog Watcher 7?\r\n\r\nSWNGServer and SW7Collector will be stopped, and SWNGServer will be set to manual start. The SW6 license will be moved to SW7 and removed from SW6. SW7 will use the existing SW6 storage folder (no message copy). Other SW6 data will remain on disk."
+21406 "Konfiguration von Syslog Watcher 6 nach Syslog Watcher 7 migrieren?\r\n\r\nSWNGServer und SW7Collector werden gestoppt, und SWNGServer wird auf manuellen Start gesetzt. Die SW6-Lizenz wird nach SW7 verschoben und aus SW6 entfernt. SW7 verwendet den vorhandenen SW6-Speicherordner (keine Kopie der Nachrichten). Andere SW6-Daten bleiben auf der Festplatte."
+
+//ORI "Migration completed SUCCESSFULLY.\r\n\r\nSyslog Watcher 7 is ready to collect messages. Please start the Collector when you are ready.\r\n\r\nIf Syslog Watcher 6 had a license, it was moved to Syslog Watcher 7 and is no longer in Syslog Watcher 6 (see the log above). The SWNGServer service is set to manual start."
+21407 "Migration ERFOLGREICH abgeschlossen.\r\n\r\nSyslog Watcher 7 ist bereit, Nachrichten zu sammeln. Bitte starten Sie den Collector, wenn Sie bereit sind.\r\n\r\nWenn Syslog Watcher 6 eine Lizenz hatte, wurde sie nach Syslog Watcher 7 verschoben und ist in Syslog Watcher 6 nicht mehr vorhanden (siehe Protokoll oben). Der Dienst SWNGServer ist auf manuellen Start gesetzt."
+
+//ORI "Migration finished with ERRORS. Review the results log."
+21408 "Migration mit FEHLERN beendet. Prüfen Sie das Ergebnisprotokoll."
+
+//ORI "Skip migration? You will not be asked again."
+21409 "Migration überspringen? Sie werden nicht erneut gefragt."
+
+//ORI "========== Migrate: Syslog Watcher 6.x → 7.0 =========="
+21410 "========== Migration: Syslog Watcher 6.x → 7.0 =========="
+
+//ORI "System time zone:"
+21411 "Systemzeitzone:"
+
+//ORI "ERROR: Failed to locate system time zone."
+21412 "FEHLER: Systemzeitzone konnte nicht ermittelt werden."
+
+//ORI "ERROR: Syslog Watcher 6.x was not found."
+21413 "FEHLER: Syslog Watcher 6.x wurde nicht gefunden."
+
+//ORI "Ensure SW6 service is stopped and starts manually."
+21414 "Sicherstellen, dass der SW6-Dienst gestoppt ist und manuell startet."
+
+//ORI "ERROR: Cannot stop SW6 service (SWNGServer)."
+21415 "FEHLER: SW6-Dienst (SWNGServer) kann nicht gestoppt werden."
+
+//ORI "Ensure SW7 collector is stopped."
+21416 "Sicherstellen, dass der SW7-Collector gestoppt ist."
+
+//ORI "ERROR: Cannot stop SW7 collector (SW7Collector)."
+21417 "FEHLER: SW7-Collector (SW7Collector) kann nicht gestoppt werden."
+
+//ORI "Move license file from SW6 to SW7."
+21418 "Lizenzdatei von SW6 nach SW7 verschieben."
+
+//ORI "WARNING: Migration continues without a license. Cannot install SW6 license file:"
+21419 "WARNUNG: Migration wird ohne Lizenz fortgesetzt. SW6-Lizenzdatei kann nicht installiert werden:"
+
+//ORI "WARNING: Migration continues without a license. Cannot load SW6 license file:"
+21420 "WARNUNG: Migration wird ohne Lizenz fortgesetzt. SW6-Lizenzdatei kann nicht geladen werden:"
+
+//ORI "SKIPPED: No SW6 license to migrate."
+21421 "ÜBERSPRUNGEN: Keine SW6-Lizenz zu migrieren."
+
+//ORI "Read SW6 configuration file."
+21422 "SW6-Konfigurationsdatei lesen."
+
+//ORI "ERROR: Cannot read SW6 configuration file."
+21423 "FEHLER: SW6-Konfigurationsdatei kann nicht gelesen werden."
+
+//ORI "Read SW7 server configuration file."
+21424 "SW7-Serverkonfigurationsdatei lesen."
+
+//ORI "ERROR: Cannot read SW7 server configuration file."
+21425 "FEHLER: SW7-Serverkonfigurationsdatei kann nicht gelesen werden."
+
+//ORI "Merge SW6 configuration into SW7 server configuration file."
+21426 "SW6-Konfiguration in die SW7-Serverkonfigurationsdatei übernehmen."
+
+//ORI "Write SW7 server configuration file."
+21428 "SW7-Serverkonfigurationsdatei schreiben."
+
+//ORI "ERROR: Cannot write SW7 configuration file."
+21429 "FEHLER: SW7-Konfigurationsdatei kann nicht geschrieben werden."
+
+//ORI "Locate SW6 syslog storage."
+21430 "SW6-Syslog-Speicher suchen."
+
+//ORI "ERROR: Cannot locate SW6 syslog storage."
+21431 "FEHLER: SW6-Syslog-Speicher kann nicht gefunden werden."
+
+//ORI "*** SW6 = Syslog Watcher 6.x *** SW7 = Syslog Watcher 7 ***"
+21432 "*** SW6 = Syslog Watcher 6.x *** SW7 = Syslog Watcher 7 ***"
+
+//ORI "ERROR: Cannot create SW7 storage index file."
+21433 "FEHLER: SW7-Speicherindexdatei kann nicht erstellt werden."
+
+//ORI "ERROR: SW7 syslog storage index already exists."
+21434 "FEHLER: SW7-Syslog-Speicherindex ist bereits vorhanden."
+
+//ORI "Migrate SW6 forwarders into SW7 features."
+21435 "SW6-Weiterleitungen in SW7-Funktionen migrieren."
+
+//ORI "WARNING: Failed to migrate feature"
+21436 "WARNUNG: Funktion konnte nicht migriert werden"
+
+//ORI "Import SW6 KB files into SW7 syslog storage."
+21437 "SW6-KB-Dateien in den SW7-Syslog-Speicher importieren."
+
+//ORI "ERROR: Cannot open SW7 storage index file."
+21438 "FEHLER: SW7-Speicherindexdatei kann nicht geöffnet werden."
+
+//ORI "WARNING: Skipped"
+21439 "WARNUNG: Übersprungen"
+
+//ORI "WARNING: File skipped (no '#' keyword section):"
+21440 "WARNUNG: Datei übersprungen (kein '#'-Schlüsselwortabschnitt):"
+
+//ORI "WARNING: Cannot add FD"
+21441 "WARNUNG: FD kann nicht hinzugefügt werden" // migration log, followed by a name; FD = field dictionary
+
+//ORI "Import SW6 FL files into SW7 syslog storage."
+21442 "SW6-FL-Dateien in den SW7-Syslog-Speicher importieren."
+
+//ORI "WARNING: Cannot add FL"
+21443 "WARNUNG: FL kann nicht hinzugefügt werden" // migration log, followed by a name; FL = filter list
+
+//ORI "Import SW6 view layouts into SW7 syslog storage."
+21444 "SW6-Ansichtslayouts in den SW7-Syslog-Speicher importieren."
+
+//ORI "WARNING: Layout skipped (parse failed):"
+21445 "WARNUNG: Layout übersprungen (Parsen fehlgeschlagen):"
+
+//ORI "Import SW6 report templates into SW7 syslog storage."
+21447 "SW6-Berichtsvorlagen in den SW7-Syslog-Speicher importieren."
+
+//ORI "WARNING: Report template skipped (parse failed):"
+21448 "WARNUNG: Berichtsvorlage übersprungen (Parsen fehlgeschlagen):"
+
+//ORI "Read SW7 collector configuration file."
+21450 "SW7-Collector-Konfigurationsdatei lesen."
+
+//ORI "ERROR: Cannot read SW7 collector configuration file."
+21451 "FEHLER: SW7-Collector-Konfigurationsdatei kann nicht gelesen werden."
+
+//ORI "Merge SW6 configuration into SW7 collector configuration file."
+21452 "SW6-Konfiguration in die SW7-Collector-Konfigurationsdatei übernehmen."
+
+//ORI "Write SW7 collector configuration file."
+21453 "SW7-Collector-Konfigurationsdatei schreiben."
+
+//ORI "Set new syslog storage path in SW7."
+21454 "Neuen Syslog-Speicherpfad in SW7 setzen."
+
+//ORI "ERROR: Cannot set syslog storage path in SW7."
+21455 "FEHLER: Syslog-Speicherpfad kann in SW7 nicht gesetzt werden."
+
+//ORI "ERROR: Service is not installed:"
+21456 "FEHLER: Dienst ist nicht installiert:"
+
+//ORI "Service is already stopped:"
+21457 "Dienst ist bereits gestoppt:"
+
+//ORI "Stopping service"
+21458 "Dienst wird gestoppt"
+
+//ORI "ERROR: Failed to stop service:"
+21459 "FEHLER: Dienst konnte nicht gestoppt werden:"
+
+//ORI "Passwords (decrypted / need to be re-entered):"
+21461 "Kennwörter (entschlüsselt / neu einzugeben):"
+
+//ORI "Features (migrated / failed):"
+21462 "Funktionen (migriert / fehlgeschlagen):"
+
+//ORI "Knowledge base (imported / skipped):"
+21463 "Wissensdatenbank (importiert / übersprungen):"
+
+//ORI "Filter lists (imported / skipped):"
+21464 "Filterlisten (importiert / übersprungen):"
+
+//ORI "View layouts (imported / skipped):"
+21465 "Ansichtslayouts (importiert / übersprungen):"
+
+//ORI "Report templates (imported / skipped):"
+21466 "Berichtsvorlagen (importiert / übersprungen):"
+
+//ORI "========== Dry run: Syslog Watcher 6.x → 7.0 (no changes) =========="
+21467 "========== Probelauf: Syslog Watcher 6.x → 7.0 (keine Änderungen) =========="
+
+//ORI "OK: writable —"
+21468 "OK: beschreibbar —"
+
+//ORI "ERROR: not writable —"
+21469 "FEHLER: nicht beschreibbar —"
+
+//ORI "Service is running (migrate will stop it):"
+21470 "Dienst läuft (die Migration stoppt ihn):"
+
+//ORI "OK: license file is valid (it will be moved to SW7 and removed from SW6)."
+21471 "OK: Lizenzdatei ist gültig (sie wird nach SW7 verschoben und aus SW6 entfernt)."
+
+//ORI "Dry run completed SUCCESSFULLY — no files were modified."
+21472 "Probelauf ERFOLGREICH abgeschlossen — keine Dateien wurden geändert."
+
+//ORI "Dry run finished with WARNINGS or ERRORS — no files were modified."
+21473 "Probelauf mit WARNUNGEN oder FEHLERN beendet — keine Dateien wurden geändert."
+
+//ORI "OK: storage folder is ready for a new SW7 index."
+21474 "OK: Speicherordner ist bereit für einen neuen SW7-Index."
+
+//ORI "WARNING: Password not decrypted (re-enter it after migration):"
+21475 "WARNUNG: Kennwort nicht entschlüsselt (nach der Migration erneut eingeben):"
+
+//ORI "Features (convertible / invalid):"
+21476 "Funktionen (konvertierbar / ungültig):"
+
+//ORI "Knowledge base (valid / invalid):"
+21477 "Wissensdatenbank (gültig / ungültig):"
+
+//ORI "Filter lists (valid / invalid):"
+21478 "Filterlisten (gültig / ungültig):"
+
+//ORI "View layouts (valid / invalid):"
+21479 "Ansichtslayouts (gültig / ungültig):"
+
+//ORI "Report templates (valid / invalid):"
+21480 "Berichtsvorlagen (gültig / ungültig):"
+
+//ORI "Secret"
+21483 "Geheime Zeichenfolge"
+
+//ORI "WARNING: Could not create secret (re-enter the password after migration):"
+21484 "WARNUNG: Geheime Zeichenfolge konnte nicht erstellt werden (Kennwort nach der Migration erneut eingeben):"
+
+//ORI "Migration completed, but the syslog storage could not be reopened.\r\n\r\nReview the error details, then open the storage manually if needed."
+21482 "Die Migration ist abgeschlossen, aber der Syslog-Speicher konnte nicht erneut geöffnet werden.\r\n\r\nPrüfen Sie die Fehlerdetails und öffnen Sie den Speicher bei Bedarf manuell."
+
+//ORI "User skipped migration."
+21485 "Benutzer hat die Migration übersprungen."
+
+//ORI "WARNING: Migration continues without a license. SW6 license file is invalid:"
+21486 "WARNUNG: Migration wird ohne Lizenz fortgesetzt. SW6-Lizenzdatei ist ungültig:"
+
+//ORI "WARNING: SW6 storage time zone differs from the server time zone. Daily archive and leftover SW6 files will keep the SW6 time zone:"
+21487 "WARNUNG: Die Zeitzone des SW6-Speichers unterscheidet sich von der Serverzeitzone. Das tägliche Archiv und verbleibende SW6-Dateien behalten die SW6-Zeitzone:"
+
+//ORI "IMPORTANT: Syslog storage retention and storage archive retention are turned off.\r\n\r\nCheck that the migrated limits are correct, then turn retention on manually in Server > Server Configuration... > Storage Maintenance.\r\nIt is left off so you can review those limits before any old messages or archives are removed."
+21488 "WICHTIG: Die Aufbewahrung im Syslog-Speicher und die Archivaufbewahrung sind ausgeschaltet.\r\n\r\nPrüfen Sie, ob die migrierten Limits korrekt sind, und schalten Sie die Aufbewahrung dann manuell unter Server > Serverkonfiguration... > Speicherwartung ein.\r\nSie bleibt ausgeschaltet, damit Sie diese Limits prüfen können, bevor alte Nachrichten oder Archive entfernt werden."
+
+//ORI "Migrated from Syslog Watcher 6"
+21489 "Von Syslog Watcher 6 migriert"
+
+//ORI "Migrated from Syslog Watcher 6 knowledge base"
+21490 "Aus der Wissensdatenbank von Syslog Watcher 6 migriert"
+
+//ORI "Migrated from Syslog Watcher 6 filter list"
+21491 "Aus der Filterliste von Syslog Watcher 6 migriert"
+
+//ORI "not writable"
+21492 "nicht beschreibbar"
+
+//ORI "License moved to SW7 and removed from SW6."
+21493 "Lizenz nach SW7 verschoben und aus SW6 entfernt."
+
+//ORI "WARNING: The license stays in SW6 and is not installed in SW7. Migration continues without a license. Cannot remove the license from SW6:"
+21494 "WARNUNG: Die Lizenz bleibt in SW6 und wird nicht in SW7 installiert. Migration wird ohne Lizenz fortgesetzt. Lizenz kann nicht aus SW6 entfernt werden:"
+
+//ORI "WARNING: The license stays in SW6 and is not installed in SW7. Migration continues without a license. SW6 license file is not writable:"
+21495 "WARNUNG: Die Lizenz bleibt in SW6 und wird nicht in SW7 installiert. Migration wird ohne Lizenz fortgesetzt. SW6-Lizenzdatei ist nicht beschreibbar:"
+
+//ORI "Service set to manual start:"
+21496 "Dienst auf manuellen Start gesetzt:"
+
+//ORI "Service startup type already Manual or Disabled, left unchanged:"
+21497 "Starttyp des Dienstes ist bereits Manuell oder Deaktiviert, unverändert gelassen:"
+
+//ORI "WARNING: Cannot set service to manual start. Set it to Manual in Windows Services so SW6 does not start after a restart. Service:"
+21498 "WARNUNG: Dienst kann nicht auf manuellen Start gesetzt werden. Setzen Sie ihn in den Windows-Diensten auf Manuell, damit SW6 nach einem Neustart nicht startet. Dienst:"
+
+//ORI "OK: startup type of service can be changed:"
+21499 "OK: Starttyp des Dienstes kann geändert werden:"
+
+//ORI "TLS certificate skipped (missing cert or key file)."
+21500 "TLS-Zertifikat übersprungen (Zertifikat- oder Schlüsseldatei fehlt)."
+
+//ORI "TLS certificate skipped (not PEM):"
+21501 "TLS-Zertifikat übersprungen (kein PEM):"
+
+//ORI "TLS certificate skipped (name conflict):"
+21502 "TLS-Zertifikat übersprungen (Namenskonflikt):"
+
+//ORI "TLS certificate import failed:"
+21503 "Import des TLS-Zertifikats fehlgeschlagen:"
+
+//ORI "TLS certificate"
+21504 "TLS-Zertifikat"
+
+//ORI "CA certificate skipped (not a CA PEM):"
+21505 "CA-Zertifikat übersprungen (kein CA-PEM):"
+
+//ORI "CA certificate skipped (name conflict):"
+21506 "CA-Zertifikat übersprungen (Namenskonflikt):"
+
+//ORI "CA certificate import failed:"
+21507 "Import des CA-Zertifikats fehlgeschlagen:"
+
+//ORI "CA folder skipped (not a directory):"
+21509 "CA-Ordner übersprungen (kein Verzeichnis):"
+
+//ORI "CA folder skipped (no CA PEM files):"
+21510 "CA-Ordner übersprungen (keine CA-PEM-Dateien):"
+
+//ORI "CA default path skipped (not imported)."
+21511 "CA-Standardpfad übersprungen (nicht importiert)."
+
+
+// Storage Location + Settings 21550
+//ORI "Storage Settings..."
+21550 "Speichereinstellungen..."
+
+//ORI "Unable to Change Storage Parameters"
+21551 "Speicherparameter können nicht geändert werden"
+
+//ORI "Unable to Get Storage Parameters"
+21552 "Speicherparameter können nicht gelesen werden"
+
+//ORI "Storage Settings"
+21553 "Speichereinstellungen"
+
+//ORI "Syslog Storage Location..."
+21554 "Syslog-Speicherort..."
+
+//ORI "Storage Location"
+21556 "Speicherort"
+
+//ORI "Folder in which received messages are stored."
+21557 "Ordner, in dem empfangene Nachrichten gespeichert werden."
+
+//ORI "Path"
+21558 "Pfad"
+
+//ORI "Path to the syslog storage folder."
+21559 "Pfad zum Ordner des Syslog-Speichers."
+
+//ORI "Syslog storage is the local file-based database for collected messages. If you change the storage path, a new syslog storage will be created in the specified folder."
+21560 "Der Syslog-Speicher ist die lokale dateibasierte Datenbank für gesammelte Nachrichten. Wenn Sie den Speicherpfad ändern, wird im angegebenen Ordner ein neuer Syslog-Speicher erstellt."
+
+//ORI "Please enter a non-blank path."
+21561 "Bitte geben Sie einen nicht leeren Pfad ein."
+
+//ORI "Unable to Change Storage Folder"
+21562 "Speicherordner kann nicht geändert werden"
+
+//ORI "You do not have permission to change the syslog storage location."
+21563 "Sie haben keine Berechtigung, den Syslog-Speicherort zu ändern."
+
+//ORI "Unable to Get Storage Folder"
+21564 "Speicherordner kann nicht gelesen werden"
+
+//ORI "Change syslog storage location..."
+21565 "Syslog-Speicherort ändern..."
+
+//ORI "Maintenance settings for the syslog storage: automatic cleanup and the storage archive."
+21566 "Wartungseinstellungen für den Syslog-Speicher: automatische Bereinigung und Speicherarchiv."
+
+//ORI "Network folders (mapped drives and UNC paths) cannot be used as the syslog storage location. Please choose a folder on a local disk."
+21567 "Netzwerkordner (zugeordnete Laufwerke und UNC-Pfade) können nicht als Syslog-Speicherort verwendet werden. Bitte wählen Sie einen Ordner auf einer lokalen Festplatte."
+
+//ORI "Please enter a valid retention period and a maximum storage size."
+21568 "Bitte geben Sie eine gültige Aufbewahrungsdauer und eine maximale Speichergröße ein."
+
+//ORI "Storage Limits"
+21569 "Speicherlimits"
+
+//ORI "Parameters that limit the syslog storage size. Important: These limits are applied only if enabled in Server ⮕ Server Configuration... ⮕ Storage Maintenance."
+21570 "Parameter, die die Größe des Syslog-Speichers begrenzen. Wichtig: Diese Limits gelten nur, wenn sie unter Server ⮕ Serverkonfiguration... ⮕ Speicherwartung aktiviert sind."
+
+//ORI "Delete files older than"
+21571 "Dateien löschen, die älter sind als"
+
+//ORI "Storage files older than the set number of days will be deleted. Important: These limits are applied only if enabled in Server ⮕ Server Configuration... ⮕ Storage Maintenance."
+21572 "Speicherdateien, die älter als die angegebene Anzahl von Tagen sind, werden gelöscht. Wichtig: Diese Limits gelten nur, wenn sie unter Server ⮕ Serverkonfiguration... ⮕ Speicherwartung aktiviert sind."
+
+//ORI "Maximum storage size (GB)"
+21573 "Maximale Speichergröße (GB)"
+
+//ORI "Delete older files when the storage size exceeds the set limit. Important: These limits are applied only if enabled in Server ⮕ Server Configuration... ⮕ Storage Maintenance."
+21574 "Ältere Dateien löschen, wenn die Speichergröße das festgelegte Limit überschreitet. Wichtig: Diese Limits gelten nur, wenn sie unter Server ⮕ Serverkonfiguration... ⮕ Speicherwartung aktiviert sind."
+
+// Storage speed test 21650
+//ORI "Test Storage Speed"
+21650 "Speichergeschwindigkeit testen"
+
+//ORI "Test Storage Speed..."
+21652 "Speichergeschwindigkeit testen..."
+
+//ORI "Start Test"
+21653 "Test starten"
+
+//ORI "Stop Test"
+21654 "Test stoppen"
+
+//ORI "Location"
+21655 "Speicherort"
+
+//ORI "Folder where the _speed_test_ subdirectory will be created."
+21656 "Ordner, in dem das Unterverzeichnis _speed_test_ erstellt wird."
+
+//ORI "Number of syslog originators"
+21657 "Anzahl der Syslog-Absender"
+
+//ORI "Important for the speed test: enter a rough estimate of your real number of syslog originators."
+21658 "Wichtig für den Geschwindigkeitstest: Geben Sie eine grobe Schätzung Ihrer tatsächlichen Anzahl von Syslog-Absendern ein."
+
+//ORI "Average message length"
+21659 "Durchschnittliche Nachrichtenlänge"
+
+//ORI "Average message body length in bytes (minimum 50)."
+21660 "Durchschnittliche Länge des Nachrichtentexts in Byte (mindestens 50)."
+
+//ORI "Test Parameters"
+21661 "Testparameter"
+
+//ORI "Parameters for the storage write throughput test. The test writes into a _speed_test_ folder under Location and deletes it when the test stops."
+21662 "Parameter für den Schreibdurchsatztest des Speichers. Der Test schreibt in einen Ordner _speed_test_ unter Speicherort und löscht ihn, wenn der Test stoppt."
+
+//ORI "Writing to:"
+21663 "Schreiben nach:"
+
+//ORI "Originators:"
+21664 "Absender:"
+
+//ORI "Stopping: waiting for the queue to drain..."
+21666 "Wird gestoppt: Warten auf das Leeren der Warteschlange..."
+
+//ORI "Stopped."
+21667 "Gestoppt."
+
+//ORI "Deleted test files in "
+21668 "Testdateien gelöscht in "
+
+//ORI "WARNING: Could not delete test files in "
+21669 "WARNUNG: Testdateien konnten nicht gelöscht werden in "
+
+//ORI "ERROR: Location is empty."
+21670 "FEHLER: Speicherort ist leer."
+
+//ORI "ERROR: Cannot create test folder "
+21671 "FEHLER: Testordner kann nicht erstellt werden "
+
+//ORI "Syslog storage location, retention limits, and storage speed test."
+21673 "Syslog-Speicherort, Aufbewahrungslimits und Speichergeschwindigkeitstest."
+
+//ORI "Waiting for the first results (about 5 seconds)..."
+21674 "Warten auf die ersten Ergebnisse (etwa 5 Sekunden)..."
+
+//ORI "Average message length:"
+21675 "Durchschnittliche Nachrichtenlänge:"
+
+//ORI "speed"
+21676 "Geschw." // speed test log: speed=1,234 msg/s (current rate)
+
+//ORI "avg"
+21677 "Mittel" // speed test log: avg=1,200 msg/s (average since start)
+
+//ORI "total"
+21678 "Gesamt" // speed test log: total=50,000 (messages written)
+
+//ORI "invalid path"
+21679 "ungültiger Pfad"
+
+//ORI "unknown"
+21680 "unbekannt"
+
+//ORI "write failed"
+21681 "Schreiben fehlgeschlagen"
+
+// Reports + Report Templates 22000
+//ORI "Generate Report Now..."
+22000 "Bericht jetzt erzeugen..."
+
+//ORI "Generate a syslog report immediately. Syslog Watcher Manager is unavailable until generation is complete."
+22001 "Einen Syslog-Bericht sofort erzeugen. Syslog Watcher Manager ist bis zum Abschluss der Erzeugung nicht verfügbar."
+
+//ORI "Show Scheduled Reports"
+22002 "Geplante Berichte anzeigen"
+
+//ORI "Show generated report history, schedule new reports, or edit existing ones."
+22003 "Verlauf der erzeugten Berichte anzeigen, neue Berichte planen oder vorhandene bearbeiten."
+
+//ORI "Manage Report Templates..."
+22004 "Berichtsvorlagen verwalten..."
+
+//ORI "Manage report templates: Report templates define the message analysis and output file format."
+22005 "Berichtsvorlagen verwalten: Berichtsvorlagen legen die Nachrichtenanalyse und das Format der Ausgabedatei fest."
+
+//ORI "Report Templates"
+22006 "Berichtsvorlagen"
+
+//ORI "Report Template"
+22008 "Berichtsvorlage"
+
+//ORI "New Report Template"
+22009 "Neue Berichtsvorlage"
+
+//ORI "Edit Report Template"
+22010 "Berichtsvorlage bearbeiten"
+
+//ORI "SQL Commands"
+22011 "SQL-Befehle"
+
+//ORI "Command to execute when a message passes the filter."
+22012 "Befehl, der ausgeführt wird, wenn eine Nachricht den Filter passiert."
+
+//ORI "Add Commands"
+22013 "Befehle hinzufügen"
+
+//ORI "Collecting Data"
+22014 "Datenerfassung"
+
+//ORI "Settings that define data collection commands."
+22015 "Einstellungen, die die Befehle zur Datenerfassung festlegen."
+
+//ORI "Initialization (SQL commands)"
+22016 "Initialisierung (SQL-Befehle)"
+
+//ORI "Commands for setting up the environment. Create tables, indexes, and triggers here."
+22017 "Befehle zum Einrichten der Umgebung. Erstellen Sie hier Tabellen, Indizes und Trigger."
+
+//ORI "Finalization (SQL commands)"
+22018 "Abschluss (SQL-Befehle)"
+
+//ORI "Commands for processing the collected data and preparing it for output."
+22019 "Befehle zum Verarbeiten der erfassten Daten und zur Vorbereitung der Ausgabe."
+
+//ORI "Output File"
+22020 "Ausgabedatei"
+
+//ORI "Settings that define the output file template, name, and location."
+22021 "Einstellungen, die Vorlage, Name und Speicherort der Ausgabedatei festlegen."
+
+//ORI "Name of the report file to generate."
+22023 "Name der zu erzeugenden Berichtsdatei."
+
+//ORI "Report file contents"
+22024 "Inhalt der Berichtsdatei"
+
+//ORI "Template for generating an output report file using the collected data."
+22025 "Vorlage zum Erzeugen der Berichtsdatei aus den erfassten Daten."
+
+//ORI "Please enter a filename."
+22026 "Bitte geben Sie einen Dateinamen ein."
+
+//ORI "Please enter an SQL command or delete it."
+22027 "Bitte geben Sie einen SQL-Befehl ein oder löschen Sie ihn."
+
+//ORI "For Each Message"
+22028 "Für jede Nachricht"
+
+//ORI "Use SQL commands to transform messages into data and insert the data into the tables created by the initialization SQL commands."
+22029 "Verwenden Sie SQL-Befehle, um Nachrichten in Daten umzuwandeln und diese in die von den Initialisierungsbefehlen erstellten Tabellen einzufügen."
+
+//ORI "The report template contains data collection instructions (SQL commands) and a text template (TXT or HTML) for generating the final file."
+22030 "Die Berichtsvorlage enthält Anweisungen zur Datenerfassung (SQL-Befehle) und eine Textvorlage (TXT oder HTML) zum Erzeugen der endgültigen Datei."
+
+//ORI "Execute the command only for messages that pass this filter."
+22031 "Den Befehl nur für Nachrichten ausführen, die diesen Filter passieren."
+
+//ORI "Report template"
+22032 "Berichtsvorlage"
+
+//ORI "Report template that will be used to generate reports."
+22033 "Berichtsvorlage, mit der die Berichte erzeugt werden."
+
+//ORI "Run"
+22034 "Ausführen" // report schedule selector: As soon as possible / Once / Recurring / Weekly / Monthly
+
+//ORI "Parameters that define the report generation schedule."
+22035 "Parameter, die den Zeitplan der Berichterzeugung festlegen."
+
+//ORI "As soon as possible"
+22036 "So bald wie möglich"
+
+//ORI "Once"
+22037 "Einmal" // report schedule: run one time at a set date/time
+
+//ORI "Recurring"
+22038 "Wiederkehrend"
+
+//ORI "Weekly"
+22039 "Wöchentlich"
+
+//ORI "Monthly"
+22040 "Monatlich"
+
+//ORI "Run on"
+22042 "Ausführen am"
+
+//ORI "The report will be generated at midnight on a specific day of the week."
+22043 "Der Bericht wird um Mitternacht an einem bestimmten Wochentag erzeugt."
+
+//ORI "Run on (month day)"
+22044 "Ausführen am (Tag des Monats)"
+
+//ORI "Day of the month when the report will be generated at midnight."
+22045 "Tag des Monats, an dem der Bericht um Mitternacht erzeugt wird."
+
+//ORI "Report configuration."
+22046 "Berichtskonfiguration."
+
+//ORI "Repeat"
+22047 "Wiederholen"
+
+//ORI "Range"
+22048 "Zeitraum" // column: time range covered by the report
+
+//ORI "Generate Report"
+22049 "Bericht erzeugen"
+
+//ORI "Schedule New Report..."
+22050 "Neuen Bericht planen..."
+
+//ORI "Schedule a new syslog report"
+22051 "Einen neuen Syslog-Bericht planen"
+
+//ORI "Schedule Report"
+22052 "Bericht planen"
+
+//ORI "General"
+22053 "Allgemein" // category: general report properties
+
+//ORI "General report properties"
+22054 "Allgemeine Berichtseigenschaften"
+
+//ORI "Edit Scheduled Report"
+22055 "Geplanten Bericht bearbeiten"
+
+//ORI "Schedule"
+22056 "Zeitplan"
+
+//ORI "Open Report"
+22057 "Bericht öffnen"
+
+//ORI "Change the report template, syslog filter, message range, or the time of a one-time report. To change the schedule, cancel the report and use Reschedule."
+22059 "Berichtsvorlage, Syslog-Filter, Nachrichtenbereich oder den Zeitpunkt eines einmaligen Berichts ändern. Um den Zeitplan zu ändern, brechen Sie den Bericht ab und verwenden Sie Neu planen."
+
+//ORI "Delete generated report files and the report history entry."
+22060 "Erzeugte Berichtsdateien und den Verlaufseintrag des Berichts löschen."
+
+//ORI "Open the generated report file."
+22061 "Die erzeugte Berichtsdatei öffnen."
+
+//ORI "Filter to select messages for the report."
+22062 "Filter zur Auswahl der Nachrichten für den Bericht."
+
+//ORI "Unable to Load Reports"
+22064 "Berichte können nicht geladen werden"
+
+//ORI "Last 365 days"
+22065 "Letzte 365 Tage"
+
+//ORI "Last 3 days"
+22066 "Letzte 3 Tage"
+
+//ORI "Last 7 days"
+22067 "Letzte 7 Tage"
+
+//ORI "Last 14 days"
+22068 "Letzte 14 Tage"
+
+//ORI "Last 30 days"
+22069 "Letzte 30 Tage"
+
+//ORI "Last 60 days"
+22070 "Letzte 60 Tage"
+
+//ORI "Last 180 days"
+22071 "Letzte 180 Tage"
+
+//ORI "At"
+22072 "Am" // report schedule Once: label of the date/time field (when to run)
+
+//ORI "Date and time for the syslog report."
+22073 "Datum und Uhrzeit für den Syslog-Bericht."
+
+//ORI "First at"
+22074 "Erstmals am" // report schedule Recurring: label of the date/time field (first run)
+
+//ORI "Date and time of the first report. Together with the repeat interval, this defines the message range."
+22075 "Datum und Uhrzeit des ersten Berichts. Zusammen mit dem Wiederholungsintervall legt dies den Nachrichtenbereich fest."
+
+//ORI "Repeat every"
+22076 "Wiederholen alle"
+
+//ORI "Interval for scheduling new reports. This also defines the syslog message range."
+22077 "Intervall für die Planung neuer Berichte. Es legt auch den Bereich der Syslog-Nachrichten fest."
+
+//ORI "Scheduled"
+22078 "Geplant"
+
+//ORI "Waiting..."
+22079 "Wartet..."
+
+//ORI "Completed"
+22081 "Abgeschlossen"
+
+//ORI "...processing..."
+22082 "...wird erzeugt..." // report status: being generated
+
+//ORI "Canceled"
+22083 "Abgebrochen"
+
+//ORI "Unable to Open Report"
+22084 "Bericht kann nicht geöffnet werden"
+
+//ORI "Date/Time"
+22085 "Datum/Uhrzeit"
+
+//ORI "<no report templates>"
+22086 "<keine Berichtsvorlagen>"
+
+//ORI "Are you sure you want to cancel or delete this report?"
+22089 "Möchten Sie diesen Bericht wirklich abbrechen oder löschen?"
+
+//ORI "Unable to Cancel Report"
+22090 "Bericht kann nicht abgebrochen werden"
+
+//ORI "Unable to Delete Report"
+22091 "Bericht kann nicht gelöscht werden"
+
+//ORI "Unable to Edit Report"
+22092 "Bericht kann nicht bearbeitet werden"
+
+//ORI "Execute for"
+22095 "Ausführen für"
+
+//ORI "Show reports for:"
+22096 "Berichte anzeigen für:"
+
+//ORI "Speed"
+22097 "Geschwindigkeit"
+
+//ORI "Report records"
+22098 "Berichtseinträge"
+
+//ORI "Incomplete"
+22099 "Unvollständig"
+
+//ORI "Errors"
+22100 "Fehler"
+
+//ORI "No report records. Increase the range to see older reports, or schedule a new report."
+22101 "Keine Berichtseinträge. Vergrößern Sie den Zeitraum, um ältere Berichte zu sehen, oder planen Sie einen neuen Bericht."
+
+//ORI "Unable to Add Template"
+22102 "Vorlage kann nicht hinzugefügt werden"
+
+//ORI "Unable to Edit Template"
+22103 "Vorlage kann nicht bearbeitet werden"
+
+//ORI "Unable to Delete Template"
+22104 "Vorlage kann nicht gelöscht werden"
+
+//ORI "Sundays"
+22106 "Sonntags" // 22106–22112: Sunday…Saturday, must stay in this order (indexed by day of week)
+
+//ORI "Mondays"
+22107 "Montags"
+
+//ORI "Tuesdays"
+22108 "Dienstags"
+
+//ORI "Wednesdays"
+22109 "Mittwochs"
+
+//ORI "Thursdays"
+22110 "Donnerstags"
+
+//ORI "Fridays"
+22111 "Freitags"
+
+//ORI "Saturdays"
+22112 "Samstags"
+
+//ORI "on"
+22113 "am" // e.g. on 1 day of month
+
+//ORI "Reschedule..."
+22114 "Neu planen..."
+
+//ORI "Schedule the selected report again."
+22115 "Den ausgewählten Bericht erneut planen."
+
+//ORI "Generating Report..."
+22116 "Bericht wird erzeugt..."
+
+//ORI "Scheduled Reports"
+22117 "Geplante Berichte"
+
+//ORI "Unable to Load Templates"
+22118 "Vorlagen können nicht geladen werden"
+
+//ORI "Unable to Generate Report"
+22119 "Bericht kann nicht erzeugt werden"
+
+//ORI "Report generation failed."
+22120 "Die Berichterzeugung ist fehlgeschlagen."
+
+//ORI "The report no longer exists."
+22121 "Der Bericht existiert nicht mehr."
+
+//ORI "The report is being generated. Cancel it first, or wait until it finishes."
+22122 "Der Bericht wird gerade erzeugt. Brechen Sie ihn zuerst ab oder warten Sie, bis er fertig ist."
+
+//ORI "The report is no longer scheduled."
+22123 "Der Bericht ist nicht mehr geplant."
+
+//ORI "The report is being generated and can no longer be changed. To use new settings, cancel it and use Reschedule."
+22124 "Der Bericht wird gerade erzeugt und kann nicht mehr geändert werden. Um neue Einstellungen zu verwenden, brechen Sie ihn ab und verwenden Sie Neu planen."
+
+//ORI "Result"
+22125 "Ergebnis" // column
+
+//ORI "Please select a report template."
+22126 "Bitte wählen Sie eine Berichtsvorlage aus."
+
+// HTTP Errors 29400
+//ORI "Authentication failed. Username or password is incorrect."
+29401 "Authentifizierung fehlgeschlagen. Benutzername oder Kennwort ist falsch."
+
+//ORI "Access denied. This account is not allowed to perform this operation."
+29402 "Zugriff verweigert. Dieses Konto darf diesen Vorgang nicht ausführen."
+
+//ORI "Unknown error"
+29403 "Unbekannter Fehler"
+
+//ORI "Too many requests."
+29404 "Zu viele Anfragen."
+
+//ORI "Service unavailable."
+29405 "Dienst nicht verfügbar."
+
+//ORI "The item was changed by another user. Close this window, open it again, and repeat your changes."
+29406 "Das Element wurde von einem anderen Benutzer geändert. Schließen Sie dieses Fenster, öffnen Sie es erneut und wiederholen Sie Ihre Änderungen."
+
+//ORI "The item was not found. It may have been deleted by another user."
+29407 "Das Element wurde nicht gefunden. Möglicherweise wurde es von einem anderen Benutzer gelöscht."
+
+//ORI "The item is in use and cannot be deleted. Remove the settings that use it first."
+29408 "Das Element wird verwendet und kann nicht gelöscht werden. Entfernen Sie zuerst die Einstellungen, die es verwenden."
+
+//ORI "The change refers to an item that no longer exists. It may have been deleted by another user. Close this window, open it again, and select it again."
+29409 "Die Änderung bezieht sich auf ein Element, das nicht mehr existiert. Möglicherweise wurde es von einem anderen Benutzer gelöscht. Schließen Sie dieses Fenster, öffnen Sie es erneut und wählen Sie das Element erneut aus."
+
+//ORI "The service rejected the saved password. It may have been changed in another Manager. Connect again with the current password."
+29410 "Der Dienst hat das gespeicherte Kennwort abgelehnt. Möglicherweise wurde es in einem anderen Manager geändert. Verbinden Sie sich erneut mit dem aktuellen Kennwort."
+
+// Filter by Originators 30750
+//ORI "ALL ORIGINATORS"
+30750 "ALLE ABSENDER"
+
+//ORI "Filters syslog messages by originators and originator groups."
+30752 "Filtert Syslog-Nachrichten nach Absendern und Absendergruppen."
+
+//ORI "<select originators>"
+30754 "<Absender auswählen>"
+
+// Filter editor 30800
+//ORI "Filter expression:"
+30802 "Filterausdruck:"
+
+//ORI "Standard Fields"
+30803 "Standardfelder"
+
+//ORI "Operators"
+30804 "Operatoren"
+
+//ORI "Logic"
+30805 "Logik" // filter editor button: insert a logical operator (AND, OR, NOT)
+
+//ORI "Blank expression matches any syslog message."
+30806 "Ein leerer Ausdruck passt auf jede Syslog-Nachricht."
+
+//ORI "INVALID SYNTAX"
+30807 "UNGÜLTIGE SYNTAX"
+
+//ORI "SYNTAX OK"
+30808 "SYNTAX OK"
+
+//ORI "A filter expression contains one or more conditions joined with logical operators. Examples:\r\n{FIELD1}=""foo"" and {FIELD2}!=""bar""\r\n{FIELD}<=50 or {FIELD}=100\r\n{FIELD} CONTAINS ""foobar""\r\n{FIELD} STARTS_WITH ""foo""\r\n{FIELD} IN ""List""\r\nSee the reference manual for more examples."
+30810 "Ein Filterausdruck enthält eine oder mehrere Bedingungen, die mit logischen Operatoren verknüpft sind. Beispiele:\r\n{FIELD1}=""foo"" and {FIELD2}!=""bar""\r\n{FIELD}<=50 or {FIELD}=100\r\n{FIELD} CONTAINS ""foobar""\r\n{FIELD} STARTS_WITH ""foo""\r\n{FIELD} IN ""List""\r\nWeitere Beispiele finden Sie im Referenzhandbuch."
+
+// Text with fields editor 30850
+//ORI "Text with fields:"
+30852 "Text mit Feldern:"
+
+//ORI "Insert Standard Field"
+30853 "Standardfeld einfügen"
+
+//ORI "Use data fields extracted from a message. For more information, refer to the user manual."
+30854 "Verwenden Sie aus einer Nachricht extrahierte Datenfelder. Weitere Informationen finden Sie im Benutzerhandbuch."
+
+// Regexp editor 30900
+//ORI "Regex Editor..."
+30901 "Regex-Editor..."
+
+//ORI "Regular expression with named capture groups (?<FIELD_NAME>…):"
+30902 "Regulärer Ausdruck mit benannten Gruppen (?<FELDNAME>…):"
+
+//ORI "(Optional) Part of a syslog message for testing:"
+30903 "(Optional) Teil einer Syslog-Nachricht zum Testen:"
+
+//ORI "Enter a regular expression with named capture groups to extract data fields.\r\n\r\nExample: ""(?<NAME>[^""]*)""\r\nExplanation: The name is between double quotes ("""") and can be used as {NAME}.\r\n\r\nExample: ip=(?<IP>\\S+)\r\nExplanation: Extracts the characters between ""ip="" and the following space to place it in the {IP} field."
+30904 "Geben Sie einen regulären Ausdruck mit benannten Gruppen ein, um Datenfelder zu extrahieren.\r\n\r\nBeispiel: ""(?<NAME>[^""]*)""\r\nErklärung: Der Name steht zwischen doppelten Anführungszeichen ("""") und kann als {NAME} verwendet werden.\r\n\r\nBeispiel: ip=(?<IP>\\S+)\r\nErklärung: Extrahiert die Zeichen zwischen ""ip="" und dem folgenden Leerzeichen in das Feld {IP}."
+
+//ORI "The regular expression is invalid."
+30905 "Der reguläre Ausdruck ist ungültig."
+
+//ORI "Add one or more named capture groups to extract data fields.\r\n\r\nFor example: ip=(?<IP>\\S+)"
+30906 "Fügen Sie eine oder mehrere benannte Gruppen hinzu, um Datenfelder zu extrahieren.\r\n\r\nZum Beispiel: ip=(?<IP>\\S+)"
+
+//ORI "No fields were extracted."
+30907 "Es wurden keine Felder extrahiert."
+
+//ORI "The regular expression is valid.\r\n\r\nEnter a test message to check how it works."
+30908 "Der reguläre Ausdruck ist gültig.\r\n\r\nGeben Sie eine Testnachricht ein, um seine Funktion zu prüfen."
+
+// General 31000
+//ORI "Originators"
+31000 "Absender"
+
+//ORI "Unable to Read Storage"
+31003 "Speicher kann nicht gelesen werden"
+
+//ORI "Export to File..."
+31005 "In Datei exportieren..."
+
+//ORI "Import from File..."
+31006 "Aus Datei importieren..."
+
+//ORI "Expand All"
+31007 "Alle aufklappen"
+
+//ORI "Collapse All"
+31008 "Alle zuklappen"
+
+//ORI "Copy"
+31009 "Kopieren"
+
+//ORI "Paste"
+31010 "Einfügen"
+
+//ORI "Yes"
+31011 "Ja"
+
+//ORI "No"
+31012 "Nein"
+
+//ORI "ALL MESSAGES"
+31013 "ALLE NACHRICHTEN"
+
+//ORI "<unnamed>"
+31014 "<unbenannt>"
+
+//ORI "Please enter a valid filter expression."
+31015 "Bitte geben Sie einen gültigen Filterausdruck ein."
+
+//ORI "JSON File"
+31016 "JSON-Datei"
+
+//ORI "Please enter a name."
+31017 "Bitte geben Sie einen Namen ein."
+
+//ORI "Name"
+31018 "Name"
+
+//ORI "Short, unique identifier."
+31019 "Kurze, eindeutige Bezeichnung." // Name field explanation
+
+//ORI "Description"
+31020 "Beschreibung"
+
+//ORI "Longer description with details."
+31021 "Längere Beschreibung mit Details." // Description field explanation
+
+//ORI "Apply"
+31022 "Anwenden"
+
+//ORI "Cancel"
+31023 "Abbrechen"
+
+//ORI "Changes Not Applied"
+31024 "Änderungen nicht übernommen"
+
+//ORI "The changes you have made will be discarded."
+31025 "Die vorgenommenen Änderungen werden verworfen."
+
+//ORI "NO MESSAGES"
+31026 "KEINE NACHRICHTEN"
+
+//ORI "invalid filter"
+31027 "ungültiger Filter"
+
+//ORI "Create New"
+31028 "Neu erstellen"
+
+//ORI "Duplicate"
+31029 "Duplizieren"
+
+//ORI "Delete"
+31030 "Löschen"
+
+//ORI "Edit..."
+31031 "Bearbeiten..."
+
+//ORI "Close"
+31032 "Schließen"
+
+//ORI "There are no items in the list."
+31033 "Die Liste enthält keine Einträge."
+
+//ORI "Stopped"
+31034 "Gestoppt"
+
+//ORI "Confirmation Required"
+31035 "Bestätigung erforderlich"
+
+//ORI "Are you sure you want to delete the items listed below?"
+31036 "Möchten Sie die unten aufgeführten Elemente wirklich löschen?"
+
+//ORI "copy"
+31037 "Kopie" // appended to a duplicated item's name, followed by a number: "Name - copy 2"
+
+//ORI "Syslog Storage"
+31038 "Syslog-Speicher"
+
+//ORI "Create"
+31040 "Erstellen"
+
+//ORI "Installation"
+31041 "Installation" // source of a built-in item (installation folder); prefix: Installation: <name>
+
+//ORI "Error"
+31042 "Fehler"
+
+//ORI "Processing"
+31043 "In Verarbeitung" // state
+
+//ORI "Suspended"
+31044 "Angehalten" // state
+
+//ORI "Maximum number of items reached."
+31045 "Maximale Anzahl von Elementen erreicht."
+
+//ORI "<any>"
+31046 "<beliebig>"
+
+//ORI "Refresh"
+31047 "Aktualisieren"
+
+//ORI "Refresh the current view"
+31048 "Aktuelle Ansicht aktualisieren"
+
+//ORI "Messages"
+31049 "Nachrichten"
+
+//ORI "OFF"
+31050 "AUS" // disabled; shown as for example "Filter [OFF]"
+
+//ORI "second"
+31051 "Sekunde" // used when N = 1
+
+//ORI "seconds"
+31052 "Sekunden" // used when N ≠ 1
+
+//ORI "Tab updated"
+31053 "Registerkarte aktualisiert" // status bar: Tab updated: 5s ago (125 ms)
+
+//ORI "ms"
+31054 "ms" // milliseconds, e.g. 125 ms
+
+//ORI "Incremental update interval"
+31055 "Intervall für inkrementelle Aktualisierung"
+
+//ORI "Features"
+31057 "Funktionen"
+
+//ORI "day"
+31058 "Tag" // used when N = 1
+
+//ORI "days"
+31059 "Tage" // used when N ≠ 1
+
+//ORI "hour"
+31060 "Stunde" // used when N = 1
+
+//ORI "hours"
+31061 "Stunden" // used when N ≠ 1
+
+//ORI "minute"
+31062 "Minute" // used when N = 1
+
+//ORI "minutes"
+31063 "Minuten" // used when N ≠ 1
+
+//ORI "<no filter>"
+31064 "<kein Filter>"
+
+//ORI "Email"
+31065 "E-Mail"
+
+//ORI "hour(s)"
+31066 "Stunde(n)"
+
+//ORI "day(s)"
+31067 "Tag(e)"
+
+//ORI "minute(s)"
+31068 "Minute(n)"
+
+//ORI "Duration"
+31069 "Dauer"
+
+//ORI "Every"
+31070 "Alle" // interval: auto-refresh "Every 5s"; recurring report "Every 2 hours"
+
+//ORI "Auto: OFF"
+31071 "Auto: AUS" // auto-refresh drop-down: automatic refresh is disabled
+
+//ORI "Request"
+31072 "Anfrage" // button
+
+//ORI "Please select a view layout."
+31073 "Bitte wählen Sie ein Ansichtslayout aus."
+
+//ORI "Editor"
+31074 "Editor"
+
+//ORI "Editor..."
+31075 "Editor..."
+
+//ORI "Status"
+31078 "Status"
+
+//ORI "msg/s"
+31079 "Nachr./s" // messages per second, e.g. 1,234 msg/s
+
+//ORI "Network Interfaces"
+31080 "Netzwerkschnittstellen"
+
+//ORI "General Properties"
+31081 "Allgemeine Eigenschaften"
+
+//ORI "Filename template"
+31082 "Dateinamenvorlage"
+
+//ORI "Advanced"
+31083 "Erweitert"
+
+//ORI "Advanced settings have optimal defaults for most cases."
+31084 "Die erweiterten Einstellungen haben für die meisten Fälle optimale Standardwerte."
+
+//ORI "Open the help page"
+31085 "Hilfeseite öffnen"
+
+//ORI "Basic properties of an entity: name, description, etc."
+31086 "Grundlegende Eigenschaften eines Elements: Name, Beschreibung usw."
+
+//ORI "Disabled"
+31087 "Deaktiviert"
+
+//ORI "Field name"
+31088 "Feldname"
+
+//ORI "Field Collections"
+31089 "Feldsammlungen"
+
+//ORI "Support keyword"
+31090 "Support-Schlüsselwort"
+
+//ORI "Recommendations"
+31091 "Empfehlungen"
+
+//ORI "Set Checkmarks"
+31092 "Häkchen setzen"
+
+//ORI "Clear Checkmarks"
+31093 "Häkchen entfernen"
+
+//ORI "Invert Checkmarks"
+31094 "Häkchen umkehren"
+
+//ORI "Section"
+31095 "Abschnitt"
+
+//ORI "Add Section"
+31096 "Abschnitt hinzufügen"
+
+//ORI "Section filter"
+31097 "Abschnittsfilter"
+
+//ORI "View Layout"
+31098 "Ansichtslayout"
+
+//ORI "Parser"
+31099 "Parser"
+
+//ORI "Delete Confirmation"
+31101 "Löschen bestätigen"
+
+//ORI "Are you sure you want to delete it?"
+31102 "Möchten Sie es wirklich löschen?"
+
+//ORI "An item with the same name already exists.\r\nPlease specify a different name."
+31103 "Ein Element mit demselben Namen ist bereits vorhanden.\r\nBitte geben Sie einen anderen Namen an."
+
+//ORI "Filter"
+31104 "Filter"
+
+//ORI "Read Only"
+31108 "Schreibgeschützt"
+
+//ORI "not found"
+31109 "nicht gefunden" // after a missing item's name: "My Layout (not found)"
+
+//ORI "Select"
+31110 "Auswählen" // button
+
+//ORI "All Files"
+31113 "Alle Dateien"
+
+//ORI "From"
+31114 "Quelle" // column: where the item comes from (Installation / Syslog Storage)
+
+//ORI "Entities in the installation folder are read-only.\r\nDo you want to create a copy in the syslog storage?\r\n\r\nYes = Create an editable copy in the storage.\r\nNo = Open the item in read-only mode."
+31115 "Elemente im Installationsordner sind schreibgeschützt.\r\nMöchten Sie eine Kopie im Syslog-Speicher erstellen?\r\n\r\nJa = Eine bearbeitbare Kopie im Speicher erstellen.\r\nNein = Das Element schreibgeschützt öffnen."
+
+//ORI "Configuration File"
+31116 "Konfigurationsdatei"
+
+//ORI "Failed to Export Configuration"
+31117 "Konfiguration konnte nicht exportiert werden"
+
+//ORI "Failed to Import Configuration"
+31118 "Konfiguration konnte nicht importiert werden"
+
+//ORI "Originator ID"
+31119 "Absender-ID"
+
+//ORI "Group"
+31120 "Gruppe"
+
+//ORI "originator"
+31121 "Absender" // 1 originator
+
+//ORI "originators"
+31122 "Absender" // N originators
+
+//ORI "Please review the imported settings.\r\n\r\nPasswords, if included in the original configuration, were not imported and must be set again."
+31123 "Bitte prüfen Sie die importierten Einstellungen.\r\n\r\nKennwörter, falls in der ursprünglichen Konfiguration enthalten, wurden nicht importiert und müssen neu gesetzt werden."
+
+//ORI "Please choose an existing email account or create a new one."
+31124 "Bitte wählen Sie ein vorhandenes E-Mail-Konto oder erstellen Sie ein neues."
+
+//ORI "Time zone"
+31126 "Zeitzone"
+
+//ORI "Please provide the email address of the target recipient."
+31127 "Bitte geben Sie die E-Mail-Adresse des Empfängers an."
+
+//ORI "Work folder"
+31128 "Arbeitsordner"
+
+//ORI "Working folder for the process."
+31129 "Arbeitsordner für den Prozess."
+
+//ORI "Connection"
+31130 "Verbindung"
+
+//ORI "Authentication"
+31131 "Authentifizierung"
+
+//ORI "HTTP Request"
+31132 "HTTP-Anfrage"
+
+//ORI "Resource path"
+31133 "Ressourcenpfad"
+
+//ORI "Protocol"
+31134 "Protokoll"
+
+//ORI "Remote Access"
+31135 "Fernzugriff"
+
+//ORI "Private key password"
+31138 "Kennwort des privaten Schlüssels"
+
+//ORI "Certificate Authority (CA)"
+31139 "Zertifizierungsstelle (CA)"
+
+//ORI "ago"
+31152 "zuvor" // for time ranges, e.g. 5 minutes ago
+
+//ORI "Unknown"
+31155 "Unbekannt"
+
+//ORI "License"
+31157 "Lizenz"
+
+//ORI "Active"
+31159 "Aktiv"
+
+//ORI "Inactive"
+31160 "Inaktiv"
+
+//ORI "Delete All"
+31161 "Alle löschen"
+
+//ORI "Please enter a non-blank template or delete it."
+31164 "Bitte geben Sie eine nicht leere Vorlage ein oder löschen Sie sie."
+
+//ORI "Are you sure you want to delete all items?"
+31166 "Möchten Sie wirklich alle Elemente löschen?"
+
+//ORI "Import / Export"
+31167 "Import / Export"
+
+//ORI "<no view layouts>"
+31169 "<keine Ansichtslayouts>"
+
+//ORI "<no view layouts in storage>"
+31170 "<keine Ansichtslayouts im Speicher>"
+
+//ORI "View..."
+31172 "Anzeigen..."
+
+//ORI "Text File"
+31178 "Textdatei"
+
+//ORI "d"
+31187 "d" // days; compact duration: 2d 5h 3m 10s
+
+//ORI "h"
+31188 "h" // hours; compact duration: 2d 5h 3m 10s
+
+//ORI "m"
+31189 "m" // minutes (not months); compact duration: 2d 5h 3m 10s; refresh interval: Every 5m
+
+//ORI "s"
+31190 "s" // seconds; compact duration: 2d 5h 3m 10s; refresh interval: Every 5s; <1s
+
+//ORI "Groups"
+31191 "Gruppen"
+
+//ORI "Storage"
+31192 "Speicher"
+
+//ORI "Licenses"
+31193 "Lizenzen"
+
+//ORI "Export"
+31194 "Exportieren"
+
+//ORI "Midnight"
+31195 "Mitternacht"
+
+//ORI "Midday"
+31196 "Mittag"
+
+//ORI "bytes"
+31199 "Byte" // data size, e.g. 512 bytes
+
+//ORI "KB"
+31200 "KB" // data size, e.g. 1.5 KB
+
+//ORI "MB"
+31201 "MB" // data size, e.g. 1.5 MB
+
+//ORI "GB"
+31202 "GB" // data size, e.g. 1.5 GB
+
+//ORI "TB"
+31203 "TB" // data size, e.g. 1.5 TB
+
+//ORI "Password"
+31206 "Kennwort"
+
+//ORI "Username"
+31207 "Benutzername"
+
+//ORI "Type"
+31208 "Typ"
+
+//ORI "Server"
+31209 "Server"
+
+//ORI "Port"
+31210 "Port"
+
+//ORI "Generate"
+31211 "Erzeugen"
+
+//ORI "For help, click Support."
+57345 "Hilfe erhalten Sie über Support."
