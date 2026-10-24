@@ -1354,7 +1354,7 @@
 11364 "アラートメールの送信元アドレスです。SMTP サーバーがこのアドレスを有効な差出人 ('From') アドレスとして受け付けることを確認してください。"
 
 //ORI "Profile"
-11368 "プロファイル" // name of newly created SMP profiles
+11368 "プロファイル" // name of newly created SMTP profiles
 
 //ORI "Add Email Account"
 11369 "メールアカウントの追加"
