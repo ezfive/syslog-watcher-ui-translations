@@ -1107,8 +1107,8 @@
 //ORI "Your remote account is not allowed to start or stop the Syslog Collector or change its startup type."
 11073 "お使いのリモートアカウントには、Syslog コレクターの開始/停止やスタートアップの種類の変更は許可されていません。"
 
-//ORI "Ask a user in the Administrators group to perform this action."
-11074 "この操作は Administrators グループのユーザーに依頼してください。"
+//ORI "Ask a user with the Admin role to perform this action."
+11074 "この操作は、管理者ロールのユーザーに依頼してください。"
 
 //ORI "Service program:"
 11075 "サービスプログラム:"
@@ -1188,10 +1188,10 @@
 11152 "Syslog Watcher Manager の情報を表示します。"
 
 //ORI "Updates"
-11153 "更新"
+11153 "アップデート"
 
 //ORI "Show available product updates"
-11154 "利用可能な製品の更新を表示します"
+11154 "利用可能な製品のアップデートを表示します"
 
 //ORI "Support"
 11155 "サポート"
@@ -1351,7 +1351,7 @@
 11363 "差出人 ('From') のメールアドレス"
 
 //ORI "The address from which alert emails will be sent. Make sure your SMTP server accepts this address as a valid 'From' address."
-11364 "アラートメールの送信元アドレスです。SMTP サーバーがこのアドレスを有効な差出人 ('From') アドレスとして受け付けることを確認してください。"
+11364 "アラートメールの差出人アドレスです。SMTP サーバーがこのアドレスを有効な差出人 ('From') アドレスとして受け付けることを確認してください。"
 
 //ORI "Profile"
 11368 "プロファイル" // name of newly created SMTP profiles
@@ -1427,7 +1427,7 @@
 11407 "説明、目的、バージョンなどをここに記入します。"
 
 //ORI "#KEYWORD\r\nReplacement text.\r\n\r\n#another keyword\r\n\r\nEmpty lines can be added for readability.\r\n\r\n\r\n#\r\nBlank keyword for default text replacement."
-11408 "#KEYWORD\r\n置換テキスト。\r\n\r\n#another keyword\r\n\r\n読みやすくするために空行を入れることができます。\r\n\r\n\r\n#\r\n既定の置換テキスト用の空のキーワード。"
+11408 "#KEYWORD\r\n置換テキスト。\r\n\r\n#別のキーワード\r\n\r\n読みやすくするために空行を入れることができます。\r\n\r\n\r\n#\r\n既定の置換テキスト用の空のキーワード。"
 
 //ORI "Collection name"
 11410 "コレクション名"
@@ -1781,8 +1781,8 @@
 //ORI "Certificate"
 11673 "証明書"
 
-//ORI "Named certificate and private key from Manage Certificates."
-11674 "[証明書の管理] で登録した名前付きの証明書と秘密鍵です。"
+//ORI "Named certificate and private key from the TLS Certificates window."
+11674 "[TLS 証明書] で登録した名前付きの証明書と秘密鍵です。"
 
 //ORI "Certificate name"
 11675 "証明書名"
@@ -2063,7 +2063,7 @@
 
 // Updates 11800
 //ORI "A new version is available. Open Updates for details."
-11800 "新しいバージョンが利用可能です。詳細は [更新] を開いてください。"
+11800 "新しいバージョンが利用可能です。詳細は [アップデート] を開いてください。"
 
 //ORI "This version is not covered by the current license maintenance."
 11801 "このバージョンは、現在のライセンスの保守契約の対象外です。"
@@ -2072,10 +2072,10 @@
 11802 "バージョン"
 
 //ORI "No updates are available."
-11803 "利用可能な更新はありません。"
+11803 "利用可能なアップデートはありません。"
 
 //ORI "Failed to check for updates."
-11804 "更新を確認できませんでした。"
+11804 "アップデートを確認できませんでした。"
 
 //ORI "Download Page"
 11805 "ダウンロードページ"
@@ -2096,25 +2096,25 @@
 11810 "利用可能 (無償アップデート)"
 
 //ORI "Syslog Watcher could not reach the update server. Check the internet connection and try again."
-11811 "Syslog Watcher が更新サーバーに接続できませんでした。インターネット接続を確認して、もう一度お試しください。"
+11811 "Syslog Watcher がアップデートサーバーに接続できませんでした。インターネット接続を確認して、もう一度お試しください。"
 
 //ORI "Installed"
 11812 "インストール済み"
 
 //ORI "Syslog Watcher Updates"
-11813 "Syslog Watcher の更新"
+11813 "Syslog Watcher のアップデート"
 
 //ORI "Syslog Watcher"
 11814 "Syslog Watcher"
 
 //ORI "This Manager is version "
-11815 "このマネージャーのバージョンは " // version mismatch, part 1, followed by the Manager version: "This Manager is version 7.0.5, and the server is version 7.1.0." Keep the trailing space.
+11815 "このマネージャーのバージョン: " // version mismatch, part 1, followed by the Manager version: "This Manager is version 7.0.5, and the server is version 7.1.0." Keep the trailing space.
 
 //ORI "They are not the same product line. Update Manager or the server before continuing."
 11816 "製品ラインが異なります。続行する前に、マネージャーまたはサーバーを更新してください。"
 
 //ORI ", and the server is version "
-11817 "、サーバーのバージョンは " // version mismatch, part 2, follows the Manager version and is followed by the server version. Keep the leading comma and the trailing space.
+11817 "、サーバーのバージョン: " // version mismatch, part 2, follows the Manager version and is followed by the server version. Keep the leading comma and the trailing space.
 
 //ORI "Consider updating Manager or the server so they match."
 11818 "バージョンが一致するように、マネージャーまたはサーバーの更新を検討してください。"
@@ -2145,7 +2145,7 @@
 12007 "英語 (English)" // keep "English" as well: XXX (English)
 
 //ORI "Check for updates"
-12009 "更新を確認する"
+12009 "アップデートを確認する"
 
 //ORI "When Syslog Watcher Manager starts, check for the latest available product version."
 12010 "Syslog Watcher Manager の起動時に、最新の製品バージョンを確認します。"
@@ -2261,16 +2261,16 @@
 12201 "前の記録"
 
 //ORI "Show diagnostic records for the previous collector startup"
-12202 "前回のコレクター起動時の診断記録を表示します"
+12202 "1 つ前の起動の診断記録を表示します"
 
 //ORI "Next Records"
 12203 "次の記録"
 
 //ORI "Show diagnostic records for the next collector startup"
-12204 "次回のコレクター起動時の診断記録を表示します"
+12204 "1 つ後の起動の診断記録を表示します"
 
 //ORI "Started"
-12205 "開始" // collector startup list: "Started: <date/time>"
+12205 "起動" // collector startup list: "Started: <date/time>"
 
 //ORI "Show DEBUG records"
 12206 "DEBUG 記録を表示"
@@ -2450,7 +2450,7 @@
 12506 "プロトコル/IP/ポート"
 
 //ORI "Last Timestamp"
-12508 "最後のタイムスタンプ"
+12508 "最終タイムスタンプ"
 
 //ORI "Received"
 12509 "受信"
@@ -2459,10 +2459,10 @@
 12510 "接続中のクライアント"
 
 //ORI "Last Message"
-12512 "最後のメッセージ"
+12512 "最終メッセージ"
 
 //ORI "Last Discarded"
-12513 "最後の破棄"
+12513 "最終破棄"
 
 //ORI "Syslog Collector is stopped."
 12514 "Syslog コレクターは停止しています。"
@@ -2540,13 +2540,13 @@
 12551 "次回の同期"
 
 //ORI "Last Sync"
-12552 "前回の同期"
+12552 "最終同期"
 
 //ORI "Synced"
 12554 "同期済み"
 
 //ORI "Last error"
-12561 "最後のエラー"
+12561 "最終エラー"
 
 //ORI "retry in"
 12563 "再試行まで" // next retry of a failed feature: "(retry in 5m)"
@@ -2579,7 +2579,7 @@
 12573 "アクティブな機能はありません。"
 
 //ORI "Start Collector"
-12574 "コレクターの開始" // data flow diagram
+12574 "コレクターを開始" // data flow diagram
 
 //ORI "Discarded"
 12575 "破棄" // data flow diagram
@@ -2746,7 +2746,7 @@
 14031 "メッセージフィルターが適用されています:"
 
 //ORI "in ANY column"
-14032 "すべての列で"
+14032 "すべての列"
 
 //ORI "in"
 14033 "列:" // used in: Find IN ...
@@ -3366,7 +3366,7 @@
 15423 "ストリーム内のメッセージ"
 
 //ORI "Use the 'octet counting' algorithm"
-15425 "'octet counting' アルゴリズムを使用する"
+15425 "オクテットカウント方式を使用する"
 
 //ORI "Separate with \\0"
 15426 "\\0 で区切る"
@@ -3416,8 +3416,8 @@
 //ORI "When on, the target certificate is checked against Windows trusted roots and the optional CA certificate, and the name must match the target server."
 15447 "オンの場合、送信先の証明書を Windows の信頼されたルートとオプションの CA 証明書で検証し、名前が送信先サーバーと一致する必要があります。"
 
-//ORI "Named CA certificate from Manage Certificates. Leave blank to use Windows trusted roots only. Used only when Verify server certificate is on."
-15449 "[証明書の管理] で登録した名前付きの CA 証明書です。Windows の信頼されたルートのみを使用するには空のままにします。[サーバー証明書を検証する] がオンの場合にのみ使用されます。"
+//ORI "Named CA certificate from the TLS Certificates window. Leave blank to use Windows trusted roots only. Used only when Verify server certificate is on."
+15449 "[TLS 証明書] で登録した名前付きの CA 証明書です。Windows の信頼されたルートのみを使用するには空のままにします。[サーバー証明書を検証する] がオンの場合にのみ使用されます。"
 
 //ORI "Timeout"
 15450 "タイムアウト"
@@ -3584,13 +3584,13 @@
 19957 "最大メッセージ数/時"
 
 //ORI "Maintenance (support and updates)"
-19958 "保守 (サポートと更新)"
+19958 "保守契約 (サポートとアップデート)"
 
 //ORI "Owner"
 19959 "所有者"
 
 //ORI "Renew Maintenance"
-19960 "保守の更新"
+19960 "保守契約の更新"
 
 //ORI "Upgrade License"
 19961 "ライセンスのアップグレード"
@@ -3742,7 +3742,7 @@
 21012 "破棄しない (すべてのレベルを受け付ける)"
 
 //ORI "Discard if level"
-21013 "次のレベルの場合に破棄"
+21013 "破棄するレベル"
 
 //ORI "Discard messages with keywords"
 21014 "キーワードを含むメッセージを破棄する"
@@ -3951,7 +3951,7 @@
 21126 "TLS オプション"
 
 //ORI "Syslog Watcher acts as a TLS server when receiving syslog over TLS."
-21127 "syslog over TLS を受信するとき、Syslog Watcher は TLS サーバーとして動作します。"
+21127 "TLS による syslog を受信するとき、Syslog Watcher は TLS サーバーとして動作します。"
 
 //ORI "Minimum protocol version"
 21128 "プロトコルの最小バージョン"
@@ -4010,8 +4010,8 @@
 //ORI "Accept a client certificate if its fingerprint is listed. An empty fingerprints file rejects all self-signed clients."
 21169 "フィンガープリントが一覧にある場合、クライアント証明書を受け付けます。フィンガープリントのファイルが空の場合、自己署名のクライアントはすべて拒否されます。"
 
-//ORI "Named CA certificate from Manage Certificates. Leave blank to disable CA validation."
-21171 "[証明書の管理] で登録した名前付きの CA 証明書です。CA による検証を無効にするには空のままにします。"
+//ORI "Named CA certificate from the TLS Certificates window. Leave blank to disable CA validation."
+21171 "[TLS 証明書] で登録した名前付きの CA 証明書です。CA による検証を無効にするには空のままにします。"
 
 //ORI "Allow clients by IP"
 21172 "IP でクライアントを許可する"
@@ -4587,7 +4587,7 @@
 21657 "syslog 送信元の数"
 
 //ORI "Important for the speed test: enter a rough estimate of your real number of syslog originators."
-21658 "速度テストでは重要です: 実際の syslog 送信元のおおよその数を入力してください。"
+21658 "速度テストで重要な値です: 実際の syslog 送信元のおおよその数を入力してください。"
 
 //ORI "Average message length"
 21659 "メッセージの平均長"
@@ -5251,7 +5251,7 @@
 31052 "秒" // used when N ≠ 1
 
 //ORI "Tab updated"
-31053 "タブの更新" // status bar: Tab updated: 5s ago (125 ms)
+31053 "最終更新" // status bar: Tab updated: 5s ago (125 ms)
 
 //ORI "ms"
 31054 "ms" // milliseconds, e.g. 125 ms
@@ -5428,10 +5428,10 @@
 31120 "グループ"
 
 //ORI "originator"
-31121 "送信元" // 1 originator
+31121 "件の送信元" // 1 originator
 
 //ORI "originators"
-31122 "送信元" // N originators
+31122 "件の送信元" // N originators
 
 //ORI "Please review the imported settings.\r\n\r\nPasswords, if included in the original configuration, were not imported and must be set again."
 31123 "インポートした設定を確認してください。\r\n\r\n元の構成にパスワードが含まれていた場合、パスワードはインポートされていないため、再設定する必要があります。"
