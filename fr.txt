@@ -1107,8 +1107,8 @@
 //ORI "Your remote account is not allowed to start or stop the Syslog Collector or change its startup type."
 11073 "Votre compte distant n'est pas autorisé à démarrer ou arrêter le Syslog Collector, ni à modifier son type de démarrage."
 
-//ORI "Ask a user in the Administrators group to perform this action."
-11074 "Demandez à un utilisateur du groupe Administrateurs d'effectuer cette action."
+//ORI "Ask a user with the Admin role to perform this action."
+11074 "Demandez à un utilisateur ayant le rôle Admin d'effectuer cette action."
 
 //ORI "Service program:"
 11075 "Programme du service :"
@@ -1781,8 +1781,8 @@
 //ORI "Certificate"
 11673 "Certificat"
 
-//ORI "Named certificate and private key from Manage Certificates."
-11674 "Certificat nommé avec clé privée, issu de la gestion des certificats."
+//ORI "Named certificate and private key from the TLS Certificates window."
+11674 "Certificat nommé avec clé privée, issu de la fenêtre Certificats TLS."
 
 //ORI "Certificate name"
 11675 "Nom du certificat"
@@ -3416,8 +3416,8 @@
 //ORI "When on, the target certificate is checked against Windows trusted roots and the optional CA certificate, and the name must match the target server."
 15447 "Si activé, le certificat cible est vérifié par rapport aux racines de confiance Windows et au certificat CA facultatif, et le nom doit correspondre au serveur cible."
 
-//ORI "Named CA certificate from Manage Certificates. Leave blank to use Windows trusted roots only. Used only when Verify server certificate is on."
-15449 "Certificat CA nommé, issu de la gestion des certificats. Laissez vide pour n'utiliser que les racines de confiance Windows. Utilisé seulement si Vérifier le certificat du serveur est activé."
+//ORI "Named CA certificate from the TLS Certificates window. Leave blank to use Windows trusted roots only. Used only when Verify server certificate is on."
+15449 "Certificat CA nommé, issu de la fenêtre Certificats TLS. Laissez vide pour n'utiliser que les racines de confiance Windows. Utilisé seulement si Vérifier le certificat du serveur est activé."
 
 //ORI "Timeout"
 15450 "Délai d'attente"
@@ -4010,8 +4010,8 @@
 //ORI "Accept a client certificate if its fingerprint is listed. An empty fingerprints file rejects all self-signed clients."
 21169 "Accepter un certificat client si son empreinte est listée. Un fichier d'empreintes vide rejette tous les clients autosignés."
 
-//ORI "Named CA certificate from Manage Certificates. Leave blank to disable CA validation."
-21171 "Certificat CA nommé, issu de la gestion des certificats. Laissez vide pour désactiver la validation CA."
+//ORI "Named CA certificate from the TLS Certificates window. Leave blank to disable CA validation."
+21171 "Certificat CA nommé, issu de la fenêtre Certificats TLS. Laissez vide pour désactiver la validation CA."
 
 //ORI "Allow clients by IP"
 21172 "Autoriser les clients par IP"
