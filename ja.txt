@@ -545,7 +545,7 @@
 10360 "指定したフィルターに一致する syslog 送信元はありません。"
 
 //ORI "This originator no longer exists. It will be removed from the filter when you click Apply."
-10361 "この送信元は存在しません。[適用] をクリックするとフィルターから削除されます。"
+10361 "この送信元は既に存在しません。[適用] をクリックするとフィルターから削除されます。"
 
 //ORI "No originators are selected. The filter will include all originators."
 10362 "送信元が選択されていません。フィルターにはすべての送信元が含まれます。"
@@ -785,7 +785,7 @@
 10707 "ユーザーのプロパティ"
 
 //ORI "User login is required for the connection."
-10709 "接続にはユーザーのログインが必要です。"
+10709 "接続に必要なユーザーのログイン名です。"
 
 //ORI "User's full name."
 10710 "ユーザーの氏名です。"
@@ -855,7 +855,7 @@
 10754 "カスタム" // time range type; also shown as the Viewer tab label
 
 //ORI "Range"
-10755 "範囲" // time range type selector (Today, Yesterday, …)
+10755 "期間" // time range type selector (Today, Yesterday, …)
 
 //ORI "Interval of messages to request from the storage."
 10756 "ストレージから要求するメッセージの期間です。"
@@ -1833,7 +1833,7 @@
 11696 "有効な IPv4 または IPv6 アドレスを入力してください。"
 
 //ORI "Expiration (days)"
-11698 "有効期限 (日)"
+11698 "有効期間 (日)"
 
 //ORI "Private Key"
 11699 "秘密鍵"
@@ -2108,7 +2108,7 @@
 11814 "Syslog Watcher"
 
 //ORI "This Manager is version "
-11815 "このマネージャーのバージョン: " // version mismatch, part 1, followed by the Manager version: "This Manager is version 7.0.5, and the server is version 7.1.0." Keep the trailing space.
+11815 "このマネージャーのバージョン: " // version mismatch, part 1, followed by the Manager version: "This Manager is version X.Y.Z, and the server is version A.B.C". Keep the trailing space.
 
 //ORI "They are not the same product line. Update Manager or the server before continuing."
 11816 "製品ラインが異なります。続行する前に、マネージャーまたはサーバーを更新してください。"
@@ -2232,7 +2232,7 @@
 12061 "マネージャーを閉じるときに確認する"
 
 //ORI "Ask for confirmation before Syslog Watcher Manager is closed while it is connected to a server."
-12062 "サーバーに接続中に Syslog Watcher Manager を閉じる前に確認します。"
+12062 "サーバーに接続しているときは、Syslog Watcher Manager を閉じる前に確認します。"
 
 //ORI "Syslog Watcher Manager is connected to a server. Are you sure you want to close it?"
 12063 "Syslog Watcher Manager はサーバーに接続しています。閉じてもよろしいですか?"
@@ -2367,7 +2367,7 @@
 12308 "(オプション) 連絡先メールアドレス"
 
 //ORI "An address where we can reply about this report."
-12309 "このレポートについて返信できるアドレスです。"
+12309 "この報告について返信できるアドレスです。"
 
 //ORI "Send Request"
 12310 "要求を送信" // button
@@ -2379,7 +2379,7 @@
 12312 "送信元の簡単な説明を入力してください。"
 
 //ORI "The report was sent. Thank you."
-12313 "レポートを送信しました。ありがとうございました。"
+12313 "報告を送信しました。ありがとうございました。"
 
 //ORI "The request could not be sent. Save the request to a file and contact technical support with that file attached."
 12314 "要求を送信できませんでした。要求をファイルに保存し、そのファイルを添付してテクニカルサポートにお問い合わせください。"
@@ -2610,7 +2610,7 @@
 13009 "ストレージのサイズ"
 
 //ORI "ENTIRE RANGE"
-13010 "範囲全体"
+13010 "期間全体"
 
 //ORI "Date"
 13012 "日付"
@@ -2652,13 +2652,13 @@
 13026 "ストレージには選択した送信元からのメッセージがありません:"
 
 //ORI "Select another day or range in the calendar."
-13027 "カレンダーで別の日または範囲を選択してください。"
+13027 "カレンダーで別の日または期間を選択してください。"
 
 //ORI "Other originators may have messages for this day."
 13028 "他の送信元には、この日のメッセージがある可能性があります。"
 
 //ORI "Select ALL ORIGINATORS, or another day or range in the calendar."
-13029 "[すべての送信元] を選択するか、カレンダーで別の日または範囲を選択してください。"
+13029 "[すべての送信元] を選択するか、カレンダーで別の日または期間を選択してください。"
 
 // Viewer tab 14000
 //ORI "Request..."
@@ -2770,7 +2770,7 @@
 14039 "表示どおりにコピー (TAB)"
 
 //ORI "Copy as Parsed (JSON)"
-14040 "解析済みとしてコピー (JSON)"
+14040 "解析結果としてコピー (JSON)"
 
 //ORI "Copy as Received (TEXT)"
 14041 "受信したとおりにコピー (TEXT)"
@@ -3674,7 +3674,7 @@
 19990 "再インストール"
 
 //ORI "No activations left."
-19991 "残りのアクティベーションがありません。"
+19991 "アクティブ化できる残り回数がありません。"
 
 //ORI "Are you sure you want to switch to this license?"
 19992 "このライセンスに切り替えますか?"
@@ -4017,7 +4017,7 @@
 21172 "IP でクライアントを許可する"
 
 //ORI "Accept the client if its certificate SAN includes the source IP address in an IP field (SAN:IP)."
-21173 "証明書の SAN の IP フィールド (SAN:IP) に送信元の IP アドレスが含まれている場合、クライアントを受け付けます。"
+21173 "証明書の SAN の IP フィールド (SAN:IP) に接続元の IP アドレスが含まれている場合、クライアントを受け付けます。"
 
 //ORI "Allow clients by name"
 21174 "名前でクライアントを許可する"
@@ -4029,7 +4029,7 @@
 21176 "件を許可" // number of allowed TLS client entries: "5 allowed"
 
 //ORI "From IP"
-21178 "送信元 IP"
+21178 "接続元 IP"
 
 //ORI "Algorithm"
 21179 "アルゴリズム"
@@ -4096,7 +4096,7 @@
 21229 "アーカイブの場所を指定してください。"
 
 //ORI "Daily"
-21230 "日次"
+21230 "毎日"
 
 //ORI "Hourly"
 21231 "毎時"
@@ -4789,7 +4789,7 @@
 22047 "繰り返し"
 
 //ORI "Range"
-22048 "範囲" // column: time range covered by the report
+22048 "期間" // column: time range covered by the report
 
 //ORI "Generate Report"
 22049 "レポートの生成"
@@ -4819,7 +4819,7 @@
 22057 "レポートを開く"
 
 //ORI "Change the report template, syslog filter, message range, or the time of a one-time report. To change the schedule, cancel the report and use Reschedule."
-22059 "レポートテンプレート、syslog フィルター、メッセージの範囲、または 1 回限りのレポートの時刻を変更します。スケジュールを変更するには、レポートをキャンセルして [再スケジュール] を使用してください。"
+22059 "レポートテンプレート、syslog フィルター、メッセージの期間、または 1 回限りのレポートの時刻を変更します。スケジュールを変更するには、レポートをキャンセルして [再スケジュール] を使用してください。"
 
 //ORI "Delete generated report files and the report history entry."
 22060 "生成されたレポートファイルとレポートの履歴エントリを削除します。"
@@ -4864,13 +4864,13 @@
 22074 "初回の日時" // report schedule Recurring: label of the date/time field (first run)
 
 //ORI "Date and time of the first report. Together with the repeat interval, this defines the message range."
-22075 "最初のレポートの日時です。繰り返しの間隔とあわせて、メッセージの範囲を定義します。"
+22075 "最初のレポートの日時です。繰り返しの間隔とあわせて、メッセージの期間を定義します。"
 
 //ORI "Repeat every"
 22076 "繰り返しの間隔"
 
 //ORI "Interval for scheduling new reports. This also defines the syslog message range."
-22077 "新しいレポートをスケジュールする間隔です。syslog メッセージの範囲もこれで決まります。"
+22077 "新しいレポートをスケジュールする間隔です。syslog メッセージの期間もこれで決まります。"
 
 //ORI "Scheduled"
 22078 "スケジュール済み"
@@ -4927,7 +4927,7 @@
 22100 "エラー"
 
 //ORI "No report records. Increase the range to see older reports, or schedule a new report."
-22101 "レポートの記録がありません。古いレポートを表示するには範囲を広げるか、新しいレポートをスケジュールしてください。"
+22101 "レポートの記録がありません。古いレポートを表示するには期間を広げるか、新しいレポートをスケジュールしてください。"
 
 //ORI "Unable to Add Template"
 22102 "テンプレートを追加できません"
@@ -4984,13 +4984,13 @@
 22120 "レポートの生成に失敗しました。"
 
 //ORI "The report no longer exists."
-22121 "レポートは存在しません。"
+22121 "レポートは既に存在しません。"
 
 //ORI "The report is being generated. Cancel it first, or wait until it finishes."
 22122 "レポートは生成中です。先にキャンセルするか、完了するまでお待ちください。"
 
 //ORI "The report is no longer scheduled."
-22123 "レポートはスケジュールされていません。"
+22123 "レポートのスケジュールは既に解除されています。"
 
 //ORI "The report is being generated and can no longer be changed. To use new settings, cancel it and use Reschedule."
 22124 "レポートは生成中のため、変更できません。新しい設定を使用するには、レポートをキャンセルして [再スケジュール] を使用してください。"
@@ -5027,7 +5027,7 @@
 29408 "この項目は使用中のため削除できません。先に、この項目を使用している設定を削除してください。"
 
 //ORI "The change refers to an item that no longer exists. It may have been deleted by another user. Close this window, open it again, and select it again."
-29409 "この変更は、存在しない項目を参照しています。別のユーザーによって削除された可能性があります。このウィンドウを閉じて再度開き、もう一度選択してください。"
+29409 "この変更は、既に存在しない項目を参照しています。別のユーザーによって削除された可能性があります。このウィンドウを閉じて再度開き、もう一度選択してください。"
 
 //ORI "The service rejected the saved password. It may have been changed in another Manager. Connect again with the current password."
 29410 "サービスが保存されたパスワードを拒否しました。別のマネージャーで変更された可能性があります。現在のパスワードで再接続してください。"
