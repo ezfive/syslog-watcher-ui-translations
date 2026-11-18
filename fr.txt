@@ -2108,7 +2108,7 @@
 11814 "Syslog Watcher"
 
 //ORI "This Manager is version "
-11815 "Ce Manager est en version " // version mismatch, part 1, followed by the Manager version: "This Manager is version 7.0.5, and the server is version 7.1.0." Keep the trailing space.
+11815 "Ce Manager est en version " // version mismatch, part 1, followed by the Manager version: "This Manager is version X.Y.Z, and the server is version A.B.C". Keep the trailing space.
 
 //ORI "They are not the same product line. Update Manager or the server before continuing."
 11816 "Ils n'appartiennent pas à la même gamme de produits. Mettez à jour Manager ou le serveur avant de continuer."

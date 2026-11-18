@@ -2108,7 +2108,7 @@
 11814 "Syslog Watcher"
 
 //ORI "This Manager is version "
-11815 "Dieser Manager hat Version " // version mismatch, part 1, followed by the Manager version: "This Manager is version 7.0.5, and the server is version 7.1.0." Keep the trailing space.
+11815 "Dieser Manager hat Version " // version mismatch, part 1, followed by the Manager version: "This Manager is version X.Y.Z, and the server is version A.B.C". Keep the trailing space.
 
 //ORI "They are not the same product line. Update Manager or the server before continuing."
 11816 "Sie gehören nicht zur selben Produktlinie. Aktualisieren Sie Manager oder den Server, bevor Sie fortfahren."
@@ -5305,7 +5305,7 @@
 31071 "Auto: AUS" // auto-refresh drop-down: automatic refresh is disabled
 
 //ORI "Request"
-31072 "Abfrage" // button
+31072 "Anfrage" // button
 
 //ORI "Please select a view layout."
 31073 "Bitte wählen Sie ein Ansichtslayout aus."
