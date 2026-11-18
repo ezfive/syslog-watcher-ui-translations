@@ -356,7 +356,7 @@
 10202 "Eigenschaften der Ansichtsregisterkarte."
 
 //ORI "Layout based on"
-10203 "Layout basiert auf"
+10203 "Basislayout"
 
 //ORI "Choose one of the available layouts to create this tab. A layout defines the way the collected messages are displayed."
 10204 "Wählen Sie eines der verfügbaren Layouts für diese Registerkarte. Ein Layout legt fest, wie die gesammelten Nachrichten angezeigt werden."
@@ -365,7 +365,7 @@
 10205 "Nachrichten pro Seite"
 
 //ORI "Maximum number of messages to show at once (for pagination)."
-10206 "Maximale Anzahl gleichzeitig angezeigter Nachrichten (für die Seitenaufteilung)."
+10206 "Maximale Anzahl gleichzeitig angezeigter Nachrichten (für die seitenweise Anzeige)."
 
 //ORI "Unique name of the viewer, displayed on the tab."
 10208 "Eindeutiger Name der Ansicht, wird auf der Registerkarte angezeigt."
@@ -374,13 +374,13 @@
 10220 "Anfangseinstellungen einer neuen Ansichtsregisterkarte, die Nachrichten aus dem Speicher anzeigt. Sie können diese Einstellungen später in den Eigenschaften ändern."
 
 //ORI "Request"
-10221 "Anfrage" // heading
+10221 "Abfrage" // heading
 
 //ORI "View"
 10222 "Ansicht" // default name of a new viewer tab, a number is appended: View 1
 
 //ORI "Modify View Request"
-10225 "Ansichtsanfrage ändern"
+10225 "Ansichtsabfrage ändern"
 
 //ORI "Unable to Load View Layout"
 10231 "Ansichtslayout kann nicht geladen werden"
@@ -423,7 +423,7 @@
 10262 "Maximum"
 
 //ORI "In syslog, a smaller number is more important."
-10263 "In Syslog ist eine kleinere Nummer wichtiger."
+10263 "Bei Syslog bedeutet eine kleinere Nummer eine höhere Wichtigkeit."
 
 //ORI "Filter Files"
 10264 "Filterdateien"
@@ -582,14 +582,14 @@
 10412 "Syslog-Parser"
 
 //ORI "Parse results:"
-10413 "Parse-Ergebnisse:"
+10413 "Parser-Ergebnisse:"
 
 // Parsers List 10450
 //ORI "Syslog Parsers"
 10450 "Syslog-Parser"
 
 //ORI "Uses"
-10455 "Verwendet" // column: number of originators that use the parser
+10455 "Verwendungen" // column: number of originators that use the parser
 
 //ORI "You cannot delete a parser that is used by originators.\r\n\r\nAssign another parser to the originators and try again."
 10456 "Ein Parser, der von Absendern verwendet wird, kann nicht gelöscht werden.\r\n\r\nWeisen Sie den Absendern einen anderen Parser zu und versuchen Sie es erneut."
@@ -855,10 +855,10 @@
 10754 "BENUTZERDEFINIERT" // time range type; also shown as the Viewer tab label
 
 //ORI "Range"
-10755 "Bereich" // time range type selector (Today, Yesterday, …)
+10755 "Zeitraum" // time range type selector (Today, Yesterday, …)
 
 //ORI "Interval of messages to request from the storage."
-10756 "Zeitintervall der Nachrichten, die aus dem Speicher angefordert werden."
+10756 "Zeitintervall der Nachrichten, die aus dem Speicher abgefragt werden."
 
 //ORI "From"
 10757 "Von" // start date/time of a custom time range
@@ -1111,7 +1111,7 @@
 11074 "Bitten Sie einen Benutzer mit der Rolle Admin, diese Aktion auszuführen."
 
 //ORI "Service program:"
-11075 "Dienstprogramm:"
+11075 "Programmdatei des Dienstes:"
 
 //ORI "The Syslog Watcher Server service is disabled. Set its startup type to Automatic and start it?"
 11077 "Der Dienst Syslog Watcher Server ist deaktiviert. Starttyp auf Automatisch setzen und den Dienst starten?"
@@ -1628,7 +1628,7 @@
 
 // Server Configuration: HTTP Endpoints 11550
 //ORI "Integrate Syslog Watcher with web services."
-11550 "Syslog Watcher mit Webdiensten integrieren."
+11550 "Syslog Watcher mit Webdiensten verbinden."
 
 //ORI "HTTP Endpoints"
 11551 "HTTP-Endpunkte"
@@ -1764,7 +1764,7 @@
 11659 "Der Name muss ein gültiger Dateiname sein. \\ / : * ? "" < > |, ein Leerzeichen oder Punkt am Ende sowie reservierte Namen wie CON oder NUL sind nicht erlaubt."
 
 //ORI "Name of the certificate in the store. Letters, digits, underscore, and hyphen only. Maximum 128 characters."
-11660 "Name des Zertifikats im Speicher. Nur Buchstaben, Ziffern, Unterstrich und Bindestrich. Maximal 128 Zeichen."
+11660 "Name des Zertifikats im Zertifikatspeicher. Nur Buchstaben, Ziffern, Unterstrich und Bindestrich. Maximal 128 Zeichen."
 
 //ORI "Fill in the name. The certificate is stored on the server."
 11661 "Geben Sie den Namen ein. Das Zertifikat wird auf dem Server gespeichert."
@@ -1776,7 +1776,7 @@
 11663 "Zertifikat kann nicht importiert werden"
 
 //ORI "Review the certificate name and import the PEM pair into the server store."
-11672 "Prüfen Sie den Zertifikatsnamen und importieren Sie das PEM-Paar in den Serverspeicher."
+11672 "Prüfen Sie den Zertifikatsnamen und importieren Sie das PEM-Paar in den Zertifikatspeicher des Servers."
 
 //ORI "Certificate"
 11673 "Zertifikat"
@@ -2217,7 +2217,7 @@
 12056 "Einstellungen für die Speicher-Registerkarte."
 
 //ORI "Maximum selected days"
-12057 "Maximal ausgewählte Tage"
+12057 "Maximal auswählbare Tage"
 
 //ORI "How many days can be selected together on the Storage tab calendar (1 to 999)."
 12058 "Wie viele Tage im Kalender der Speicher-Registerkarte zusammen ausgewählt werden können (1 bis 999)."
@@ -2232,7 +2232,7 @@
 12061 "Schließen von Manager bestätigen"
 
 //ORI "Ask for confirmation before Syslog Watcher Manager is closed while it is connected to a server."
-12062 "Vor dem Schließen von Syslog Watcher Manager um Bestätigung bitten, während er mit einem Server verbunden ist."
+12062 "Vor dem Schließen von Syslog Watcher Manager um Bestätigung bitten, wenn er mit einem Server verbunden ist."
 
 //ORI "Syslog Watcher Manager is connected to a server. Are you sure you want to close it?"
 12063 "Syslog Watcher Manager ist mit einem Server verbunden. Möchten Sie ihn wirklich schließen?"
@@ -2358,7 +2358,7 @@
 12305 "Geben Sie an, wer diese Nachricht gesendet hat: Software, Hardware, Modell, Version usw."
 
 //ORI "(Optional) What is wrong"
-12306 "(Optional) Was ist falsch"
+12306 "(Optional) Problembeschreibung"
 
 //ORI "Describe what you expected or what is wrong."
 12307 "Beschreiben Sie, was Sie erwartet haben oder was falsch ist."
@@ -2416,7 +2416,7 @@
 12409 "E-Mail-Konto zum Senden von E-Mail-Nachrichten."
 
 //ORI "Email error diagnostic records"
-12410 "Fehler aus Diagnoseeinträgen per E-Mail"
+12410 "Fehler-Diagnoseeinträge per E-Mail senden"
 
 //ORI "Send all warning and error events from diagnostic records by email."
 12411 "Alle Warnungen und Fehler aus den Diagnoseeinträgen per E-Mail senden."
@@ -2610,7 +2610,7 @@
 13009 "Speichergröße"
 
 //ORI "ENTIRE RANGE"
-13010 "GESAMTER BEREICH"
+13010 "GESAMTER ZEITRAUM"
 
 //ORI "Date"
 13012 "Datum"
@@ -2662,7 +2662,7 @@
 
 // Viewer tab 14000
 //ORI "Request..."
-14000 "Anfrage..."
+14000 "Abfrage..."
 
 //ORI "Tab"
 14001 "Registerkarte" // Viewer toolbar menu button with tab actions: ◳ Tab▾
@@ -2716,7 +2716,7 @@
 14019 "Nächste passende Nachricht unterhalb in der Tabelle suchen."
 
 //ORI "Requested"
-14020 "Angefordert" // Viewer status bar label: requested time range and filter
+14020 "Abgefragt" // Viewer status bar label: requested time range and filter
 
 //ORI "Filter/Search"
 14021 "Filter/Suche"
@@ -2770,7 +2770,7 @@
 14039 "Wie angezeigt kopieren (TAB)"
 
 //ORI "Copy as Parsed (JSON)"
-14040 "Geparst kopieren (JSON)"
+14040 "Wie geparst kopieren (JSON)"
 
 //ORI "Copy as Received (TEXT)"
 14041 "Wie empfangen kopieren (TEXT)"
@@ -2782,7 +2782,7 @@
 14043 "Keine der geladenen Nachrichten entspricht den Spaltenfiltern.\r\nÄndern oder löschen Sie die Filter in der Filterzeile."
 
 //ORI "No syslog messages were collected in the requested time range:"
-14044 "Im angeforderten Zeitraum wurden keine Syslog-Nachrichten gesammelt:"
+14044 "Im abgefragten Zeitraum wurden keine Syslog-Nachrichten gesammelt:"
 
 //ORI "Layout..."
 14045 "Layout..."
@@ -2794,7 +2794,7 @@
 14047 "Nachrichten können nicht geladen werden"
 
 //ORI "No messages in the requested time range match the message filters:"
-14049 "Keine Nachrichten im angeforderten Zeitraum entsprechen den Nachrichtenfiltern:"
+14049 "Keine Nachrichten im abgefragten Zeitraum entsprechen den Nachrichtenfiltern:"
 
 //ORI "New messages will appear when the view is refreshed."
 14050 "Neue Nachrichten erscheinen, wenn die Ansicht aktualisiert wird."
@@ -2977,19 +2977,19 @@
 15073 "Sekunden zwischen E-Mails, um den E-Mail-Server zu entlasten. 0 = keine Verzögerung."
 
 //ORI "Consolidation"
-15074 "Zusammenfassung"
+15074 "Bündelung"
 
 //ORI "OFF: One email per alert (only with a single email rule)"
 15075 "AUS: Eine E-Mail pro Alarm (nur mit einer einzigen E-Mail-Regel)"
 
 //ORI "ON: Merge multiple alerts into one email"
-15076 "EIN: Mehrere Alarme in einer E-Mail zusammenfassen"
+15076 "EIN: Mehrere Alarme in einer E-Mail bündeln"
 
 //ORI "Combines several alerts into one email. If one syslog message matches more than one rule, all of those alerts are included together, which may exceed the maximum."
-15077 "Fasst mehrere Alarme in einer E-Mail zusammen. Wenn eine Syslog-Nachricht auf mehrere Regeln passt, werden alle diese Alarme gemeinsam aufgenommen, auch über das Maximum hinaus."
+15077 "Bündelt mehrere Alarme in einer E-Mail. Wenn eine Syslog-Nachricht auf mehrere Regeln passt, werden alle diese Alarme gemeinsam aufgenommen, auch über das Maximum hinaus."
 
 //ORI "Maximum merged emails"
-15078 "Maximal zusammengefasste E-Mails"
+15078 "Maximal gebündelte E-Mails"
 
 //ORI "Maximum number of alerts merged into one email. A single syslog message that matches several rules can still add all of those alerts, even if that goes over the maximum."
 15079 "Maximale Anzahl von Alarmen in einer E-Mail. Eine einzelne Syslog-Nachricht, die auf mehrere Regeln passt, kann trotzdem alle diese Alarme hinzufügen, auch wenn das Maximum dadurch überschritten wird."
@@ -2998,13 +2998,13 @@
 15080 "E-Mail-Betreff"
 
 //ORI "Subject of a consolidated email with multiple messages"
-15081 "Betreff einer zusammengefassten E-Mail mit mehreren Nachrichten"
+15081 "Betreff einer gebündelten E-Mail mit mehreren Nachrichten"
 
 //ORI "No email accounts"
 15082 "Keine E-Mail-Konten"
 
 //ORI "{N} consolidated emails from Syslog Watcher"
-15083 "{N} zusammengefasste E-Mails von Syslog Watcher" // {N} = number of emails; keep {N} as is
+15083 "{N} gebündelte E-Mails von Syslog Watcher" // {N} = number of emails; keep {N} as is
 
 //ORI "<select account>"
 15084 "<Konto auswählen>"
@@ -3016,7 +3016,7 @@
 15089 "Es werden keine E-Mails gesendet. Bitte fügen Sie mindestens eine E-Mail hinzu: E-Mails > E-Mail hinzufügen."
 
 //ORI "Consolidation should stay on when there is more than one email. One syslog message can match several rules, and those alerts are always sent in the same email."
-15090 "Die Zusammenfassung sollte bei mehr als einer E-Mail eingeschaltet bleiben. Eine Syslog-Nachricht kann auf mehrere Regeln passen, und diese Alarme werden immer in derselben E-Mail gesendet."
+15090 "Die Bündelung sollte bei mehr als einer E-Mail eingeschaltet bleiben. Eine Syslog-Nachricht kann auf mehrere Regeln passen, und diese Alarme werden immer in derselben E-Mail gesendet."
 
 //ORI "The 'Send Emails' feature sends email notifications for syslog messages that match the specified filter conditions."
 15091 "Die Funktion 'E-Mails senden' sendet E-Mail-Benachrichtigungen für Syslog-Nachrichten, die den angegebenen Filterbedingungen entsprechen."
@@ -3208,7 +3208,7 @@
 15302 "Konfiguration der HTTP-Anfrage."
 
 //ORI "The 'Send HTTP Requests' feature integrates with external services by sending HTTP requests."
-15305 "Die Funktion 'HTTP-Anfragen senden' integriert externe Dienste durch das Senden von HTTP-Anfragen."
+15305 "Die Funktion 'HTTP-Anfragen senden' bindet externe Dienste durch das Senden von HTTP-Anfragen an."
 
 //ORI "HTTP request section"
 15306 "HTTP-Anfrageabschnitt"
@@ -3275,7 +3275,7 @@
 15354 "Konfiguration der Programmausführung."
 
 //ORI "The 'Execute Program/Script' feature integrates with external tools by executing programs or scripts."
-15355 "Die Funktion 'Programm/Skript ausführen' integriert externe Werkzeuge durch das Ausführen von Programmen oder Skripten."
+15355 "Die Funktion 'Programm/Skript ausführen' bindet externe Werkzeuge durch das Ausführen von Programmen oder Skripten an."
 
 //ORI "Windows account that starts the process. DOMAIN\\user, user@domain, or a local name. Leave empty to run as the server account."
 15359 "Windows-Konto, das den Prozess startet. DOMÄNE\\Benutzer, benutzer@domäne oder ein lokaler Name. Leer lassen, um unter dem Serverkonto auszuführen."
@@ -4123,7 +4123,7 @@
 21242 "Aufbewahrung im Syslog-Speicher"
 
 //ORI "Automatically delete syslog storage files that exceed the age or size limits. Storage limits are kept in the storage and can be set in Storage ⮕ Storage Settings..."
-21243 "Syslog-Speicherdateien automatisch löschen, die die Alters- oder Größenlimits überschreiten. Die Speicherlimits werden im Speicher gehalten und können unter Speicher ⮕ Speichereinstellungen... festgelegt werden."
+21243 "Syslog-Speicherdateien automatisch löschen, die die Alters- oder Größenlimits überschreiten. Die Speicherlimits sind im Speicher selbst hinterlegt und können unter Speicher ⮕ Speichereinstellungen... festgelegt werden."
 
 //ORI "Enforce storage limits"
 21244 "Speicherlimits durchsetzen"
@@ -4151,7 +4151,7 @@
 21251 "Arbeitsspeicherpuffer"
 
 //ORI "Keeps messages before they are written to the syslog storage."
-21252 "Hält Nachrichten, bevor sie in den Syslog-Speicher geschrieben werden."
+21252 "Puffert Nachrichten, bevor sie in den Syslog-Speicher geschrieben werden."
 
 //ORI "Buffer size (messages)"
 21253 "Puffergröße (Nachrichten)"
@@ -4819,7 +4819,7 @@
 22057 "Bericht öffnen"
 
 //ORI "Change the report template, syslog filter, message range, or the time of a one-time report. To change the schedule, cancel the report and use Reschedule."
-22059 "Berichtsvorlage, Syslog-Filter, Nachrichtenbereich oder den Zeitpunkt eines einmaligen Berichts ändern. Um den Zeitplan zu ändern, brechen Sie den Bericht ab und verwenden Sie Neu planen."
+22059 "Berichtsvorlage, Syslog-Filter, Nachrichtenzeitraum oder den Zeitpunkt eines einmaligen Berichts ändern. Um den Zeitplan zu ändern, brechen Sie den Bericht ab und verwenden Sie Neu planen."
 
 //ORI "Delete generated report files and the report history entry."
 22060 "Erzeugte Berichtsdateien und den Verlaufseintrag des Berichts löschen."
@@ -4864,13 +4864,13 @@
 22074 "Erstmals am" // report schedule Recurring: label of the date/time field (first run)
 
 //ORI "Date and time of the first report. Together with the repeat interval, this defines the message range."
-22075 "Datum und Uhrzeit des ersten Berichts. Zusammen mit dem Wiederholungsintervall legt dies den Nachrichtenbereich fest."
+22075 "Datum und Uhrzeit des ersten Berichts. Zusammen mit dem Wiederholungsintervall legt dies den Nachrichtenzeitraum fest."
 
 //ORI "Repeat every"
 22076 "Wiederholen alle"
 
 //ORI "Interval for scheduling new reports. This also defines the syslog message range."
-22077 "Intervall für die Planung neuer Berichte. Es legt auch den Bereich der Syslog-Nachrichten fest."
+22077 "Intervall für die Planung neuer Berichte. Es legt auch den Zeitraum der Syslog-Nachrichten fest."
 
 //ORI "Scheduled"
 22078 "Geplant"
@@ -5305,7 +5305,7 @@
 31071 "Auto: AUS" // auto-refresh drop-down: automatic refresh is disabled
 
 //ORI "Request"
-31072 "Anfrage" // button
+31072 "Abfrage" // button
 
 //ORI "Please select a view layout."
 31073 "Bitte wählen Sie ein Ansichtslayout aus."

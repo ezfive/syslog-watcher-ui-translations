@@ -423,7 +423,7 @@
 10262 "Maximum"
 
 //ORI "In syslog, a smaller number is more important."
-10263 "En syslog, un numéro plus petit est plus important."
+10263 "Dans syslog, plus le numéro est petit, plus le message est important."
 
 //ORI "Filter Files"
 10264 "Fichiers de filtre"
@@ -1121,7 +1121,7 @@
 11100 "Serveur Syslog Watcher distant"
 
 //ORI "Connect"
-11101 "Connecter"
+11101 "Se connecter"
 
 //ORI "Connection settings for a remote Syslog Watcher server."
 11103 "Paramètres de connexion à un serveur Syslog Watcher distant."
@@ -1185,7 +1185,7 @@
 11151 "Manager"
 
 //ORI "Show information about Syslog Watcher Manager."
-11152 "Afficher les informations sur Syslog Watcher Manager."
+11152 "Afficher des informations sur Syslog Watcher Manager."
 
 //ORI "Updates"
 11153 "Mises à jour"
@@ -1237,7 +1237,7 @@
 11214 "Personnaliser les noms des gravités et des facilities."
 
 //ORI "Filter Lists..."
-11217 "Listes de filtre..."
+11217 "Listes de filtrage..."
 
 //ORI "Lists of field values that simplify filtering."
 11218 "Listes de valeurs de champ qui simplifient le filtrage."
@@ -1454,10 +1454,10 @@
 11418 "#EXEMPLE-MSG1\r\nip=(?<IP>\\S+)\r\n\r\n#EXEMPLE-MSG2\r\nIP:(?<IP>\\S+)"
 
 //ORI "Filter Lists"
-11419 "Listes de filtre"
+11419 "Listes de filtrage"
 
 //ORI "Filter list name"
-11420 "Nom de la liste de filtre"
+11420 "Nom de la liste de filtrage"
 
 //ORI "Items"
 11421 "Éléments"
@@ -1466,13 +1466,13 @@
 11422 "Liste" // default name of a new filter list, a number is appended: List1
 
 //ORI "New Filter List"
-11423 "Nouvelle liste de filtre"
+11423 "Nouvelle liste de filtrage"
 
 //ORI "Edit Filter List"
-11424 "Modifier la liste de filtre"
+11424 "Modifier la liste de filtrage"
 
 //ORI "Filter list items, one per line:"
-11425 "Éléments de la liste de filtre, un par ligne :"
+11425 "Éléments de la liste de filtrage, un par ligne :"
 
 //ORI "Field Dictionary"
 11426 "Dictionnaire de champs"
@@ -1481,7 +1481,7 @@
 11427 "Collection de champs"
 
 //ORI "Filter List"
-11428 "Liste de filtre"
+11428 "Liste de filtrage"
 
 //ORI "Type:"
 11429 "Type :"
@@ -1520,7 +1520,7 @@
 11442 "Fichier de collection de champs"
 
 //ORI "Filter List File"
-11443 "Fichier de liste de filtre"
+11443 "Fichier de liste de filtrage"
 
 // Server Configuration: Reports 11450
 //ORI "Syslog Reports"
@@ -1533,10 +1533,10 @@
 11453 "Paramètres de génération des rapports."
 
 //ORI "Generate on a schedule"
-11454 "Générer selon un planning"
+11454 "Générer selon une planification"
 
 //ORI "Generate reports on a schedule."
-11455 "Générer les rapports selon un planning."
+11455 "Générer les rapports selon une planification."
 
 //ORI "Concurrent tasks"
 11456 "Tâches simultanées"
@@ -1761,7 +1761,7 @@
 11657 "Impossible d'ajouter le certificat"
 
 //ORI "The name must be a valid file name. \\ / : * ? "" < > |, a trailing space or period, and reserved names such as CON or NUL are not allowed."
-11659 "Le nom doit être un nom de fichier valide. \\ / : * ? "" < > |, une espace ou un point final, ainsi que les noms réservés comme CON ou NUL ne sont pas autorisés."
+11659 "Le nom doit être un nom de fichier valide. \\ / : * ? "" < > |, un espace ou un point en fin de nom, ainsi que les noms réservés comme CON ou NUL ne sont pas autorisés."
 
 //ORI "Name of the certificate in the store. Letters, digits, underscore, and hyphen only. Maximum 128 characters."
 11660 "Nom du certificat dans le magasin. Lettres, chiffres, tiret bas et tiret uniquement. 128 caractères au maximum."
@@ -1824,7 +1824,7 @@
 11691 "IP" // SAN type: IP address
 
 //ORI "Pick a local hostname or IP address, or enter one."
-11693 "Choisissez un nom d'hôte ou une adresse IP locale, ou saisissez-en un."
+11693 "Choisissez un nom d'hôte ou une adresse IP locale, ou saisissez une valeur."
 
 //ORI "Please enter a SAN value."
 11695 "Veuillez saisir une valeur SAN."
@@ -1833,7 +1833,7 @@
 11696 "Veuillez saisir une adresse IPv4 ou IPv6 valide."
 
 //ORI "Expiration (days)"
-11698 "Expiration (jours)"
+11698 "Validité (jours)"
 
 //ORI "Private Key"
 11699 "Clé privée"
@@ -2217,7 +2217,7 @@
 12056 "Paramètres de l'onglet Stockage."
 
 //ORI "Maximum selected days"
-12057 "Jours sélectionnés au maximum"
+12057 "Nombre maximal de jours sélectionnables"
 
 //ORI "How many days can be selected together on the Storage tab calendar (1 to 999)."
 12058 "Nombre de jours pouvant être sélectionnés ensemble dans le calendrier de l'onglet Stockage (1 à 999)."
@@ -2770,7 +2770,7 @@
 14039 "Copier tel qu'affiché (TAB)"
 
 //ORI "Copy as Parsed (JSON)"
-14040 "Copier analysé (JSON)"
+14040 "Copier tel qu'analysé (JSON)"
 
 //ORI "Copy as Received (TEXT)"
 14041 "Copier tel que reçu (TEXTE)"
@@ -2852,25 +2852,25 @@
 14968 "Reprendre"
 
 //ORI "From Suspension Time"
-14971 "Depuis l'heure de suspension"
+14971 "À partir de l'heure de suspension"
 
 //ORI "From Now"
-14972 "Depuis maintenant"
+14972 "À partir de maintenant"
 
 //ORI "From Date/Time..."
-14973 "Depuis une date/heure..."
+14973 "À partir d'une date/heure..."
 
 //ORI "From Now (Skip Messages)"
-14974 "Depuis maintenant (ignorer les messages)"
+14974 "À partir de maintenant (ignorer les messages)"
 
 //ORI "From Date/Time (Reset)..."
-14975 "Depuis une date/heure (réinitialiser)..."
+14975 "À partir d'une date/heure (réinitialiser)..."
 
 //ORI "to add a feature to process syslog messages."
 14976 "pour ajouter une fonctionnalité qui traite les messages syslog." // follows the button name: "Add Feature... to add a feature to process syslog messages."
 
 //ORI "Resume From Date/Time"
-14977 "Reprendre depuis une date/heure"
+14977 "Reprendre à partir d'une date/heure"
 
 //ORI "Unable to Suspend Feature"
 14978 "Impossible de suspendre la fonctionnalité"
@@ -2947,7 +2947,7 @@
 15060 "Les e-mails sont envoyés à la réception des messages syslog concernés."
 
 //ORI "User-friendly name that describes the purpose of the email."
-15063 "Nom convivial décrivant l'objet de l'e-mail."
+15063 "Nom convivial décrivant le but de l'e-mail."
 
 //ORI "The filter determines which messages will trigger an email. Invalid syntax is highlighted in red."
 15065 "Le filtre détermine quels messages déclenchent un e-mail. Une syntaxe non valide est surlignée en rouge."
@@ -3038,7 +3038,7 @@
 15200 "Exporter vers des fichiers"
 
 //ORI "File Exporter"
-15201 "Export de fichiers"
+15201 "Export vers des fichiers"
 
 //ORI "Configures the output file format and the output folder structure."
 15202 "Configure le format des fichiers de sortie et la structure des dossiers de sortie."
@@ -3690,7 +3690,7 @@
 20003 "Pour appliquer la modification, Syslog Watcher Manager sera déconnecté du serveur."
 
 //ORI "Failed to Locate Time Zone"
-20004 "Échec de la localisation du fuseau horaire"
+20004 "Fuseau horaire introuvable"
 
 //ORI "Failed to identify the current time zone."
 20005 "Échec de l'identification du fuseau horaire actuel."
@@ -3821,7 +3821,7 @@
 21071 "Expression régulière"
 
 //ORI "Regular expression to extract originator ID from the message contents.\r\nExample: '^(\\S+)\\s' extracts characters until the first space.\r\nIf the expression has several groups, their matches are concatenated."
-21072 "Expression régulière pour extraire l'ID d'émetteur du contenu du message.\r\nExemple : '^(\\S+)\\s' extrait les caractères jusqu'à la première espace.\r\nSi l'expression a plusieurs groupes, leurs correspondances sont concaténées."
+21072 "Expression régulière pour extraire l'ID d'émetteur du contenu du message.\r\nExemple : '^(\\S+)\\s' extrait les caractères jusqu'au premier espace.\r\nSi l'expression a plusieurs groupes, leurs correspondances sont concaténées."
 
 //ORI "If unable to extract ID"
 21073 "Si l'ID ne peut pas être extrait"
@@ -4096,13 +4096,13 @@
 21229 "Veuillez indiquer l'emplacement de l'archive."
 
 //ORI "Daily"
-21230 "Quotidien"
+21230 "Tous les jours"
 
 //ORI "Hourly"
-21231 "Horaire"
+21231 "Toutes les heures"
 
 //ORI "Command timeout"
-21233 "Délai de la commande"
+21233 "Délai d'attente de la commande"
 
 //ORI "Seconds to wait for the command to finish. The process is stopped if it runs longer."
 21234 "Secondes d'attente de la fin de la commande. Le processus est arrêté s'il dure plus longtemps."
@@ -4209,7 +4209,7 @@
 21411 "Fuseau horaire du système :"
 
 //ORI "ERROR: Failed to locate system time zone."
-21412 "ERREUR : impossible de localiser le fuseau horaire du système."
+21412 "ERREUR : impossible de déterminer le fuseau horaire du système."
 
 //ORI "ERROR: Syslog Watcher 6.x was not found."
 21413 "ERREUR : Syslog Watcher 6.x introuvable."
@@ -4353,7 +4353,7 @@
 21463 "Base de connaissances (importés / ignorés) :"
 
 //ORI "Filter lists (imported / skipped):"
-21464 "Listes de filtre (importées / ignorées) :"
+21464 "Listes de filtrage (importées / ignorées) :"
 
 //ORI "View layouts (imported / skipped):"
 21465 "Dispositions de vue (importées / ignorées) :"
@@ -4395,7 +4395,7 @@
 21477 "Base de connaissances (valides / non valides) :"
 
 //ORI "Filter lists (valid / invalid):"
-21478 "Listes de filtre (valides / non valides) :"
+21478 "Listes de filtrage (valides / non valides) :"
 
 //ORI "View layouts (valid / invalid):"
 21479 "Dispositions de vue (valides / non valides) :"
@@ -4431,7 +4431,7 @@
 21490 "Migré depuis la base de connaissances de Syslog Watcher 6"
 
 //ORI "Migrated from Syslog Watcher 6 filter list"
-21491 "Migré depuis la liste de filtre de Syslog Watcher 6"
+21491 "Migré depuis la liste de filtrage de Syslog Watcher 6"
 
 //ORI "not writable"
 21492 "non accessible en écriture"
@@ -4608,7 +4608,7 @@
 21664 "Émetteurs :"
 
 //ORI "Stopping: waiting for the queue to drain..."
-21666 "Arrêt en cours : attente de la vidange de la file..."
+21666 "Arrêt en cours : attente du vidage de la file d'attente..."
 
 //ORI "Stopped."
 21667 "Arrêté."
@@ -4753,7 +4753,7 @@
 22034 "Exécution" // report schedule selector: As soon as possible / Once / Recurring / Weekly / Monthly
 
 //ORI "Parameters that define the report generation schedule."
-22035 "Paramètres définissant le planning de génération du rapport."
+22035 "Paramètres définissant la planification de génération du rapport."
 
 //ORI "As soon as possible"
 22036 "Dès que possible"
@@ -4813,13 +4813,13 @@
 22055 "Modifier le rapport planifié"
 
 //ORI "Schedule"
-22056 "Planning"
+22056 "Planification"
 
 //ORI "Open Report"
 22057 "Ouvrir le rapport"
 
 //ORI "Change the report template, syslog filter, message range, or the time of a one-time report. To change the schedule, cancel the report and use Reschedule."
-22059 "Modifier le modèle de rapport, le filtre syslog, la plage de messages ou l'heure d'un rapport unique. Pour modifier le planning, annulez le rapport et utilisez Replanifier."
+22059 "Modifier le modèle de rapport, le filtre syslog, la plage de messages ou l'heure d'un rapport unique. Pour modifier la planification, annulez le rapport et utilisez Replanifier."
 
 //ORI "Delete generated report files and the report history entry."
 22060 "Supprimer les fichiers de rapport générés et l'entrée d'historique du rapport."
@@ -5088,7 +5088,7 @@
 30903 "(Facultatif) Partie d'un message syslog pour les tests :"
 
 //ORI "Enter a regular expression with named capture groups to extract data fields.\r\n\r\nExample: ""(?<NAME>[^""]*)""\r\nExplanation: The name is between double quotes ("""") and can be used as {NAME}.\r\n\r\nExample: ip=(?<IP>\\S+)\r\nExplanation: Extracts the characters between ""ip="" and the following space to place it in the {IP} field."
-30904 "Saisissez une expression régulière avec des groupes de capture nommés pour extraire des champs de données.\r\n\r\nExemple : ""(?<NAME>[^""]*)""\r\nExplication : le nom se trouve entre guillemets doubles ("""") et peut être utilisé sous la forme {NAME}.\r\n\r\nExemple : ip=(?<IP>\\S+)\r\nExplication : extrait les caractères entre ""ip="" et l'espace suivante pour les placer dans le champ {IP}."
+30904 "Saisissez une expression régulière avec des groupes de capture nommés pour extraire des champs de données.\r\n\r\nExemple : ""(?<NAME>[^""]*)""\r\nExplication : le nom se trouve entre guillemets doubles ("""") et peut être utilisé sous la forme {NAME}.\r\n\r\nExemple : ip=(?<IP>\\S+)\r\nExplication : extrait les caractères entre ""ip="" et l'espace suivant pour les placer dans le champ {IP}."
 
 //ORI "The regular expression is invalid."
 30905 "L'expression régulière n'est pas valide."
