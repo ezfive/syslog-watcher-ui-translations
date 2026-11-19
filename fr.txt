@@ -2237,6 +2237,12 @@
 //ORI "Syslog Watcher Manager is connected to a server. Are you sure you want to close it?"
 12063 "Syslog Watcher Manager est connecté à un serveur. Voulez-vous vraiment le fermer ?"
 
+//ORI "Open maximized"
+12064 "Ouvrir en fenêtre agrandie"
+
+//ORI "When Syslog Watcher Manager starts, maximize its window. When No, the window opens with the size and position it had when Syslog Watcher Manager was last closed."
+12065 "Au démarrage de Syslog Watcher Manager, agrandir sa fenêtre. Si Non, la fenêtre s'ouvre avec la taille et la position qu'elle avait à la dernière fermeture de Syslog Watcher Manager."
+
 // Collector Configuration Window 12100
 //ORI "Syslog Collector Configuration"
 12100 "Configuration du Syslog Collector"
