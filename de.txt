@@ -3501,8 +3501,6 @@
 
 //ORI "Support Data File"
 19912 "Supportdatendatei"
-//IDS_SUPPORT_OPEN                "Open"
-//IDS_SUPPORT_WARNING             "Offline user guide is not installed.\r\n\r\nHelp (❓) buttons will try to open online user guide. We recommend installing offline copy if this system has no Internet access."
 
 // Licenses Windows 19919
 //ORI "Request Evaluation License"
@@ -4062,6 +4060,9 @@
 21191 "Bitte geben Sie einen Wert im zulässigen Bereich ein."
 
 // Server Configuration: Storage Maintenance 21200
+//ORI "Daily archives need a time zone a whole number of hours from UTC, so the archive is set to hourly."
+21207 "Tägliche Archive benötigen eine Zeitzone mit einem ganzzahligen Stundenabstand zu UTC, daher wird das Archiv stündlich synchronisiert."
+
 //ORI "Storage Archive (Storage Copy)"
 21217 "Speicherarchiv (Speicherkopie)"
 
